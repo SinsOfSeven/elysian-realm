@@ -11,8 +11,8 @@ import { Build, Flamechaser, Form } from "@/utilities/types";
 import { useTitle, useSlug, useRedirectToAdmin } from "@/utilities/helpers";
 import Admin from "@/Layouts/Admin.vue";
 
-// @ts-ignore
-let exclusives = []; let exclusiveLists = [];
+type Exclusive = { name: string; description: string; priority?: string };
+let exclusives: Exclusive[] = []; let exclusiveLists: Exclusive[] = [];
 const flamechasers = ref<Flamechaser[]>([{ name: "", signets: [] }]);
 const image = ref("");
 const form = ref<Form>({ name: "", image: "", slug: "", type: "", position: "", imageSource: "", builds: [], extension: "" });

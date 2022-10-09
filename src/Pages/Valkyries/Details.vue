@@ -1,0 +1,249 @@
+<script setup lang="ts">
+import { ref, onMounted, computed } from "vue";
+import { useRoute } from "vue-router";
+import { supabase } from "@/utilities/supabase";
+import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
+import ValkyrieType from "@/Components/ValkyrieType.vue";
+import ImageSource from "@/Components/ImageSource.vue";
+import Loading from "@/Components/Loading.vue";
+import Guest from "@/Layouts/Guest.vue";
+import { Data, SignetObject, SigilBuild, ValkyrieDetails } from "@/utilities/types";
+
+type Exclusive = { name: string; description: string; priority: string }
+const route = useRoute();
+const data = ref<Data>();
+const selectedBuild = ref(0);
+const indexTab = ref(0);
+const signets = ref<SignetObject[]>();
+const sigils = ref<SigilBuild[]>();
+const supports = ref<SigilBuild[]>();
+const exclusives = ref<Exclusive[]>();
+const loading = ref(true);
+const loadingImage = ref(true);
+const valkyrie = ref<ValkyrieDetails>({
+  name: "",
+  image: "",
+  extension: "",
+  slug: "",
+  type: "",
+  position: "",
+  imageSource: "",
+  builds: [],
+});
+
+const loaded = () => loadingImage.value = false;
+
+const getData = async () => {
+  try {
+    data.value = await supabase.from("valkyries").select().eq('slug', route.params.name).single().then(el => el = el.data);
+    let builds = JSON.parse(data.value!.builds);
+    valkyrie.value = Object.assign(data.value!, { builds: builds });
+    loading.value = false;
+    getSignets(0);
+    valkyrie.value.builds.forEach(el => {
+      if (el.ref.includes("youtube")) {
+        const key = el.ref.split("?v=").pop();
+        el.ref = `https://youtube.com/embed/${key}`;
+      }
+    });
+  } catch (error) { alert(error) }
+}
+
+const getSignets = (index: number) => {
+  selectedBuild.value = index;
+  signets.value = valkyrie.value.builds[selectedBuild.value].signets;
+  supports.value = valkyrie.value.builds[selectedBuild.value].supports;
+  sigils.value = valkyrie.value.builds[selectedBuild.value].sigils;
+  exclusives.value = valkyrie.value!.builds[selectedBuild.value].exclusives;
+  document.getElementById("exclusive")?.click();
+};
+
+const reference = computed(() => valkyrie.value.builds[selectedBuild.value].ref);
+
+onMounted(() => getData());
+</script>
+
+<template>
+  <Loading v-if="loading" />
+  <Guest v-else>
+    <div class="h-[36rem] lg:h-[50rem] relative">
+      <div class="w-full h-full absolute" style="filter: blur(8px);">
+        <img v-if="loadingImage" class="mx-auto"
+          src="/assets/loading.gif" alt="loading.." />
+        <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie.name" class="w-full h-full opacity-80" @load="loaded" />
+      </div>
+      <div class="w-full h-full relative pt-16">
+        <div class="flex flex-col">
+          <img v-if="loadingImage" class="mx-auto"
+            src="/assets/loading.gif" alt="loading.." />
+          <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name" class="w-full h-full lg:w-1/2 lg:h-1/2 mx-auto" @load="loaded" />
+          <div class="mt-4 mx-auto flex flex-col">
+            <span class="text-2xl font-bold lg:font-medium lg:text-4xl text-center drop-shadow-md shadow-black">{{ valkyrie.name }}</span>
+            <div class="flex w-full justify-between items-center mt-6">
+              <ValkyrieType :type="valkyrie.type" />
+              <ImageSource :imageSrc="valkyrie.imageSource" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-8 px-6 flex flex-col lg:flex-row w-full items-center">
+      <div class="h-[30rem] w-full">
+        <div class="w-full px-2 sm:px-0">
+          <TabGroup @change="indexTab = 0">
+            <h2 class="font-bold text-xl lg:text-4xl pb-4">Signet Builds</h2>
+            <div class="flex w-full">
+              <TabList class="flex space-x-1 rounded-xl bg-blue-900/20 lg:p-1 w-full overflow-x-auto">
+                <Tab v-for="(build, idx) in valkyrie.builds" as="template" :key="idx" v-slot="{selected}">
+                  <button @click="getSignets(idx)" :class="[
+                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 focus:outline-none',
+                    selected
+                      ? 'bg-white shadow'
+                      : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
+                  ]">
+                    {{ build.name }}
+                  </button>
+                </Tab>
+              </TabList>
+            </div>
+            <TabPanels class="mt-2 flex flex-col w-full">
+              <TabPanel v-for="build in valkyrie.builds" :key="build.name" class="focus:outline-none">
+                <div class="flex flex-col w-full lg:flex-row h-80 overflow-y-auto bg-slate-800 rounded-xl">
+                  <p class="py-2 px-8 whitespace-pre-line" v-text="build.informations" />
+                </div>
+              </TabPanel>
+            </TabPanels>
+          </TabGroup>
+        </div>
+      </div>
+      <div class="w-full">
+        <iframe class="w-300 h-[169px] lg:w-[600px] lg:h-[338px] border border-red-500 relative mx-auto" :src="reference" />
+      </div>
+    </div>
+    <div class="w-full px-6 h-[40rem] overflow-y-hidden py-8">
+      <TabGroup>
+        <div class="flex flex-col lg:flex-row h-full">
+          <TabList class="flex flex-row lg:flex-col w-full items-center lg:w-1/5 rounded-xl bg-blue-900/20 lg:p-1 lg:space-y-4 lg:h-full lg:overflow-y-auto overflow-x-auto overflow-y-hidden">
+            <Tab v-slot="{selected}" as="div" class="w-full h-full">
+              <button id="exclusive" :class="[
+                'px-6 py-4 uppercase w-full rounded-lg lg:py-8 font-semibold leading-5 text-blue-700',
+                  selected
+                    ? 'bg-white shadow ring-transparent outline-none ring-0 border-0'
+                    : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
+              ]">
+                Sigils & Support
+              </button>
+            </Tab>
+            <Tab v-slot="{selected}" as="div" class="w-full h-full">
+              <button :class="[
+                'px-6 py-4 uppercase w-full rounded-lg lg:py-8 font-semibold leading-5 text-blue-700 focus:outline-none border-0',
+                  selected
+                    ? 'bg-white shadow ring-transparent outline-none ring-0 border-0'
+                    : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
+              ]">
+                Elysia
+              </button>
+            </Tab>
+            <Tab v-for="(signet,idx) in signets" as="div" class="w-full h-full" :key="idx" v-slot="{selected}">
+              <button :class="[
+                'px-6 py-4 uppercase w-full rounded-lg lg:py-8 font-semibold leading-5 text-blue-700 focus:outline-none border-0',
+                selected
+                  ? 'bg-white shadow ring-transparent outline-none ring-0 border-0'
+                  : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
+              ]">
+                {{ signet.name }}
+              </button>
+            </Tab>
+          </TabList>
+
+          <TabPanels class="w-full lg:w-4/5 h-full bg-slate-800 rounded-xl overflow-y-auto">
+            <TabPanel class="rounded-xl bg-transparent px-8 py-6 space-y-6">
+              <p class="w-full bg-slate-500 px-4 py-3 rounded font-semibold" v-text="`Boss path: ${valkyrie.builds[selectedBuild].boss}`"></p>
+              <table class="table w-full h-full">
+                <thead>
+                  <tr class="border border-white">
+                    <th class="border border-white py-3">Time</th>
+                    <th class="border border-white py-3">Remembrance Sigil</th>
+                    <th class="border border-white py-3">FC Support Skill</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border border-white" v-for="(sigil, index) in sigils" :key="index">
+                    <td class="border border-white text-center py-2">{{ sigil.time }}</td>
+                    <td class="border border-white text-center py-2">{{ sigil.first }}</td>
+                    <td class="border border-white text-center py-2">{{ sigil.second }}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table w-full h-full">
+                <thead>
+                  <tr class="border border-white">
+                    <th class="border border-white py-3">Time</th>
+                    <th class="border border-white py-3">First Support</th>
+                    <th class="border border-white py-3">Second Support</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border border-white" v-for="(support, index) in supports" :key="index">
+                    <td class="border border-white text-center py-2">{{ support.time }}</td>
+                    <td class="border border-white text-center py-2">{{ support.first }}</td>
+                    <td class="border border-white text-center py-2">{{ support.second }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </TabPanel>
+            <TabPanel class="rounded-xl bg-transparent px-8 py-6 space-y-6">
+              <table class="table w-full h-full">
+                <thead>
+                  <tr class="border border-white">
+                    <th class="border border-white py-2 px-4">No</th>
+                    <th class="border border-white py-2 px-4">Name</th>
+                    <th class="border border-white py-2 px-4">Priority</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border border-white" v-for="(exclusive, index) in exclusives" :key="index">
+                    <td class="border border-white text-center">{{ index + 1 }}</td>
+                    <td class="border border-white p-2">
+                      <div class="flex flex-col">
+                        <span class="font-semibold underline">{{ exclusive.name }}</span>
+                        <span class="text-sm text-gray-300">{{ exclusive.description }}</span>
+                      </div>
+                    </td>
+                    <td class="border border-white text-center">{{ exclusive.priority }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </TabPanel>
+            <TabPanel v-for="(signet, idx) in signets" :key="idx" class="rounded-xl bg-transparent px-8 py-6">
+              <div class="w-full bg-slate-500 px-4 py-2 rounded mb-4 font-semibold" v-if="signet.informations">
+                <p v-text="signet.informations" class="whitespace-pre-line" />
+              </div>
+              <table class="table w-full">
+                <thead>
+                  <tr class="border border-white">
+                    <th class="border border-white py-2 px-4">No</th>
+                    <th class="border border-white py-2 px-4">Name</th>
+                    <th class="border border-white py-2 px-4">Priority</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border border-white" v-for="(sign, index) in signet.lists" :key="index">
+                    <td class="border border-white text-center">{{ index + 1 }}</td>
+                    <td class="border border-white p-2">
+                      <div class="flex flex-col">
+                        <span class="font-semibold underline">{{ sign.name }}</span>
+                        <span class="text-sm text-gray-300">{{ sign.description }}</span>
+                      </div>
+                    </td>
+                    <td class="border border-white text-center">{{ sign.priority }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </TabPanel>
+          </TabPanels>
+        </div>
+      </TabGroup>
+    </div>
+  </Guest>
+</template>

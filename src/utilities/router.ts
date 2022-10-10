@@ -1,35 +1,27 @@
 import { createRouter, createWebHistory } from "vue-router";
-const Index = () => "@/Pages/Valkyries/Index.vue";
-const About = () => "@/Pages/About.vue";
-const Credits = () => "@/Pages/Credits.vue";
-const SubmitBuild = () => "@/Pages/SubmitBuild.vue";
-const CheckBuild = () => "@/Pages/CheckBuild.vue";
-const Login = () => "@/Pages/Auth/Login.vue";
-const Details = () => "@/Pages/Valkyries/Details.vue";
-const Admin = () => "@/Pages/Admin/Index.vue";
-const AddValkyrie = () => "@/Pages/Admin/Valkyrie/Create.vue";
-const EditValkyrie = () => "@/Pages/Admin/Valkyrie/Update.vue";
+import Index from "@/Pages/Valkyries/Index.vue";
 import { auth } from "@/utilities/auth";
 
 const routes = [
   { path: "/", name:"valkyries.index", component: Index },
-  { path: "/about", name:"about", component: About },
-  { path: "/credits", name: "credits", component: Credits },
-  { path: "/submit-build", name: "submit.build", component: SubmitBuild },
-  { path: "/check-build/:id?", name: "check.build", component: CheckBuild },
-  { path: "/login", name: "login", component: Login },
-  { path: "/valkyries/:name", name: "valkyries.details", component: Details },
-  { path: "/admin", name: "admin", component: Admin },
-  { path: "/admin/valkyries/create", name: "admin.valkyries.create", component: AddValkyrie },
-  { path: "/admin/valkyries/:name", name: "admin.valkyries.edit", component: EditValkyrie },
+  { path: "/about", name:"about", component: () => import ("@/Pages/About.vue") },
+  { path: "/credits", name: "credits", component: () => import ("@/Pages/Credits.vue") },
+  { path: "/submit-build", name: "submit.build", component: () => import ("@/Pages/SubmitBuild.vue") },
+  { path: "/check-build/:id?", name: "check.build", component: () => import ("@/Pages/CheckBuild.vue") },
+  { path: "/login", name: "login", component: () => import ("@/Pages/Auth/Login.vue") },
+  { path: "/valkyries/:name", name: "valkyries.details", component: () => import ("@/Pages/Valkyries/Details.vue") },
+  { path: "/admin", name: "admin", component: () => import ("@/Pages/Admin/Index.vue") },
+  { path: "/admin/valkyries/create", name: "admin.valkyries.create", component: () => import ("@/Pages/Admin/Valkyrie/Create.vue") },
+  { path: "/admin/valkyries/:name", name: "admin.valkyries.edit", component: () => import ("@/Pages/Admin/Valkyrie/Update.vue") },
+  { path: "/:pathMatch(.*)*", name: "not.found", component: () => import ("@/App.vue") },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: routes
+  routes: routes,
 });
 
-router.beforeEach((to, from) => {
+router.beforeEach((to) => {
   if (to.name?.toString().includes("admin")) {
     if (!auth.user) {
       return { name: "login" };

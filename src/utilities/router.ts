@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Index from "@/Pages/Valkyries/Index.vue";
-import About from "@/Pages/About.vue";
-import Credits from "@/Pages/Credits.vue";
-import SubmitBuild from "@/Pages/SubmitBuild.vue";
-import CheckBuild from "@/Pages/CheckBuild.vue";
-import Login from "@/Pages/Auth/Login.vue";
-import Details from "@/Pages/Valkyries/Details.vue";
-import Admin from "@/Pages/Admin/Index.vue";
-import AddValkyrie from "@/Pages/Admin/Valkyrie/Create.vue";
-import EditValkyrie from "@/Pages/Admin/Valkyrie/Update.vue";
+const Index = () => "@/Pages/Valkyries/Index.vue";
+const About = () => "@/Pages/About.vue";
+const Credits = () => "@/Pages/Credits.vue";
+const SubmitBuild = () => "@/Pages/SubmitBuild.vue";
+const CheckBuild = () => "@/Pages/CheckBuild.vue";
+const Login = () => "@/Pages/Auth/Login.vue";
+const Details = () => "@/Pages/Valkyries/Details.vue";
+const Admin = () => "@/Pages/Admin/Index.vue";
+const AddValkyrie = () => "@/Pages/Admin/Valkyrie/Create.vue";
+const EditValkyrie = () => "@/Pages/Admin/Valkyrie/Update.vue";
 import { auth } from "@/utilities/auth";
 
 const routes = [

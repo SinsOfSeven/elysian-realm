@@ -5,7 +5,7 @@ import { Listbox, ListboxButton, ListboxOptions, ListboxOption, Disclosure, Disc
 import { ChevronUpIcon, ChevronUpDownIcon, CheckIcon, PlusIcon } from "@heroicons/vue/20/solid";
 import { Bars3Icon } from "@heroicons/vue/24/solid";
 import { XMarkIcon } from "@heroicons/vue/24/outline";
-import { supabase, supabaseStorage, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supabaseExclusiveDatabase } from "@/utilities/supabase";
+import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supabaseExclusiveDatabase } from "@/utilities/supabase";
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
 import Admin from "@/Layouts/Admin.vue";
@@ -26,19 +26,12 @@ const changeImage = () => { image.value = event.target.files[0]; image.value = U
 
 const update = async (): Promise<void> => {
   loading.value = true;
-  let slug = useSlug(form.value.name);
 
   let extension: string = image.value?.type.split("/").pop();
 
   // Upload to Bucket
   if (image.value) {
-    // Delete old Pic
-    let { data, error } = await supabase.storage.from(supabaseStorage).remove([`${valkyrie.value!.image.split("/").pop()}`]);
-    if (error) { console.error(error); return; };
-    try {
-      await supabase.storage.from(supabaseStorage).upload(`${slug}.${extension}`, image.value);
-      form.value.image = supabase.storage.from(supabaseStorage).getPublicUrl(`${slug}.${extension}`).publicURL!;
-    } catch (error) { console.error(error) }
+    form.value.image = `${useSlug(form.value.name)}.${extension}`
   } else {
     form.value.image = valkyrie.value.image;
   }
@@ -46,7 +39,7 @@ const update = async (): Promise<void> => {
   // Store to DB
   let { data, error } = await supabase.from(supabaseValkyrieDatabase).upsert({
     name: useTitle(form.value.name),
-    image: form.value.image,
+    image: `/valkyries/${form.value.image}`,
     imageSource: form.value.imageSource,
     type: form.value.type,
     slug: useSlug(form.value.name),

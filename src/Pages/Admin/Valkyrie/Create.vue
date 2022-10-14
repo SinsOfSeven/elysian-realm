@@ -4,7 +4,7 @@ import { Listbox, ListboxButton, ListboxOptions, ListboxOption, Disclosure, Disc
 import { ChevronUpIcon, ChevronUpDownIcon, CheckIcon, PlusIcon } from "@heroicons/vue/20/solid";
 import { Bars3Icon } from "@heroicons/vue/24/solid";
 import { XMarkIcon } from "@heroicons/vue/24/outline";
-import { supabase, supabaseStorage, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supabaseExclusiveDatabase } from "@/utilities/supabase";
+import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supabaseExclusiveDatabase } from "@/utilities/supabase";
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
 import { Build, Flamechaser, Form } from "@/utilities/types";
@@ -24,19 +24,14 @@ const changeImage = () => { form.value.image = event.target.files[0]; image.valu
 
 const insert = async (): Promise<void> => {
   loading.value = true;
-  let slug = useSlug(form.value.name);
 
   // @ts-ignore
   let extension: string = form.value.image.type.split("/").pop();
-  try {
-    await supabase.storage.from(supabaseStorage).upload(`${slug}.${extension}`, form.value.image);
-    form.value.image = supabase.storage.from(supabaseStorage).getPublicUrl(`${slug}.${extension}`).publicURL!;
-  } catch (error) { console.error(error) }
 
   // Store to DB
   await supabase.from(supabaseValkyrieDatabase).insert({
     name: useTitle(form.value.name),
-    image: form.value.image,
+    image: `/valkyries/${useSlug(form.value.name)}.${extension}`,
     imageSource: form.value.imageSource,
     type: form.value.type,
     slug: useSlug(form.value.name),

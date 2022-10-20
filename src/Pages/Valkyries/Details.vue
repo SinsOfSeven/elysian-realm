@@ -67,16 +67,19 @@ onMounted(() => { getData() });
   <Loading v-if="loading" />
   <div v-else class="relative">
     <Guest>
-      <div class="h-96 md:h-[40rem] lg:h-screen w-full relative">
+      <div class="h-[36rem] md:h-[40rem] lg:h-screen w-full relative">
         <div class="w-full h-full">
-          <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name" class="w-full h-full md:w-full md:h-full blur-sm object-cover opacity-60 absolute top-0" @load="loaded" />
+          <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name"
+            class="w-full h-full md:w-full md:h-full blur-sm object-cover opacity-60 absolute top-0" @load="loaded" />
           <div class="w-full h-full relative">
             <div class="flex flex-col">
               <img v-if="loadingImage" class="mx-auto" src="/assets/loading.gif" alt="loading.." />
               <div class="flex flex-col justify-center items-center w-full h-full">
-                <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name" class="w-full h-auto sm:w-1/6 sm:h-1/6 md:w-full md:h-full lg:w-5/6 lg:h-5/6" />
+                <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name"
+                  class="w-full h-auto sm:w-1/6 sm:h-1/6 md:w-full md:h-full lg:w-7/12 lg:h-7/12" />
                 <div class="mt-4 mx-auto flex flex-col">
-                  <span class="text-2xl font-bold md:text-4xl lg:font-semibold text-center drop-shadow-md shadow-black">
+                  <span
+                    class="text-2xl font-bold lg:text-xl lg:font-semibold xl:text-3xl text-center drop-shadow-md shadow-black tracking-widest">
                     {{ valkyrie.name }}
                   </span>
                   <div class="flex w-full justify-between items-center mt-6">
@@ -89,11 +92,16 @@ onMounted(() => { getData() });
           </div>
         </div>
       </div>
-      <div class="py-8 px-6 flex flex-col lg:flex-row w-full items-center">
-        <div class="h-[30rem] w-full">
-          <div class="w-full px-2 sm:px-0">
+      <div class="py-8 px-6 flex flex-col lg:flex-row-reverse w-full h-screen items-center space-y-4">
+        <h2 class="font-bold text-xl md:text-2xl lg:hidden">Signet Builds</h2>
+        <div class="w-full py-6">
+          <iframe class="w-[300px] h-[169px] md:w-[600px] md:h-[338px] border border-red-500 relative mx-auto"
+            allow-fullscreen="true" :src="reference" />
+        </div>
+        <div class="h-96 w-full">
+          <div class="w-full pt-12 lg:pt-0 px-2 sm:px-0">
+            <h2 class="hidden font-bold text-xl md:text-2xl lg:block">Signet Builds</h2>
             <TabGroup @change="indexTab = 0">
-              <h2 class="font-bold text-xl lg:text-4xl pb-4">Signet Builds</h2>
               <div class="flex w-full">
                 <TabList class="flex space-x-1 rounded-xl bg-blue-900/20 lg:p-1 w-full overflow-x-auto">
                   <Tab v-for="(build, idx) in valkyrie.builds" as="template" :key="idx" v-slot="{selected}">
@@ -117,10 +125,6 @@ onMounted(() => { getData() });
               </TabPanels>
             </TabGroup>
           </div>
-        </div>
-        <div class="w-full">
-          <iframe class="w-300 h-[169px] lg:w-[600px] lg:h-[338px] border border-red-500 relative mx-auto"
-            :src="reference" />
         </div>
       </div>
       <div class="w-full px-6 h-[40rem] overflow-y-hidden py-8">

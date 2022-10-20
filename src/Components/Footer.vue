@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-slate-700 h-full text-sm px-8 flex flex-col md:flex-row md:space-x-6 lg:space-x-8 py-4">
+  <div class="w-full bg-slate-700 h-full text-sm px-8 flex flex-col justify-center md:flex-row md:space-x-6 lg:space-x-8 py-4" id="footer">
     <router-link class="text-gray-400 hover:text-white hover:underline w-full md:w-auto text-center py-3 text-base" to="/about">About</router-link>
     <router-link class="text-gray-400 hover:text-white hover:underline w-full md:w-auto text-center py-3 text-base" to="/credits">Credits</router-link>
     <router-link class="text-gray-400 hover:text-white hover:underline w-full md:w-auto text-center py-3 text-base" to="/submit-build">Submit build</router-link>

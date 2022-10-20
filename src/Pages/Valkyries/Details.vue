@@ -3,6 +3,7 @@ import { ref, onMounted, computed } from "vue";
 import { useRoute } from "vue-router";
 import { supabase } from "@/utilities/supabase";
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
+import { ArrowDownIcon, HomeIcon } from "@heroicons/vue/24/outline";
 import ValkyrieType from "@/Components/ValkyrieType.vue";
 import ImageSource from "@/Components/ImageSource.vue";
 import Loading from "@/Components/Loading.vue";
@@ -30,6 +31,26 @@ const valkyrie = ref<ValkyrieDetails>({
   imageSource: "",
   builds: [],
 });
+const isOnBottom = ref(false);
+const currentView = ref(0);
+
+const scroll = () => {
+  const id = ["header", "builds", "signets", "footer"];
+  if (id.length - 1 === currentView.value) {
+    document.getElementById("header")!.scrollIntoView();
+    currentView.value = 0;
+  } else {
+    document.getElementById(id[currentView.value += 1])!.scrollIntoView();
+  }
+};
+
+window.onscroll = function (ev) {
+  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    isOnBottom.value = true;
+  } else {
+    isOnBottom.value = false;
+  }
+};
 
 const loaded = () => loadingImage.value = false;
 
@@ -60,14 +81,14 @@ const getSignets = (index: number) => {
 
 const reference = computed(() => valkyrie.value.builds[selectedBuild.value].ref);
 
-onMounted(() => { getData() });
+onMounted(() => getData());
 </script>
 
 <template>
   <Loading v-if="loading" />
   <div v-else class="relative">
     <Guest>
-      <div class="h-[36rem] md:h-[40rem] lg:h-screen w-full relative">
+      <div class="h-[36rem] md:h-[40rem] lg:h-screen w-full relative" id="header">
         <div class="w-full h-full">
           <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name"
             class="w-full h-full md:w-full md:h-full blur-sm object-cover opacity-60 absolute top-0" @load="loaded" />
@@ -92,7 +113,7 @@ onMounted(() => { getData() });
           </div>
         </div>
       </div>
-      <div class="py-8 px-6 flex flex-col lg:flex-row-reverse w-full h-screen items-center space-y-4">
+      <div class="py-8 px-6 flex flex-col lg:flex-row-reverse w-full h-screen items-center space-y-4" id="builds">
         <h2 class="font-bold text-xl md:text-2xl lg:hidden">Signet Builds</h2>
         <div class="w-full py-6">
           <iframe class="w-[300px] h-[169px] md:w-[600px] md:h-[338px] border border-red-500 relative mx-auto"
@@ -127,7 +148,7 @@ onMounted(() => { getData() });
           </div>
         </div>
       </div>
-      <div class="w-full px-6 h-[40rem] overflow-y-hidden py-8">
+      <div class="w-full px-6 h-[40rem] overflow-y-hidden py-8" id="signets">
         <TabGroup>
           <div class="flex flex-col lg:flex-row h-full">
             <TabList
@@ -255,5 +276,15 @@ onMounted(() => { getData() });
         </TabGroup>
       </div>
     </Guest>
+    <router-link to="/" class="rounded-full h-12 w-12 bg-gray-800 border border-white fixed bottom-10 left-10">
+      <div class="flex items-center justify-center w-full h-full">
+        <HomeIcon class="w-8 h-8 text-white" />
+      </div>
+    </router-link>
+    <button @click="scroll()" class="rounded-full h-12 w-12 bg-gray-800 border border-white fixed bottom-10 right-10 animate-bounce">
+      <div class="flex items-center justify-center w-full h-full">
+        <ArrowDownIcon :class="['w-8 h-8 text-white', isOnBottom ? 'rotate-180' : '']" />
+      </div>
+    </button>
   </div>
 </template>

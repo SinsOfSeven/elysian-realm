@@ -1,4 +1,3 @@
-import { SupabaseQueryBuilder } from "@supabase/supabase-js/dist/module/lib/SupabaseQueryBuilder";
 import { supabase } from "./supabase";
 
 interface Valkyrie {
@@ -8,6 +7,7 @@ interface Valkyrie {
 	slug: string;
 	type: string;
 	position: string;
+	keywords: string;
 }
 
 interface ValkyrieDetails extends Valkyrie {

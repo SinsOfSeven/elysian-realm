@@ -24,8 +24,9 @@ const getData = async () => {
 };
 
 let selectedValkyries = computed(() => {
-  if (search.value !== "" && selectedType.value !== "ALL") return valkyries.value?.filter(el => (el.type.toUpperCase() === selectedType.value) && (el.name.toLowerCase().includes(search.value.toLowerCase())));
-  else if (search.value !== "") return valkyries.value?.filter(el => el.name.toLowerCase().includes(search.value.toLowerCase()));
+  const regex = new RegExp(`\\b${search.value.toLowerCase()}`, "g");
+  if (search.value !== "" && selectedType.value !== "ALL") return valkyries.value?.filter(el => (el.type.toUpperCase() === selectedType.value) && (el.keywords.toLowerCase().match(regex)));
+  else if (search.value !== "") return valkyries.value?.filter(el => el.keywords.toLowerCase().match(regex));
   else if (selectedType.value !== "ALL") return valkyries.value?.filter(el => el.type.toUpperCase() === selectedType.value);
   else return valkyries.value;
 });

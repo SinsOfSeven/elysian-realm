@@ -31,7 +31,7 @@ const update = async (): Promise<void> => {
 
   // Upload to Bucket
   if (image.value) {
-    form.value.image = `${useSlug(form.value.name)}.${extension}`
+    form.value.image = `/valkyries/${useSlug(form.value.name)}.${extension}`
   } else {
     form.value.image = valkyrie.value.image;
   }
@@ -39,7 +39,7 @@ const update = async (): Promise<void> => {
   // Store to DB
   let { data, error } = await supabase.from(supabaseValkyrieDatabase).upsert({
     name: useTitle(form.value.name),
-    image: `/valkyries/${form.value.image}`,
+    image: form.value.image,
     imageSource: form.value.imageSource,
     type: form.value.type,
     slug: useSlug(form.value.name),

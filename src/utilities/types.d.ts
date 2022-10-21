@@ -7,7 +7,7 @@ interface Valkyrie {
 	slug: string;
 	type: string;
 	position: string;
-	keywords: string;
+	keywords?: string;
 }
 
 interface ValkyrieDetails extends Valkyrie {

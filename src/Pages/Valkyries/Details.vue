@@ -30,6 +30,7 @@ const valkyrie = ref<ValkyrieDetails>({
   position: "",
   imageSource: "",
   builds: [],
+  keywords: "",
 });
 const isOnBottom = ref(false);
 const currentView = ref(0);

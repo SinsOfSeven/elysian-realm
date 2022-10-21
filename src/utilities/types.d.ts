@@ -25,6 +25,7 @@ interface Form extends Omit<ValkyrieDetails, ["slug", "image"]> {
 	slug?: string;
 	position: string;
 	image: string;
+	keywords: string;
 };
 
 type Build = {

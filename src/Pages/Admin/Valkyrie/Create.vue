@@ -15,7 +15,7 @@ type Exclusive = { name: string; description: string; priority?: string };
 let exclusives: Exclusive[] = []; let exclusiveLists: Exclusive[] = [];
 const flamechasers = ref<Flamechaser[]>([{ name: "", signets: [] }]);
 const image = ref("");
-const form = ref<Form>({ name: "", image: "", slug: "", type: "", position: "", imageSource: "", builds: [], extension: "" });
+const form = ref<Form>({ name: "", image: "", slug: "", type: "", position: "", imageSource: "", builds: [], extension: "", keywords: "" });
 const loading = ref(true);
 const types = ["BIO", "MECH", "PHY", "QUA", "IMG"];
 
@@ -37,7 +37,8 @@ const insert = async (): Promise<void> => {
     slug: useSlug(form.value.name),
     builds: JSON.stringify(form.value.builds),
     extension: extension,
-    position: form.value.position
+    position: form.value.position,
+    keywords: form.value.keywords,
   });
 
   useRedirectToAdmin();
@@ -139,6 +140,10 @@ onMounted(() => {
               <option value="object-right-bottom">Right Bottom</option>
               <option value="object-right-top">Right Top</option>
             </select>
+          </div>
+          <div class="mt-4 w-full flex flex-col">
+            <label for="keywords" class="text-sm">Keywords</label>
+            <input id="keywords" type="text" class="text-gray-900 rounded-lg" v-model="form.keywords">
           </div>
         </div>
         <div class="relative w-1/3 mt-4">

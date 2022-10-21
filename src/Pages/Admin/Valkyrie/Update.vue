@@ -15,9 +15,9 @@ import { useTitle, useSlug, useRedirectToAdmin } from "@/utilities/helpers";
 type Exclusive = { name: string; description: string; };
 let exclusive: Exclusive[] = [];
 const flamechasers = ref<Flamechaser[]>();
-const form = ref<Form>({ name: "", image: "", imageSource: "", position: "", type: "", builds: [], extension: "" });
+const form = ref<Form>({ name: "", image: "", imageSource: "", position: "", type: "", builds: [], extension: "", keywords: "" });
 const loading = ref(true);
-const valkyrie = ref<ValkyrieDetails>({ name: "", slug: "", image: "", imageSource: "", position: "", type: "", builds: [], extension: "" });
+const valkyrie = ref<ValkyrieDetails>({ name: "", slug: "", image: "", imageSource: "", position: "", type: "", builds: [], extension: "", keywords: "" });
 const image = ref();
 const params = useRoute().params;
 
@@ -45,7 +45,8 @@ const update = async (): Promise<void> => {
     slug: useSlug(form.value.name),
     builds: JSON.stringify(form.value.builds),
     extension: extension,
-    position: form.value.position
+    position: form.value.position,
+    keywords: form.value.keywords
   }, { onConflict: 'slug' });
 
   if (error) { alert(`Oops, error!\nMessage: ${error.message}\nDetails: ${error.details}`); loading.value = false; return; };
@@ -66,6 +67,7 @@ const parseValkyrieData = async (): Promise<void> => {
     type: valkyrie.value.type,
     builds: valkyrie.value.builds,
     extension: valkyrie.value.extension,
+    keywords: valkyrie.value.keywords
   };
 };
 
@@ -154,6 +156,10 @@ onMounted(() => {
               </option>
               <option value="object-right-top" :selected="form.position === 'object-right-top'">Right Top</option>
             </select>
+          </div>
+          <div class="mt-4 w-full flex flex-col">
+            <label for="keywords" class="text-sm">Keywords</label>
+            <input id="keywords" type="text" class="text-gray-900 rounded-lg" v-model="form.keywords">
           </div>
         </div>
         <div class="relative w-1/3 mt-4">

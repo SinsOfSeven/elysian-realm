@@ -36,7 +36,7 @@ onMounted(() => getData());
 <template>
   <Loading v-if="loading" />
   <Guest v-else>
-    <div class="mx-auto max-w-2xl py-16 px-4 sm:px-8 lg:max-w-7xl lg:px-8">
+    <div class="mx-auto max-w-2xl py-16 px-4 sm:px-8 lg:max-w-7xl lg:px-8 grow">
       <h1 class="text-center font-thin tracking-widest uppercase text-5xl mb-12">elysian realm</h1>
       <div class="flex w-full justify-center my-4 bg-white skew-x-12">
         <div class="-skew-x-12 w-full sm:w-96">

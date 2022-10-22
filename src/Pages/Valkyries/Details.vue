@@ -55,7 +55,19 @@ window.onscroll = function (ev) {
 
 const loaded = () => loadingImage.value = false;
 
-const getData = async () => {
+const isSupportWebp = (): boolean => {
+  var elem = document.createElement('canvas');
+
+  if (!!(elem.getContext && elem.getContext('2d'))) {
+    // was able or not to get WebP representation
+    return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+  }
+
+  // very old browser like IE 8, canvas not supported
+  return false;
+}
+
+const getData = async (): Promise<void> => {
   try {
     data.value = await supabase.from("valkyries").select().eq('slug', route.params.name).single().then(el => el = el.data);
     let builds = JSON.parse(data.value!.builds);
@@ -68,6 +80,12 @@ const getData = async () => {
         el.ref = `https://youtube.com/embed/${key}`;
       }
     });
+
+    if (isSupportWebp()) {
+      const image = valkyrie.value.image.split(".");
+      valkyrie.value.image = `${image[0]}.webp`;
+    }
+    
   } catch (error) { alert(error) }
 }
 
@@ -91,13 +109,13 @@ onMounted(() => getData());
     <Guest>
       <div class="h-[36rem] md:h-[40rem] lg:h-screen w-full relative" id="header">
         <div class="w-full h-full">
-          <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name"
+          <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie.name"
             class="w-full h-full md:w-full md:h-full blur-sm object-cover opacity-60 absolute top-0" @load="loaded" />
           <div class="w-full h-full relative">
             <div class="flex flex-col">
               <img v-if="loadingImage" class="mx-auto" src="/assets/loading.gif" alt="loading.." />
               <div class="flex flex-col justify-center items-center w-full h-full">
-                <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie!.name"
+                <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie.name"
                   class="w-full h-auto sm:w-1/6 sm:h-1/6 md:w-full md:h-full lg:w-7/12 lg:h-7/12" />
                 <div class="mt-4 mx-auto flex flex-col">
                   <span
@@ -161,7 +179,7 @@ onMounted(() => getData());
                       ? 'bg-white shadow ring-transparent outline-none ring-0 border-0'
                       : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
                 ]">
-                  Sigils & Support
+                  Setup
                 </button>
               </Tab>
               <Tab v-slot="{selected}" as="div" class="w-full h-full">

@@ -18,9 +18,9 @@ supabase.auth.onAuthStateChange((_, session) => {
 
 <template>
 	<Suspense>
-		<div>
-			<div v-if="auth.user"><Admin><router-view /></Admin></div>
-			<div v-else><router-view /></div>
+		<div class="flex flex-col min-h-screen">
+			<template v-if="auth.user"><Admin><router-view /></Admin></template>
+			<template v-else><router-view /></template>
 		</div>
 		<template #fallback><Loading/></template>
 	</Suspense>

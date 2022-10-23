@@ -5,30 +5,51 @@ import Card from "@/Components/Card.vue";
 import Loading from "@/Components/Loading.vue";
 import { Valkyrie } from "@/utilities/types";
 import Guest from "@/Layouts/Guest.vue";
+import { useValkyrieTypes } from "@/utilities/helpers";
 
-const valkyries = ref<Valkyrie[]>();
 const loading = ref(false);
-const search = ref("");
-const selectedType = ref("ALL");
-const types = ref(["ALL", "BIO", "MECH", "PHY", "QUA", "IMG"]);
-
+const valkyries = ref<Array<Valkyrie>>();
 const getData = async () => {
+  // Fetch list of valkyries from database then remove loading overlay
   try {
-    let { data, error, status } = await supabase.from("valkyries").select().order("slug");
-    if (error && status !== 406) throw error;
-    if (data) valkyries.value = data;
+    const { data, error, status } = await supabase.from("valkyries").select().order("slug");
+    if (error && status !== 406) {
+      throw error;
+    }
+    if (data) {
+      valkyries.value = data;
+    } 
     loading.value = false;
   } catch (error) {
-    console.log(error);
+    if (error instanceof Error) {
+      alert(error.message);
+    }
   }
 };
 
-let selectedValkyries = computed(() => {
+const selectedType = ref("ALL");
+const types = useValkyrieTypes;
+const search = ref("");
+const selectedValkyries = computed(() => {
+  // This regex is to check each word in keywords that starts with search bar
   const regex = new RegExp(`\\b${search.value.toLowerCase()}`, "g");
-  if (search.value !== "" && selectedType.value !== "ALL") return valkyries.value?.filter(el => (el.type.toUpperCase() === selectedType.value) && (el.keywords.toLowerCase().match(regex)));
-  else if (search.value !== "") return valkyries.value?.filter(el => el.keywords.toLowerCase().match(regex));
-  else if (selectedType.value !== "ALL") return valkyries.value?.filter(el => el.type.toUpperCase() === selectedType.value);
-  else return valkyries.value;
+
+  // Filter by search bar and type of valkyries
+  if (search.value !== "" && selectedType.value !== "ALL") {
+    return valkyries.value?.filter(el => (el.type.toUpperCase() === selectedType.value) && (el.keywords.toLowerCase().match(regex)));
+  }
+  // Filter by search bar
+  else if (search.value !== "") {
+    return valkyries.value?.filter(el => el.keywords.toLowerCase().match(regex));
+  }
+  // Filter by type of valkyries
+  else if (selectedType.value !== "ALL") {
+    return valkyries.value?.filter(el => el.type.toUpperCase() === selectedType.value);
+  }
+  // Show all valkyries
+  else {
+    return valkyries.value
+  };
 });
 
 onMounted(() => getData());

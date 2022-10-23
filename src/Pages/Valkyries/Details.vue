@@ -8,55 +8,48 @@ import ValkyrieType from "@/Components/ValkyrieType.vue";
 import ImageSource from "@/Components/ImageSource.vue";
 import Loading from "@/Components/Loading.vue";
 import Guest from "@/Layouts/Guest.vue";
-import { Data, SignetObject, SigilBuild, ValkyrieDetails } from "@/utilities/types";
+import { SignetObject, ValkyrieDetails, ValkyrieBuild, SupabaseAPI } from "@/utilities/types";
 
-type Exclusive = { name: string; description: string; priority: string }
-const route = useRoute();
-const data = ref<Data>();
-const selectedBuild = ref(0);
 const indexTab = ref(0);
-const signets = ref<SignetObject[]>();
-const sigils = ref<SigilBuild[]>();
-const supports = ref<SigilBuild[]>();
-const exclusives = ref<Exclusive[]>();
-const loading = ref(true);
-const loadingImage = ref(true);
-const valkyrie = ref<ValkyrieDetails>({
-  name: "",
-  image: "",
-  extension: "",
-  slug: "",
-  type: "",
-  position: "",
-  imageSource: "",
-  builds: [],
-  keywords: "",
-});
+
+/**
+ * Control arrow button based on viewport
+ * If it reaches bottom of page, rotate the arrow 180 degrees
+ */
 const isOnBottom = ref(false);
 const currentView = ref(0);
 
 const scroll = () => {
   const id = ["header", "builds", "signets", "footer"];
+
   if (id.length - 1 === currentView.value) {
     document.getElementById("header")!.scrollIntoView();
     currentView.value = 0;
+
   } else {
     document.getElementById(id[currentView.value += 1])!.scrollIntoView();
   }
 };
 
-window.onscroll = function (ev) {
+window.onscroll = () => {
   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
     isOnBottom.value = true;
+
   } else {
     isOnBottom.value = false;
   }
 };
 
+/**
+ * At first, show loading image
+ * When valkyrie image loaded, remove loading image
+ */
+const loadingImage = ref(true);
 const loaded = () => loadingImage.value = false;
 
+// Check if client browser is compatible to webp or not
 const isSupportWebp = (): boolean => {
-  var elem = document.createElement('canvas');
+  const elem = document.createElement('canvas');
 
   if (!!(elem.getContext && elem.getContext('2d'))) {
     // was able or not to get WebP representation
@@ -67,38 +60,62 @@ const isSupportWebp = (): boolean => {
   return false;
 }
 
-const getData = async (): Promise<void> => {
-  try {
-    data.value = await supabase.from("valkyries").select().eq('slug', route.params.name).single().then(el => el = el.data);
-    let builds = JSON.parse(data.value!.builds);
-    valkyrie.value = Object.assign(data.value!, { builds: builds });
-    loading.value = false;
-    getSignets(0);
-    valkyrie.value.builds.forEach(el => {
-      if (el.ref.includes("youtube")) {
-        const key = el.ref.split("?v=").pop();
-        el.ref = `https://youtube.com/embed/${key}`;
-      }
-    });
+const loading = ref(true);
+const valkyrie = ref<ValkyrieDetails>();
+const route = useRoute().params;
+const getData = async () => {
+  /**
+   * - Fetch data from Database
+   * - Parse string of builds into JSON of builds
+   * - Assign reactive variable with result of async call
+   * - Remove loading overlay
+   */
+  const data: SupabaseAPI = await supabase.from("valkyries").select().eq('slug', route.name).single().then(el => el = el.data);
+  const builds: ValkyrieBuild = JSON.parse(data.builds);
+  valkyrie.value = Object.assign(data, { builds: builds });
+  loading.value = false;
 
-    if (isSupportWebp()) {
-      const image = valkyrie.value.image.split(".");
-      valkyrie.value.image = `${image[0]}.webp`;
+  // Hard coded to 0 so always show first build at first visit
+  getBuild(0);
+
+  // If ref is from youtube, convert url into embed video. Will update when new ref source added
+  valkyrie.value.builds.forEach((el: ValkyrieBuild) => {
+    if (el.ref.includes("youtube")) {
+      const key = el.ref.split("?v=").pop();
+      el.ref = `https://youtube.com/embed/${key}`;
     }
-    
-  } catch (error) { alert(error) }
+  });
+
+  /**
+   * If browser support webp image, use that instead
+   * Otherwise, use original image
+   */
+  if (isSupportWebp()) {
+    const image = valkyrie.value.image.split(".");
+    valkyrie.value.image = `${image[0]}.webp`;
+  }
 }
 
-const getSignets = (index: number) => {
+/**
+ * Assign reactive variables based on selected build
+ * Also automatically click element with id "exclusive",
+ * So when selected build change, show sigil and support instead previous selected signet index
+ */
+const selectedBuild = ref(0);
+const signets = ref<Array<SignetObject>>();
+const sigils = ref<Array<Setup>>();
+const supports = ref<Array<Setup>>();
+const exclusives = ref<Array<Exclusive>>();
+const getBuild = (index: number) => {
   selectedBuild.value = index;
   signets.value = valkyrie.value.builds[selectedBuild.value].signets;
   supports.value = valkyrie.value.builds[selectedBuild.value].supports;
   sigils.value = valkyrie.value.builds[selectedBuild.value].sigils;
-  exclusives.value = valkyrie.value!.builds[selectedBuild.value].exclusives;
+  exclusives.value = valkyrie.value.builds[selectedBuild.value].exclusives;
   document.getElementById("exclusive")?.click();
 };
 
-const reference = computed(() => valkyrie.value.builds[selectedBuild.value].ref);
+const reference = computed((): void => valkyrie.value.builds[selectedBuild.value].ref);
 
 onMounted(() => getData());
 </script>
@@ -300,7 +317,8 @@ onMounted(() => getData());
         <HomeIcon class="w-8 h-8 text-white" />
       </div>
     </router-link>
-    <button @click="scroll()" class="rounded-full h-12 w-12 bg-gray-800 border border-white fixed bottom-10 right-10 animate-bounce">
+    <button @click="scroll()"
+      class="rounded-full h-12 w-12 bg-gray-800 border border-white fixed bottom-10 right-10 animate-bounce">
       <div class="flex items-center justify-center w-full h-full">
         <ArrowDownIcon :class="['w-8 h-8 text-white', isOnBottom ? 'rotate-180' : '']" />
       </div>

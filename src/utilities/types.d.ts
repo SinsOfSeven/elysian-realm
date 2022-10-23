@@ -1,9 +1,6 @@
-import { supabase } from "./supabase";
-
 interface Valkyrie {
 	name: string;
 	image: string;
-	extension: string;
 	slug: string;
 	type: string;
 	position: string;
@@ -11,37 +8,48 @@ interface Valkyrie {
 }
 
 interface ValkyrieDetails extends Valkyrie {
-  imageSource: string;
-	builds: Build[];
+	imageSource: string;
+	builds: Array<ValkyrieBuild>;
 };
 
-interface Data extends Omit<ValkyrieDetails, "builds"> {
+interface SupabaseAPI extends Omit<ValkyrieDetails, "builds"> {
 	id: string;
 	builds: string;
-	created_at: string;
 };
 
-interface Form extends Omit<ValkyrieDetails, ["slug", "image"]> {
+interface ValkyrieForm extends Omit<ValkyrieDetails, "slug"> {
 	slug?: string;
-	position: string;
-	image: string;
-	keywords: string;
 };
 
-type Build = {
-  name: string,
-  supports: SupportBuild[];
-  sigils: SigilBuild[];
-  ref: string;
-  boss: string;
-  informations: string;
-  signets: SignetObject[];
-  exclusives: Exclusive[];
+interface ValkyrieBuild {
+	name: string,
+	supports: Array<SupportBuild>;
+	sigils: Array<SigilBuild>;
+	ref: string;
+	boss: string;
+	informations: string;
+	signets: Array<SignetObject>;
+	exclusives: Array<Exclusive>;
 };
 
-type Flamechaser = { name: string; signets: FlamechaserSignet[]; };
+interface Flamechaser {
+	name: string;
+	signets: Array<FlamechaserSignet>;
+};
 
-type FlamechaserSignet = { basic: Array<SignetItem>; first: ExclusiveSignet[]; second: ExclusiveSignet[]; };
+interface FlamechaserSignet {
+	basic: Array<SignetItem>;
+	first: Array<SignetItem>;
+	second: Array<SignetItem>;
+};
+
+type Exclusive = SignetItem;
+
+interface SignetObject {
+	name: string;
+	informations: string;
+	lists: Array<SignetItem>;
+};
 
 interface SignetItem {
 	name: string;
@@ -49,17 +57,8 @@ interface SignetItem {
 	priority: string;
 };
 
-interface SignetObject {
-	name: string;
-	informations?: string;
-	lists: SignetItem[];
-};
-
-type SupportBuild = {
+interface Setup {
 	time: string;
 	first: string;
 	second: string;
 };
-
-type SigilBuild = SupportBuild
-

@@ -18,7 +18,6 @@ const form = ref<ValkyrieDetails>({
   position: "",
   imageSource: "",
   builds: [],
-  extension: "",
   keywords: ""
 });
 const types = useValkyrieTypes;
@@ -28,6 +27,7 @@ const image = ref("");
 const changeImage = () => {
   // @ts-ignore
   form.value.image = event.target.files[0];
+  // @ts-ignore
   image.value = URL.createObjectURL(form.value.image);
 };
 
@@ -39,8 +39,7 @@ const getFlamechasers = async () => {
   flamechasers.value = await supabase.from(supabaseFlamechaserDatabase).select().order('name') as unknown as Array<Flamechaser>;
 
   // Fetch exclusive signets
-  const fetchExclusiveList = await supabase.from(supabaseExclusiveDatabase).select();
-  exclusiveList = fetchExclusiveList.body as Array<SignetItem>;
+  const fetchExclusiveList = await supabase.from(supabaseExclusiveDatabase).select() as unknown as Array<SignetItem>;
 
   // Remove loading overlay
   loading.value = false;
@@ -54,7 +53,8 @@ const getFlamechasers = async () => {
  */
 const insert = async () => {
   loading.value = true;
-  let extension = form.value.image.type.split("/").pop() as string;
+  // @ts-ignore
+  const extension = form.value.image.type.split("/").pop() as string;
   await supabase.from(supabaseValkyrieDatabase).insert({
     name: useTitle(form.value.name),
     image: `/valkyries/${useSlug(form.value.name)}.${extension}`,
@@ -116,18 +116,19 @@ const resetSignets = (index: number, idx: number) => {
    * - Get selected flamechaser based on param
    * - Assign local array with selected flamechaser signet list
    */
-  const selectedFlamechaser: Flamechaser = flamechasers.value!.find(item => item.name === form.value.builds[index].signets[idx].name);
-  const signets = [] as Array<FlamechaserSignet>;
-
-  let selected: FlamechaserSignet = JSON.parse(selectedFlamechaser.signets);
-
-  for (const key in selected) {
+  // @ts-ignore
+  const selected = JSON.parse(flamechasers.value!.find(item => item.name === form.value.builds[index].signets[idx].name).signets);
+  const signets = [];
+    
+    for (const key in selected) {
+    // @ts-ignore
     for (const iterator of selected[key]) {
       signets.push(Object.assign(iterator, { priority: key }));
     }
   }
 
   // Set list of signet from local array
+  // @ts-ignore
   form.value.builds[index].signets[idx].lists = signets;
 };
 

@@ -9,21 +9,21 @@ import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supaba
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
 import Admin from "@/Layouts/Admin.vue";
-import { ValkyrieBuild, Flamechaser, ValkyrieDetails } from "@/utilities/types";
+import { ValkyrieBuild, ValkyrieDetails, Flamechaser, Exclusive } from "@/utilities/types";
 import { useTitle, useSlug, useRedirectToAdmin } from "@/utilities/helpers";
 
 const params = useRoute().params;
 
 const loading = ref(true);
-const valkyrie = ref() as ValkyrieDetails;
+const valkyrie = ref<ValkyrieDetails>();
 const form = ref<ValkyrieDetails>({
   name: "",
   image: "",
+  slug: "",
   imageSource: "",
   position: "",
   type: "",
   builds: [],
-  extension: "",
   keywords: ""
 });
 let exclusive = {} as Exclusive;
@@ -45,16 +45,17 @@ const parseValkyrieData = async () => {
    * - Assign selected valkyrie data to form input
    */
   valkyrie.value = Object.assign(data, { builds: JSON.parse(data.builds) });
-  exclusive = await supabase.from(supabaseExclusiveDatabase).select().eq("name", `${valkyrie.value.name}`).single() as unknown as Exclusive;
+  exclusive = await supabase.from(supabaseExclusiveDatabase).select().eq("name", `${valkyrie.value!.name}`).single() as unknown as Exclusive;
   loading.value = false;
   form.value = {
-    name: valkyrie.value.name,
+    name: valkyrie.value!.name,
     image: "",
-    imageSource: valkyrie.value.imageSource,
-    position: valkyrie.value.position,
-    type: valkyrie.value.type,
-    builds: valkyrie.value.builds,
-    keywords: valkyrie.value.keywords
+    slug: "",
+    imageSource: valkyrie.value!.imageSource,
+    position: valkyrie.value!.position,
+    type: valkyrie.value!.type,
+    builds: valkyrie.value!.builds,
+    keywords: valkyrie.value!.keywords
   };
 };
 
@@ -68,8 +69,10 @@ const image = ref();
 const changeImage = () => {
   // @ts-ignore
   image.value = event.target.files[0];
+  // @ts-ignore
   image.value = URL.createObjectURL(form.value.image);
 };
+
 const update = async () => {
   // Add loading overlay
   loading.value = true;
@@ -81,7 +84,7 @@ const update = async () => {
   if (image.value) {
     form.value.image = `/valkyries/${useSlug(form.value.name)}.${extension}`;
   } else {
-    form.value.image = valkyrie.value.image;
+    form.value.image = valkyrie.value!.image;
   }
 
   // Store to DB
@@ -137,21 +140,20 @@ const removeAt = (index: number, idx?: number, i?: number) => {
   }
 };
 
-const addSignet = (index: number) => valkyrie.value.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
+const addSignet = (index: number) => valkyrie.value!.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
 
 const resetSignets = (index: number, idx: number) => {
-  let selectedFlamechaser: Flamechaser = flamechasers.value!.find(item => item.name === valkyrie.value?.builds[index].signets[idx].name);
-  const signets = [] as Array<FlamechaserSignet>;
-
-  let selected: FlamechaserSignet = JSON.parse(selectedFlamechaser.signets);
+  // @ts-ignore
+  const selected = JSON.parse(flamechasers.value!.find(item => item.name === valkyrie.value?.builds[index].signets[idx].name).signets);
+  const signets = [];
 
   for (const key in selected) {
-    // @ts-ignore
     for (const iterator of selected[key]) {
       signets.push(Object.assign(iterator, { priority: key }));
     }
   }
 
+  // @ts-ignore
   valkyrie.value.builds[index].signets[idx].lists = signets;
 };
 onMounted(() => {
@@ -212,12 +214,12 @@ onMounted(() => {
               :class="form.position" :src="image" />
             <img v-else
               class="object-center h-full w-full scale-105 object-cover group-hover:scale-100 lg:h-full lg:w-full"
-              :class="form.position" :src="valkyrie.image" />
+              :class="form.position" :src="valkyrie!.image" />
           </div>
         </div>
       </div>
       <div class="flex flex-col w-full">
-        <div v-for="(build, key) in valkyrie.builds" :key="key" class="flex w-full space-x-2 space-y-1">
+        <div v-for="(build, key) in valkyrie!.builds" :key="key" class="flex w-full space-x-2 space-y-1">
           <Disclosure as="div" class="mt-2 w-full" v-slot="{ open }">
             <DisclosureButton
               class="flex w-full justify-between rounded-lg bg-slate-800 px-4 py-2 text-left text-sm font-medium hover:bg-slate-600 focus:outline-none">

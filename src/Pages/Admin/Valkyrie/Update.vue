@@ -9,55 +9,43 @@ import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supaba
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
 import Admin from "@/Layouts/Admin.vue";
-import { Form, Build, Flamechaser, ValkyrieDetails } from "@/utilities/types";
+import { ValkyrieBuild, Flamechaser, ValkyrieDetails } from "@/utilities/types";
 import { useTitle, useSlug, useRedirectToAdmin } from "@/utilities/helpers";
 
-type Exclusive = { name: string; description: string; };
-let exclusive: Exclusive[] = [];
-const flamechasers = ref<Flamechaser[]>();
-const form = ref<Form>({ name: "", image: "", imageSource: "", position: "", type: "", builds: [], extension: "", keywords: "" });
-const loading = ref(true);
-const valkyrie = ref<ValkyrieDetails>({ name: "", slug: "", image: "", imageSource: "", position: "", type: "", builds: [], extension: "", keywords: "" });
-const image = ref();
 const params = useRoute().params;
 
-// @ts-ignore
-const changeImage = () => { image.value = event.target.files[0]; image.value = URL.createObjectURL(form.value.image); };
+const loading = ref(true);
+const valkyrie = ref() as ValkyrieDetails;
+const form = ref<ValkyrieDetails>({
+  name: "",
+  image: "",
+  imageSource: "",
+  position: "",
+  type: "",
+  builds: [],
+  extension: "",
+  keywords: ""
+});
+let exclusive = {} as Exclusive;
+const parseValkyrieData = async () => {
+  // Fetch selected valkyrie data
+  const { data, error } = await supabase.from(supabaseValkyrieDatabase).select().eq("slug", `${params.name}`).single();
+  if (error) {
+    // Show alert with error
+    alert(`Oops, error!\nMessage: ${error.message}\nDetails: ${error.details}`);
+    // Remove overlay
+    loading.value = false;
+    return;
+  };
 
-const update = async (): Promise<void> => {
-  loading.value = true;
-
-  let extension: string = image.value?.type.split("/").pop();
-
-  // Upload to Bucket
-  if (image.value) {
-    form.value.image = `/valkyries/${useSlug(form.value.name)}.${extension}`
-  } else {
-    form.value.image = valkyrie.value.image;
-  }
-
-  // Store to DB
-  let { data, error } = await supabase.from(supabaseValkyrieDatabase).upsert({
-    name: useTitle(form.value.name),
-    image: form.value.image,
-    imageSource: form.value.imageSource,
-    type: form.value.type,
-    slug: useSlug(form.value.name),
-    builds: JSON.stringify(form.value.builds),
-    extension: extension,
-    position: form.value.position,
-    keywords: form.value.keywords
-  }, { onConflict: 'slug' });
-
-  if (error) { alert(`Oops, error!\nMessage: ${error.message}\nDetails: ${error.details}`); loading.value = false; return; };
-  useRedirectToAdmin();
-}
-
-const parseValkyrieData = async (): Promise<void> => {
-  let { data, error } = await supabase.from(supabaseValkyrieDatabase).select().eq("slug", `${params.name}`).single();
-  if (error) throw error;
+  /**
+   * - Assign selected valkyrie to reactive variable
+   * - Get exclusive signet of selected valkyrie
+   * - Remove overlay
+   * - Assign selected valkyrie data to form input
+   */
   valkyrie.value = Object.assign(data, { builds: JSON.parse(data.builds) });
-  exclusive = await (await supabase.from(supabaseExclusiveDatabase).select().eq("name", `${valkyrie.value.name}`).single()).body;
+  exclusive = await supabase.from(supabaseExclusiveDatabase).select().eq("name", `${valkyrie.value.name}`).single() as unknown as Exclusive;
   loading.value = false;
   form.value = {
     name: valkyrie.value.name,
@@ -66,53 +54,106 @@ const parseValkyrieData = async (): Promise<void> => {
     position: valkyrie.value.position,
     type: valkyrie.value.type,
     builds: valkyrie.value.builds,
-    extension: valkyrie.value.extension,
     keywords: valkyrie.value.keywords
   };
 };
 
-const getFlamechasers = async (): Promise<void> => {
-  flamechasers.value = (await supabase.from(supabaseFlamechaserDatabase).select().order("slug")).body!;
+// Get all flamechasers
+const flamechasers = ref<Array<Flamechaser>>();
+const getFlamechasers = async () => {
+  flamechasers.value = await supabase.from(supabaseFlamechaserDatabase).select().order("slug") as unknown as Array<Flamechaser>;
 };
 
-const addBuilds = (): void => {
-  let obj: Build = {
+const image = ref();
+const changeImage = () => {
+  // @ts-ignore
+  image.value = event.target.files[0];
+  image.value = URL.createObjectURL(form.value.image);
+};
+const update = async () => {
+  // Add loading overlay
+  loading.value = true;
+
+  // Get image extension
+  let extension: string = image.value?.type.split("/").pop();
+
+  // If new image is uploaded, change value of image. Otherwise, keep the old data
+  if (image.value) {
+    form.value.image = `/valkyries/${useSlug(form.value.name)}.${extension}`;
+  } else {
+    form.value.image = valkyrie.value.image;
+  }
+
+  // Store to DB
+  const { data, error } = await supabase.from(supabaseValkyrieDatabase).upsert({
+    name: useTitle(form.value.name),
+    image: form.value.image,
+    imageSource: form.value.imageSource,
+    type: form.value.type,
+    slug: useSlug(form.value.name),
+    builds: JSON.stringify(form.value.builds),
+    position: form.value.position,
+    keywords: form.value.keywords
+  }, { onConflict: 'slug' });
+
+  if (error) {
+    // Show alert with error
+    alert(`Oops, error!\nMessage: ${error.message}\nDetails: ${error.details}`);
+    // Remove overlay
+    loading.value = false;
+    return;
+  };
+  useRedirectToAdmin();
+}
+
+const addBuilds = () => {
+  // Base Object of each valkyrie build
+  let obj: ValkyrieBuild = {
     name: "", ref: "", boss: "", informations: "",
     supports: [{ time: "Early", first: "", second: "" }, { time: "Mid", first: "", second: "" }, { time: "Late", first: "", second: "" }],
     sigils: [{ time: "Early", first: "", second: "" }, { time: "Mid", first: "", second: "" }, { time: "Late", first: "", second: "" }],
     signets: [{
       name: "Choose one", informations: "", lists: [{ name: "", description: "", priority: "" }]
     }],
-    // @ts-ignore
     exclusives: JSON.parse(exclusive.signets)
   };
 
-  valkyrie.value.builds.push(obj);
+  // Add new build into form
+  form.value.builds.push(obj);
 };
 
-const removeAt = (index: number, idx?: number, i?: number): void => {
-  if (idx == undefined) valkyrie.value.builds.splice(index, 1)
-  else if (i == undefined) valkyrie.value.builds[index].signets.splice(idx, 1)
-  else valkyrie.value.builds[index].signets[idx].lists.splice(i, 1)
+const removeAt = (index: number, idx?: number, i?: number) => {
+  // Remove Build
+  if (idx === undefined) {
+    form.value.builds.splice(index, 1);
+  }
+  // Remove flamechaser
+  else if (i === undefined) {
+    form.value.builds[index].signets.splice(idx, 1);
+  }
+  // Remove signet from flamechaser
+  else {
+    form.value.builds[index].signets[idx].lists.splice(i, 1);
+  }
 };
+
+const addSignet = (index: number) => valkyrie.value.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
 
 const resetSignets = (index: number, idx: number) => {
-  let selectedFlamechaser = flamechasers.value!.find(item => item.name === valkyrie.value?.builds[index].signets[idx].name);
-  const signets = [];
-  //@ts-ignore
-  let selected = JSON.parse(selectedFlamechaser.signets);
+  let selectedFlamechaser: Flamechaser = flamechasers.value!.find(item => item.name === valkyrie.value?.builds[index].signets[idx].name);
+  const signets = [] as Array<FlamechaserSignet>;
+
+  let selected: FlamechaserSignet = JSON.parse(selectedFlamechaser.signets);
 
   for (const key in selected) {
+    // @ts-ignore
     for (const iterator of selected[key]) {
       signets.push(Object.assign(iterator, { priority: key }));
     }
   }
 
-  valkyrie.value!.builds[index].signets[idx].lists = signets;
+  valkyrie.value.builds[index].signets[idx].lists = signets;
 };
-
-const addSignet = (index: number) => valkyrie.value.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
-
 onMounted(() => {
   parseValkyrieData();
   getFlamechasers();

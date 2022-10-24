@@ -2,33 +2,59 @@
 import { ref, onMounted } from "vue";
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption, Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { ChevronUpIcon, ChevronUpDownIcon, CheckIcon, PlusIcon } from "@heroicons/vue/20/solid";
-import { Bars3Icon } from "@heroicons/vue/24/solid";
-import { XMarkIcon } from "@heroicons/vue/24/outline";
+import { XMarkIcon, Bars3Icon } from "@heroicons/vue/24/outline";
 import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supabaseExclusiveDatabase } from "@/utilities/supabase";
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
-import { Build, Flamechaser, Form } from "@/utilities/types";
-import { useTitle, useSlug, useRedirectToAdmin } from "@/utilities/helpers";
+import { ValkyrieBuild, ValkyrieDetails, Flamechaser, FlamechaserSignet, Exclusive, SignetItem } from "@/utilities/types";
+import { useTitle, useSlug, useRedirectToAdmin, useValkyrieTypes, useEnsure } from "@/utilities/helpers";
 import Admin from "@/Layouts/Admin.vue";
 
-type Exclusive = { name: string; description: string; priority?: string };
-let exclusives: Exclusive[] = []; let exclusiveLists: Exclusive[] = [];
-const flamechasers = ref<Flamechaser[]>([{ name: "", signets: [] }]);
+const form = ref<ValkyrieDetails>({
+  name: "",
+  image: "",
+  slug: "",
+  type: "",
+  position: "",
+  imageSource: "",
+  builds: [],
+  extension: "",
+  keywords: ""
+});
+const types = useValkyrieTypes;
+
+// Preview image before create
 const image = ref("");
-const form = ref<Form>({ name: "", image: "", slug: "", type: "", position: "", imageSource: "", builds: [], extension: "", keywords: "" });
-const loading = ref(true);
-const types = ["BIO", "MECH", "PHY", "QUA", "IMG"];
-
-// @ts-ignore
-const changeImage = () => { form.value.image = event.target.files[0]; image.value = URL.createObjectURL(form.value.image); };
-
-const insert = async (): Promise<void> => {
-  loading.value = true;
-
+const changeImage = () => {
   // @ts-ignore
-  let extension: string = form.value.image.type.split("/").pop();
+  form.value.image = event.target.files[0];
+  image.value = URL.createObjectURL(form.value.image);
+};
 
-  // Store to DB
+const loading = ref(true);
+let exclusiveList: Array<Exclusive> = [];
+const flamechasers = ref<Array<Flamechaser>>();
+const getFlamechasers = async () => {
+  // Fetch flamechasers signets (dont ask me about "unknown" type)
+  flamechasers.value = await supabase.from(supabaseFlamechaserDatabase).select().order('name') as unknown as Array<Flamechaser>;
+
+  // Fetch exclusive signets
+  const fetchExclusiveList = await supabase.from(supabaseExclusiveDatabase).select();
+  exclusiveList = fetchExclusiveList.body as Array<SignetItem>;
+
+  // Remove loading overlay
+  loading.value = false;
+};
+
+/**
+ * - Add loading overlay
+ * - Grab image extension
+ * - Store to DB
+ * - Redirect to admin page
+ */
+const insert = async () => {
+  loading.value = true;
+  let extension = form.value.image.type.split("/").pop() as string;
   await supabase.from(supabaseValkyrieDatabase).insert({
     name: useTitle(form.value.name),
     image: `/valkyries/${useSlug(form.value.name)}.${extension}`,
@@ -36,7 +62,6 @@ const insert = async (): Promise<void> => {
     type: form.value.type,
     slug: useSlug(form.value.name),
     builds: JSON.stringify(form.value.builds),
-    extension: extension,
     position: form.value.position,
     keywords: form.value.keywords,
   });
@@ -44,47 +69,57 @@ const insert = async (): Promise<void> => {
   useRedirectToAdmin();
 };
 
-const getFlamechasers = async (): Promise<void> => {
-  flamechasers.value = (await supabase.from(supabaseFlamechaserDatabase).select().order('slug')).body!;
-  let data = await supabase.from(supabaseExclusiveDatabase).select();
-  // @ts-ignore
-  exclusiveLists = data.body;
-  loading.value = false;
-};
-
-const addBuilds = (): void => {
-  if (exclusives.length < 1) {
-    // @ts-ignore
-    exclusives = exclusiveLists.find(el => el.name.toLowerCase() === form.value.name.toLowerCase());
-    if (exclusives == undefined) { alert("Valkyrie name not found"); return; };
+let exclusives = {} as Exclusive;
+const name = ref("");
+const addBuilds = () => {
+  /**
+   * For first time add build, set "exclusives" based from list with same name property
+   * If object is null or name input is changed, re assign "exclusives" object
+   */
+  if ((exclusives === null && typeof exclusives === "object") || name.value.toLowerCase() !== form.value.name.toLowerCase()) {
+    name.value = form.value.name.toLowerCase();
+    exclusives = useEnsure(exclusiveList.find(el => el.name.toLowerCase() === name.value), "Valkyrie name not found");
   }
 
-  let obj: Build = {
+  // Base Object of each valkyrie build
+  let obj: ValkyrieBuild = {
     name: "", ref: "", boss: "", informations: "",
     supports: [{ time: "Early", first: "", second: "" }, { time: "Mid", first: "", second: "" }, { time: "Late", first: "", second: "" }],
     sigils: [{ time: "Early", first: "", second: "" }, { time: "Mid", first: "", second: "" }, { time: "Late", first: "", second: "" }],
     signets: [{
       name: "Choose one", informations: "", lists: [{ name: "", description: "", priority: "" }]
     }],
-    // @ts-ignore
     exclusives: JSON.parse(exclusives.signets)
   };
 
-  form.value.builds.push(obj); return;
+  // Add new build into form
+  form.value.builds.push(obj);
 };
 
-const removeAt = (index: number, idx?: number, i?: number): void => {
-  if (idx === undefined) form.value.builds.splice(index, 1)
-  else if (i === undefined) form.value.builds[index].signets.splice(idx, 1)
-  else form.value.builds[index].signets[idx].lists.splice(i, 1)
+const removeAt = (index: number, idx?: number, i?: number) => {
+  // Remove Build
+  if (idx === undefined) {
+    form.value.builds.splice(index, 1);
+  }
+  // Remove flamechaser
+  else if (i === undefined) {
+    form.value.builds[index].signets.splice(idx, 1);
+  } 
+  // Remove signet from flamechaser
+  else {
+    form.value.builds[index].signets[idx].lists.splice(i, 1);
+  } 
 };
 
 const resetSignets = (index: number, idx: number) => {
-  const selectedFlamechaser = flamechasers.value.find(item => item.name === form.value.builds[index].signets[idx].name);
-  const signets = [];
+  /**
+   * - Get selected flamechaser based on param
+   * - Assign local array with selected flamechaser signet list
+   */
+  const selectedFlamechaser: Flamechaser = flamechasers.value!.find(item => item.name === form.value.builds[index].signets[idx].name);
+  const signets = [] as Array<FlamechaserSignet>;
 
-  // @ts-ignore
-  let selected = JSON.parse(selectedFlamechaser.signets);
+  let selected: FlamechaserSignet = JSON.parse(selectedFlamechaser.signets);
 
   for (const key in selected) {
     for (const iterator of selected[key]) {
@@ -92,14 +127,14 @@ const resetSignets = (index: number, idx: number) => {
     }
   }
 
+  // Set list of signet from local array
   form.value.builds[index].signets[idx].lists = signets;
 };
 
+// Add new signet to a build
 const addSignet = (index: number) => form.value.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
 
-onMounted(() => {
-  getFlamechasers();
-});
+onMounted(() => getFlamechasers());
 </script>
 <template>
   <Loading v-if="loading" />
@@ -150,7 +185,8 @@ onMounted(() => {
           <span class="tex-sm">Preview image</span>
           <div
             class="aspect-w-1 aspect-h-1 min-h-24 lg:h-24 w-full flex-col items-center overflow-hidden bg-transparent rounded-xl">
-            <img v-if="image" class="object-center h-full w-full scale-105 object-cover group-hover:scale-100 lg:h-full lg:w-full"
+            <img v-if="image"
+              class="object-center h-full w-full scale-105 object-cover group-hover:scale-100 lg:h-full lg:w-full"
               :class="form.position" :src="image" />
             <div v-else class="h-full w-full bg-slate-600"></div>
           </div>

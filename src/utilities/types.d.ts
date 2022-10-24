@@ -29,7 +29,7 @@ interface ValkyrieBuild {
 	boss: string;
 	informations: string;
 	signets: Array<SignetObject>;
-	exclusives: Array<Exclusive>;
+	exclusives: Exclusive;
 };
 
 interface Flamechaser {
@@ -43,7 +43,11 @@ interface FlamechaserSignet {
 	second: Array<SignetItem>;
 };
 
-type Exclusive = SignetItem;
+type Exclusive = {
+	id: number;
+	name: string;
+	signets: string;
+};
 
 interface SignetObject {
 	name: string;

@@ -8,7 +8,7 @@ import ValkyrieType from "@/Components/ValkyrieType.vue";
 import ImageSource from "@/Components/ImageSource.vue";
 import Loading from "@/Components/Loading.vue";
 import Guest from "@/Layouts/Guest.vue";
-import { SignetObject, ValkyrieDetails, ValkyrieBuild, SupabaseAPI } from "@/utilities/types";
+import { SignetObject, ValkyrieDetails, ValkyrieBuild, SupabaseAPI, Setup, SignetItem } from "@/utilities/types";
 
 const indexTab = ref(0);
 
@@ -72,6 +72,7 @@ const getData = async () => {
    */
   const data: SupabaseAPI = await supabase.from("valkyries").select().eq('slug', route.name).single().then(el => el = el.data);
   const builds: ValkyrieBuild = JSON.parse(data.builds);
+  // @ts-ignore
   valkyrie.value = Object.assign(data, { builds: builds });
   loading.value = false;
 
@@ -79,7 +80,7 @@ const getData = async () => {
   getBuild(0);
 
   // If ref is from youtube, convert url into embed video. Will update when new ref source added
-  valkyrie.value.builds.forEach((el: ValkyrieBuild) => {
+  valkyrie.value!.builds.forEach((el: ValkyrieBuild) => {
     if (el.ref.includes("youtube")) {
       const key = el.ref.split("?v=").pop();
       el.ref = `https://youtube.com/embed/${key}`;
@@ -91,8 +92,8 @@ const getData = async () => {
    * Otherwise, use original image
    */
   if (isSupportWebp()) {
-    const image = valkyrie.value.image.split(".");
-    valkyrie.value.image = `${image[0]}.webp`;
+    const image = valkyrie.value!.image.split(".");
+    valkyrie.value!.image = `${image[0]}.webp`;
   }
 }
 
@@ -105,17 +106,18 @@ const selectedBuild = ref(0);
 const signets = ref<Array<SignetObject>>();
 const sigils = ref<Array<Setup>>();
 const supports = ref<Array<Setup>>();
-const exclusives = ref<Array<Exclusive>>();
+const exclusives = ref<Array<SignetItem>>();
 const getBuild = (index: number) => {
   selectedBuild.value = index;
-  signets.value = valkyrie.value.builds[selectedBuild.value].signets;
-  supports.value = valkyrie.value.builds[selectedBuild.value].supports;
-  sigils.value = valkyrie.value.builds[selectedBuild.value].sigils;
-  exclusives.value = valkyrie.value.builds[selectedBuild.value].exclusives;
+  signets.value = valkyrie.value!.builds[selectedBuild.value].signets;
+  supports.value = valkyrie.value!.builds[selectedBuild.value].supports;
+  sigils.value = valkyrie.value!.builds[selectedBuild.value].sigils;
+  // @ts-ignore
+  exclusives.value = valkyrie.value!.builds[selectedBuild.value].exclusives;
   document.getElementById("exclusive")?.click();
 };
 
-const reference = computed((): void => valkyrie.value.builds[selectedBuild.value].ref);
+const reference = computed((): string => valkyrie.value!.builds[selectedBuild.value].ref);
 
 onMounted(() => getData());
 </script>
@@ -126,22 +128,22 @@ onMounted(() => getData());
     <Guest>
       <div class="h-[36rem] md:h-[40rem] lg:h-screen w-full relative" id="header">
         <div class="w-full h-full">
-          <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie.name"
+          <img v-show="!loadingImage" :src="valkyrie!.image" :alt="valkyrie!.name"
             class="w-full h-full md:w-full md:h-full blur-sm object-cover opacity-60 absolute top-0" @load="loaded" />
           <div class="w-full h-full relative">
             <div class="flex flex-col">
               <img v-if="loadingImage" class="mx-auto" src="/assets/loading.gif" alt="loading.." />
               <div class="flex flex-col justify-center items-center w-full h-full">
-                <img v-show="!loadingImage" :src="valkyrie.image" :alt="valkyrie.name"
+                <img v-show="!loadingImage" :src="valkyrie!.image" :alt="valkyrie!.name"
                   class="w-full h-auto sm:w-1/6 sm:h-1/6 md:w-full md:h-full lg:w-7/12 lg:h-7/12" />
                 <div class="mt-4 mx-auto flex flex-col">
                   <span
                     class="text-2xl font-bold lg:text-xl lg:font-semibold xl:text-3xl text-center drop-shadow-md shadow-black tracking-widest">
-                    {{ valkyrie.name }}
+                    {{ valkyrie!.name }}
                   </span>
                   <div class="flex w-full justify-between items-center mt-6">
-                    <ValkyrieType :type="valkyrie.type" />
-                    <ImageSource :imageSrc="valkyrie.imageSource" />
+                    <ValkyrieType :type="valkyrie!.type" />
+                    <ImageSource :imageSrc="valkyrie!.imageSource" />
                   </div>
                 </div>
               </div>
@@ -161,8 +163,8 @@ onMounted(() => getData());
             <TabGroup @change="indexTab = 0">
               <div class="flex w-full">
                 <TabList class="flex space-x-1 rounded-xl bg-blue-900/20 lg:p-1 w-full overflow-x-auto">
-                  <Tab v-for="(build, idx) in valkyrie.builds" as="template" :key="idx" v-slot="{selected}">
-                    <button @click="getSignets(idx)" :class="[
+                  <Tab v-for="(build, idx) in valkyrie!.builds" as="template" :key="idx" v-slot="{selected}">
+                    <button @click="getBuild(idx)" :class="[
                       'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 focus:outline-none',
                       selected
                         ? 'bg-white shadow'
@@ -174,7 +176,7 @@ onMounted(() => getData());
                 </TabList>
               </div>
               <TabPanels class="mt-2 flex flex-col w-full">
-                <TabPanel v-for="build in valkyrie.builds" :key="build.name" class="focus:outline-none">
+                <TabPanel v-for="build in valkyrie!.builds" :key="build.name" class="focus:outline-none">
                   <div class="flex flex-col w-full lg:flex-row h-80 overflow-y-auto bg-slate-800 rounded-xl">
                     <p class="py-2 px-8 whitespace-pre-line" v-text="build.informations" />
                   </div>
@@ -224,7 +226,7 @@ onMounted(() => getData());
             <TabPanels class="w-full lg:w-4/5 h-full bg-slate-800 rounded-xl overflow-y-auto">
               <TabPanel class="rounded-xl bg-transparent px-8 py-6 space-y-6">
                 <p class="w-full bg-slate-500 px-4 py-3 rounded font-semibold"
-                  v-text="`Boss path: ${valkyrie.builds[selectedBuild].boss}`"></p>
+                  v-text="`Boss path: ${valkyrie!.builds[selectedBuild].boss}`"></p>
                 <table class="table w-full h-full">
                   <thead>
                     <tr class="border border-white">

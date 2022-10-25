@@ -17,4 +17,4 @@ export function useEnsure<T> (argument: T | undefined | null, message: string = 
   return argument;
 }
 
-export const useValkyrieTypes = ref(["BIO", "MECH", "PHY", "QUA", "IMG"]);
+export const useValkyrieTypes = ref(["ALL", "BIO", "MECH", "PHY", "QUA", "IMG"]);

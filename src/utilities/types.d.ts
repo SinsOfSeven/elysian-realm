@@ -44,10 +44,13 @@ export interface FlamechaserSignet {
 };
 
 export type Exclusive = {
-	id: number;
+	id?: string;
 	name: string;
-	signets: string;
+	slug: string;
+	signets?: Array<ExclusiveSignets>;
 };
+
+interface ExclusiveSignets extends Omit<SignetItem, "priority"> { };
 
 export interface SignetObject {
 	name: string;

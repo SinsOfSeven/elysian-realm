@@ -6,9 +6,11 @@ import { XMarkIcon, Bars3Icon } from "@heroicons/vue/24/outline";
 import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supabaseExclusiveDatabase } from "@/utilities/supabase";
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
-import { ValkyrieBuild, ValkyrieDetails, Flamechaser, FlamechaserSignet, Exclusive, SignetItem } from "@/utilities/types";
+import { ValkyrieBuild, ValkyrieDetails, Flamechaser, Exclusive, SignetItem } from "@/utilities/types";
 import { useTitle, useSlug, useRedirectToAdmin, useValkyrieTypes, useEnsure } from "@/utilities/helpers";
 import Admin from "@/Layouts/Admin.vue";
+
+const types = useValkyrieTypes;
 
 const form = ref<ValkyrieDetails>({
   name: "",
@@ -20,10 +22,8 @@ const form = ref<ValkyrieDetails>({
   builds: [],
   keywords: ""
 });
-const types = useValkyrieTypes;
 
-// Preview image before create
-const image = ref("");
+const image = ref();
 const changeImage = () => {
   // @ts-ignore
   form.value.image = event.target.files[0];
@@ -32,29 +32,21 @@ const changeImage = () => {
 };
 
 const loading = ref(true);
-let exclusiveList: Array<Exclusive> = [];
-const flamechasers = ref<Array<Flamechaser>>();
+let exclusiveList = [] as Array<Exclusive>;
+const flamechasers = ref<Array<Flamechaser>>([{ name: "", signets: [] }]);
 const getFlamechasers = async () => {
-  // Fetch flamechasers signets (dont ask me about "unknown" type)
-  flamechasers.value = await supabase.from(supabaseFlamechaserDatabase).select().order('name') as unknown as Array<Flamechaser>;
+  flamechasers.value = (await supabase.from(supabaseFlamechaserDatabase).select().order('name')).data as Array<Flamechaser>;
 
-  // Fetch exclusive signets
-  const fetchExclusiveList = await supabase.from(supabaseExclusiveDatabase).select() as unknown as Array<SignetItem>;
+  exclusiveList = (await supabase.from(supabaseExclusiveDatabase).select()).data as Array<Exclusive>;
 
-  // Remove loading overlay
   loading.value = false;
 };
 
-/**
- * - Add loading overlay
- * - Grab image extension
- * - Store to DB
- * - Redirect to admin page
- */
 const insert = async () => {
   loading.value = true;
   // @ts-ignore
   const extension = form.value.image.type.split("/").pop() as string;
+
   await supabase.from(supabaseValkyrieDatabase).insert({
     name: useTitle(form.value.name),
     image: `/valkyries/${useSlug(form.value.name)}.${extension}`,
@@ -72,16 +64,13 @@ const insert = async () => {
 let exclusives = {} as Exclusive;
 const name = ref("");
 const addBuilds = () => {
-  /**
-   * For first time add build, set "exclusives" based from list with same name property
-   * If object is null or name input is changed, re assign "exclusives" object
-   */
+  // For first time add build, set "exclusives" based from list with same name property
+  // If object is null or name input is changed, re assign "exclusives" object
   if ((exclusives === null && typeof exclusives === "object") || name.value.toLowerCase() !== form.value.name.toLowerCase()) {
     name.value = form.value.name.toLowerCase();
     exclusives = useEnsure(exclusiveList.find(el => el.name.toLowerCase() === name.value), "Valkyrie name not found");
   }
 
-  // Base Object of each valkyrie build
   let obj: ValkyrieBuild = {
     name: "", ref: "", boss: "", informations: "",
     supports: [{ time: "Early", first: "", second: "" }, { time: "Mid", first: "", second: "" }, { time: "Late", first: "", second: "" }],
@@ -92,7 +81,6 @@ const addBuilds = () => {
     exclusives: JSON.parse(exclusives.signets)
   };
 
-  // Add new build into form
   form.value.builds.push(obj);
 };
 
@@ -112,27 +100,19 @@ const removeAt = (index: number, idx?: number, i?: number) => {
 };
 
 const resetSignets = (index: number, idx: number) => {
-  /**
-   * - Get selected flamechaser based on param
-   * - Assign local array with selected flamechaser signet list
-   */
-  // @ts-ignore
-  const selected = JSON.parse(flamechasers.value!.find(item => item.name === form.value.builds[index].signets[idx].name).signets);
-  const signets = [];
+  const flamechaser = JSON.stringify(useEnsure(flamechasers.value.find(item => item.name === form.value.builds[index].signets[idx].name)).signets);
+  const signets = [] as Array<SignetItem>;
+  const selected = JSON.parse(JSON.parse(flamechaser));
     
     for (const key in selected) {
-    // @ts-ignore
     for (const iterator of selected[key]) {
       signets.push(Object.assign(iterator, { priority: key }));
     }
   }
 
-  // Set list of signet from local array
-  // @ts-ignore
   form.value.builds[index].signets[idx].lists = signets;
 };
 
-// Add new signet to a build
 const addSignet = (index: number) => form.value.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
 
 onMounted(() => getFlamechasers());

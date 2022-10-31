@@ -9,13 +9,12 @@ import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supaba
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
 import Admin from "@/Layouts/Admin.vue";
-import { ValkyrieBuild, ValkyrieDetails, Flamechaser, Exclusive } from "@/utilities/types";
-import { useTitle, useSlug, useRedirectToAdmin } from "@/utilities/helpers";
+import { ValkyrieBuild, ValkyrieDetails, Flamechaser, SignetItem, Exclusive } from "@/utilities/types";
+import { useTitle, useSlug, useRedirectToAdmin, useEnsure } from "@/utilities/helpers";
 
 const params = useRoute().params;
 
 const loading = ref(true);
-const valkyrie = ref<ValkyrieDetails>();
 const form = ref<ValkyrieDetails>({
   name: "",
   image: "",
@@ -27,45 +26,36 @@ const form = ref<ValkyrieDetails>({
   keywords: ""
 });
 let exclusive = {} as Exclusive;
+
 const parseValkyrieData = async () => {
-  // Fetch selected valkyrie data
   const { data, error } = await supabase.from(supabaseValkyrieDatabase).select().eq("slug", `${params.name}`).single();
   if (error) {
-    // Show alert with error
     alert(`Oops, error!\nMessage: ${error.message}\nDetails: ${error.details}`);
-    // Remove overlay
     loading.value = false;
     return;
   };
 
-  /**
-   * - Assign selected valkyrie to reactive variable
-   * - Get exclusive signet of selected valkyrie
-   * - Remove overlay
-   * - Assign selected valkyrie data to form input
-   */
-  valkyrie.value = Object.assign(data, { builds: JSON.parse(data.builds) });
-  exclusive = await supabase.from(supabaseExclusiveDatabase).select().eq("name", `${valkyrie.value!.name}`).single() as unknown as Exclusive;
   loading.value = false;
   form.value = {
-    name: valkyrie.value!.name,
-    image: "",
-    slug: "",
-    imageSource: valkyrie.value!.imageSource,
-    position: valkyrie.value!.position,
-    type: valkyrie.value!.type,
-    builds: valkyrie.value!.builds,
-    keywords: valkyrie.value!.keywords
+    name: data.name,
+    image: data.image,
+    slug: data.slug,
+    imageSource: data.imageSource,
+    position: data.position,
+    type: data.type,
+    builds: JSON.parse(data.builds),
+    keywords: data.keywords
   };
+
+  exclusive = (await supabase.from(supabaseExclusiveDatabase).select().eq("name", `${form.value.name}`).single()).data as Exclusive;
 };
 
-// Get all flamechasers
-const flamechasers = ref<Array<Flamechaser>>();
+const flamechasers = ref<Array<Flamechaser>>([{ name: "", signets: [] }]);
 const getFlamechasers = async () => {
-  flamechasers.value = await supabase.from(supabaseFlamechaserDatabase).select().order("slug") as unknown as Array<Flamechaser>;
+  flamechasers.value = (await supabase.from(supabaseFlamechaserDatabase).select().order("name")).data as Array<Flamechaser>;
 };
 
-const image = ref();
+const image = ref("");
 const changeImage = () => {
   // @ts-ignore
   image.value = event.target.files[0];
@@ -74,17 +64,12 @@ const changeImage = () => {
 };
 
 const update = async () => {
-  // Add loading overlay
   loading.value = true;
-
-  // Get image extension
-  let extension: string = image.value?.type.split("/").pop();
 
   // If new image is uploaded, change value of image. Otherwise, keep the old data
   if (image.value) {
+    let extension: string = image.value?.type.split("/").pop();
     form.value.image = `/valkyries/${useSlug(form.value.name)}.${extension}`;
-  } else {
-    form.value.image = valkyrie.value!.image;
   }
 
   // Store to DB
@@ -100,17 +85,15 @@ const update = async () => {
   }, { onConflict: 'slug' });
 
   if (error) {
-    // Show alert with error
     alert(`Oops, error!\nMessage: ${error.message}\nDetails: ${error.details}`);
-    // Remove overlay
     loading.value = false;
     return;
   };
+
   useRedirectToAdmin();
 }
 
 const addBuilds = () => {
-  // Base Object of each valkyrie build
   let obj: ValkyrieBuild = {
     name: "", ref: "", boss: "", informations: "",
     supports: [{ time: "Early", first: "", second: "" }, { time: "Mid", first: "", second: "" }, { time: "Late", first: "", second: "" }],
@@ -121,7 +104,6 @@ const addBuilds = () => {
     exclusives: JSON.parse(exclusive.signets)
   };
 
-  // Add new build into form
   form.value.builds.push(obj);
 };
 
@@ -140,12 +122,12 @@ const removeAt = (index: number, idx?: number, i?: number) => {
   }
 };
 
-const addSignet = (index: number) => valkyrie.value!.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
+const addSignet = (index: number) => form.value.builds[index].signets.push({ name: "Choose one", informations: "", lists: [] });
 
-const resetSignets = (index: number, idx: number) => {
-  // @ts-ignore
-  const selected = JSON.parse(flamechasers.value!.find(item => item.name === valkyrie.value?.builds[index].signets[idx].name).signets);
-  const signets = [];
+const refreshSignet = (index: number, idx: number) => {
+  const flamechaser = JSON.stringify(useEnsure(flamechasers.value.find(item => item.name === form.value.builds[index].signets[idx].name)).signets);
+  const signets = [] as Array<SignetItem>;
+  const selected = JSON.parse(JSON.parse(flamechaser));
 
   for (const key in selected) {
     for (const iterator of selected[key]) {
@@ -153,9 +135,9 @@ const resetSignets = (index: number, idx: number) => {
     }
   }
 
-  // @ts-ignore
-  valkyrie.value.builds[index].signets[idx].lists = signets;
+  form.value.builds[index].signets[idx].lists = signets;
 };
+
 onMounted(() => {
   parseValkyrieData();
   getFlamechasers();
@@ -214,12 +196,12 @@ onMounted(() => {
               :class="form.position" :src="image" />
             <img v-else
               class="object-center h-full w-full scale-105 object-cover group-hover:scale-100 lg:h-full lg:w-full"
-              :class="form.position" :src="valkyrie!.image" />
+              :class="form.position" :src="form.image" />
           </div>
         </div>
       </div>
       <div class="flex flex-col w-full">
-        <div v-for="(build, key) in valkyrie!.builds" :key="key" class="flex w-full space-x-2 space-y-1">
+        <div v-for="(build, key) in form.builds" :key="key" class="flex w-full space-x-2 space-y-1">
           <Disclosure as="div" class="mt-2 w-full" v-slot="{ open }">
             <DisclosureButton
               class="flex w-full justify-between rounded-lg bg-slate-800 px-4 py-2 text-left text-sm font-medium hover:bg-slate-600 focus:outline-none">
@@ -370,7 +352,7 @@ onMounted(() => {
                           class="bg-red-500 rounded-l-lg w-full py-2 px-4 hover:bg-red-400">Remove
                           Signet</button>
                         <button type="button" class="rounded-r-lg w-full bg-blue-600 py-2 px-4 hover:bg-blue-500"
-                          @click="resetSignets(key, idx)">Refresh Signet</button>
+                          @click="refreshSignet(key, idx)">Refresh Signet</button>
                       </div>
                     </div>
                     <div class="flex flex-col w-full">
@@ -393,7 +375,8 @@ onMounted(() => {
                               <th colspan="2" class="border border-slate-100 text-center py-2">Priority</th>
                             </tr>
                           </thead>
-                          <Draggable tag="tbody" :list="signet.lists" handle=".handle" item-key="name" class="border border-green-500">
+                          <Draggable tag="tbody" :list="signet.lists" handle=".handle" item-key="name"
+                            class="border border-green-500">
                             <template #item="{ element, index }">
                               <tr>
                                 <td class="handle border border-slate-100 p-3">

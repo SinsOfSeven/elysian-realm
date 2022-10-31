@@ -7,8 +7,8 @@ export const useTitle = (str: string): string => {
   const regex = /(^|\b(?!(and?|at?|the|for|of|to|but|by)\b))\w+/g;
   return str.toLowerCase().replace(regex, s => s[0].toUpperCase() + s.slice(1));
 };
-export const useRedirectToAdmin = (): void => {
-  window.location.replace("/admin")
+export const useRedirectTo = (url: string): void => {
+  window.location.replace(`/admin/${url}`);
 };
 export function useEnsure<T> (argument: T | undefined | null, message: string = "Data not found"): T {
   if (argument === undefined || argument === null) {

@@ -528,8 +528,230 @@ export const valkyries = [
 						},
 					],
 				},
-			}
-		]
+			},
+		],
+	},
+	{
+		name: "Dea Anchora",
+		danger: "Outdated 5.8 build",
+		boss: {
+			info: "Husk, Elysia",
+		},
+		sigil: {
+			lists: [
+				{
+					time: "Early",
+					first: "Burden",
+					second: "",
+				},
+				{
+					time: "Mid",
+					first: "Gold Goblet / Light as a Bodhi Leaf",
+					second: "",
+				},
+				{
+					time: "Late",
+					first: "It Will Be Written / Home Lost",
+					second: "",
+				},
+			],
+		},
+		support: {
+			lists: [
+				{
+					time: "Early",
+					first: "AE",
+					second: "LE",
+				},
+				{
+					time: "Mid",
+					first: "AE",
+					second: "LE / BR",
+				},
+				{
+					time: "Late",
+					first: "AE",
+					second: "MA / BR",
+				},
+			],
+		},
+		signets: {
+			lists: [
+				{
+					name: "Elysia - Signet of Ego",
+					lists: [
+						{
+							name: "Blessing of Stars",
+							description: "Ultimate deals 50 % bonus Total DMG",
+							priority: "Start",
+						},
+						{
+							name: "Blessing of Brilliance",
+							description:
+								"Voidstar Anchor and Astral Flares EX cost no SP and restore 3 SP.Every 30 SP restored deals 800 % ATK of Fire DMG to enemies within 10 meters.CD: 6s",
+							priority: "1st",
+						},
+						{
+							name: "Blessing of Halo",
+							description:
+								"Voidstar Anchor, Voidstar Anchor EX, Astral Flares, and Astral Flares EX deal 2000 % ATK of Fire DMG to enemies within 8 meters of the target hit, gather them, and restore 50 Astrum.CD: 10s",
+							priority: "2nd",
+						},
+						{
+							name: "Blessing of Sheen",
+							description:
+								"Voidstar Anchor EX and Astral Flares EX do not suspend Astrum cosumption, but Seirios Ballista doesnt end Astral Harness and clear Astrum.Seirios Ballista costs 65 SP at most",
+							priority: "3rd",
+						},
+						{
+							name: "Blessing of Gale",
+							description:
+								"In Astral Hamess, all attacks ignite enemies hit and ignited enemies take 25 % bonus Total DMG for 10s",
+							priority: "Filler",
+						},
+					],
+				},
+				{
+					name: "Kevin - Signet of Deliverance (1st Core)",
+					lists: [
+						{
+							name: "Artifact of the Inhibitor",
+							description: "Ultimate boosts Elemental Breach by 20 % for 5s",
+							priority: "1st",
+						},
+						{
+							name: "Brand of the Undead",
+							description: "Ultimate boosts Elemental DMG by 30 % for 5s",
+							priority: "2nd",
+						},
+						{
+							name: "Rochet of the Pilgrim",
+							description: "Ultimate restores 3 SP per second for 5s",
+							priority: "3rd",
+						},
+						{
+							name: "Goblet of the Giver",
+							description: "Ultimate boosts Total DMG by 35 % for 5s",
+							priority: "Filler",
+						},
+						{
+							name: "Blade of the Deliverer",
+							description: "",
+							priority: "Core",
+						},
+						{
+							name: "Crusade of the Deliverer",
+							description:
+								"After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90 % instead of 50 %",
+							priority: "1st",
+						},
+					],
+				},
+				{
+					name: "Eden - Signet of Gold (2nd Core)",
+					lists: [
+						{
+							name: "Recitatif of Creeks",
+							description:
+								"Every 10 SP left boosts Physical & Elemental DMG by 2.5 %",
+							priority: "1st",
+						},
+						{
+							name: "Recitatif of Eden",
+							description: "Every 10 SP left boost Total DMG by 3.0 %",
+							priority: "2nd",
+						},
+						{
+							name: "Recitatif of Fine Jade",
+							description: "Initial SP and max SP increase by 30",
+							priority: "3rd",
+						},
+						{
+							name: "Echo of Gold",
+							description: "",
+							priority: "Core",
+						},
+						{
+							name: "Echo of Silent Night",
+							description:
+								"After lasting over 7s, reduce ATK, DEF, ele resists of enemies nearby",
+							priority: "YES",
+						},
+					],
+				},
+				{
+					name: "Griseo - Signet of Stars (1st Core)",
+					lists: [
+						{
+							name: "White & Bright",
+							description:
+								"Every time an enemy is tainted, Valkyrie restores 12 SP.CD: 5s",
+							priority: "Start",
+						},
+						{
+							name: "Yellow & Warm",
+							description:
+								"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30 % bonus Total DMG.Triggering it again resets the duration",
+							priority: "1st",
+						},
+						{
+							name: "Red & Hot",
+							description:
+								"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25 % bonus Physical and Elemental MG(cannot stack).Triggering it again resets the duration",
+							priority: "2nd",
+						},
+						{
+							name: "Grey & Empty",
+							description: "Enemies stay tainted for 5s longer",
+							priority: "3rd",
+						},
+						{
+							name: "Shine like Stars",
+							description: "",
+							priority: "Core",
+						},
+					],
+				},
+				{
+					name: "Su - Signet of Bodhi (2nd Core)",
+					lists: [
+						{
+							name: "Motto of Dibba - Cakkhu",
+							description:
+								"Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35 % for 10s",
+							priority: "1st",
+						},
+						{
+							name: "Motto of Asavakkhaya",
+							description: "Attacks grant 25 bonus combo hits on hit.CD: 5s",
+							priority: "2nd",
+						},
+						{
+							name: "Motto of Iddhi - Vidha",
+							description:
+								"Combo hits are increased to 60 when below 60. CD: 10s",
+							priority: "3rd",
+						},
+						{
+							name: "Dictum of Bodhi",
+							description: "",
+							priority: "Core",
+						},
+						{
+							name: "Dictum of Anatman",
+							description:
+								"Eyes Open debuffs last 3s longer.Every debuff on enemy makes it take 5 % more TDM",
+							priority: "1st",
+						},
+						{
+							name: "Dictum of Santam",
+							description: "Inflict 3 random debuffs when Eyes Open hit",
+							priority: "Filler",
+						},
+					],
+				},
+			],
+		},
 	},
 	{
 		name: "Valkyrie Gloria",

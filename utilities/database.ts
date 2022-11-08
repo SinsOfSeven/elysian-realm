@@ -1062,6 +1062,316 @@ export const valkyries = [
 		],
 	},
 	{
+		name: "Fallen Rosemary",
+		builds: [
+			{
+				name: "General Build",
+				note: "Updated 6.1. Do note that FR needs her Pri-arm if you want to use her for ER. Due to the complex mechanics that FR has, she's one of the harder valks to properly play into ER. In fact, much like certain other valks, her performance won't only depend on her gears and ranks, but also will depend on how optimally you can play her. As long as you can consistently and properly do her Evade cancels (especially taking note of Strix-the bird rune- getting off CD to spam him) into Charged ATKs one after another, you can expect things to go well. Her greatest dps is between her ult and the successive Charged ATK chain.",
+				boss: {
+					info: "Hephaestus, then Aponia or Kosma",
+					note: "Aponia is just easier. Kosma is not recommended due to FR lacking enough hitcount potential which would take her too long during the hitcount phases.",
+				},
+				setup: {
+					danger:
+						'In downscalability terms, even below SS2 where FR unlocks her "dps" potential outside ER, she should be fine here. With lower gears as well. However, do note that FR is a valk that re',
+					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							gear: "Iris of Helheim & Handel TMB",
+							time: "6:21 (6.1)",
+							ref: "https://youtu.be/xppTS-q5ll4",
+						},
+					],
+				},
+				buff: {
+					note: "Effective for 6.1",
+					lists: [
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: "15",
+						},
+						{
+							description:
+								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+							load: "15",
+						},
+					],
+				},
+				sigil: {
+					note: "If your FR is struggling to get through 4F double, you can instead start with The Lonely Moon and delay your 4 Ego powerspike until F11.",
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "Because of You OR The Lonely Moon",
+						},
+						{
+							time: "Mid",
+							first: "Memory / Mad King's Mask / Rainbow of Absence",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask or Key to the Deep",
+							second: "The Lonely Moon",
+						},
+					],
+				},
+				support: {
+					note: "Remember to swap AE out for BK before Heimdall fight. As for the late floors, you can use BR because by then you'll already have more than enough breach with Aponia's and Hua's combined. For this very same reason. You don't take SN out because of 2nd Load Buff.",
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "SN",
+						},
+						{
+							time: "Mid",
+							first: "AE/BK",
+							second: "SN",
+						},
+						{
+							time: "Late",
+							first: "AE/BR",
+							second: "SN",
+						},
+					],
+				},
+				signets: {
+					note: "Ideal course of build up: 2 Ego start into Aponia Ultimate F3, finish Aponia 2nd Core by F4 with SP Regen & 70 Load, grab Aponia's Breach at F5, go shop F6, grab Aponia's Basic ATK if missing, get Kalpas' both DMG boosts or one and Hua's Elem Breach, then use Because of You to grab Nocturne and God Eater from F7 Double.",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							note: "This build mainly relies on 2 Ego signets that are necessary to start with: Soul Siphon into Valfreyja. Soul Siphon is the signet that will allow FR to chain unlimited Charged ATKs. Valfreyja will be your other main source of big damage. Then, the other 2 Ego signets that become a huge powerspike for FR are Nocturne and God Eater, gotten through Because of You.",
+							lists: [
+								{
+									name: "Blessing of Soul Siphon",
+									description:
+										"In Valfreyja form basic ATK siphons extra Disir",
+									priority: "**Start**",
+								},
+								{
+									name: "Blessing of Valfreyja",
+									description: "In Valfreyja form Lightning DMG is increased",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Nocturne",
+									description: "Using God Eater increases Charge ATK TDM",
+									priority: "2nd",
+								},
+								{
+									name: "Blessing of God Eater",
+									description:
+										"When God Eater hits, a lightning bolt hits and fully recharges Strix",
+									priority: "3rd",
+								},
+								{
+									name: "Blessing of Spirit Servants",
+									description:
+										"When Garmr/Strix/Linnorm hits, increases Lightning DMG",
+									priority: "No",
+								},
+							],
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							lists: [
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "3rd",
+								},
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "4th",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+						},
+						{
+							name: "Hua - Signet of Vicissitude (2nd Core)",
+							note: "If you don't get any better options for doors, you can try and gamble for Broken Dream",
+							lists: [
+								{
+									name: "Old Dreams Again",
+									description: "Elemental Breach increases by 0.6% per second",
+									priority: "1st",
+								},
+								{
+									name: "Long Trip",
+									description:
+										"Total DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks",
+									priority: "2nd",
+								},
+								{
+									name: "Dark Garb No More",
+									description: "Elemental DMG increases by 0.8% per second",
+									priority: "3rd",
+								},
+								{
+									name: "Suffering Mass",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Broken Dream",
+									description:
+										"When possessing Soldier's Remembrance., increase the maximum stack of normal Vicissitude signets by 20",
+									priority: "Optional",
+								},
+							],
+						},
+						{
+							name: "Kalpas - Signet of Decimation (3rd/4th Core)",
+							note: "It is NOT necessary to finish Kalpas2's Core. FR has no in-built healing so she can permanently stay at below 100 HP and won't be recovering any HP diminishing Kalpas' buffs. This also means you can just continue towards Griseo while getting Kalpas signets from shop.",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "3rd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "Optional",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core",
+								},
+							],
+						},
+						{
+							name: "Griseo - Signet of Stars (3rd/4th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "5th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
+									priority: "Optional 3rd",
+								},
+							],
+						},
+						{
+							name: "Eden - Signet of Gold (Felis Shop Signets)",
+							lists: [
+								{
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "2nd",
+								},
+							],
+						},
+					],
+				},
+			},
+		],
+	},
+	{
 		name: "Valkyrie Gloria",
 		builds: [
 			{

@@ -754,6 +754,314 @@ export const valkyries = [
 		},
 	},
 	{
+		name: "Disciplinary Perdition",
+		builds: [
+			{
+				name: "General Build",
+				note: "Updated 6.1. Aponia being one of the strongest Flamechasers available to do ER with, is also a valk that doesn't really demands much mechanical play. There's really not much to explain about her. Aponia in ER is basically a get 100 sp, use Ultimate, hold A for Thunderstorm and move or just watch a video while enemies die. Then gain SP again and repeat the same process. More explanation on her is given in the description of the video runs.",
+				boss: {
+					info: "Husk, then Aponia",
+					note: "Yeah. Fighting herself. That's how things should be. Right?",
+				},
+				setup: {
+					danger:
+						"In downscalability terms, Aponia does seem pretty decent as seen on the above run using Handel instead of Zeno. However, do expect worse performance with lower gears, but she can scale accordingly without problems.",
+					lists: [
+						{
+							rank: "S0",
+							difficult: "Finality",
+							gear: "Lost Conviction & 3-set Handel",
+							time: "7:47m (6.1)",
+							ref: "https://youtu.be/250mouXMexk",
+						},
+					],
+				},
+				buff: {
+					note: "Effective for 6.1.",
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: "5",
+						},
+						{
+							description: "Flame-Chasers deal 15% more Total DMG.",
+							load: "10",
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: "15",
+						},
+					],
+				},
+				sigil: {
+					note: "Boundless Feeling is used for the +1 to Aponia signets. You can alternatively start with The Lonely Moon instead, to guarantee 4F double.",
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "Boundless Feeling / The Lonely Moon",
+						},
+						{
+							time: "Mid",
+							first:
+								"Rainbow of Absence / Mad King's Mask / Feast of Emptiness",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask / Key to the Deep",
+							second: "The Lonely Moon",
+						},
+					],
+				},
+				support: {
+					note: "AE is not switched out. LE is for early game, and can later be switched out at F5 shop and above once you have Aponia's SP Regen. Other additional SP regen sources can be obtained to be more comfortable, but not recommended. BK is recommended to bring against Heimdall.",
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "LE",
+						},
+						{
+							time: "Mid",
+							first: "AE",
+							second: "BK",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR",
+						},
+					],
+				},
+
+				signets: {
+					note: "Ideal course of build up: 2 Ego start (Admonition into Shelter, then Inclusiveness) into Aponia QTE F3, unlock Aponia 2nd Core with SP Regen and Ultimate, grab Aponia's Breach from F5, go shop F6 and buy Griseo's Red, Yellow and Black from Shop. Can also take Sakura's TDM Taken and TDM and Kalpas signets. Grab Aponia door for F7 and unlock the remaining 2 Enhanceds",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							note: "Aponia only needs 3 Ego signets; Admonition, Shelter and Inclusiveness. A 4th Ego signet can be picked for Rescue, only if you want, as it hasn't given a lot of impact from getting picked. Its almost negligible.",
+							lists: [
+								{
+									name: "Blessing of Admonition",
+									description:
+										"Aponia gains 40% Total DMG Reduction. In Predictor's Sentence form, Lightning DMG increases 30% every 0.5s for a maximum of 180%. Inhibitor's Adjudication deals an additional 400% Lightning DMG",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Shelter",
+									description:
+										"In Predictor's Sentence form, Redemption cost per second reduced by 55%; Total DMG dealt by Thunderstorm and Inhibitor's Adjudication increases 70% and count as Ultimates",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Inclusiveness",
+									description:
+										"Restores 12 SP and reduces Ultimate CD by 6s when illusion uses QTE. Increases Ultimate's Total DMG by 60%. Ultimate restores up to 100% Redemption when used",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Rescue",
+									description:
+										"Illusory Summoned Entity will deal Paralyse Trauma alongside DMG. DMG dealt by your Ultimate Evasion Skill increases 120%. Lightning DMG dealt by you or your illusion increases 70%",
+									priority: "Optional",
+								},
+								{
+									name: "Blessing of Atonement",
+									description:
+										"Aponia illusory Summoned Entity wherever she does, dealing 385% Lightning DMG every second to surrounding enemies. The illusion's Total DMG increases 100% and restores 12 SP after leaving Predictor's Sentence form",
+									priority: "No",
+								},
+							],
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							note: "All 3 Enhanceds are good to get for Aponia. Also, Basic ATK is not taken because the Admonition Ego signet modifies the Thunderstorm and its finisher to count as Ultimate DMG.",
+							lists: [
+								{
+									name: "Sixth, No Decadence",
+									description:
+										"Boosts Valkyrie Total DMG by 20% and keeps Exhortation from reducing for 15s upon QTE hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "3rd",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+						},
+
+						{
+							name: "Griseo - Signet of Stars (2nd Core)",
+							note: "After getting Petals in the Wind, can proceed to finish Kalpas 2nd Core.",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
+									priority: "Optional 3rd",
+								},
+							],
+						},
+
+						{
+							name: "Kalpas - Signet of Decimation (3rd Core)",
+							note: "Throughout the Wep Active spam, Aponia recovers so much HP upon many repeated uses that she can easily fill Bloodboil Garment to the max in a decent amount of time.",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "3rd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "Optional",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core",
+								},
+							],
+						},
+						{
+							name: "Pardofelis - Signet of Reverie (4th Core)",
+							lists: [
+								{
+									name: "Motto of Meow",
+									description:
+										"Every 100 Shiny Silvers obtained this round boost Total DMG by 1%.",
+									priority: "1st",
+								},
+								{
+									name: "Back-Curled Tail",
+									description:
+										"Every 100 Shiny Silvers obtained this round boost Physical and Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Flexible P&C",
+									description:
+										"Every 100 Shiny Silvers obtained this round restore 1 HP and 0.1 SP. Taking DMG disables this effect for 5s.",
+									priority: "3rd",
+								},
+								{
+									name: "Empty Dreams, Self, Set, and Joy",
+									description: "",
+									priority: "Core",
+								},
+							],
+						},
+						{
+							name: "Sakura - Signet of Setsuna (Felis Shop Signets)",
+							lists: [
+								{
+									name: "Bountiful Blossom: Koyo",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s.",
+									priority: "1st",
+								},
+								{
+									name: "Bountiful Blossom: Botan",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
+									priority: "2nd",
+								},
+							],
+						},
+					],
+				},
+			},
+		],
+	},
+	{
 		name: "Valkyrie Gloria",
 		builds: [
 			{

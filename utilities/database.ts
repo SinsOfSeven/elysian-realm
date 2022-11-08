@@ -209,7 +209,7 @@ export const valkyries = [
 					{
 						name: "Hua - Signet of Vicissitude (3rd Core)",
 						note: "If you don't get any better options for doors, you can try and gamble for Broken Dream",
-						signets: [
+						lists: [
 							{
 								name: "Old Dreams Again",
 								description: "Elemental Breach increases by 0.6% per second",
@@ -241,7 +241,7 @@ export const valkyries = [
 					},
 					{
 						name: "Griseo - Signet of Stars (4th Core)",
-						signets: [
+						lists: [
 							{
 								name: "Red & Hot",
 								description:
@@ -384,7 +384,7 @@ export const valkyries = [
 					{
 						name: "Elysia - Signet of Ego",
 						note: "Battle Song + Gloria are a must. Sol can be optionally picked later. Triumph is not necessary. VG is another valk that loves her Ego signets, however, prioritize completing the important cores over the Ego signets.",
-						signets: [
+						lists: [
 							{
 								name: "Blessing of Impetus",
 								description:
@@ -420,7 +420,7 @@ export const valkyries = [
 					{
 						name: "Aponia - Signet of Discipline (1st Core)",
 						note: "Ideal course of build up: Double Ego start > Apo2 Core by F4 > Apo2 Breach by F5 > V-V by F6 > Complete V-V 2nd Core by F7.",
-						signets: [
+						lists: [
 							{
 								name: "Third, No Brutality",
 								description:
@@ -473,7 +473,7 @@ export const valkyries = [
 					{
 						name: "Griseo - Signet of Stars (2nd Signet)",
 						note: "Interlacing Cells and Origin of Slumber take priority of upgrades.",
-						signets: [
+						lists: [
 							{
 								name: "Red & Hot",
 								description:
@@ -507,7 +507,7 @@ export const valkyries = [
 					},
 					{
 						name: "Vill-V - Signet of Helix (3rd Core)",
-						signets: [
+						lists: [
 							{
 								name: "Act II: Pendulum",
 								description:
@@ -560,7 +560,7 @@ export const valkyries = [
 					{
 						name: "Kalpas - Signet of Decimation (4th Core)",
 						note: "Kalpas' signets are best taken from Felis shop. If you get 2 of Kalpas' signets from there, then proceed with getting his Core if possible.",
-						signets: [
+						lists: [
 							{
 								name: "Blade, Grave and Scar",
 								description: "Every 100 HP loss boosts Total DMG by 1.0%.",

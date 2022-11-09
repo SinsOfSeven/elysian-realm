@@ -81,7 +81,7 @@ export const valkyries = [
 						},
 					],
 				},
-				signets: {
+				signet: {
 					note: "Ideal course of build up: 2 Ego start into Aponia SP Regen F3, finish Aponia 2nd Core by F4, go shop F5 and swap The Lonely Moon for Because of You, buy Aponia's Penance if possible, otherwise get Mobius' Lip Poison [E] and Hua's Elem Breach. Can upgrade Aponia's Ultimate. Grab Aponia door F6 for Breach and finish Mobius 1st Core by F7 with Entwined [P] and Rodent [V].",
 					lists: [
 						{
@@ -347,7 +347,7 @@ export const valkyries = [
 						},
 					],
 				},
-				signets: {
+				signet: {
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
@@ -575,7 +575,7 @@ export const valkyries = [
 				},
 			],
 		},
-		signets: {
+		signet: {
 			lists: [
 				{
 					name: "Elysia - Signet of Ego",
@@ -836,8 +836,7 @@ export const valkyries = [
 						},
 					],
 				},
-
-				signets: {
+				signet: {
 					note: "Ideal course of build up: 2 Ego start (Admonition into Shelter, then Inclusiveness) into Aponia QTE F3, unlock Aponia 2nd Core with SP Regen and Ultimate, grab Aponia's Breach from F5, go shop F6 and buy Griseo's Red, Yellow and Black from Shop. Can also take Sakura's TDM Taken and TDM and Kalpas signets. Grab Aponia door for F7 and unlock the remaining 2 Enhanceds",
 					lists: [
 						{
@@ -1139,7 +1138,7 @@ export const valkyries = [
 						},
 					],
 				},
-				signets: {
+				signet: {
 					note: "Ideal course of build up: 2 Ego start into Aponia Ultimate F3, finish Aponia 2nd Core by F4 with SP Regen & 70 Load, grab Aponia's Breach at F5, go shop F6, grab Aponia's Basic ATK if missing, get Kalpas' both DMG boosts or one and Hua's Elem Breach, then use Because of You to grab Nocturne and God Eater from F7 Double.",
 					lists: [
 						{
@@ -1454,7 +1453,7 @@ export const valkyries = [
 						},
 					],
 				},
-				signets: {
+				signet: {
 					note: "Ideal Order from F1-F7: Double Ego start into Griseo Red or Yellow F3, get Griseo 2nd Core by F4 with Yellow & Black, grab Griseo's A Flame Extinguished or White for F5 or F6, shop, get an Aponia signet and finish Aponia 2nd Core by F7.",
 					lists: [
 						{
@@ -1709,6 +1708,332 @@ export const valkyries = [
 		],
 	},
 	{
+		name: "Golden Diva",
+		builds: [
+			{
+				name: "General Build",
+				note: "Updated 6.1. As far as testing goes, this is the current best build for Eden, and other variations with different signets are either weaker, or just don't really work as well as they would seem to do in paper. Take Eden2 for instance, which supposedly GD would be perfectly fine with. Issue? It actually isn't that great. Only acceptable as a versatile option when you don't have any other better alternatives for doors, but otherwise, not recommended to do as early start, as it's garbage.",
+				boss: {
+					info: "Husk or Hephaestus, then Aponia or Vill-V",
+					note: "Hephaestus is only recommended if you actually have both DoI & Handel to go with. Eden has the capability to kill Hephaestus before he goes into Overheat mode. If you do not have the confidence to kill it before it goes Overheat mode, then just go with Husk.",
+				},
+				setup: {
+					danger:
+						"In terms of downscalability, as long as you have Handel, GD won't be as painful to use, particularly because the atk difference does play in ",
+					lists: [],
+				},
+				buff: {
+					note: "Effective for 6.1.",
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Max SP increases by 30.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description: "Flame-Chasers deal 15% more Total DMG.",
+							load: 10,
+						},
+					],
+				},
+				sigil: {
+					note: "This build has 2 starter variations. You either choose Aponia or Kosma. The difference between both will be explained further below. Look out for reading if you want to know.",
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears / Fragile Friend",
+							second: "Boundless Feeling / Out of Reach",
+						},
+						{
+							time: "Mid",
+							first: "Mad King's Mask / Rainbow of Absence / Home Lost",
+							second: "Out of Reach",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask / Key to the Deep",
+							second: "Out of Reach",
+						},
+					],
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "BR;",
+						},
+						{
+							time: "Mid",
+							first: "AE / BK",
+							second: "BR;",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR;",
+						},
+					],
+				},
+				signet: {
+					note: "Ideal course of build up: 3 Ego start into Aponia's Basic or Ultimate F3, unlock Aponia 2nd Core by F4, go shop F5, buy 2 of either Kosma or Kalpas signets and reroll for either door accordingly to unlock their core by F6, otherwise Aponia door for enhanced. If you CAN get Kalpas 2nd Core by F6 over Kosma2, then grab Aponia for F7 double",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							note: "This build requires only 3 Ego signets to function: Arioso + Fugue into Cadenza. You can also additionally take a 4rd Ego door for Concerto, or if you plan on using Eden2, take Symphony, but otherwise NEVER take Symphony, as it heavily relies on minimum 2 SP regen sources (Aponia2 and Eden2)",
+							danger:
+								"Regarding 2 diff Startup importance: Aponia which includes her Boundless Feeling support skill is weaker for F4 Double, but is a bit stronger start after getting her core. Kosma on the other hand provides easily accessible and comfortable gather, while also being stronger for F4 Double and can very likely guarantee it. This run will assume Aponia start. For Kosma start, you just switch the priority order between the two. (Kosma 1st, Aponia 3rd)",
+							lists: [
+								{
+									name: "Blessing of Arioso",
+									description:
+										"During Sound of Nature, each note consumed increases Total DMG by 12% with a max stack of 10. This is reset when Sound of Nature ends",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Fugue",
+									description:
+										"Ensemble combo sequence is increased by 6. Hurling pistols Total DMG increases 140%",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Cadenza",
+									description:
+										"Chord and Variation launch sound waves dealing 550% Lightning DMG. Each wave increases Total DMG reduction by 30% and slightly raises Ignore Interrupt for 10s while restoring 2 or 4 SP respectively. Triggering it again resets the duration",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Concerto",
+									description:
+										"Each Combo ATK grants 1 Charge. At 4 Charge, Basic and Combo ATKs' Total DMG increase by 60% for 15s. Charge consumed on use and cannot be restored during use. Restores 12 SP after use",
+									priority: "Optional",
+								},
+								{
+									name: "Blessing of Symphony",
+									description:
+										"Hurl pistols when using Ensemble Playing for 12 SP and dealing 350% Lightning DMG",
+									priority: "No",
+								},
+							],
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							lists: [
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed",
+									priority: "2nd",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "3rd",
+								},
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation",
+									priority: "Optional 4th",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "3rd",
+								},
+							],
+						},
+						{
+							name: "Kalpas - Signet of Decimation (2nd Core)",
+							lists: [
+								{
+									name: "Blade, Grave, and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood, and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%",
+									priority: "2nd",
+								},
+								{
+									name: "Path, Misfortune, and Written Fate",
+									description: "Max HP increases by 25%",
+									priority: "3rd",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core",
+								},
+							],
+						},
+						{
+							name: "Kosma - Signet of Daybreak (3rd Core)",
+							note: "If you want to be able to maximize Kalpas2's Bloodboil Garment, then you take Kosma's healing (the 3000% Adaptive DMG). It will further boost the amount of buffs you can get from Kalpas.",
+							lists: [
+								{
+									name: "Talons that Desecrate the Sanctuary",
+									description:
+										"Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking CD: 1s.",
+									priority: "1st",
+								},
+								{
+									name: "Horns that Rip the Bleak Sky",
+									description:
+										"Ultimate inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. CD: 15s.",
+									priority: "2nd",
+								},
+								{
+									name: "Wings that Mask the Sanguine Moon",
+									description:
+										"Ultimate Evasion Skill inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. CD: 15s.",
+									priority: "3rd",
+								},
+								{
+									name: "Heart that Commited Seven Crimes",
+									description: "Rend lasts 5s longer.",
+									priority: "4th",
+								},
+								{
+									name: "Daybreak, Lone Beacon",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Heart, Unshakable Character",
+									description:
+										"Each stack of Rend on Valkyrie makes her deal 1.5% more Physical and Elemental DMG.",
+									priority: "1st",
+								},
+								{
+									name: "Dawn, Perpetual Wait",
+									description:
+										"While Rended, recovering HP reduces Total DMG taken by 1% each time upto 30%, and losing HP increases Physical and Elemental Breach by 2% each time up to 30%.",
+									priority: "2nd",
+								},
+								{
+									name: "Choice, Ensuing Regret",
+									description:
+										"When Combo and Charged ATKs hit, unleash Righteous Retribution once, dealing 3000% ATK of Adaptive DMG to nearby enemies as well as restoring 0.5% of HP for each stack of Rend on Valkyrie. CD: 10s.",
+									priority: "Optional",
+								},
+							],
+						},
+						{
+							name: "Griseo - Signet of Stars 4th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+							],
+						},
+						{
+							name: "Pardofelis - Signet of Reverie (5th Core)",
+							lists: [
+								{
+									name: "Neighborhood Chatters",
+									description:
+										"Every 100 Shiny Silvers obtained this round boost max HP by 25 and max SP by 1.",
+									priority: "1st",
+								},
+							],
+						},
+						{
+							name: "Eden - Signet of Gold 6th Core)",
+							lists: [
+								{
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
+									description:
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
+									priority: "2nd",
+								},
+							],
+						},
+					],
+				},
+			},
+		],
+	},
+	{
 		name: "Valkyrie Gloria",
 		builds: [
 			{
@@ -1786,7 +2111,7 @@ export const valkyries = [
 						},
 					],
 				},
-				signets: {
+				signet: {
 					note: "Ideal course of build up: Double Ego start > Apo2 Core by F4 > Apo2 Breach by F5 > V-V by F6 > Complete V-V 2nd Core by F7.",
 					lists: [
 						{

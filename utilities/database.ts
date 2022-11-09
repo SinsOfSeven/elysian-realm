@@ -1372,6 +1372,343 @@ export const valkyries = [
 		],
 	},
 	{
+		name: "Fervent Tempo: Delta",
+		builds: [
+			{
+				name: "FT General Build",
+				note: "Updated 6.1. In terms of downscalability, this build sucks for that. It's linked to the valk herself. What does this mean? Basically, you'd rather be using another valk instead of FT if your FT is a bit too downscaled. Needs Sleeper's Dream as minimum, otherwise her ER gameplay is really painful.",
+				boss: {
+					info: "Husk, then Vill-V",
+					note: "Why not Hephaestus? Because, despite FT type-countering Heph and even with Griseo2, she's actually awfully horrible against Heph. It also doesn't help that her personal single damage against Bosses is dogshit despite everything. Husk is way easier. Also simpler to parry his attacks.",
+				},
+				setup: {
+					danger: "Sleeper's Dream is the minimum re",
+					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							gear: "Sleeper's Dream & Michelangelo TB Dante M",
+							time: "8:55m (6.0 1st Half)",
+							ref: "https://youtu.be/0od_2xpXFcI",
+						},
+					],
+				},
+				buff: {
+					note: "Effective for 6.1.",
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: "5",
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: "10",
+						},
+						{
+							description:
+								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+							load: "15",
+						},
+					],
+				},
+				sigil: {
+					note: "It Will Be Written can be used for guaranteeing F7 double by oneshotting the Smelter Zombie.",
+					lists: [
+						{
+							time: "Early",
+							first: "Rainbow of Absence",
+							second: "The Lonely Moon OR Because of You / It Will Be Written",
+						},
+						{
+							time: "Mid",
+							first: "Veil of Tears / Mad King's Mask / Memory",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Late",
+							first: "Key to the Deep",
+							second: "The Lonely Moon",
+						},
+					],
+				},
+				support: {
+					note: "You want to swap LE out once you're settled down on SP regen sources, which is very important for FT. ",
+
+					lists: [
+						{
+							time: "Early",
+							first: "SS",
+							second: "LE;",
+						},
+						{
+							time: "Mid",
+							first: "SS",
+							second: "(LE / BR);",
+						},
+						{
+							time: "Late",
+							first: "SS",
+							second: "BR;",
+						},
+					],
+				},
+				signets: {
+					note: "Ideal Order from F1-F7: Double Ego start into Griseo Red or Yellow F3, get Griseo 2nd Core by F4 with Yellow & Black, grab Griseo's A Flame Extinguished or White for F5 or F6, shop, get an Aponia signet and finish Aponia 2nd Core by F7.",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							note: "This build works with 2 Ego signets mainly: Silence + Mixing. Those 2 are essential. FT without gather is absolutely horrible. No Mixing means FT is unplayable. Regarding other Ego signets, she really loves the opportunity to take a 3rd and 4th; Thorns and Solitude are your best choices respectively.",
+
+							lists: [
+								{
+									name: "Blessing of Silence",
+									description:
+										"Ultimate's CD is reduced by 30% and Ultimate's Total DMG is increased by 300%. Weapon Active CD is reduced by 2s each time Ultimate deals DMG. Strike Back EX is usable during the entirety of Fortress Mode.",
+									priority: "**Start**",
+								},
+								{
+									name: "Blessing of Mixing",
+									description:
+										"Charged ATK and Ultimate pull enemies in a large area and increase their Total DMG taken by 30% for 8s. Triggering it again refreshes the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Thorns",
+									description:
+										"Basic ATK and Charged ATK deal 20% more Physical DMG and restore 1 SP on every hit. At 150 SP or higher, casting Ultimate costs an extra 50 SP, and during this Ultimate enemies take 20% more Total DMG.",
+									priority: "Optional 2nd",
+								},
+								{
+									name: "Blessing of Solitude",
+									description:
+										"In Fervent Mode, Basic ATK deals an extra 20% Physical DMG. Ultimate last SEQ deals an extra 200% Physical DMG.",
+									priority: "Optional 3rd",
+								},
+								{
+									name: "Blessing of Fervor",
+									description:
+										"In Fervent Mode, nearby enemies take 20% more Physical DMG and Fervent Juice is consumed 50% faster (cannot stack).",
+									priority: "Optional 4th",
+								},
+							],
+						},
+						{
+							name: "Griseo - Signet of Stars (1st Core)",
+							note: "White is essential due to FT's severe lack of SP regen without Thorns and particularly during Fervent Mode (which incentivizes you to just let Fervent Mode end so you can regen SP again), so if you get Thorns beforehand, you basically ignore White. Also, due to no on-demand UE, you'll want to intentionally let enemies attack you and evade so you can proc Blue paint, and along with it, Fallen Leaves and Petals in the Wind. Especially Fallen Leaves as it gives a really noticeable shitload of dmg buff to FT.",
+
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "2nd",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "White & Bright",
+									description:
+										"Every time an enemy is tainted, Valkyrie restores 12 SP. CD: 5s.",
+									priority: "Optional",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "3rd",
+								},
+							],
+						},
+						{
+							name: "Aponia - Signet of Discipline (2nd Core)",
+							lists: [
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "3rd",
+								},
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "4th",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "Filler",
+								},
+							],
+						},
+						{
+							name: "Kalpas - Signet of Decimation (3rd Core)",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "3rd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "Optional",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core",
+								},
+							],
+						},
+						{
+							name: "Eden - Signet of Gold (4th Core)",
+							lists: [
+								{
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
+									description:
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
+									priority: "2nd",
+								},
+								{
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second",
+									priority: "3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "4th",
+								},
+								{
+									name: "Echo of Gold",
+									description: "",
+									priority: "Core",
+								},
+							],
+						},
+						{
+							name: "Hua - Signet of Vicissitude (5th Core)",
+							lists: [
+								{
+									name: "No One To Share",
+									description:
+										"Physical Breach increases by 0.6% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
+									priority: "1st",
+								},
+								{
+									name: "Long Trip",
+									description:
+										"Total DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks",
+									priority: "2nd",
+								},
+								{
+									name: "Days Gone",
+									description:
+										"Physical DMG increases by 0.8% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
+									priority: "3rd",
+								},
+								{
+									name: "Suffering Mass",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Broken Dream",
+									description:
+										"When possessing Soldier's Remembrance., increase the maximum stack of normal Vicissitude signets by 20",
+									priority: "Optional",
+								},
+							],
+						},
+					],
+				},
+			},
+		],
+	},
+	{
 		name: "Valkyrie Gloria",
 		builds: [
 			{

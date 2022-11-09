@@ -2034,6 +2034,345 @@ export const valkyries = [
 		],
 	},
 	{
+		name: "Helical Contraption",
+		builds: [
+			{
+				name: "Not Helical Cripple",
+				note: "Updated 6.1. All in all, HC is one of the easiest valks to play in ER, and her gameplay doesn't involve anything complicated. The only thing of note to be mindful of is that she greatly values gather as it's better for her to be hitting every mob due to her AoE damage being pretty damn strong.",
+				boss: {
+					info: "Hephaestus, then Aponia or Kosma",
+					note: "While HC can take Kosma and deal with the hitcount phases the easiest, you can also instead take Aponia, but do keep in mind to manually end your Burst Mode before transition phases to save SP and ult again.",
+				},
+				setup: {
+					note: "With lower ranks, you can expect HC to perform worse, however her strength is probably more dependant on her stigma set, and more importantly, her own weapon. Without her weapon, she probably struggles aside from gameplay changes.",
+					lists: [
+						{
+							rank: "SS1",
+							difficult: "Finality",
+							gear: "Tower of Past & Collodi TMB",
+							time: "5:15 (6.1)",
+							ref: "https://youtu.be/cwbYxS_h_VE",
+						},
+					],
+				},
+				buff: {
+					note: "Effective for 6.1.",
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Flame-Chasers deal 15% more Total DMG.",
+							load: 10,
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
+					],
+				},
+				sigil: {
+					note: "It Will Be Written can be used for guaranteeing F7 double by oneshotting the Smelter Zombie.",
+					lists: [
+						{
+							time: "Early",
+							first: "Pseudo Miracle",
+							second: "Falling in Past Light",
+						},
+						{
+							time: "Mid",
+							first: "Forbidden Seed / Memory / Rainbow of Absence",
+							second: "Boundless Logos",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask or Key to the Deep",
+							second: "Boundless Logos",
+						},
+					],
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "BR",
+						},
+						{
+							time: "Mid",
+							first: "AE / BK or VK",
+							second: "BR",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR",
+						},
+					],
+					note: "In the SS1 run, I picked VK as she gives 20% Fire Taken. However, do note that VK is harder to use for the purpose of denying Heimdall's Red Mode. This is because VK applies mid Heavy Trauma throughout many successive hits that NEED to connect with Heimdall. If you do not want to be resetting the fight until VK successfully does her job, then just pick BK instead.",
+				},
+				signet: {
+					note: "Ideal course of build up: 3 Ego Start (Facade + Sleight into Reversal), V-V's Spider Web or Pendulum F3, then finish V-V 2nd Core by F4, grab V-V's Puppetry by F5, go shop and swap Falling in Past Light for Boundless Logos, get Drama (if possible) or get Mobius' Entwined [P] or Lip Poison [E] and Hua's Elem Breach & Kalpas TDM, proceed to finish Mobius 1st Core by F7",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							lists: [
+								{
+									name: "Blessing of Facade",
+									description:
+										"Within 15s of entering Special Weapon: No. 9 or Weapon Mode, Valkyrie deals 40% more Fire DMG, and Target Lock hits 1 more time and recovers 0.3 more SP.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Sleight",
+									description:
+										"Target Lock becomes an AoE attack and deals 100% ATK more of Fire DMG. If Target Lock hits, Valkyrie deals 30% more Total DMG for 5s. Triggering it again refreshes the duration.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Reversal",
+									description:
+										"Weapon active deals 25% more Total DMG. In burst mode, casting weapon active restores 20 Chariot Heat Value, Total DMG increases by 30%, and hitting an enemy inflicts Target Lock on all eneimes once; CD: 5s.",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Assemblage",
+									description:
+										"Once Loud Armaments is destroyed, enter burst mode. Can summon a Blazing Spiral that lasts for 5s. It will continuously pull enemies and make them take 30% more Total DMG. A Blazing Spiral deals 500% ATK of Fire DMG when created, which increases by 300% ATK for every Loud Armaments destroyed.",
+									priority: "Optional 2nd",
+								},
+								{
+									name: "Blessing of Transmission",
+									description:
+										"In Special Weapon: No. 9, Interlude Salute and Evasion deal 50% more Total DMG. Casting Interlude Salue restores 5 SP. Every 3 casts of Interlude Salute refreshes weapon active CD, but exiting the combat vehicle resets the counter.",
+									priority: "No",
+								},
+							],
+						},
+						{
+							name: "Vill-V - Signet of Helix (1st Core)",
+							lists: [
+								{
+									name: "Act V: Spider Web",
+									description:
+										"Using a weapon active boosts Valkyrie ranged Total DMG by 40% for 4.5s. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Act II: Pendulum",
+									description:
+										"Using a weapon active makes enemies take 20% bonus Total DMG for 4.5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Act III: Conflict",
+									description:
+										"Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
+									priority: "3rd",
+								},
+								{
+									name: "Act IV: Spoon",
+									description:
+										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Holistic Helix",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Puppetry: Interlacing Cells",
+									description:
+										"Extends Global Time Fracture caused by Specail Weapon: No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
+									priority: "1st",
+								},
+								{
+									name: "Drama: Origin of Slumber",
+									description:
+										"During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
+									priority: "2nd ",
+								},
+							],
+						},
+
+						{
+							name: "Mobius - Signet of Infinity (2nd Core)",
+							note: "Dead [X] is a pretty nice powerspike for HC, so strongly recommended to try and get.",
+
+							lists: [
+								{
+									name: "Entwined [P]",
+									description:
+										"For every summoned entity, ELF, or Support Valkyrie present, enemies take 8% bonus Total DMG (5 stacks max)",
+									priority: "1st",
+								},
+								{
+									name: "Rodent [V]",
+									description:
+										"For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (5 stacks max).",
+									priority: "2nd",
+								},
+								{
+									name: "Lip Poison [E]",
+									description:
+										"Total DMG from summoned entities, ELFs, and Support Valkyries increases by 60%.ELFs",
+									priority: "3rd",
+								},
+								{
+									name: "Infinite [X]",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Dead [X]",
+									description:
+										"For every second in Mind Sync, Valkyrie herself, summoned entities, ELFs, and Support Valkyries deal 10% bonus Total DMG. 5 stacks max. 9 stacks max with any summoned entity present. Reset on exiting Mind Sync",
+									priority: "1st",
+								},
+								{
+									name: "Unknown [X]",
+									description:
+										"Triggering Mind Sync again during Mind Sync reduces the CD of ELF Ultimates and Support Valkyries' support skills by 2s. With any summoned entity present, the CDs are reduced by 2s additionally. This effect can only be triggered once per 4s.",
+									priority: "Optional",
+								},
+							],
+						},
+
+						{
+							name: "Hua - Signet of Vicissitude (3rd or 4th Core)",
+							lists: [
+								{
+									name: "Old Dreams Again",
+									description: "Elemental Breach increases by 0.6% per second",
+									priority: "1st",
+								},
+								{
+									name: "Dark Garb No More",
+									description: "Elemental DMG increases by 0.8% per second",
+									priority: "2nd",
+								},
+								{
+									name: "Long Trip",
+									description:
+										"Total DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks",
+									priority: "3rd",
+								},
+								{
+									name: "Suffering Mass",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Broken Dream",
+									description:
+										"When possessing Soldier's Remembrance., increase the maximum stack of normal Vicissitude signets by 20",
+									priority: "Optional",
+								},
+							],
+							note: "If you don't get any better options for doors, you can try and gamble for Broken Dream",
+						},
+
+						{
+							name: "Griseo - Signet of Stars (3rd or 4th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "Optional 5th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
+									priority: "Optional 3rd",
+								},
+							],
+						},
+
+						{
+							name: "Kalpas - Signet of Decimation (5th Core)",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "3rd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "Optional",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core",
+								},
+							],
+							note: "It is NOT necessary to finish Kalpas Core, as HC has no in-built healing in her kit so she can permanently stay at low HP, however you can stay at around 700 for better survival odds, especially against Heimdall.",
+						},
+					],
+				},
+			},
+		],
+	},
+	{
 		name: "Valkyrie Gloria",
 		builds: [
 			{

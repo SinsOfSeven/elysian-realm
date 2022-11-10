@@ -1,6 +1,7 @@
 export interface Valkyrie {
 	name: string;
 	type: "BIO" | "MECH" | "PHY" | "QUA" | "IMG";
+	keyword: string;
     builds: Array<Build>;
 }
 interface Build {

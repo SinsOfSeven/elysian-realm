@@ -3,6 +3,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Argent Knight: Artemis",
 		type: "BIO",
+		keyword: "ice rita rossweisse argent knight artemis aka jojo",
 		builds: [
 			{
 				name: "General Build",
@@ -307,6 +308,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Bright Knight: Excelsis",
 		type: "MECH",
+		keyword: "dudu bianca durandal astagina bright knight: excelsis bright knight excelsis bkek jojo goose",
 		builds: [
 			{
 				name: "Recommended",
@@ -537,6 +539,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Dea Anchora",
 		type: "BIO",
+		keyword: "fire dudu fire bianca durandal astagina dea anchora leg bow one hand da goose",
 		builds: [
 			{
 				name: "Tap B, Watch Youtube",
@@ -851,6 +854,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Disciplinary Perdition",
 		type: "BIO",
+		keyword: "aponia nun disciplinary perdition dpe dip",
 		builds: [
 			{
 				name: "Recommended",
@@ -1157,6 +1161,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Fallen Rosemary",
 		type: "QUA",
+		keyword: "rita rossweisse fallen rosemary fr",
 		builds: [
 			{
 				name: "General Build",
@@ -1468,6 +1473,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Fervent Tempo",
 		type: "PHY",
+		keyword: "rozaliya olenyeva twins fervent tempo delta ft",
 		builds: [
 			{
 				name: "FT General Build 7D",
@@ -1804,6 +1810,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Golden Diva",
 		type: "IMG",
+		keyword: "eden golden diva gd",
 		builds: [
 			{
 				name: "General Build",
@@ -2139,6 +2146,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Helical Contraption",
 		type: "QUA",
+		keyword: "vill-v vill v vv helical contraption hc",
 		builds: [
 			{
 				name: "Not Helical Cripple",
@@ -2474,6 +2482,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Herrscher of Flamescion",
 		type: "PHY",
+		keyword: "fire tuna fk fire kiana kaslana hofs hfs",
 		builds: [
 			{
 				name: "Starfire Build",
@@ -3455,6 +3464,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Herrscher of Human: Ego",
 		type: "PHY",
+		keyword: "hohe hoe h2o herrscher of human ego elysia ellie",
 		builds: [
 			{
 				name: "Ultimate Build",
@@ -4159,6 +4169,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Herrscher of Reason",
 		type: "MECH",
+		keyword: "bronya zaychik hor hr herrscher of reason",
 		builds: [
 			{
 				name: "[SoE-Only] Ultimate Build",
@@ -5157,6 +5168,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Herrscher of Sentience",
 		type: "BIO",
+		keyword: "fu hua fuhua hos hs herrscher of sentience",
 		builds: [
 			{
 				name: "General Build",
@@ -6135,6 +6147,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Herrscher of Thunder",
 		type: "PHY",
+		keyword: "herrscher of thunder raiden mei hot ht",
 		builds: [
 			{
 				name: "4-5 Revived Build",
@@ -7193,6 +7206,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Herrscher of the Void",
 		type: "BIO",
+		keyword: "gk god kiana hov hv hotv herrscher of the void herrscher of void",
 		builds: [
 			{
 				name: "Thanos Snap Build",
@@ -7965,6 +7979,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Jade Knight",
 		type: "PHY",
+		keyword: "jade knight jk li sushang",
 		builds: [
 			{
 				name: "Unlimited Blade Works Build - Aponia Variation",
@@ -9386,6 +9401,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Infinite Ouroboros",
 		type: "MECH",
+		keyword: "mobius io infinite ouroboros snek snake",
 		builds: [
 			{
 				name: "Non-Kevin Build",
@@ -9710,6 +9726,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Luna Kindred",
 		type: "BIO",
+		keyword: "theresa apocalypse luna kindred lk",
 		builds: [
 			{
 				name: "LK Abstinence Build",
@@ -10038,6 +10055,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Midnight Absinthe",
 		type: "IMG",
+		keyword: "raven midnight absinthe natasha cioara ma",
 		builds: [
 			{
 				name: "5-Core Build",
@@ -10279,6 +10297,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Miss Pink Elf",
 		type: "PHY",
+		keyword: "mpe me miss pink elf elysia",
 		builds: [
 			{
 				name: "General Build",
@@ -10621,6 +10640,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Palatinus Equinox",
 		type: "IMG",
+		keyword: "dudu goose bianca durandal astagina pe juan",
 		builds: [
 			{
 				name: "Equinox Severance Build",
@@ -10979,6 +10999,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Prinzessin der Verurteilung",
 		type: "BIO",
+		keyword: "pv fish fischl Prinzessin der Verurteilung",
 		builds: [
 			{
 				name: "General Build",
@@ -11333,6 +11354,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Reverist Calico",
 		type: "IMG",
+		keyword: "rc cat neko reverist calico pardofelis",
 		builds: [
 			{
 				name: "Pardo1 Variation",
@@ -12065,6 +12087,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Ritual Imayoh",
 		type: "MECH",
+		keyword: "kallen kaslana ritual imayoh ir",
 		builds: [
 			{
 				name: "Aponia Build",
@@ -12394,6 +12417,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Silverwing N-EX",
 		type: "BIO",
+		keyword: "silverwing nex silverwing n-ex sw bronya zaychik",
 		builds: [
 			{
 				name: "Tap and Hold A, Watch Youtube",
@@ -12700,6 +12724,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Spina Astera",
 		type: "MECH",
+		keyword: "rita rossweisse spa spina astera",
 		builds: [
 			{
 				name: "General Build",
@@ -13010,6 +13035,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Starchasm Nyx",
 		type: "QUA",
+		keyword: "starchasm nyx nyx sx seele vollerei",
 		builds: [
 			{
 				name: "Veliona Tries to Survive",
@@ -13313,6 +13339,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Starry Impression",
 		type: "PHY",
+		keyword: "griseo starry impression si",
 		builds: [
 			{
 				name: "Griseo Aboose",
@@ -13665,6 +13692,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Striker Fulminata",
 		type: "BIO",
+		keyword: "stfu raiden mei striker fulminata",
 		builds: [
 			{
 				name: "Recommended",
@@ -13878,6 +13906,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Stygian Nymph",
 		type: "QUA",
+		keyword: "sn seele vollerei stygian nymph",
 		builds: [
 			{
 				name: "Veliona After PTSD",
@@ -14446,6 +14475,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Sweet 'n' Spicy",
 		type: "MECH",
+		keyword: "sns sweet n spicy carole pepper",
 		builds: [
 			{
 				name: "Abstinence Build",
@@ -14675,6 +14705,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Twilight Paladin",
 		type: "MECH",
+		keyword: "theresa apocalypse tp twilight paladin",
 		builds: [
 			{
 				name: "Recommended",
@@ -14888,6 +14919,7 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Valkyrie Gloria",
 		type: "QUA",
+		keyword: "vg valkyrie gloria goose dudu bianca durandal astagina",
 		builds: [
 			{
 				name: "Abstinence Build",

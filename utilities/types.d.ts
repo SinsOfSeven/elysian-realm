@@ -12,25 +12,26 @@ interface Build {
     },
     setup?: {
         lists: Array<Setup>,
-		danger?: string;
+		danger?: string | Array<string>;
 		note?: string;
     },
-    buff: {
+    buff?: {
         lists: Array<Buff>;
 		note?: string;
 		danger?: string;
     },
-    sigil: {
+    sigil?: {
 		lists: Array<Sigil>;
-		note?: string;
+		note?: string | Array<string>;
 	},
 	support: {
 		lists: Array<Support>;
-		note?: string;
+		note?: string | Array<string>;
 		danger?: string;
 	},
 	signet: {
 		note?: string;
+		danger?: string;
 		lists: Array<Signet>;
 	}
 }
@@ -53,7 +54,7 @@ interface Sigil {
 interface Support extends Sigil { }
 interface Signet {
 	name: string;
-	note?: string;
+	note?: string | Array<string>;
 	danger?: string;
 	lists: Array<SignetList>;
 }

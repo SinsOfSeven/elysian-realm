@@ -2,6 +2,7 @@ import { Valkyrie } from "../utilities/types";
 export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Argent Knight: Artemis",
+		type: "BIO",
 		builds: [
 			{
 				name: "General Build",
@@ -305,6 +306,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Bright Knight: Excelsis",
+		type: "MECH",
 		builds: [
 			{
 				name: "Recommended",
@@ -534,6 +536,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Dea Anchora",
+		type: "BIO",
 		builds: [
 			{
 				name: "Tap B, Watch Youtube",
@@ -847,6 +850,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Disciplinary Perdition",
+		type: "BIO",
 		builds: [
 			{
 				name: "Recommended",
@@ -1152,6 +1156,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Fallen Rosemary",
+		type: "QUA",
 		builds: [
 			{
 				name: "General Build",
@@ -1461,7 +1466,8 @@ export const valkyries: Array<Valkyrie> = [
 		],
 	},
 	{
-		name: "Fervent Tempo: Delta",
+		name: "Fervent Tempo",
+		type: "PHY",
 		builds: [
 			{
 				name: "FT General Build 7D",
@@ -1797,6 +1803,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Golden Diva",
+		type: "IMG",
 		builds: [
 			{
 				name: "General Build",
@@ -2131,6 +2138,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Helical Contraption",
+		type: "QUA",
 		builds: [
 			{
 				name: "Not Helical Cripple",
@@ -2465,6 +2473,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Herrscher of Flamescion",
+		type: "PHY",
 		builds: [
 			{
 				name: "Starfire Build",
@@ -3444,7 +3453,8 @@ export const valkyries: Array<Valkyrie> = [
 		],
 	},
 	{
-		name: "Herrscher of Humanity",
+		name: "Herrscher of Human: Ego",
+		type: "PHY",
 		builds: [
 			{
 				name: "Ultimate Build",
@@ -4148,6 +4158,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Herrscher of Reason",
+		type: "MECH",
 		builds: [
 			{
 				name: "[SoE-Only] Ultimate Build",
@@ -5145,6 +5156,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Herrscher of Sentience",
+		type: "BIO",
 		builds: [
 			{
 				name: "General Build",
@@ -6122,6 +6134,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Herrscher of Thunder",
+		type: "PHY",
 		builds: [
 			{
 				name: "4-5 Revived Build",
@@ -7178,7 +7191,8 @@ export const valkyries: Array<Valkyrie> = [
 		],
 	},
 	{
-		name: "Herrscher of Void",
+		name: "Herrscher of the Void",
+		type: "BIO",
 		builds: [
 			{
 				name: "Thanos Snap Build",
@@ -7950,6 +7964,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Jade Knight",
+		type: "PHY",
 		builds: [
 			{
 				name: "Unlimited Blade Works Build - Aponia Variation",
@@ -9370,6 +9385,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Infinite Ouroboros",
+		type: "MECH",
 		builds: [
 			{
 				name: "Non-Kevin Build",
@@ -9693,6 +9709,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Luna Kindred",
+		type: "BIO",
 		builds: [
 			{
 				name: "LK Abstinence Build",
@@ -10020,6 +10037,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Midnight Absinthe",
+		type: "IMG",
 		builds: [
 			{
 				name: "5-Core Build",
@@ -10260,6 +10278,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Miss Pink Elf",
+		type: "PHY",
 		builds: [
 			{
 				name: "General Build",
@@ -10601,6 +10620,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Palatinus Equinox",
+		type: "IMG",
 		builds: [
 			{
 				name: "Equinox Severance Build",
@@ -10958,6 +10978,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Prinzessin der Verurteilung",
+		type: "BIO",
 		builds: [
 			{
 				name: "General Build",
@@ -11311,6 +11332,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Reverist Calico",
+		type: "IMG",
 		builds: [
 			{
 				name: "Pardo1 Variation",
@@ -12042,6 +12064,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Ritual Imayoh",
+		type: "MECH",
 		builds: [
 			{
 				name: "Aponia Build",
@@ -12370,6 +12393,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Silverwing N-EX",
+		type: "BIO",
 		builds: [
 			{
 				name: "Tap and Hold A, Watch Youtube",
@@ -12675,6 +12699,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Spina Astera",
+		type: "MECH",
 		builds: [
 			{
 				name: "General Build",
@@ -12984,6 +13009,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Starchasm Nyx",
+		type: "QUA",
 		builds: [
 			{
 				name: "Veliona Tries to Survive",
@@ -13286,6 +13312,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Starry Impression",
+		type: "PHY",
 		builds: [
 			{
 				name: "Griseo Aboose",
@@ -13637,6 +13664,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Striker Fulminata",
+		type: "BIO",
 		builds: [
 			{
 				name: "Recommended",
@@ -13849,6 +13877,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Stygian Nymph",
+		type: "QUA",
 		builds: [
 			{
 				name: "Veliona After PTSD",
@@ -14416,6 +14445,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Sweet 'n' Spicy",
+		type: "MECH",
 		builds: [
 			{
 				name: "Abstinence Build",
@@ -14644,6 +14674,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Twilight Paladin",
+		type: "MECH",
 		builds: [
 			{
 				name: "Recommended",
@@ -14856,6 +14887,7 @@ export const valkyries: Array<Valkyrie> = [
 	},
 	{
 		name: "Valkyrie Gloria",
+		type: "QUA",
 		builds: [
 			{
 				name: "Abstinence Build",

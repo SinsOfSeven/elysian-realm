@@ -27,7 +27,7 @@ defineProps<{ open: boolean }>();
                                         class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
                                         <ExclamationCircleIcon class="h-6 w-6 text-blue-600" aria-hidden="true" />
                                     </div>
-                                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 text-left">
                                         <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">
                                             Details</DialogTitle>
                                         <div class="mt-2">

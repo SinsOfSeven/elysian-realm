@@ -2,12 +2,7 @@
 export default defineNuxtConfig({
 	typescript: {
 		shim: false,
+		strict: true,
 	},
-	css: ["~/assets/css/tailwind.css"],
-	postcss: {
-		plugins: {
-			tailwindcss: {},
-			autoprefixer: {},
-		},
-	},
+	modules: ['@nuxtjs/tailwindcss'],
 });

@@ -12,8 +12,8 @@ const toggleModal = (state: boolean) => {
 }
 </script>
 <template>
-    <span class="uppercase text-xs">boss</span>
-    <span class="text-xs font-semibold">{{ boss.info }}
+    <span class="uppercase text-sm">boss</span>
+    <span class="text-sm font-thin">{{ boss.info }}
         <button @click="open = true">
             <InformationCircleIcon v-if="boss.note" class="w-6 h-6 inline-flex animate-pulse" />
         </button>

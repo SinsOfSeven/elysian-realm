@@ -7,7 +7,7 @@ import { supabase, supabaseValkyrieDatabase, supabaseFlamechaserDatabase, supaba
 import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
 import { ValkyrieBuild, ValkyrieDetails, Flamechaser, Exclusive, SignetItem } from "@/utilities/types";
-import { useTitle, useSlug, useRedirectToAdmin, useValkyrieTypes, useEnsure } from "@/utilities/helpers";
+import { useTitle, useSlug, useRedirectTo, useValkyrieTypes, useEnsure } from "@/utilities/helpers";
 import Admin from "@/Layouts/Admin.vue";
 
 const types = useValkyrieTypes;
@@ -58,7 +58,7 @@ const insert = async () => {
     keywords: form.value.keywords,
   });
 
-  useRedirectToAdmin();
+  useRedirectTo('/admin');
 };
 
 let exclusives = {} as Exclusive;
@@ -78,6 +78,7 @@ const addBuilds = () => {
     signets: [{
       name: "Choose one", informations: "", lists: [{ name: "", description: "", priority: "" }]
     }],
+    // @ts-ignore
     exclusives: JSON.parse(exclusives.signets)
   };
 

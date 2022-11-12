@@ -10,7 +10,7 @@ import Draggable from "vuedraggable";
 import Loading from "@/Components/Loading.vue";
 import Admin from "@/Layouts/Admin.vue";
 import { ValkyrieBuild, ValkyrieDetails, Flamechaser, SignetItem, Exclusive } from "@/utilities/types";
-import { useTitle, useSlug, useRedirectToAdmin, useEnsure } from "@/utilities/helpers";
+import { useTitle, useSlug, useRedirectTo, useEnsure } from "@/utilities/helpers";
 
 const params = useRoute().params;
 
@@ -68,6 +68,7 @@ const update = async () => {
 
   // If new image is uploaded, change value of image. Otherwise, keep the old data
   if (image.value) {
+    // @ts-ignore
     let extension: string = image.value?.type.split("/").pop();
     form.value.image = `/valkyries/${useSlug(form.value.name)}.${extension}`;
   }
@@ -90,7 +91,7 @@ const update = async () => {
     return;
   };
 
-  useRedirectToAdmin();
+  useRedirectTo('/admin');
 }
 
 const addBuilds = () => {
@@ -101,6 +102,7 @@ const addBuilds = () => {
     signets: [{
       name: "Choose one", informations: "", lists: [{ name: "", description: "", priority: "" }]
     }],
+    // @ts-ignore
     exclusives: JSON.parse(exclusive.signets)
   };
 

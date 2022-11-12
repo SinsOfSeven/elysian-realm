@@ -1,12 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/vue': ^1.7.4
+  '@heroicons/vue': ^2.0.13
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
   autoprefixer: ^10.4.13
   nuxt: 3.0.0-rc.13
   postcss: ^8.4.18
   tailwindcss: ^3.2.3
+
+dependencies:
+  '@headlessui/vue': 1.7.4
+  '@heroicons/vue': 2.0.13
 
 devDependencies:
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.3
@@ -338,6 +344,19 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@headlessui/vue/1.7.4:
+    resolution: {integrity: sha512-QHRlKCK/zRpjSjhth7c2CZvx5eMDFflXauqRdRJgp1CwScx6PwCpWiwDsjQcYM4z8Yik2ZvyX8W4PFT2Wsqqyw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dev: false
+
+  /@heroicons/vue/2.0.13:
+    resolution: {integrity: sha512-vVCVF02+rNKXEmanVNnmktJlxCbOn0qVFP1gfZPn4bcBIwPX3h9AVHGCkwly+IWDEME8w5oooG0KRd2hhSe/HQ==}
+    peerDependencies:
+      vue: '>= 3'
+    dev: false
 
   /@ioredis/commands/1.2.0:
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==}

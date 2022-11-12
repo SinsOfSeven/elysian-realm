@@ -12,9 +12,9 @@ function filter(selected: string) {
 };
 </script>
 <template>
-    <h1 class="text-blue-500 uppercase text-center">elysian realm</h1>
+    <h1 class="text-green-500 uppercase text-center text-4xl font-bold tracking-wider pt-8 pb-4">elysian realm</h1>
     <SearchBar @filter="filter" />
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-6 gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-6 md:px-12 md:gap-6 gap-4 py-8">
         <Card v-for="valkyrie in valks" :key="valkyrie.name" :valkyrie="valkyrie" />
     </div>
 </template>

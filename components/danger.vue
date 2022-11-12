@@ -4,7 +4,7 @@ import { ExclamationTriangleIcon } from '@heroicons/vue/24/solid';
 defineProps<{ danger: string | Array<string> }>();
 </script>
 <template>
-    <div class="flex w-full items-center space-x-2 text-xs">
+    <div class="flex w-full items-center space-x-2 text-base">
         <div>
             <ExclamationTriangleIcon class="w-6 h-6 text-red-500" />
         </div>

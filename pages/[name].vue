@@ -19,7 +19,7 @@ const selected = (index: number) => {
 </script>
 
 <template>
-    <div class="backdrop-blur-sm h-96 px-2 pt-8 text-white bg-gray-700 bg-no-repeat bg-center bg-contain" :style="`background-image: url('/valkyries/${slug(valkyrie.name)}.jpg');`">
+    <div class="px-2 pt-8 text-white bg-gray-700">
         <p class="text-xs uppercase">{{ valkyrie.name }}</p>
         <p class="text-xl font-bold uppercase">{{ selectedBuild.name }}</p>
         <Information v-if="selectedBuild.note" :note="selectedBuild.note" />
@@ -28,13 +28,8 @@ const selected = (index: number) => {
             <Boss :boss="selectedBuild.boss" />
         </div>
         <div class="flex w-full space-x-2 items-center">
-            <span class="uppercase">Buff</span>
-            <div class="flex w-full justify-start space-x-2">
-                <button class="border border-white bg-orange-600 w-12 h-12">5</button>
-                <button class="border border-white bg-orange-600 w-12 h-12">10</button>
-                <button class="border border-white bg-orange-600 w-12 h-12">15</button>
-            </div>
+            <Buff v-if="selectedBuild.buff" :buff="selectedBuild.buff" />
         </div>
     </div>
-    <Navigation @selected="selected" />
+    <Navigation :selected="selectedIndex" @selected="selected" />
 </template>

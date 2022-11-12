@@ -16,5 +16,10 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.4",
     "@heroicons/vue": "^2.0.13"
+  },
+  "pnpm": {
+    "overrides": {
+      "@vueuse/head": "v1.0.0-rc.14"
+    }
   }
 }

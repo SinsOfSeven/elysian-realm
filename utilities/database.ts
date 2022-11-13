@@ -308,28 +308,66 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Bright Knight: Excelsis",
 		type: "MECH",
-		keyword: "dudu bianca durandal astagina bright knight: excelsis bright knight excelsis bkek jojo goose",
+		keyword:
+			"dudu bianca durandal astagina bright knight: excelsis bright knight excelsis bkek jojo goose",
 		builds: [
 			{
-				name: "Recommended",
-				danger: "Outdated 5.8 build",
-				boss: { info: "Aponia" },
+				name: "Jojo",
+				note: "Updated 6.1. Dudu got her own stand, and she's on her way to become a real Jojo of her own. Truly built different! Will her stand be as powerful as Jojo's Star Platinum? Oh, an enemy is approaching! How dare they approach her? They must be destroyed by Abyss Flower! Wait... it did really destroy them easily. She's... a monster! Anyway, her damage ceiling is astronomically high. She's a pretty straightforward valkyrie that doesn't have much problems clearing it, however, her requirement for this is to have 3-set Dante and AF is a given.",
+				boss: {
+					info: "Hephaestus, then Aponia",
+					note: "Aponia really was sent into the afterlife from standing in BK's way. There's no stopping her. Oh no.",
+				},
+				setup: {
+					danger:
+						"Truthfully, you shouldn't even bother with this Valkyrie if you don't have BOTH of the shit she needs, which is basically AF and 3-set Dante. AF is a given, and evne more so in the current weather since it is what enables BK to abuse the 20% TDT on Timestop Load Buff. As for the 3-set Dante? There's just... no replacement for it. Other than maybe coping with 3-set Dirac. But, again, let's be honest... that's, uh, pretty awkward to cope with. BK really needs the impair right from the get go.",
+					lists: [
+						{
+							rank: "SS0",
+							difficult: "Finality",
+							gear: "Abyss Flower & 3-set Dante",
+							time: "9:51m (6.1)",
+							ref: "https://youtu.be/Ja3yyEc2mQI",
+						},
+					],
+				},
+				buff: {
+					note: "Effective for 6.1.",
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
+					],
+				},
 				sigil: {
+					note: "The Lonely Moon is a must to get F4 Double guaranteed. Also, regarding Because of You, BK honestly doesn't even need a 4th Ego signet... so, if by F5 or F6 doors you see an Ego door, then by any means go ahead and take it. This way, you won't have to use Because of You.",
 					lists: [
 						{
 							time: "Early",
-							first: "Forget-Me-Not/Mad King's Mask",
-							second: "",
+							first: "Veil of Tears",
+							second: "The Lonely Moon",
 						},
 						{
 							time: "Mid",
-							first: "Forget-Me-Not/Grey-scale Rainbow",
-							second: "",
+							first: "Forget-Me-Not / Gold Goblet / Rainbow of Absence",
+							second: "Because of You (F5 Shop)",
 						},
 						{
 							time: "Late",
-							first: "Stained Sakura/Home Lost",
-							second: "",
+							first: "Key to the Deep",
+							second: "The Lonely Moon / Dreamful Gold",
 						},
 					],
 				},
@@ -337,13 +375,13 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							time: "Early",
-							first: "VC",
-							second: "LE",
+							first: "SS",
+							second: "SN",
 						},
 						{
 							time: "Mid",
 							first: "SS",
-							second: "LE / BR",
+							second: "SA",
 						},
 						{
 							time: "Late",
@@ -351,8 +389,10 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
+					note: "SN is mainly to deal with the early Quantum mobs as they are too tanky for her without being collapsed. Afterwards, SN is swapped out for SA or BR, depends on your preference (gather and damage vs pure stonks damage)",
 				},
 				signet: {
+					note: "Ideal course of build up: 2 Ego start (Gambit + Paragon) into Aponia's Ultimate by F3, finish Aponia 2nd Core by F4 Doubles, go shop F5 and put Because of You, buy Griseo's Red Paint and Sakura's TDM Taken or 1 extra UE Charge signets, grab Aponia's Breach at F6 and finish Sakura's 1st Core by F7",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
@@ -364,16 +404,22 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Start",
 								},
 								{
-									name: "Blessing of Glory",
-									description:
-										"In Burst mode, Weapon Active has 70% shorter CD and can deal 2400% ATK of bonus Physical DMG at the cost of 12 SP. Weapon Active gains 4% Total DMG boost per second, and the boost resets when Burst mode is activated again",
-									priority: "1st",
-								},
-								{
 									name: "Blessing of Paragon",
 									description:
 										"Ultimate grants 5 stacks of Paragon, each of which boosts Total DMG by 4% for 15s",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Glory",
+									description:
+										"In Burst mode, Weapon Active has 70% shorter CD and can deal 2400% ATK of bonus Physical DMG at the cost of 12 SP. Weapon Active gains 4% Total DMG boost per second, and the boost resets when Burst mode is activated again",
 									priority: "2nd",
+								},
+								{
+									name: "Blessing of Formation",
+									description:
+										"Basic ATK SEQ 5 creates a 3-sec Grav Singularity that pulls in surrounding enemies and deals 2100% ATK of Physical DMG to them. Basic ATK SEQ 4 & 5 and the explosion of the Grav Singularity boost Valkyrie's Total DMG by 3% for 40s (15 stacks max)",
+									priority: "Optional 3rd",
 								},
 								{
 									name: "Blessing of Holy Lance",
@@ -381,53 +427,58 @@ export const valkyries: Array<Valkyrie> = [
 										"During Basic ATK SEQ 4, tap [ATK] repeatedly to thrust the lance at enemies in an increasingly violent manner to deal a total of 6000% ATK of Physical DMG, and Valkyrie is immune to frontal and flank attacks. When Valkyrie's SEQ 4 attack reaches its peak, Basic ATK SEQ 5 will be enhanced to deal 3500% ATK of bonus Physical DMG to enemies in a large area",
 									priority: "No",
 								},
-								{
-									name: "Blessing of Formation",
-									description:
-										"Basic ATK SEQ 5 creates a 3-sec Grav Singularity that pulls in surrounding enemies and deals 2100% ATK of Physical DMG to them. Basic ATK SEQ 4 & 5 and the explosion of the Grav Singularity boost Valkyrie's Total DMG by 3% for 40s (15 stacks max)",
-									priority: "No",
-								},
 							],
+							note: "Gambit and Paragon are her must-start signets. Those are the 2 main signets that will carry BK throughout the whole run. A 3rd Ego signet is strongly recommended to get for Glory. BK honestly doesn't even need the remaining 2 Ego signets, but you can take Formation as your 4th Ego.",
 						},
 						{
-							name: "Kevin - Signet of Deliverance (1st Core)",
+							name: "Aponia - Signet of Discipline (1st Core)",
+							note: "Ultimate is a must priority to upgrade to +3. It will not only enormously boost BK's damage in Burst Mode but will also affect AF's damage.",
 							lists: [
 								{
-									name: "Mask of the Predator",
-									description: "Ultimate boosts Physical Breach by 25% for 5s",
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
 									priority: "1st",
 								},
 								{
-									name: "Pendant of the Watcher",
-									description: "Ultimate boosts Physical DMG by 30% for 5s",
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
 									priority: "2nd",
 								},
 								{
-									name: "Goblet of the Giver",
-									description: "Ultimate boosts Total DMG by 35% for 5s",
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
 									priority: "3rd",
 								},
 								{
-									name: "Blade of the Deliverer",
+									name: "You Shall Receive Disciplines' Blessing",
 									description: "",
 									priority: "Core",
 								},
 								{
-									name: "Echo of the Deliverer",
+									name: "You Shall Follow Good",
 									description:
-										"Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s",
-									priority: "Yes",
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
 								},
 								{
-									name: "Crusade of the Deliverer",
+									name: "You Shall Answer Prayers",
 									description:
-										"After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%",
-									priority: "1st",
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
 								},
 							],
 						},
 						{
-							name: "Sakura - Signet of Setsuna (1st Core)",
+							name: "Sakura - Signet of Setsuna (2nd Core)",
 							lists: [
 								{
 									name: "Bountiful Blossom: Koyo",
@@ -436,9 +487,9 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 								{
-									name: "Bountiful Blossom: Ayame",
+									name: "Bountiful Blossom: Botan",
 									description:
-										"Triggering Ultimate Evasion Skill restores 12.0 bonus SP",
+										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
 									priority: "2nd",
 								},
 								{
@@ -448,20 +499,52 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "3rd",
 								},
 								{
+									name: "Bountiful Blossom: Ume",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 40% for 8s.",
+									priority: "4th",
+								},
+								{
 									name: "Setsuna Blade: Sakura ni Maku",
 									description: "",
 									priority: "Core",
 								},
+							],
+							note: "The signet that gives extra ATK Speed can give a really comfy transition between BK's whole combo rotation.",
+						},
+						{
+							name: "Signet of Gold (3rd Core)",
+							lists: [
 								{
-									name: "Setsuna Blade: Ame-Shiko",
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
 									description:
-										"Activating Sakura Screen resets Ultimate CD and weapon active CD",
-									priority: "Yes",
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
+									priority: "2nd",
+								},
+								{
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second.",
+									priority: "3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "Optional 4th",
+								},
+								{
+									name: "Echo of Gold",
+									description: "",
+									priority: "Core",
 								},
 							],
 						},
 						{
-							name: "Griseo - Signet of Stars (1st Core)",
+							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
 								{
 									name: "Red & Hot",
@@ -476,8 +559,9 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "2nd",
 								},
 								{
-									name: "Grey & Empty",
-									description: "Enemies stay tainted for 5s longer",
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
 									priority: "3rd",
 								},
 								{
@@ -487,47 +571,14 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "4th",
 								},
 								{
-									name: "Shine like Stars",
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer",
+									priority: "Optional 5th",
+								},
+								{
+									name: "Faded Stars",
 									description: "",
 									priority: "Core",
-								},
-								{
-									name: "Blooming like Flowers",
-									description:
-										"When enemies of countering types are tainted with both blue and red paints, Valkyries deal 50% bonus Total DMG to them (cannot stack)",
-									priority: "Yes",
-								},
-							],
-						},
-						{
-							name: "Kalpas - Signet of Decimation (2nd Core)",
-							lists: [
-								{
-									name: "Path, Misfortune, and Written Fate",
-									description: "Max HP increases by 25%",
-									priority: "3rd",
-								},
-								{
-									name: "Bone, Blood, and Ribbon",
-									description:
-										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%",
-									priority: "1st",
-								},
-								{
-									name: "Blade, Grave, and Scar",
-									description: "Every 100 HP loss boosts Total DMG by 1.0%",
-									priority: "2nd",
-								},
-								{
-									name: "Soldiers, Scissors, Spoils, and Slaughter",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Death, Life, Oblivion, and Existence",
-									description:
-										" If [Bloodboil Garment] exceeds 1500, when taking damage, reduces damage taken by 1% of [Bloodboil Garment]",
-									priority: "Filler",
 								},
 							],
 						},
@@ -539,7 +590,8 @@ export const valkyries: Array<Valkyrie> = [
 	{
 		name: "Dea Anchora",
 		type: "BIO",
-		keyword: "fire dudu fire bianca durandal astagina dea anchora leg bow one hand da goose",
+		keyword:
+			"fire dudu fire bianca durandal astagina dea anchora leg bow one hand da goose",
 		builds: [
 			{
 				name: "Tap B, Watch Youtube",
@@ -2144,6 +2196,699 @@ export const valkyries: Array<Valkyrie> = [
 		],
 	},
 	{
+		name: "Goushinnso Memento",
+		type: "MECH",
+		keyword: "goushinnso mementos yae sakura vergil ice gm ua",
+		builds: [
+			{
+				name: "Motivated Vergil",
+				note: "Updated 6.1. Memento with Muramasa Bloodlust? What's that? We don't use that here! Instead, we give some real motivation to Sakura by giving her a nice gift to carve her path towards becoming a real Vergil! Who needs Naraka? Why craft it and pri-arm it when you can instead give 7T to Memento? That's much better! Trust me!",
+				boss: {
+					info: "Hephaestus, then Aponia or Kalpas",
+					note: "Make sure to avoid being at less than 900 HP when going against Hephaestus. In this run I had forgotten about the fact and proceeded to go against him with less than 100 HP. I had to retry a lot until I managed to beat him lmao.",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "SS0",
+							difficult: "Finality",
+							gear: "7T & 3-set Ana",
+							time: "10:18m (6.1)",
+							ref: "https://youtu.be/2jg-_BezVv8",
+						},
+					],
+					danger:
+						"Other sets like Bastet can work for Memento, but you can expect it to be weaker probably, due to it giving nothing more than just TDM becoming diluted on her as opposed to Ana Schariac having a lot of different multipliers. Naraka can work for weapon.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Max SP increases by 30.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description: "Flame-Chasers deal 15% more Total DMG.",
+							load: 10,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Mid",
+							first: "Forget-Me-Not / Gold Goblet / Rainbow of Absence",
+							second: "The Lonely Moon / Dreamful Gold",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask or Key to the Deep",
+							second: "Dreamful Gold",
+						},
+					],
+					note: "The Lonely Moon is a must to get F4 Double guaranteed. Dreamful Gold can be picked after F13 or however you see it fit.",
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "BR",
+						},
+						{
+							time: "Mid",
+							first: "AE",
+							second: "BK",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR",
+						},
+					],
+					note: "AE will be your main means of gather aside of her other bonuses. BR will be your bread and butter necessary to get past Early floors with enough damage. Remember to bring BK to Heimdall fight. Afterwards, you swap BK out for BR again.",
+				},
+				signet: {
+					note: "Ideal course of build up: 2 Ego start (Whiteout + Flourish + Haste) into Aponia Basic ATK F3, finish Aponia 2nd Core by F4 Double, go shop F5 and grab Griseo's Red and Yellow Paint or Red and Sakura's TDM Taken signet, grab Aponia's Breach at F6 and get the remaining 2 Aponia Enhanceds at F7 Double.",
+
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							lists: [
+								{
+									name: "Blessing of Whiteout",
+									description:
+										"Zankeki deals an extra 100% ATK of Ice DMG in a large area. Each stack of Deep Freeze increases Zankeki's Ice DMG by 1%.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Flourish",
+									description:
+										"Zankeki's rush sequence restores KE to 200 and 1 Ultimate Evasion attempt on hitting an enemy. Triggering Ultimate Evasion Skill restores 1000 KE. When KE falls below 0, Ultimate Evasion Skill is auto-triggered.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Haste",
+									description:
+										"Triggering Ultimate Evasion or Ultimate Evasion Skill deals 300% of ATK of Ice DMG to nearby enemies. This attack counts as Zankeki and deals an extra 100% ATK of Ice DMG for each exclusive signet owned.",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Icy Sakura",
+									description:
+										"With 20 stacks of Deep Freeze, Ultimate clears all stacks of Deep Freeze to deal 1500% + number of stacks × 40% ATK of Ice DMG, refresh 3 Ultimate Evasion Skill attempts, and make Zankeki deal 20% bonus Total DMG and consume 600 KE for 10s. Triggering it again refreshes the duration.",
+									priority: "No",
+								},
+								{
+									name: "Blessing of Frozen Cloud",
+									description:
+										"Raises the cap on Deep Freeze to 40 stacks. At the start of battle, gain 20 stacks of Deep Freeze and 50 SP. Whenever Deep Freeze stacks are gained or consumed, Total DMG increases by 0.2% untile capping at 40%. Hitting the cap increases Total DMG by another 20%.",
+									priority: "No",
+								},
+							],
+							note: "Whiteout and Florish are the must start for Memento. It is strongly recommended and advised to reset for F2 Ego start to grab Haste, as it's a signet that will become pretty strong and act as a good powerspike for Memento later on as she starts scaling towards the late floors. The other 2 are just no.",
+						},
+
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							lists: [
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "3rd",
+								},
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "Optional 4th (See note)",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+							note: "Whilst not necessary, the Ultimate signet is not a bad idea to get for 2 reasons mainly. One, it will increase the load per second to 30, which is good to consider for Memento due to the rate at which she halvens Aponia's Load. Second, it will also increase your Ultimate's DMG. However, do note that this will modify your playstyle into using 7T Active only whenever you have to reapply Griseo's Red Paint. On the other hand, Basic ATK is priority to upgrade to +3.",
+						},
+
+						{
+							name: "Sakura - Signet of Setsuna (2nd Core)",
+							lists: [
+								{
+									name: "Bountiful Blossom: Koyo",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s",
+									priority: "1st",
+								},
+								{
+									name: "Bountiful Blossom: Botan",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
+									priority: "2nd",
+								},
+								{
+									name: "Bountiful Blossom: Ayame",
+									description:
+										"Triggering Ultimate Evasion Skill restores 12.0 bonus SP.",
+									priority: "3rd",
+								},
+								{
+									name: "Setsuna Blade: Sakura ni Maku",
+									description: "",
+									priority: "Core",
+								},
+							],
+							note: "You need the SP signet to enable the synergy with Eden2 afterwards.",
+						},
+
+						{
+							name: "Eden - Signet of Gold (3rd Core)",
+
+							note: "Both enhanceds are really good to take. Memento synergizes extremely well with Eden2 due to her capability to spam her low-cd Ult to keep refreshing Eden2. Silent Night is also really good as it will act as another form of breach aside from Aponia's. ",
+							lists: [
+								{
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
+									description:
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
+									priority: "2nd",
+								},
+								{
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second.",
+									priority: "3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "Optional 4th",
+								},
+								{
+									name: "Echo of Gold",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Echo of Withered Soil",
+									description:
+										"After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
+									priority: "1st",
+								},
+								{
+									name: "Echo of Silent Night",
+									description:
+										"After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2% per second (40% max) until it ends.",
+									priority: "2nd",
+								},
+							],
+						},
+
+						{
+							name: "Griseo - Signet of Stars (4th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "Optional 5th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
+									priority: "Optional 3rd",
+								},
+							],
+							note: "Red paint is a must priority to +3. Yellow is also good to +3. Do make sure to get them alongside Black if you get them in Shop. Petals will also further skyrocket Memento's damage.",
+						},
+
+						{
+							name: "Kalpas - Signet of Decimation (Felis Shop Signets)",
+							lists: [
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "1st",
+								},
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "2nd",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "3rd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "4th",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core (Optional)",
+								},
+							],
+							note: "Kalpas is mostly just a core that you can consider getting if you manage to get 2 of his signets from Shop and can proceed to unlock his 2nd Core from a door. Either that, or if you don't want to risk Memento's survivality against F17 boss fight, you can choose not to take Kalpas at all.",
+						},
+					],
+				},
+			},
+			{
+				name: "(Muramasa) Vergil plays on Easy difficulty",
+
+				note: "Updated 6.1. Memento didn't had enough fun with 7T and thought it was too simple and easy for her, so she got rid of it and decided to go to a back alley, proceeded to buy a 3* weapon of doubtful quality from a merchant by the name of Senti, got back home and chose the highest difficulty to prove she isn't any weaker and can also do it herself. Was it worth the 500,000,000 yen that the 3* weapon cost her? Did she get scammed by Senti? Or does that not matter? Turns out even the highest difficulty couldn't stop her and she became an unstoppable force of nature! What an absolute madlad!",
+
+				danger:
+					"Do note that the best start for this build is Griseo's Red Paint at F2, so it's strongly recommended to mald for it instead of Ego signet.",
+
+				boss: {
+					info: "Hephaestus, then Aponia or Kalpas",
+					note: "Between Aponia or Kalpas, you can bully either of the two. Pick your preference.",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "SS0",
+							difficult: "Finality",
+							gear: "Muramasa Bloodlust & Ana Schariac",
+							time: "10:30m (6.1)",
+							ref: "https://youtu.be/r-KRIK4AfB8",
+						},
+					],
+					danger:
+						"Other sets like Bastet can work for Memento, however Ana Schariac is not only her BiS here but also the best set that she can be paired together with Muramasa as she wants to have the best buffs possible here.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Max SP increases by 30.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description: "Flame-Chasers deal 15% more Total DMG.",
+							load: 10,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Pseudo Miracle",
+							second: "Falling in Past Light",
+						},
+						{
+							time: "Mid",
+							first: "Veil of Tears / Gold Goblet / Rainbow of Absence",
+							second: "Falling in Past Light",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask / Key to the Deep",
+							second: "Falling in Past Light",
+						},
+					],
+					note: "In order to have the best chances at getting F4 Double, you need the skills to time the charging every 6s aside from getting into the F4 with FPL fully charged already. Doing this right will net you 3 FPL's that you can use in total for the floor. For later floors, you can choose to go with TLM or Dreamful Gold based on your preference.",
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "BR",
+						},
+						{
+							time: "Mid",
+							first: "AE",
+							second: "BK",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR",
+						},
+					],
+					note: "AE will be your main means of gather aside of her other bonuses. BR will be your bread and butter necessary to get past Early floors with enough damage. Remember to bring BK to Heimdall fight. Afterwards, you swap BK out for BR again.",
+				},
+				signet: {
+					note: "Ideal course of build up: Griseo Red Paint start (mald for it F2), then grab Vill-V's Pendulum or Conflict at F3, finish Vill-V 2nd Core by F4 Double, get Vill-V's Puppetry or Drama at F5, go shop F6 and buy Aponia's SP Regen and Sakura's TDM Taken or TDM, or upgrade Red to +3 and Puppetry/Drama to +3. Then grab V-V door at F7 Double for the remaining priority signets",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							lists: [
+								{
+									name: "Blessing of Whiteout",
+									description:
+										"Zankeki deals an extra 100% ATK of Ice DMG in a large area. Each stack of Deep Freeze increases Zankeki's Ice DMG by 1%.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Flourish",
+									description:
+										"Zankeki's rush sequence restores KE to 200 and 1 Ultimate Evasion attempt on hitting an enemy. Triggering Ultimate Evasion Skill restores 1000 KE. When KE falls below 0, Ultimate Evasion Skill is auto-triggered.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Haste",
+									description:
+										"Triggering Ultimate Evasion or Ultimate Evasion Skill deals 300% of ATK of Ice DMG to nearby enemies. This attack counts as Zankeki and deals an extra 100% ATK of Ice DMG for each exclusive signet owned.",
+									priority: "No",
+								},
+								{
+									name: "Blessing of Icy Sakura",
+									description:
+										"With 20 stacks of Deep Freeze, Ultimate clears all stacks of Deep Freeze to deal 1500% + number of stacks × 40% ATK of Ice DMG, refresh 3 Ultimate Evasion Skill attempts, and make Zankeki deal 20% bonus Total DMG and consume 600 KE for 10s. Triggering it again refreshes the duration.",
+									priority: "No",
+								},
+								{
+									name: "Blessing of Frozen Cloud",
+									description:
+										"Raises the cap on Deep Freeze to 40 stacks. At the start of battle, gain 20 stacks of Deep Freeze and 50 SP. Whenever Deep Freeze stacks are gained or consumed, Total DMG increases by 0.2% untile capping at 40%. Hitting the cap increases Total DMG by another 20%.",
+									priority: "No",
+								},
+							],
+							note: "Whiteout and Florish are the must start for Memento. For this build, she doesn't need anything more.",
+						},
+
+						{
+							name: "Vill-V - Signet of Helix (1st Core)",
+							lists: [
+								{
+									name: "Act II: Pendulum",
+									description:
+										"Using a weapon active makes enemies take 20% bonus Total DMG for 4.5s. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Act III: Conflict",
+									description:
+										"Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Act IV: Spoon",
+									description:
+										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
+									priority: "3rd",
+								},
+								{
+									name: "Act VI: Sneer",
+									description:
+										"Using a weapon active restores 12 SP in 5s and reduces its CD by 15%.",
+									priority: "4th",
+								},
+								{
+									name: "Holistic Helix",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Puppetry: Interlacing Cells",
+									description:
+										"Extends Global Time Fracture caused by Specail Weapon: No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
+									priority: "1st",
+								},
+								{
+									name: "Drama: Origin of Slumber",
+									description:
+										"During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
+									priority: "2nd",
+								},
+								{
+									name: "Saga: Overlapping Needles",
+									description:
+										"Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 500% ATK of Adaptive DMG.",
+									priority: "Filler",
+								},
+							],
+							note: "Sneer has very good synergy in this build due to increasing the frequency in which Memento can make use of and abuse V-V's buffs, aside from granting her some nice SP Regen which in turn will also synergize very well later with Eden2. Puppetry and Drama are priority to +3.",
+						},
+
+						{
+							name: "Aponia - Signet of Discipline (2nd Core)",
+							lists: [
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "3rd",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "3rd",
+								},
+							],
+							note: "Basic ATK is priority to +3 after Red and V-V's enhanceds.",
+						},
+
+						{
+							name: "Eden - Signet of Gold (3rd Core)",
+							lists: [
+								{
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
+									description:
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
+									priority: "2nd",
+								},
+								{
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second.",
+									priority: "3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "Optional 4th",
+								},
+								{
+									name: "Echo of Gold",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Echo of Withered Soil",
+									description:
+										"After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
+									priority: "1st",
+								},
+								{
+									name: "Echo of Silent Night",
+									description:
+										"After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2% per second (40% max) until it ends.",
+									priority: "2nd",
+								},
+							],
+							note: "If you can get Withered Soil, go for it, it's a really strong option for Memento.",
+						},
+
+						{
+							name: "Sakura - Signet of Setsuna (4th Core)",
+							lists: [
+								{
+									name: "Bountiful Blossom: Koyo",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s",
+									priority: "1st",
+								},
+								{
+									name: "Bountiful Blossom: Botan",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
+									priority: "2nd",
+								},
+								{
+									name: "Bountiful Blossom: Ayame",
+									description:
+										"Triggering Ultimate Evasion Skill restores 12.0 bonus SP.",
+									priority: "3rd",
+								},
+								{
+									name: "Sakura ni Maku",
+									description: "",
+									priority: "Core",
+								},
+							],
+							note: "Sakura's signets are better taken from Shop and finish her Core on a door.",
+						},
+
+						{
+							name: "Griseo - Signet of Stars (5th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+							],
+							note: "Red is absolute priority to +3. Yellow is also good choice to +3. There is no need to finish Griseo's Core, as the other Cores have higher priority.",
+						},
+					],
+				},
+			},
+		],
+	},
+	{
 		name: "Helical Contraption",
 		type: "QUA",
 		keyword: "vill-v vill v vv helical contraption hc",
@@ -2502,6 +3247,11 @@ export const valkyries: Array<Valkyrie> = [
 				},
 				buff: {
 					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
 						{
 							description:
 								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
@@ -9463,7 +10213,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "The First Scale or Key to the Deep",
+							first: "The First Scale / Key to the Deep",
 							second: "Boundless Logos",
 						},
 					],
@@ -9473,12 +10223,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "AE",
-							second: "BR or LE",
+							second: "BR / LE",
 						},
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BR/LE or BKE",
+							second: "BR / LE / BKE",
 						},
 						{
 							time: "Late",
@@ -9690,7 +10440,7 @@ export const valkyries: Array<Valkyrie> = [
 							note: "Red & Hot is the absolute first priority. But also, be mindful of what paints you get. Blue is essential to be able to use Petals in the Wind and Fallen Leaves.",
 						},
 						{
-							name: "Sakura - Signet of Setsuna (5th Core)",
+							name: "Sakura - Signet of Setsuna (Felis shop signet)",
 							lists: [
 								{
 									name: "Bountiful Blossom: Koyo",
@@ -10058,31 +10808,86 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "raven midnight absinthe natasha cioara ma",
 		builds: [
 			{
-				name: "5-Core Build",
-				danger: "Outdated 5.8 build",
+				name: "Who needs IMG Weather?",
+				note: "Updated 6.1. Honestly, considering only base A ranks and non-Flame Chasers, Raven is probably one of the strongest valkyries to clear ER. At least, in weathers that are not so unfavorable for her. She's rather excellent, albeit a bit awkward and her gameplay pretty much just revolves around controlling the appropiate timings.",
 				boss: {
-					info: "Elysia",
+					info: "Hephaestus, then Vill-V",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							gear: "DoEgo & Aslaug",
+							time: "12: 08m (6.1)",
+							ref: "https://youtu.be/rkCnkA44e4s",
+						},
+					],
+
+					danger:
+						"There's no other set that will work better than Aslaug does for her, especially since Aslaug enormously increases her Mist's already skyhigh damage. DoEgo is her BiS weapon purely because of the ATK statstick.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Max SP increases by 30.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Pseudo Miracle",
+							second: "Falling in Past Light",
+						},
+						{
+							time: "Mid",
+							first: "Burden / Veil of Tears / Rainbow of Absence",
+							second: "Falling in Past Light",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask / Key to the Deep",
+							second: "Falling in Past Light",
+						},
+					],
+					note: "Falling in Past Light can be kept for the remainder of the run, as it is really helpful for Raven at any floor and especially against bosses. ",
 				},
 				support: {
 					lists: [
 						{
 							time: "Early",
 							first: "AE",
-							second: "LE",
+							second: "BR",
 						},
 						{
 							time: "Mid",
 							first: "AE",
-							second: "LE/MA/BR",
+							second: "BR or BK",
 						},
 						{
 							time: "Late",
 							first: "AE",
-							second: "MA/BR",
+							second: "BR",
 						},
 					],
+					note: "AE will be your main means of gather aside of her other bonuses. BR will also help to get past DPS check in the early floors. You can take BK for Heimdall if you want to be extra sure. However, if you have hands and the skill for it, you can go without BK and be fine for the fight. Raven can break Heimdall's shields easily through her Ultimate sequence. Breaking Heimdall's shields will keep him from going Red Mode until he's down to half HP",
 				},
 				signet: {
+					note: "Ideal course of build up: 2 Ego start (Ominous Mist + Arrowhead) into V-V Spider Web or Pendulum F3, finish V-V 2nd Core by F4 Doubles, grab V-V's Drama or Puppetry at F5, go shop F6 and buy Griseo's Red and Yellow Paint or Red and Kevin's TDM/Elem DMG/Elem Breach, then grab V-V's remaining Enhanced except Saga from F7 and Sneer. Ideal Order from F1-F7: Double Reroll into Apo2 Core by F4, then 1 Griseo door before F7, then finish Griseo by F7 double.",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
@@ -10103,13 +10908,13 @@ export const valkyries: Array<Valkyrie> = [
 									name: "Blessing of Wild Hunt",
 									description:
 										"The follow-up of Basic ATK Sequence 5 is no longer limited by Night Roamer stacks. Basic ATK Sequence 5 and every hit of the follow-up consume 10 Night Roamer stacks to shoot 5 more arrows, each dealing 150% ATK of Fire DMG",
-									priority: "Filler",
+									priority: "No",
 								},
 								{
 									name: "Blessing of Suppression",
 									description:
 										"Feather Arrows, Feather Blades, Feathers, and Night Roamer stacks cap at 30. Night Roamer boosts Fire DMG by 15%",
-									priority: "Filler",
+									priority: "No",
 								},
 								{
 									name: "Blessing of Raven Plume",
@@ -10118,43 +10923,59 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "No",
 								},
 							],
+							note: "Ominous Mist and Arrowhead is all Raven needs. She does not need any more than these 2. Double Ego start is the best start you can do.",
 						},
+
 						{
 							name: "Vill-V - Signet of Helix (1st Core)",
 							lists: [
 								{
+									name: "Act V: Spider Web",
+									description:
+										"Using a weapon active boosts Valkyrie ranged Total DMG by 40% for 4.5s. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
 									name: "Act II: Pendulum",
 									description:
-										"Using a weapon active makes enemies take 20% bonus Total DMG for 3.5s. Triggering it again resets the duration",
-									priority: "1st",
+										"Using a weapon active makes enemies take 20% bonus Total DMG for 4.5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Act III: Conflict",
+									description:
+										"Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
+									priority: "3rd",
 								},
 								{
 									name: "Act VI: Sneer",
 									description:
-										"Using a weapon active restores 12 SP in 5s and reduces its CD by 15%",
-									priority: "2nd",
+										"Using a weapon active restores 12 SP in 5s and reduces its CD by 15%.",
+									priority: "4th",
 								},
 								{
-									name: "Act V: Spider Web",
-									description:
-										"Using a weapon active boosts Valkyrie ranged Total DMG by 40% for 3.5s. Triggering it again resets the duration",
-									priority: "3rd",
-								},
-								{
-									name: "Reversed Spiral",
+									name: "Holistic Helix",
 									description: "",
 									priority: "Core",
 								},
 								{
-									name: "Act VIII: Adorned Chamber",
+									name: "Puppetry: Interlacing Cells",
 									description:
-										"Marvellous Magic costs 20 SP to boost its base Physical DMG by 35% and grants 30% Physical Breach for 6s",
+										"Extends Global Time Fracture caused by Specail Weapon: No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
 									priority: "1st",
 								},
+								{
+									name: "Drama: Origin of Slumber",
+									description:
+										"During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
+									priority: "2nd ",
+								},
 							],
+							note: "Sneer is really good to have as it will significantly reduce the downtime that Raven has to deal with waiting for Ult and reducing its CD due to Arrowhead. It also synergizes in that you can use Active beforehand for the bonuses of Puppetry and Drama. ",
 						},
+
 						{
-							name: "Kevin - Signet of Deliverance (1st Core)",
+							name: "Kevin - Signet of Deliverance (2nd Core)",
 							lists: [
 								{
 									name: "Artifact of the Inhibitor",
@@ -10162,14 +10983,19 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 								{
-									name: "Brand of the Undead",
-									description: "Ultimate boosts Elemental DMG by 30% for 5s",
+									name: "Goblet of the Giver",
+									description: "Ultimate boosts Total DMG by 35% for 5s",
 									priority: "2nd",
 								},
 								{
-									name: "Goblet of the Giver",
-									description: "Ultimate boosts Total DMG by 35% for 5s",
+									name: "Brand of the Undead",
+									description: "Ultimate boosts Elemental DMG by 30% for 5s",
 									priority: "3rd",
+								},
+								{
+									name: "Rochet of the Pilgrim",
+									description: "Ultimate restores 3 SP per second for 5s.",
+									priority: "Optional 4th",
 								},
 								{
 									name: "Blade of the Deliverer",
@@ -10177,117 +11003,115 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 								{
-									name: "Echo of the Deliverer",
-									description:
-										" Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s",
-									priority: "Yes",
-								},
-								{
 									name: "Crusade of the Deliverer",
 									description:
 										"After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%",
-									priority: "Yes",
+									priority: "1st",
+								},
+								{
+									name: "Flock of the Deliverer",
+									description:
+										"Final Battle is also considered burst mode. Total DMG increases by 20% in burst mode.",
+									priority: "Optional 2nd",
 								},
 							],
+							note: "You have to make sure to always active right away after ulting. If you get interrupted, you will miss Crusade's window for the enormous buffs from Kevin.",
 						},
+
 						{
-							name: "Griseo - Signet of Stars (1st Core)",
+							name: "Aponia - Signet of Discipline (3rd Core)",
+							lists: [
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "2nd",
+								},
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "3rd",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+							note: "Do prioritize getting Griseo's Red and Yellow Paint before pursuing Aponia's signets.",
+						},
+
+						{
+							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
 								{
 									name: "Red & Hot",
 									description:
-										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental MG (cannot stack). Triggering it again resets the duration",
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
 									priority: "1st",
 								},
 								{
 									name: "Yellow & Warm",
 									description:
-										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration",
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
-									name: "Grey & Empty",
-									description: "Enemies stay tainted for 5s longer",
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
 									priority: "3rd",
 								},
 								{
 									name: "Blue & Cold",
 									description:
-										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration",
-									priority: "4th/Filler",
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "Optional 3rd or 4th",
 								},
 								{
-									name: "Shine like Stars",
-									description: "",
-									priority: "Core",
-								},
-							],
-						},
-						{
-							name: "Su - Signet of Bodhi (2nd Core)",
-							lists: [
-								{
-									name: "Motto of Dibba-Cakkhu",
-									description:
-										"Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35% for 10s",
-									priority: "1st",
-								},
-								{
-									name: "Motto of Asavakkhaya",
-									description:
-										"Attacks grant 25 bonus combo hits on hit. CD: 5s",
-									priority: "2nd",
-								},
-								{
-									name: "Motto of Iddhi-Vidha",
-									description:
-										"Combo hits are increased to 60 when below 60. CD: 10s",
-									priority: "3rd",
-								},
-								{
-									name: "Dictum of Bodhi",
+									name: "Faded Stars",
 									description: "",
 									priority: "Core",
 								},
 								{
-									name: "Dictum of Anatman",
+									name: "Petals in the Wind",
 									description:
-										"The Bodhi: Eyes Open lasts for 3s longer. For every debuff on the target enemy, it takes 5% bonus Total DMG",
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "Optional",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
 									priority: "Optional",
 								},
 							],
-						},
-						{
-							name: "Eden - Signet of Gold (2nd Core)",
-							lists: [
-								{
-									name: "Recitatif of Creeks",
-									description:
-										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
-									priority: "1st",
-								},
-								{
-									name: "Recitatif of Fine Jade",
-									description: "Initial SP and max SP increase by 30",
-									priority: "2nd",
-								},
-								{
-									name: "Recitatif of Good Wine",
-									description: "Restore 1.5 SP per second",
-									priority: "3rd",
-								},
-								{
-									name: "Echo of Gold",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Echo of Silent Night",
-									description:
-										"After lasting over 7s, reduce ATK, DEF, ele resists of enemies nearby",
-									priority: "1st",
-								},
-							],
+							note: "Prioritize only Red, Yellow and Black. If you unlock 2nd Core, that's fine, it will open up the opportunity to grab Petals in the Wind, in which case make sure to.",
 						},
 					],
 				},
@@ -11367,12 +12191,19 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
+							gear: "Purana & Bastet",
+							time: "5:43m (6.1)",
+							ref: "https://youtu.be/tkFqo9p6bd4",
+						},
+						{
+							rank: "SSS",
+							difficult: "Finality",
 							gear: "Purana & Ana Schariac",
 							time: "8:08m (6.0 1st Half)",
 							ref: "https://youtu.be/EZNq6e74Wjc",
 						},
 					],
-					note: "In terms of downscaling, it's downscaleable with lower clear time based on stats/gears/rank and lower difficulties. Things like N-EX TB, Bastet, are fine.",
+					note: "For downscalability purposes, Pardo is pretty amazing, being a valk that can reliably clear ER even on heavily downscaled gears.",
 				},
 				buff: {
 					lists: [
@@ -11434,25 +12265,19 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
+					note: "Pardo doesn't really need anyone else honestly. If you're downscaling, you can bring BK for Heimdall. If not, then she can easily bruteforce through Heimdall's Red Mode.",
 				},
 				signet: {
-					note: "Ideal Order from F1-F7: 1 V-V door by F2, then complete Aponia 2nd core by F4. Proceed to take Aponia's breach on F5 or F6, and complete Vill-V 2nd Core by F7. Can alternatively be Kalpas2 instead.",
+					note: "Ideal Order from F1-F7: Double Ego Start (Hidden Claws + Cat's Eyes + Phantasma) into Aponia's QTE by F3, finish Aponia 2nd Core by F4 Doubles with Ultimate and Basic ATK, grab Aponia's Breach at F5 and go Shop F6, buy V-V's Pendulum and Conflict and Griseo's Red Paint from Shop. Then grab the remaining 2 enhanceds from Aponia at F7",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
 							lists: [
 								{
-									name: "Blessing of Phantasma",
+									name: "Blessing of Hidden Claws",
 									description:
-										"Metaton Furball deals 180% more Ice DMG. Runaway state lasts 5s longer",
-									priority: "1st",
-								},
-								{
-									name: "Blessing of the Tailpiece",
-									description:
-										"Combo ATK deals 80% more Total DMG. When Combo ATK hits, reduces Megaton Furball's CD by 2s (CD: 5s)",
-									priority: "Start (Depends)",
+										"When Combo ATK/Paw Barrage/Predation hits, the target drops 5 Shiny Silvers. It has 5 charges, which reset every floor (unaffected by other effects). It also increases Ice DMG by 45% for 10s. Triggering it again resets the duration",
+									priority: "Start",
 								},
 								{
 									name: "Blessing of Cat's Eyes",
@@ -11461,10 +12286,16 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Start (Depends)",
 								},
 								{
-									name: "Blessing of Hidden Claws",
+									name: "Blessing of the Tailpiece",
 									description:
-										"When Combo ATK/Paw Barrage/Predation hits, the target drops 5 Shiny Silvers. It has 5 charges, which reset every floor (unaffected by other effects). It also increases Ice DMG by 45% for 10s. Triggering it again resets the duration",
-									priority: "Start",
+										"Combo ATK deals 80% more Total DMG. When Combo ATK hits, reduces Megaton Furball's CD by 2s (CD: 5s)",
+									priority: "Start (Depends)",
+								},
+								{
+									name: "Blessing of Phantasma",
+									description:
+										"Metaton Furball deals 180% more Ice DMG. Runaway state lasts 5s longer",
+									priority: "1st",
 								},
 								{
 									name: "Blessing of Nighteye",
@@ -11522,7 +12353,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Optional",
 								},
 							],
-							note: "Aponia2 start is stronger than Vill-V start.",
+							note: "Either Ultimate or Basic ATK are priority to +3. Don't forget about Griseo's Red paint taking highest priority to +3.",
 						},
 						{
 							name: "Vill-V - Signet of Helix (2nd Core)",
@@ -11534,15 +12365,15 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 								{
-									name: "Act IV: Spoon",
-									description:
-										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
 									name: "Act III: Conflict",
 									description:
 										"Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Act IV: Spoon",
+									description:
+										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
 									priority: "3rd",
 								},
 								{
@@ -11560,38 +12391,32 @@ export const valkyries: Array<Valkyrie> = [
 									name: "Drama: Origin of Slumber",
 									description:
 										"During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
-									priority: "2nd",
+									priority: "2nd ",
 								},
 							],
-							note: "Magic will be strong in combination with Commitment, as your gunlance will become an even more vital part of your damage rotations.",
+							note: "Drama is priority to +3.",
 						},
 						{
-							name: "Kalpas - Signet of Decimation (3rd Core)",
+							name: "Eden - Signet of Gold (3rd Core)",
 							lists: [
 								{
-									name: "Blade, Grave and Scar",
-									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%",
 									priority: "1st",
 								},
 								{
-									name: "Bone, Blood and Ribbon",
+									name: "Recitatif of Creeks",
 									description:
-										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
 									priority: "2nd",
 								},
 								{
-									name: "Path, Misfortune and Written Fate",
-									description: "Max HP increases by 25%.",
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30",
 									priority: "3rd",
 								},
 								{
-									name: "Desireless, Mindless and Homeless",
-									description:
-										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
-									priority: "Optional",
-								},
-								{
-									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									name: "Echo of Gold",
 									description: "",
 									priority: "Core",
 								},
@@ -11646,62 +12471,8 @@ export const valkyries: Array<Valkyrie> = [
 										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
 									priority: "3rd",
 								},
-								{
-									name: "Blue & Cold",
-									description:
-										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
-									priority: "4th",
-								},
-								{
-									name: "Faded Stars",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Petals in the Wind",
-									description:
-										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Fallen Leaves",
-									description:
-										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
-									name: "A Flame Extinguished",
-									description:
-										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
-									priority: "Optional",
-								},
 							],
-						},
-						{
-							name: "Eden - Signet of Gold (6th Core)",
-							lists: [
-								{
-									name: "Recitatif of Eden",
-									description: "Every 10 SP left boosts Total DMG by 3.0%",
-									priority: "1st",
-								},
-								{
-									name: "Recitatif of Creeks",
-									description:
-										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
-									priority: "2nd",
-								},
-								{
-									name: "Recitatif of Fine Jade",
-									description: "Initial SP and max SP increase by 30",
-									priority: "3rd",
-								},
-								{
-									name: "Echo of Gold",
-									description: "",
-									priority: "Core",
-								},
-							],
+							note: "Red is absolute priority to +3. Yellow can be upgraded to +3 too.",
 						},
 					],
 				},
@@ -11709,12 +12480,19 @@ export const valkyries: Array<Valkyrie> = [
 			{
 				name: "Pardo2 Variation",
 				danger:
-					"Updated to 6.1. Pardo2 focuses on the 2nd Core and shines more right away from the Early game. This build is also focused on visiting shops. It also opens up the possibility of being able to reach up to 8 cores, however the most ideal remains 6/7 as the enhanceds are still good to take.",
+					"Updated to 6.1. Pardo2 variation basically just focuses on giving you a stronger headstart towards getting more signets and also getting more upgrades in comparison to Pardo1 variation. That's pretty much about it.",
 				boss: {
-					info: "Hephaestus, then Kalpas or Vill-V. Elysia is also fine too.",
+					info: "Hephaestus, then Kalpas.",
 				},
 				setup: {
 					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							gear: "Purana & Bastet",
+							time: "5:29m (6.1)",
+							ref: "https://youtu.be/N9fb3zsGZjM",
+						},
 						{
 							rank: "SSS",
 							difficult: "Finality",
@@ -11723,7 +12501,7 @@ export const valkyries: Array<Valkyrie> = [
 							ref: "https://youtu.be/jn0qc03V5WI",
 						},
 					],
-					note: "In terms of downscaling, it's downscaleable with lower clear time based on stats/gears/rank and lower difficulties. Things like N-EX TB, Bastet, are fine.",
+					note: "For downscalability purposes, Pardo is pretty amazing, being a valk that can reliably clear ER even on heavily downscaled gears.",
 				},
 				buff: {
 					lists: [
@@ -11753,12 +12531,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Feast of Emptiness",
-							second: "Falling in Past Light",
+							second: "The Lonely Moon / Falling in Past Light",
 						},
 						{
 							time: "Mid",
 							first:
-								"Veil of Tears / Pseudo Miracle Mad King's Mask / Home Lost",
+								"Veil of Tears / Pseudo Miracle / Gold Goblet / Rainbow of Absence",
 							second: "Falling in Past Light",
 						},
 						{
@@ -11767,32 +12545,40 @@ export const valkyries: Array<Valkyrie> = [
 							second: "Falling in Past Light",
 						},
 					],
+					note: "The Lonely Moon is purely to utilize against the F4's 2nd Wave. You just have to time it right. You can also alternatively start with the Pardo Gacha Machine, however that'd call for ultra balding, and I'm pretty sure you don't want to go bald. Do you?",
 				},
 				support: {
 					lists: [
 						{
 							time: "Early",
 							first: "AE",
-							second: "HB",
+							second: "BR",
 						},
 						{
 							time: "Mid",
 							first: "AE",
-							second: "HB",
+							second: "BR / BKE",
 						},
 						{
 							time: "Late",
 							first: "AE",
-							second: "HB",
+							second: "BR",
 						},
 					],
+					note: "Pardo doesn't really need anyone else honestly. If you're downscaling, you can bring BK for Heimdall. If not, then she can easily bruteforce through Heimdall's Red Mode.",
 				},
 				signet: {
-					note: "Ideal Order from F1-F7: Take both Pardo' Coins-related signets by F2 and F3, then finish Pardofelis 2nd Core by F4. Go shop F5. Buy 2 V-V signets and 1 Aponia signet or the other way around. Unlock either core by F6. Then use F7 double to unlock the remaining core.",
+					note: "Ideal Order from F1-F7: Double Ego Start (Hidden Claws + Cat's Eyes + Phantasma) into Pardo's 10% Coins by F3, finish Pardo 2nd Core by F4 Doubles with Shiny Silvers Drop and TDM, go shop F5 and grab Griseo's Red Paint, Aponia's QTE and Ultimate or V-V's Pendulum and Conflict. Then you can either unlock Aponia or Vill-V's 2nd Cores and proceed with getting the 2 important enhanceds of either.",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
 							lists: [
+								{
+									name: "Blessing of Hidden Claws",
+									description:
+										"When Combo ATK/Paw Barrage/Predation hits, the target drops 5 Shiny Silvers. It has 5 charges, which reset every floor (unaffected by other effects). It also increases Ice DMG by 45% for 10s. Triggering it again resets the duration",
+									priority: "Start",
+								},
 								{
 									name: "Blessing of Cat's Eyes",
 									description:
@@ -11804,12 +12590,6 @@ export const valkyries: Array<Valkyrie> = [
 									description:
 										"Combo ATK deals 80% more Total DMG. When Combo ATK hits, reduces Megaton Furball's CD by 2s (CD: 5s)",
 									priority: "Start (Depends)",
-								},
-								{
-									name: "Blessing of Hidden Claws",
-									description:
-										"When Combo ATK/Paw Barrage/Predation hits, the target drops 5 Shiny Silvers. It has 5 charges, which reset every floor (unaffected by other effects). It also increases Ice DMG by 45% for 10s. Triggering it again resets the duration",
-									priority: "Start",
 								},
 								{
 									name: "Blessing of Phantasma",
@@ -11841,25 +12621,25 @@ export const valkyries: Array<Valkyrie> = [
 									name: "Shiny & Valuable",
 									description:
 										"Enemy kills grant bonus Shiny Silvers. Non-boss enemies grant 5 each. Boss enemies grant each (independent effect).",
-									priority: "2nd",
-								},
-								{
-									name: "Neighborhood Chatters",
-									description:
-										"Every 100 Shiny Silvers obtained this round boost max HP by 25 and max SP by 1.",
-									priority: "3rd",
+										priority: "2nd",
 								},
 								{
 									name: "Motto of Meow",
 									description:
 										"Every 100 Shiny Silvers obtained this round boost Total DMG by 1%.",
-									priority: "Optional",
+									priority: "3rd",
 								},
 								{
 									name: "Back-Curled Tail",
 									description:
 										"Every 100 Shiny Silvers obtained this round boost Physical and Elemental DMG by 0.8%.",
-									priority: "Optional",
+									priority: "Optional 4th or 5th",
+								},
+								{
+									name: "Neighborhood Chatters",
+									description:
+										"Every 100 Shiny Silvers obtained this round boost max HP by 25 and max SP by 1.",
+									priority: "Optional 4th or 5th",
 								},
 								{
 									name: "Empty Illusions, Empty Fantasies",
@@ -11879,7 +12659,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "2nd",
 								},
 							],
-							note: "For this build to work, you want to visit Shop 1 time on every new zone. Ideally, F5, F9, F13. And you keep buying signets. Then by F15 you either buy anything useful or upgrade the most efficient signets to upgrade.",
+							note: "Due to how Pardo2 works, you want to make sure to ALWAYS go shop at every first or second floor of each stage transition. Basically, F5-F9-F13-F16.",
 						},
 						{
 							name: "Aponia - Signet of Discipline (2nd Core)",
@@ -11914,18 +12694,19 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 								{
-									name: "You Shall Punish Evil",
+									name: "You Shall Answer Prayers",
 									description:
-										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
-									name: "You Shall Answer Prayers",
+									name: "You Shall Punish Evil",
 									description:
-										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
-									priority: "Optional",
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
 								},
 							],
+							note: "Either Ultimate or Basic ATK are priority to +3. Don't forget about Griseo's Red paint taking highest priority to +3.",
 						},
 						{
 							name: "Vill-V - Signet of Helix (3rd Core)",
@@ -11937,15 +12718,15 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 								{
-									name: "Act IV: Spoon",
-									description:
-										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
 									name: "Act III: Conflict",
 									description:
 										"Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Act IV: Spoon",
+									description:
+										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
 									priority: "3rd",
 								},
 								{
@@ -11966,6 +12747,62 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "2nd",
 								},
 							],
+							note: "Drama is priority to +3.",
+						},
+						{
+							name: "Eden - Signet of Gold (4th Core)",
+							lists: [
+								{
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
+									description:
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
+									priority: "2nd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30",
+									priority: "3rd",
+								},
+								{
+									name: "Echo of Gold",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Echo of Withered Soil",
+									description: "After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
+									priority: "Optional 1st",
+								},
+							],
+						},
+						{
+							name: "Griseo - Signet of Stars (5th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+							],
+							note: "Red is absolute priority to +3. Yellow can be upgraded to +3 too.",
 						},
 						{
 							name: "Kalpas - Signet of Decimation (4th Core)",
@@ -11998,86 +12835,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 							],
-						},
-						{
-							name: "Griseo - Signet of Stars (5th Core)",
-							lists: [
-								{
-									name: "Red & Hot",
-									description:
-										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Yellow & Warm",
-									description:
-										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
-									name: "Black & Dark",
-									description:
-										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
-									priority: "3rd",
-								},
-								{
-									name: "Blue & Cold",
-									description:
-										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
-									priority: "4th",
-								},
-								{
-									name: "Faded Stars",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Petals in the Wind",
-									description:
-										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Fallen Leaves",
-									description:
-										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
-									name: "A Flame Extinguished",
-									description:
-										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
-									priority: "Optional",
-								},
-							],
-						},
-						{
-							name: "Eden - Signet of Gold (6th Core)",
-							lists: [
-								{
-									name: "Recitatif of Eden",
-									description: "Every 10 SP left boosts Total DMG by 3.0%",
-									priority: "1st",
-								},
-								{
-									name: "Recitatif of Creeks",
-									description:
-										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
-									priority: "2nd",
-								},
-								{
-									name: "Recitatif of Fine Jade",
-									description: "Initial SP and max SP increase by 30",
-									priority: "3rd",
-								},
-								{
-									name: "Echo of Gold",
-									description: "",
-									priority: "Core",
-								},
-							],
-							danger:
-								"It is very possible to reach 7 or 8 cores with this build. Monopoly Pardo for the win.",
+							note: "Kalpas signets are mostly picked off from Shop.",
 						},
 					],
 				},
@@ -12727,7 +13485,309 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "rita rossweisse spa spina astera",
 		builds: [
 			{
-				name: "General Build",
+				name: "Rita's Training Arc",
+
+				note: "Updated 6.1. SpA had enough of sitting in the bench just warming it while watching other valkyries push ahead of her, so she decided to finally take matters into her hands and train to become a better valkyrie and catch up to the others! And she sure did went a bit overboard... by becoming even stronger than before! SpA's strength in favorable weathers is pretty strong and she also becomes a fairly easy valk to clear ER with. Although she struggles even more against Psy mobs.",
+
+				boss: {
+					info: "Hephaestus, then Aponia or Vill-V",
+					note: "You should consider Hephaestus' Overheat mechanic. You might not be able to kill him. If you're not confident in doing so, you can instead go with Husk, but he's more annoying due to SpA's lack of i-frames which makes her be reliant on manual dodging even more, as she already uses Kosma.",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "SS",
+							difficult: "Finality",
+							gear: "Pisces & Ragna",
+							time: "7:00m (6.1)",
+							ref: "https://youtu.be/HvXbqtefzNA",
+						},
+					],
+					note: "In terms of downscalability purposes, her weapon is pretty much a given and as for stigmatas she can do fine with Leuweenhoek TB Thales M.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Mid",
+							first: "Gold Goblet / Light as a Bodhi Leaf / Rainbow of Absence",
+							second: "Because of You (F5 Shop) ",
+						},
+						{
+							time: "Late",
+							first: "Key to the Deep",
+							second: "Dreamful Gold",
+						},
+					],
+					note: "The Lonely Moon will help SpA guarantee the F4 double, while Because of You is a given to put at F5 shop so you can get double Ego at F11.",
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "BR",
+						},
+						{
+							time: "Mid",
+							first: "AE",
+							second: "BK",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR",
+						},
+					],
+					note: "Remember to bring BK for Heimdall, especially since SpA gets interrupted really easily by Heimdall in Red Mode.",
+				},
+				signet: {
+					note: "Ideal course of build up: 2 Ego start (Wild Flare + Radiant Formation) into Aponia's Basic ATK F3, finish Aponia 2nd Core by F4 Double, go shop F5 and put Because of You, buy Griseo's Red and Yellow paints or Red and Eden's TDM, grab Aponia's Breach at F6 and get the remaining 2 Enhanceds from Aponia at F7 Double",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							lists: [
+								{
+									name: "Blessing of Wild Flare",
+									description:
+										"Each hit of Astral Flare unleashes Astral Flare: Erupt, casting 1 Astral Rend in front that deals 200% of ATK as Fire DMG. Each cast of Astral Rend exits Astral Harness state, restoring 3 SP and 80 Astrum, with a maximum of 6 casts",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Radiant Formation",
+									description:
+										"Hits dealt by Astral Flare: Erupt +1. After unleashing Astral Flare: Erupt, the remaining Ultimate CD reduces by 10% and 300 Astrum is restored",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Alrescha",
+									description:
+										"Hits dealt by Astral Flare +1. When Astral Flare hits the target, its Fire DMG increases by 40% for 5s. This effect can be refreshed",
+									priority: "2nd",
+								},
+								{
+									name: "Blessing of Holy Flame",
+									description:
+										"Astral Flare deals an additional 500% ATK of Fire DMG to the target for every 6 hits and increases the Fire DMG to the hit target by 20% (independent effect) for 5s. Can be refreshed",
+									priority: "3rd",
+								},
+								{
+									name: "Blessing of Star Quillon",
+									description:
+										"When unleashing Astral Flare: Ignite, and Astral Flare: Combust, the 4th hit of Basic ATK in Astral Harness state deals 500% of ATK as Fire DMG to enemies within 10m, pulls them towards Valkyrie, and increases the total DMG taken by the target by 20%",
+									priority: "Filler",
+								},
+							],
+							note: "This build requires 2 Ego signets from the early get-go: Wild Flare and Radiant Formation. Once you get Radiant Formation, doing any normal Rapier stabs will reduce the Ultimate's CD by 20%, allowing you to play around it for quick bursts. The other 2 Ego signets to get are Alrescha and Holy Flame. Star Quillon is really unnecessary, but you can take it if you don't get any better doors.",
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							lists: [
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "3rd",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "Optional 4th",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+							note: "Basic ATK is priority to upgrade to +3. SP Regen can be taken to further synergize with Eden2 afterwards, but not necessary.",
+						},
+						{
+							name: "Eden - Signet of Gold (2nd Core)",
+							lists: [
+								{
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
+									description:
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
+									priority: "2nd",
+								},
+								{
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second.",
+									priority: "3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "4th",
+								},
+								{
+									name: "Echo of Gold",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Echo of Withered Soil",
+									description:
+										"After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
+									priority: "Optional 1st",
+								},
+							],
+							note: "Withered Soil will further boost SpA's damage even more especially when you already have Su's SP Regen.",
+						},
+
+						{
+							name: "Su - Signet of Bodhi (3rd Core)",
+							lists: [
+								{
+									name: "Motto of Dibba-Cakkhu",
+									description:
+										"Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35% for 10s.",
+									priority: "1st",
+								},
+								{
+									name: "Motto of Asavakkhaya",
+									description:
+										"Attacks grant 25 bonus combo hits on hit. CD: 5s.",
+									priority: "2nd",
+								},
+								{
+									name: "Motto of Ceto-Pariya-Nana",
+									description: "Combo hits are reset at 150 to restore 30 SP.",
+									priority: "3rd",
+								},
+								{
+									name: "Motto of Pubbe-Nivasanussati",
+									description:
+										"Combo hits are reset at 150 to boost Total DMG by 55% for 10s.",
+									priority: "4th",
+								},
+								{
+									name: "Motto of Iddhi-Vidha",
+									description:
+										"Combo hits are increased to 60 when below 60. CD: 10s.",
+									priority: "Optional 5th",
+								},
+								{
+									name: "Dictum of Bodhi",
+									description: "",
+									priority: "Core",
+								},
+							],
+						},
+
+						{
+							name: "Griseo - Signet of Stars (4th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+							],
+							note: "It's fine to have just Red, Yellow and Black. As long as you have at least Red, you can focus on the other signets in the meanwhile and leave Griseo by last. Red is highest priority to upgrade to +3.",
+						},
+					],
+				},
+			},
+			{
+				name: "Kosma Build",
 				note: "Updated 6.1. This valk is fucking awful. Honest truth. Her early game absolutely sucks, even as SS-rank, and loses against valks like Fischl and Eden in that regard. She only starts ramping up in strength after Benares, but even then, she still sucks a bit as she becomes mediocre at best. If anything, I would honestly recommend to play other valks instead of this shitty valk. She just really sucks, nothing more.",
 				boss: {
 					info: "Hephaestus OR Husk, then Aponia or Vill-V",
@@ -13695,31 +14755,88 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "stfu raiden mei striker fulminata",
 		builds: [
 			{
-				name: "Recommended",
-				danger: "Outdated 5.8 build",
+				name: "Just Stfu",
+
+				note: "Updated 6.1. If anyone tells you that StFu can't do ER, you can show this to them! Or... you can do it yourself! Provided you actually wouldn't mind balding for making this valkyrie work, that is... Wait, this valk actually isn't that bad! Okay, but seriously. What can I say? StFu's strength as a valkyrie for ER is also pretty mid, but leaning towards somewhat strong. Though this comes with quite a number of downsides that StFu has, naturally making her not a better choice than other particular valks.",
 				boss: {
-					info: "Elysia",
+					info: "Husk, then Aponia or Vill-V",
 				},
+				setup: {
+					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							gear: "7T & 3-set Dirac",
+							time: "13:18m (6.1)",
+							ref: "https://youtu.be/K-h8H2hQViQ",
+						},
+					],
+					danger:
+						"For downscalability purposes, let's be honest, she aint gonna do shit without 3-set Dirac as she badly needs the 50% impair for the early game. Dirac also provides with other useful things that StFu wants. 7T, on the other hand, is easily her BiS here due to it allowing StFu to reapply Griseo's Red Paint easily anytime.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description:
+								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+							load: 15,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Mid",
+							first: "Light as a Bodhi Leaf / Gold Goblet / Rainbow of Absence",
+							second: "Because of You (F5 Shop)",
+						},
+						{
+							time: "Late",
+							first: "Key to the Deep",
+							second: "Dreamful Gold",
+						},
+					],
+					note: "The Lonely Moon is a must to get F4 Double guaranteed.",
+				},
+
 				support: {
 					lists: [
 						{
 							time: "Early",
-							first: "VC",
-							second: "LE",
+							first: "SS",
+							second: "SN",
 						},
 						{
 							time: "Mid",
-							first: "VC",
-							second: "LE/SS",
+							first: "SS",
+							second: "BK",
 						},
 						{
 							time: "Late",
-							first: "VC",
-							second: "SS",
+							first: "SS",
+							second: "SA",
 						},
 					],
+					note: "SN is mainly to deal with the early Quantum mobs as they are too tanky for her without being collapsed. Afterwards, SN is swapped out for SA. Remember to bring BK to Heimdall fight.",
 				},
 				signet: {
+					note: "Ideal course of build up: 2 Ego start (Current + Karma) into Aponia Ultimate F3, finish Aponia 2nd Core by F4 Double, go shop F5 and put Because of You, buy Su's 30 SP and 25 Hits or TDM Taken, grab Aponia's Breach at F6 and finish Su 2nd Core by F7 Double.",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
@@ -13737,119 +14854,138 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 								{
+									name: "Blessing of Zanshin",
+									description:
+										"Increases the Physical DMG dealt by Combo ATK: Blade Flurry by 45%. For every 4 EM Reserves restored, gains a barrier with 50% of her max HP that lasts 3s. Triggering it again resets the barrieds HP",
+									priority: "2nd",
+								},
+								{
 									name: "Blessing of Idea",
 									description:
 										"Can use Ultimate after entering Burst mode for 4s. After using Ultimate again in Burst mode, her Total DMG will be increased by 30% until Burst mode ends",
-									priority: "2nd",
+									priority: "3rd",
 								},
 								{
 									name: "Blessing of Thunder",
 									description:
 										"For every 4 EM Reserves restored, releases a burst of lightning that deals ATK of Physical DMG to surrounding enemies",
-									priority: "2nd",
-								},
-								{
-									name: "Blessing of Zanshin",
-									description:
-										"Increases the Physical DMG dealt by Combo ATK: Blade Flurry by 45%. For every 4 EM Reserves restored, gains a barrier with 50% of her max HP that lasts 3s. Triggering it again resets the barrieds HP",
 									priority: "No",
 								},
 							],
+							note: "Current is a must start, followed next by Karma. StFu needs this double Ego start as these 2 signets are what provide her with her ER damage. Without both of these signets, her damage is just non-existent. The other 2 Ego signets to get from Because of You are Zanshin and Idea.",
 						},
 						{
-							name: "Griseo - Signet of Stars (1st Core)",
+							name: "Aponia - Signet of Discipline (1st Core)",
 							lists: [
 								{
-									name: "Red & Hot",
+									name: "Fourth, No Insolence",
 									description:
-										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental MG (cannot stack). Triggering it again resets the duration",
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
 									priority: "1st",
 								},
 								{
-									name: "Yellow & Warm",
+									name: "Third, No Brutality",
 									description:
-										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration",
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
 									priority: "2nd",
 								},
 								{
-									name: "Grey & Empty",
-									description: "Enemies stay tainted for 5s longer",
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
 									priority: "3rd",
 								},
 								{
-									name: "Blue & Cold",
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
 									description:
-										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration",
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+							note: "Ultimate is priority to +3, providing massive amounts of damage to StFu's laser blades.",
+						},
+
+						{
+							name: "Su - Signet of Bodhi (2nd Core)",
+							lists: [
+								{
+									name: "Motto of Ceto-Pariya-Nana",
+									description: "Combo hits are reset at 150 to restore 30 SP.",
+									priority: "1st",
+								},
+								{
+									name: "Motto of Dibba-Cakkhu",
+									description:
+										"Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35% for 10s.",
+									priority: "2nd",
+								},
+								{
+									name: "Motto of Asavakkhaya",
+									description:
+										"Attacks grant 25 bonus combo hits on hit. CD: 5s.",
+									priority: "3rd",
+								},
+								{
+									name: "Motto of Pubbe-Nivasanussati",
+									description:
+										"Combo hits are reset at 150 to boost Total DMG by 55% for 10s.",
 									priority: "4th",
 								},
 								{
-									name: "Shine like Stars",
+									name: "Motto of Iddhi-Vidha",
+									description:
+										"Combo hits are increased to 60 when below 60. CD: 10s.",
+									priority: "Optional 5th",
+								},
+								{
+									name: "Dictum of Bodhi",
 									description: "",
 									priority: "Core",
 								},
-								{
-									name: "Blooming like Flowers",
-									description:
-										"When enemies of countering types are tainted with both blue and red paints, Valkyries deal 50% bonus Total DMG to them (cannot stack)",
-									priority: "Yes",
-								},
 							],
+							note: "Su's SP Regen will basically avoid StFu's downtime issues when she can't get her Burst Mode.",
 						},
+
 						{
-							name: "Kevin - Signet of Deliverance (1st Core)",
+							name: "Eden - Signet of Gold (3rd Core)",
 							lists: [
 								{
-									name: "Mask of the Predator",
-									description: "Ultimate boosts Physical Breach by 25% for 5s",
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
 									priority: "1st",
 								},
-								{
-									name: "Pendant of the Watcher",
-									description: "Ultimate boosts Physical DMG by 30% for 5s",
-									priority: "2nd",
-								},
-								{
-									name: "Goblet of the Giver",
-									description: "Ultimate boosts Total DMG by 35% for 5s",
-									priority: "3rd",
-								},
-								{
-									name: "Blade of the Deliverer",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Echo of the Deliverer",
-									description:
-										" Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s",
-									priority: "1st",
-								},
-								{
-									name: "Crusade of the Deliverer",
-									description:
-										"After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%",
-									priority: "2nd",
-								},
-							],
-						},
-						{
-							name: "Eden - Signet of Gold (2nd Core)",
-							lists: [
 								{
 									name: "Recitatif of Creeks",
 									description:
-										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
-									priority: "1st",
-								},
-								{
-									name: "Recitatif of Eden",
-									description: "Every 10 SP left boosts Total DMG by 3.0%",
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
 									priority: "2nd",
 								},
 								{
-									name: "Recitatif of Fine Jade",
-									description: "Initial SP and max SP increase by 30",
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second.",
 									priority: "3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "4th",
 								},
 								{
 									name: "Echo of Gold",
@@ -13857,44 +14993,58 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 								{
-									name: "Echo of Silent Night",
-									description:
-										"After lasting over 7s, reduce ATK, DEF, ele resists of enemies nearby",
-									priority: "1st",
-								},
-								{
 									name: "Echo of Withered Soil",
 									description:
-										"After lasting over 7s, boost SP cap and restore SP/s till it ends",
-									priority: "Filler",
+										"After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
+									priority: "Optional 1st",
 								},
 							],
+							note: "Withered Soil can be a massive upgrade due to synergizing very well with StFu's Burst Mode and providing much more buffs from Eden's DMG boosts.",
 						},
+
 						{
-							name: "Su - Signet of Bodhi (2nd Core)",
+							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
 								{
-									name: "Motto of Dibba-Cakkhu",
+									name: "Red & Hot",
 									description:
-										"Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35% for 10s",
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
 									priority: "1st",
 								},
 								{
-									name: "Motto of Asavakkhaya",
+									name: "Yellow & Warm",
 									description:
-										"Attacks grant 25 bonus combo hits on hit. CD: 5s",
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
-									name: "Motto of Iddhi-Vidha",
+									name: "Black & Dark",
 									description:
-										"Combo hits are increased to 60 when below 60. CD: 10s",
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
 									priority: "3rd",
 								},
 								{
-									name: "Dictum of Bodhi",
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Faded Stars",
 									description: "",
 									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
 								},
 							],
 						},

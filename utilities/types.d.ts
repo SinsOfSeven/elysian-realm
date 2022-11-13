@@ -6,8 +6,8 @@ export interface Valkyrie {
 }
 interface Build {
     name: string;
-    note?: string | Array<string>;
-    danger?: string | Array<string>;
+    note?: string;
+    danger?: string;
     boss: {
         info: string;
         note?: string;
@@ -37,23 +37,23 @@ interface Build {
 		lists: Array<Signet>;
 	}
 }
-interface Setup {
+export interface Setup {
     rank: string;
     difficult: string;
     gear: string;
     time: string;
     ref: string;
 }
-interface Buff {
+export interface Buff {
     description: string;
     load: number;
 }
-interface Sigil {
+export interface Sigil {
 	time: string;
 	first: string;
 	second: string;
 }
-interface Support extends Sigil { }
+export interface Support extends Sigil { }
 interface Signet {
 	name: string;
 	note?: string | Array<string>;

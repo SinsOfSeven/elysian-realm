@@ -49,12 +49,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Veil of Tears",
-							second: "The Lonely Moon OR Because of You",
+							second: "The Lonely Moon / Because of You",
 						},
 						{
 							time: "Mid",
 							first: "Forbidden Seed / Memory / Rainbow of Absence",
-							second: "Because of You (F5 Shop) / Boundless Logos",
+							second: "Because of You / Boundless Logos",
 						},
 						{
 							time: "Late",
@@ -74,7 +74,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -82,7 +82,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "HB",
 						},
 					],
-					note: "Remember to switch out LE for BK at F9/F10 before Heimdall fight. As for LE, you can switch her out once you get yourself a SP regen source like Aponia's. HB on the other hand is better after Heimdall fight, as she will provide highest damage. BR is not recommended due to AKA wanting to stay at more than 70% HP.",
+					note: "Remember to switch out LE for BKE at F9/F10 before Heimdall fight. As for LE, you can switch her out once you get yourself a SP regen source like Aponia's. HB on the other hand is better after Heimdall fight, as she will provide highest damage. BR is not recommended due to AKA wanting to stay at more than 70% HP.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start into Aponia SP Regen F3, finish Aponia 2nd Core by F4, go shop F5 and swap The Lonely Moon for Because of You, buy Aponia's Penance if possible, otherwise get Mobius' Lip Poison [E] and Hua's Elem Breach. Can upgrade Aponia's Ultimate. Grab Aponia door F6 for Breach and finish Mobius 1st Core by F7 with Entwined [P] and Rodent [V].",
@@ -316,11 +316,11 @@ export const valkyries: Array<Valkyrie> = [
 				note: "Updated 6.1. Dudu got her own stand, and she's on her way to become a real Jojo of her own. Truly built different! Will her stand be as powerful as Jojo's Star Platinum? Oh, an enemy is approaching! How dare they approach her? They must be destroyed by Abyss Flower! Wait... it did really destroy them easily. She's... a monster! Anyway, her damage ceiling is astronomically high. She's a pretty straightforward valkyrie that doesn't have much problems clearing it, however, her requirement for this is to have 3-set Dante and AF is a given.",
 				boss: {
 					info: "Hephaestus, then Aponia",
-					note: "Aponia really was sent into the afterlife from standing in BK's way. There's no stopping her. Oh no.",
+					note: "Aponia really was sent into the afterlife from standing in BKE's way. There's no stopping her. Oh no.",
 				},
 				setup: {
 					danger:
-						"Truthfully, you shouldn't even bother with this Valkyrie if you don't have BOTH of the shit she needs, which is basically AF and 3-set Dante. AF is a given, and evne more so in the current weather since it is what enables BK to abuse the 20% TDT on Timestop Load Buff. As for the 3-set Dante? There's just... no replacement for it. Other than maybe coping with 3-set Dirac. But, again, let's be honest... that's, uh, pretty awkward to cope with. BK really needs the impair right from the get go.",
+						"Truthfully, you shouldn't even bother with this Valkyrie if you don't have BOTH of the shit she needs, which is basically AF and 3-set Dante. AF is a given, and evne more so in the current weather since it is what enables BKE to abuse the 20% TDT on Timestop Load Buff. As for the 3-set Dante? There's just... no replacement for it. Other than maybe coping with 3-set Dirac. But, again, let's be honest... that's, uh, pretty awkward to cope with. BKE really needs the impair right from the get go.",
 					lists: [
 						{
 							rank: "SS0",
@@ -352,7 +352,7 @@ export const valkyries: Array<Valkyrie> = [
 					],
 				},
 				sigil: {
-					note: "The Lonely Moon is a must to get F4 Double guaranteed. Also, regarding Because of You, BK honestly doesn't even need a 4th Ego signet... so, if by F5 or F6 doors you see an Ego door, then by any means go ahead and take it. This way, you won't have to use Because of You.",
+					note: "The Lonely Moon is a must to get F4 Double guaranteed. Also, regarding Because of You, BKE honestly doesn't even need a 4th Ego signet... so, if by F5 or F6 doors you see an Ego door, then by any means go ahead and take it. This way, you won't have to use Because of You.",
 					lists: [
 						{
 							time: "Early",
@@ -362,7 +362,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "Forget-Me-Not / Gold Goblet / Rainbow of Absence",
-							second: "Because of You (F5 Shop)",
+							second: "Because of You",
 						},
 						{
 							time: "Late",
@@ -428,11 +428,11 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "No",
 								},
 							],
-							note: "Gambit and Paragon are her must-start signets. Those are the 2 main signets that will carry BK throughout the whole run. A 3rd Ego signet is strongly recommended to get for Glory. BK honestly doesn't even need the remaining 2 Ego signets, but you can take Formation as your 4th Ego.",
+							note: "Gambit and Paragon are her must-start signets. Those are the 2 main signets that will carry BKE throughout the whole run. A 3rd Ego signet is strongly recommended to get for Glory. BKE honestly doesn't even need the remaining 2 Ego signets, but you can take Formation as your 4th Ego.",
 						},
 						{
 							name: "Aponia - Signet of Discipline (1st Core)",
-							note: "Ultimate is a must priority to upgrade to +3. It will not only enormously boost BK's damage in Burst Mode but will also affect AF's damage.",
+							note: "Ultimate is a must priority to upgrade to +3. It will not only enormously boost BKE's damage in Burst Mode but will also affect AF's damage.",
 							lists: [
 								{
 									name: "Fourth, No Insolence",
@@ -510,7 +510,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 							],
-							note: "The signet that gives extra ATK Speed can give a really comfy transition between BK's whole combo rotation.",
+							note: "The signet that gives extra ATK Speed can give a really comfy transition between BKE's whole combo rotation.",
 						},
 						{
 							name: "Signet of Gold (3rd Core)",
@@ -641,7 +641,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "Burden / Gold Goblet / Rainbow of Absence",
-							second: "Because of You (F5 Shop) / Dreamful Gold (After F12)",
+							second: "Because of You / Dreamful Gold",
 						},
 						{
 							time: "Late",
@@ -649,7 +649,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "Dreamful Gold",
 						},
 					],
-					note: "The Lonely Moon is absolutely necessary to help barely guarantee F4 Double. ",
+					note: "The Lonely Moon is absolutely necessary to help barely guarantee F4 Double.",
 				},
 				support: {
 					lists: [
@@ -661,7 +661,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "MA / BK",
+							second: "MA / BKE",
 						},
 						{
 							time: "Late",
@@ -669,7 +669,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "MA",
 						},
 					],
-					note: "LE is essential for DA's early game, otherwise she may face SP problems. By F5 Shop, you can swap her out for MA to help DA's damage. BR is not recommended due to DA's long animation sequence for her Ultimate. Also, remember to bring BK before Heimdall fight.",
+					note: "LE is essential for DA's early game, otherwise she may face SP problems. By F5 Shop, you can swap her out for MA to help DA's damage. BR is not recommended due to DA's long animation sequence for her Ultimate. Also, remember to bring BKE before Heimdall fight.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Stars & Gale) into Aponia Ultimate F3, unlock Aponia 2nd Core by F4, go shop F5 and swap TLM for Because of You, grab Kevin's Elem Breach and TDM from Shop and upgrade Aponia's Ultimate to +1 if possible, then grab Aponia Breach by F6, finish Kevin 1st Core by F7 Double",
@@ -978,7 +978,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -986,7 +986,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "AE is not switched out. LE is for early game, and can later be switched out at F5 shop and above once you have Aponia's SP Regen. Other additional SP regen sources can be obtained to be more comfortable, but not recommended. BK is recommended to bring against Heimdall.",
+					note: "AE is not switched out. LE is for early game, and can later be switched out at F5 shop and above once you have Aponia's SP Regen. Other additional SP regen sources can be obtained to be more comfortable, but not recommended. BKE is recommended to bring against Heimdall.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Admonition into Shelter, then Inclusiveness) into Aponia QTE F3, unlock Aponia 2nd Core with SP Regen and Ultimate, grab Aponia's Breach from F5, go shop F6 and buy Griseo's Red, Yellow and Black from Shop. Can also take Sakura's TDM Taken and TDM and Kalpas signets. Grab Aponia door for F7 and unlock the remaining 2 Enhanceds",
@@ -1255,7 +1255,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Veil of Tears",
-							second: "Because of You OR The Lonely Moon",
+							second: "Because of You / The Lonely Moon",
 						},
 						{
 							time: "Mid",
@@ -1264,7 +1264,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -1279,16 +1279,16 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "AE/BK",
+							first: "AE / BKE",
 							second: "SN",
 						},
 						{
 							time: "Late",
-							first: "AE/BR",
+							first: "AE / BR",
 							second: "SN",
 						},
 					],
-					note: "Remember to swap AE out for BK before Heimdall fight. As for the late floors, you can use BR because by then you'll already have more than enough breach with Aponia's and Hua's combined. For this very same reason. You don't take SN out because of 2nd Load Buff.",
+					note: "Remember to swap AE out for BKE before Heimdall fight. As for the late floors, you can use BR because by then you'll already have more than enough breach with Aponia's and Hua's combined. For this very same reason. You don't take SN out because of 2nd Load Buff.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start into Aponia Ultimate F3, finish Aponia 2nd Core by F4 with SP Regen & 70 Load, grab Aponia's Breach at F5, go shop F6, grab Aponia's Basic ATK if missing, get Kalpas' both DMG boosts or one and Hua's Elem Breach, then use Because of You to grab Nocturne and God Eater from F7 Double.",
@@ -1572,7 +1572,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Rainbow of Absence",
-							second: "The Lonely Moon OR Because of You / It Will Be Written",
+							second: "The Lonely Moon / Because of You / It Will Be Written",
 						},
 						{
 							time: "Mid",
@@ -1597,7 +1597,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "SS",
-							second: "LE/BR",
+							second: "LE / BR",
 						},
 						{
 							time: "Late",
@@ -1911,8 +1911,8 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							time: "Early",
-							first: "Veil of Tears OR Fragile Friend",
-							second: "Boundless Feeling OR Out of Reach",
+							first: "Veil of Tears / Fragile Friend",
+							second: "Boundless Feeling / Out of Reach",
 						},
 						{
 							time: "Mid",
@@ -1921,7 +1921,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "Out of Reach",
 						},
 					],
@@ -1936,7 +1936,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "AE / BK",
+							first: "AE / BKE",
 							second: "BR",
 						},
 						{
@@ -2257,7 +2257,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "Dreamful Gold",
 						},
 					],
@@ -2273,7 +2273,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -2281,11 +2281,10 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "AE will be your main means of gather aside of her other bonuses. BR will be your bread and butter necessary to get past Early floors with enough damage. Remember to bring BK to Heimdall fight. Afterwards, you swap BK out for BR again.",
+					note: "AE will be your main means of gather aside of her other bonuses. BR will be your bread and butter necessary to get past Early floors with enough damage. Remember to bring BKE to Heimdall fight. Afterwards, you swap BKE out for BR again.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Whiteout + Flourish + Haste) into Aponia Basic ATK F3, finish Aponia 2nd Core by F4 Double, go shop F5 and grab Griseo's Red and Yellow Paint or Red and Sakura's TDM Taken signet, grab Aponia's Breach at F6 and get the remaining 2 Aponia Enhanceds at F7 Double.",
-
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
@@ -2323,7 +2322,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Whiteout and Florish are the must start for Memento. It is strongly recommended and advised to reset for F2 Ego start to grab Haste, as it's a signet that will become pretty strong and act as a good powerspike for Memento later on as she starts scaling towards the late floors. The other 2 are just no.",
 						},
-
 						{
 							name: "Aponia - Signet of Discipline (1st Core)",
 							lists: [
@@ -2377,7 +2375,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Whilst not necessary, the Ultimate signet is not a bad idea to get for 2 reasons mainly. One, it will increase the load per second to 30, which is good to consider for Memento due to the rate at which she halvens Aponia's Load. Second, it will also increase your Ultimate's DMG. However, do note that this will modify your playstyle into using 7T Active only whenever you have to reapply Griseo's Red Paint. On the other hand, Basic ATK is priority to upgrade to +3.",
 						},
-
 						{
 							name: "Sakura - Signet of Setsuna (2nd Core)",
 							lists: [
@@ -2407,10 +2404,8 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "You need the SP signet to enable the synergy with Eden2 afterwards.",
 						},
-
 						{
 							name: "Eden - Signet of Gold (3rd Core)",
-
 							note: "Both enhanceds are really good to take. Memento synergizes extremely well with Eden2 due to her capability to spam her low-cd Ult to keep refreshing Eden2. Silent Night is also really good as it will act as another form of breach aside from Aponia's. ",
 							lists: [
 								{
@@ -2453,7 +2448,6 @@ export const valkyries: Array<Valkyrie> = [
 								},
 							],
 						},
-
 						{
 							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
@@ -2512,7 +2506,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Red paint is a must priority to +3. Yellow is also good to +3. Do make sure to get them alongside Black if you get them in Shop. Petals will also further skyrocket Memento's damage.",
 						},
-
 						{
 							name: "Kalpas - Signet of Decimation (Felis Shop Signets)",
 							lists: [
@@ -2551,12 +2544,9 @@ export const valkyries: Array<Valkyrie> = [
 			},
 			{
 				name: "(Muramasa) Vergil plays on Easy difficulty",
-
 				note: "Updated 6.1. Memento didn't had enough fun with 7T and thought it was too simple and easy for her, so she got rid of it and decided to go to a back alley, proceeded to buy a 3* weapon of doubtful quality from a merchant by the name of Senti, got back home and chose the highest difficulty to prove she isn't any weaker and can also do it herself. Was it worth the 500,000,000 yen that the 3* weapon cost her? Did she get scammed by Senti? Or does that not matter? Turns out even the highest difficulty couldn't stop her and she became an unstoppable force of nature! What an absolute madlad!",
-
 				danger:
 					"Do note that the best start for this build is Griseo's Red Paint at F2, so it's strongly recommended to mald for it instead of Ego signet.",
-
 				boss: {
 					info: "Hephaestus, then Aponia or Kalpas",
 					note: "Between Aponia or Kalpas, you can bully either of the two. Pick your preference.",
@@ -2627,7 +2617,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -2635,7 +2625,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "AE will be your main means of gather aside of her other bonuses. BR will be your bread and butter necessary to get past Early floors with enough damage. Remember to bring BK to Heimdall fight. Afterwards, you swap BK out for BR again.",
+					note: "AE will be your main means of gather aside of her other bonuses. BR will be your bread and butter necessary to get past Early floors with enough damage. Remember to bring BKE to Heimdall fight. Afterwards, you swap BKE out for BR again.",
 				},
 				signet: {
 					note: "Ideal course of build up: Griseo Red Paint start (mald for it F2), then grab Vill-V's Pendulum or Conflict at F3, finish Vill-V 2nd Core by F4 Double, get Vill-V's Puppetry or Drama at F5, go shop F6 and buy Aponia's SP Regen and Sakura's TDM Taken or TDM, or upgrade Red to +3 and Puppetry/Drama to +3. Then grab V-V door at F7 Double for the remaining priority signets",
@@ -2676,7 +2666,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Whiteout and Florish are the must start for Memento. For this build, she doesn't need anything more.",
 						},
-
 						{
 							name: "Vill-V - Signet of Helix (1st Core)",
 							lists: [
@@ -2730,7 +2719,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Sneer has very good synergy in this build due to increasing the frequency in which Memento can make use of and abuse V-V's buffs, aside from granting her some nice SP Regen which in turn will also synergize very well later with Eden2. Puppetry and Drama are priority to +3.",
 						},
-
 						{
 							name: "Aponia - Signet of Discipline (2nd Core)",
 							lists: [
@@ -2778,7 +2766,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Basic ATK is priority to +3 after Red and V-V's enhanceds.",
 						},
-
 						{
 							name: "Eden - Signet of Gold (3rd Core)",
 							lists: [
@@ -2823,7 +2810,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "If you can get Withered Soil, go for it, it's a really strong option for Memento.",
 						},
-
 						{
 							name: "Sakura - Signet of Setsuna (4th Core)",
 							lists: [
@@ -2853,7 +2839,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Sakura's signets are better taken from Shop and finish her Core on a door.",
 						},
-
 						{
 							name: "Griseo - Signet of Stars (5th Core)",
 							lists: [
@@ -2945,7 +2930,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "Boundless Logos",
 						},
 					],
@@ -2960,7 +2945,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "AE / BK or VK",
+							first: "AE / BKE / VKE",
 							second: "BR",
 						},
 						{
@@ -2969,7 +2954,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "In the SS1 run, I picked VK as she gives 20% Fire Taken. However, do note that VK is harder to use for the purpose of denying Heimdall's Red Mode. This is because VK applies mid Heavy Trauma throughout many successive hits that NEED to connect with Heimdall. If you do not want to be resetting the fight until VK successfully does her job, then just pick BK instead.",
+					note: "In the SS1 run, I picked VKE as she gives 20% Fire Taken. However, do note that VKE is harder to use for the purpose of denying Heimdall's Red Mode. This is because VKE applies mid Heavy Trauma throughout many successive hits that NEED to connect with Heimdall. If you do not want to be resetting the fight until VKE successfully does her job, then just pick BKE instead.",
 				},
 				signet: {
 					note: "Ideal course of build up: 3 Ego Start (Facade + Sleight into Reversal), V-V's Spider Web or Pendulum F3, then finish V-V 2nd Core by F4, grab V-V's Puppetry by F5, go shop and swap Falling in Past Light for Boundless Logos, get Drama (if possible) or get Mobius' Entwined [P] or Lip Poison [E] and Hua's Elem Breach & Kalpas TDM, proceed to finish Mobius 1st Core by F7",
@@ -3294,7 +3279,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "VK",
+							first: "VKE",
 							second: "BR",
 						},
 						{
@@ -3305,7 +3290,7 @@ export const valkyries: Array<Valkyrie> = [
 					],
 					note: "You want to save BR specifically for after entering Herrscher Mode on the first snap. Basically, when you're about to use your first Blackhole in Herrscher Form for the maximum output of damage possible. Combine this with Sirin and Kalpas Support Skill and you end up dealing a shitton of damage.",
 					danger:
-						"VK for Heimdall fight is recommended in order to fill his Heavy Bar Trauma. Do note that this is specifically for getting him out of Red Mode forcibly once its filled.",
+						"VKE for Heimdall fight is recommended in order to fill his Heavy Bar Trauma. Do note that this is specifically for getting him out of Red Mode forcibly once its filled.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego Start (Heatflow + Starfire), Kalpas' TDM by F3, Kalpas 2nd Core by F4, F5 Shop for switching The Lonely Moon for Because Of You and grab 2 Hua Signets and Sakura's TDM Taken or TDM, get Hua door by F6 and unlock 2nd Core, then proceed to get Sakura 1st Core by F7",
@@ -3623,7 +3608,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "VK",
+							first: "VKE",
 							second: "BR",
 						},
 						{
@@ -3634,7 +3619,7 @@ export const valkyries: Array<Valkyrie> = [
 					],
 					note: "You want to save BR specifically for after entering Herrscher Mode on the first snap. Basically, when you're about to use your first Blackhole in Herrscher Form for the maximum output of damage possible. Combine this with Sirin and Kalpas Support Skill and you end up dealing a shitton of damage.",
 					danger:
-						"VK for Heimdall fight is recommended in order to fill his Heavy Bar Trauma. Do note that this is specifically for getting him out of Red Mode forcibly once its filled.",
+						"VKE for Heimdall fight is recommended in order to fill his Heavy Bar Trauma. Do note that this is specifically for getting him out of Red Mode forcibly once its filled.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego Start, Kalpas' TDM by F3, Kalpas 2nd Core by F4 w/Max HP, F5 Shop for switching The Lonely Moon for An Old Pal's Legacy and grab Sakura's Fuji or Hua's Elem Breach, get Sakura or Hua door F6, finish Hua 2nd Core by F7.",
@@ -3954,7 +3939,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "VK",
+							first: "VKE",
 							second: "BR",
 						},
 						{
@@ -3965,7 +3950,7 @@ export const valkyries: Array<Valkyrie> = [
 					],
 					note: "You want to save BR specifically for after entering Herrscher Mode on the first snap. Basically, when you're about to use your first Blackhole in Herrscher Form for the maximum output of damage possible.",
 					danger:
-						"VK for Heimdall fight is recommended in order to fill his Heavy Bar Trauma. Do note that this is specifically for getting him out of Red Mode forcibly once its filled.",
+						"VKE for Heimdall fight is recommended in order to fill his Heavy Bar Trauma. Do note that this is specifically for getting him out of Red Mode forcibly once its filled.",
 				},
 				signet: {
 					lists: [
@@ -4273,17 +4258,17 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "AE",
-							second: "LE/BR",
+							second: "LE / BR",
 						},
 						{
 							time: "Mid",
 							first: "AE",
-							second: "LE/BR",
+							second: "LE / BR",
 						},
 						{
 							time: "Late",
 							first: "AE",
-							second: "LE/BR",
+							second: "LE / BR",
 						},
 					],
 					note: "LE gives you instant ult, also comfier, whereas BR is preferred if you might be lacking damage, especially for early floors.",
@@ -4964,16 +4949,16 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Veil of Tears",
-							second: "The Lonely Moon / Because of You (F5)",
+							second: "The Lonely Moon / Because of You",
 						},
 						{
 							time: "Mid",
 							first: "Memory / Mad King's Mask / Forget-Me-Not",
-							second: "Because of You / The Lonely Moon (F13+)",
+							second: "Because of You / The Lonely Moon",
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -4989,7 +4974,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -4997,7 +4982,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "Remember to switch BK in by F10 just before Heimdall fight. Without BK, you'll have a really hard time against Heimdall otherwise. Then, you can switch her out for BR if you already have SP Regen covered.",
+					note: "Remember to switch BKE in by F10 just before Heimdall fight. Without BKE, you'll have a really hard time against Heimdall otherwise. Then, you can switch her out for BR if you already have SP Regen covered.",
 				},
 				signet: {
 					note: "Ideal order from F1-F7: Reset F2 for Griseo Red Paint start, then take Aponia's SP Regen by F3, unlock Aponia 2nd Core by F4 with Ultimate & 70 Load, go shop F5 and put Because of You, buy Aponia's Breach or Penance if you get them, otherwise take Hua's Elem Breach, Sakura's TDM Taken and TDM or Black & Dark from Griseo. Grab Aponia door F6, then unlock Hua 2nd Core by F7 double",
@@ -5613,7 +5598,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Stained Sakura or Key to the Deep",
+							first: "Stained Sakura / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -5974,7 +5959,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Good Old Days or Key to the Deep",
+							first: "Good Old Days / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -5989,7 +5974,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "SS",
-							second: "BR or BKE",
+							second: "BR / BKE",
 						},
 						{
 							time: "Late",
@@ -6305,7 +6290,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "Veil of Tears / Golden Goblet / Rainbow of Absence",
+							first: "Veil of Tears / Gold Goblet / Rainbow of Absence",
 							second: "The Lonely Moon",
 						},
 						{
@@ -6325,7 +6310,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "SS",
-							second: "BR or BKE",
+							second: "BR / BKE",
 						},
 						{
 							time: "Late",
@@ -6628,7 +6613,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "SS",
-							second: "BR or BKE",
+							second: "BR / BKE",
 						},
 						{
 							time: "Late",
@@ -8040,14 +8025,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Stained Sakura or Key to the Deep",
+							first: "Stained Sakura / Key to the Deep",
 							second: "Boundless Logos",
 						},
 					],
-					note: [
-						"Tsukimi Himiko is swapped out for Boundless Logos at F5 Shop.",
-						"When you reach F5 or F6 shop, you'll want to be looking for Kalpas TDM and Phys/Elem DMG boost or Max HP signets and switch VC for BR, additionally abusing the swap out spam trick for lowering your health to below 100 to abuse the most out of Kalpas buffs at this point easily, without having to get Kalpas2 beforehand. BR will stay for the remainder of the run.",
-					],
+					note: "Tsukimi Himiko is swapped out for Boundless Logos at F5 Shop. When you reach F5 or F6 shop, you'll want to be looking for Kalpas TDM and Phys/Elem DMG boost or Max HP signets and switch VC for BR, additionally abusing the swap out spam trick for lowering your health to below 100 to abuse the most out of Kalpas buffs at this point easily, without having to get Kalpas2 beforehand. BR will stay for the remainder of the run.",
 				},
 				support: {
 					lists: [
@@ -8058,7 +8040,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "VC / BR or BKE",
+							first: "VC / BR / BKE",
 							second: "SS",
 						},
 						{
@@ -8417,7 +8399,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "The First Scale or Key to the Deep",
+							first: "The First Scale / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -8431,12 +8413,12 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "VC or BKE",
+							first: "VC / BKE",
 							second: "SS",
 						},
 						{
 							time: "Late",
-							first: "VC or BR",
+							first: "VC / BR",
 							second: "SS",
 						},
 					],
@@ -8771,7 +8753,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Veil of Tears",
-							second: "The Lonely Moon OR Boundless Feeling",
+							second: "The Lonely Moon / Boundless Feeling",
 						},
 						{
 							time: "Mid",
@@ -8780,7 +8762,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -8796,7 +8778,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "BR",
-							second: "LE / BK",
+							second: "LE / BKE",
 						},
 						{
 							time: "Late",
@@ -8804,7 +8786,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "LE",
 						},
 					],
-					note: "LE allows you for instant ult at the beginning of every floor. With Nocturnal Sheath, she also allows you to get the 175sp cost down right away, for maximum buffs benefit from the extra 25 sp mechanic of Sussy. BK, on the other hand, can be taken for Heimdall if you don't feel confident enough on your damage or your RNG with the signets gotten. VC is the best choice for comfortable gather if u want it.",
+					note: "LE allows you for instant ult at the beginning of every floor. With Nocturnal Sheath, she also allows you to get the 175sp cost down right away, for maximum buffs benefit from the extra 25 sp mechanic of Sussy. BKE, on the other hand, can be taken for Heimdall if you don't feel confident enough on your damage or your RNG with the signets gotten. VC is the best choice for comfortable gather if u want it.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start into Aponia Basic ATK F3, finish Aponia 2nd Core by F4 with Ultimate & 70 Initial Load, grab Aponia's Breach or Penance F5, go shop F6, buy Griseo's Red and Yellow or Red and Kalpas' TDM (abuse BR), upgrade Aponia's Basic ATK to +2 or +3, grab Aponia's other 2 Enhanceds from F7 double",
@@ -9161,17 +9143,17 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Memory",
-							second: "The Lonely Moon OR Out of Reach",
+							second: "The Lonely Moon / Out of Reach",
 						},
 						{
 							time: "Mid",
 							first: "Mad King's Mask / Rainbow of Absence / Fragile Friend",
-							second: "The Lonely Moon OR Out of Reach",
+							second: "The Lonely Moon / Out of Reach",
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
-							second: "The Lonely Moon OR Out of Reach",
+							first: "Tin Flask / Key to the Deep",
+							second: "The Lonely Moon / Out of Reach",
 						},
 					],
 					note: "With UBW build's weakness of being gather-reliant, Out of Reach provides you a really convenient means of gather. However, The Lonely Moon is more preferred as not only it helps guaranteeing double bonuses but also +1 to Griseo signets which you'll want to have at least 2 enhanceds before Heimdall fight.",
@@ -9180,17 +9162,17 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							time: "Early",
-							first: "AE/VC/HB",
+							first: "AE / VC / HB",
 							second: "BR",
 						},
 						{
 							time: "Mid",
-							first: "BK",
+							first: "BKE",
 							second: "BR",
 						},
 						{
 							time: "Late",
-							first: "VC/HB",
+							first: "VC / HB",
 							second: "BR",
 						},
 					],
@@ -9519,7 +9501,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first:
-								"Light as a Bodhi Leaf / Memory OR Veil of Tears / Rainbow of Absence",
+								"Light as a Bodhi Leaf / Memory / Veil of Tears / Rainbow of Absence",
 							second: "Empty Like Shala / The Lonely Moon",
 						},
 						{
@@ -9539,8 +9521,8 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "BK / BR",
-							second: "BK / LE",
+							first: "BKE / BR",
+							second: "BKE / LE",
 						},
 						{
 							time: "Late",
@@ -9840,7 +9822,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "Memory / Golden Goblet / Rainbow of Absence",
+							first: "Memory / Gold Goblet / Rainbow of Absence",
 							second: "Dreamful Gold",
 						},
 						{
@@ -10233,7 +10215,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Late",
 							first: "AE",
-							second: "BR or LE",
+							second: "BR / LE",
 						},
 					],
 					note: [
@@ -10480,6 +10462,7 @@ export const valkyries: Array<Valkyrie> = [
 		builds: [
 			{
 				name: "LK Abstinence Build",
+				note: "",
 				boss: {
 					info: "Husk, then Vill-V",
 				},
@@ -10529,7 +10512,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Key to the Deep or Proof of Good and Evil",
+							first: "Key to the Deep / Proof of Good and Evil",
 							second: "The Lonely Moon",
 						},
 					],
@@ -10823,7 +10806,6 @@ export const valkyries: Array<Valkyrie> = [
 							ref: "https://youtu.be/rkCnkA44e4s",
 						},
 					],
-
 					danger:
 						"There's no other set that will work better than Aslaug does for her, especially since Aslaug enormously increases her Mist's already skyhigh damage. DoEgo is her BiS weapon purely because of the ATK statstick.",
 				},
@@ -10876,7 +10858,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BR or BK",
+							second: "BR / BKE",
 						},
 						{
 							time: "Late",
@@ -10884,7 +10866,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "AE will be your main means of gather aside of her other bonuses. BR will also help to get past DPS check in the early floors. You can take BK for Heimdall if you want to be extra sure. However, if you have hands and the skill for it, you can go without BK and be fine for the fight. Raven can break Heimdall's shields easily through her Ultimate sequence. Breaking Heimdall's shields will keep him from going Red Mode until he's down to half HP",
+					note: "AE will be your main means of gather aside of her other bonuses. BR will also help to get past DPS check in the early floors. You can take BKE for Heimdall if you want to be extra sure. However, if you have hands and the skill for it, you can go without BKE and be fine for the fight. Raven can break Heimdall's shields easily through her Ultimate sequence. Breaking Heimdall's shields will keep him from going Red Mode until he's down to half HP",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Ominous Mist + Arrowhead) into V-V Spider Web or Pendulum F3, finish V-V 2nd Core by F4 Doubles, grab V-V's Drama or Puppetry at F5, go shop F6 and buy Griseo's Red and Yellow Paint or Red and Kevin's TDM/Elem DMG/Elem Breach, then grab V-V's remaining Enhanced except Saga from F7 and Sneer. Ideal Order from F1-F7: Double Reroll into Apo2 Core by F4, then 1 Griseo door before F7, then finish Griseo by F7 double.",
@@ -10925,7 +10907,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Ominous Mist and Arrowhead is all Raven needs. She does not need any more than these 2. Double Ego start is the best start you can do.",
 						},
-
 						{
 							name: "Vill-V - Signet of Helix (1st Core)",
 							lists: [
@@ -10973,7 +10954,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Sneer is really good to have as it will significantly reduce the downtime that Raven has to deal with waiting for Ult and reducing its CD due to Arrowhead. It also synergizes in that you can use Active beforehand for the bonuses of Puppetry and Drama. ",
 						},
-
 						{
 							name: "Kevin - Signet of Deliverance (2nd Core)",
 							lists: [
@@ -11017,7 +10997,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "You have to make sure to always active right away after ulting. If you get interrupted, you will miss Crusade's window for the enormous buffs from Kevin.",
 						},
-
 						{
 							name: "Aponia - Signet of Discipline (3rd Core)",
 							lists: [
@@ -11065,7 +11044,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Do prioritize getting Griseo's Red and Yellow Paint before pursuing Aponia's signets.",
 						},
-
 						{
 							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
@@ -11193,7 +11171,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "Falling in Past Light",
 						},
 					],
@@ -11203,17 +11181,17 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "VC",
-							second: "SS or LE",
+							second: "SS / LE",
 						},
 						{
 							time: "Mid",
-							first: "BK / VC",
-							second: "SS or LE",
+							first: "BKE / VC",
+							second: "SS / LE",
 						},
 						{
 							time: "Late",
 							first: "BR",
-							second: "SS or LE",
+							second: "SS / LE",
 						},
 					],
 					danger:
@@ -11518,7 +11496,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Key to the Deep or Proof of Good and Evil",
+							first: "Key to the Deep / Proof of Good and Evil",
 							second: "The Lonely Moon",
 						},
 					],
@@ -11867,17 +11845,17 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							time: "Early",
-							first: "Veil of Tears OR Pseudo Miracle",
-							second: "The Lonely Moon OR Falling in Past Light",
+							first: "Veil of Tears / Pseudo Miracle",
+							second: "The Lonely Moon / Falling in Past Light",
 						},
 						{
 							time: "Mid",
 							first: "Mad King's Mask / Forbidden Seed / Rainbow of Absence",
-							second: "Because of You OR Falling in Past Light",
+							second: "Because of You / Falling in Past Light",
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "Falling in Past Light",
 						},
 					],
@@ -11893,7 +11871,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BR or BK",
+							second: "BR / BKE",
 						},
 						{
 							time: "Late",
@@ -12242,7 +12220,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Key to the Deep or Proof of Good and Evil",
+							first: "Key to the Deep / Proof of Good and Evil",
 							second: "Falling in Past Light",
 						},
 					],
@@ -12265,7 +12243,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "Pardo doesn't really need anyone else honestly. If you're downscaling, you can bring BK for Heimdall. If not, then she can easily bruteforce through Heimdall's Red Mode.",
+					note: "Pardo doesn't really need anyone else honestly. If you're downscaling, you can bring BKE for Heimdall. If not, then she can easily bruteforce through Heimdall's Red Mode.",
 				},
 				signet: {
 					note: "Ideal Order from F1-F7: Double Ego Start (Hidden Claws + Cat's Eyes + Phantasma) into Aponia's QTE by F3, finish Aponia 2nd Core by F4 Doubles with Ultimate and Basic ATK, grab Aponia's Breach at F5 and go Shop F6, buy V-V's Pendulum and Conflict and Griseo's Red Paint from Shop. Then grab the remaining 2 enhanceds from Aponia at F7",
@@ -12479,6 +12457,7 @@ export const valkyries: Array<Valkyrie> = [
 			},
 			{
 				name: "Pardo2 Variation",
+				note: "",
 				danger:
 					"Updated to 6.1. Pardo2 variation basically just focuses on giving you a stronger headstart towards getting more signets and also getting more upgrades in comparison to Pardo1 variation. That's pretty much about it.",
 				boss: {
@@ -12565,7 +12544,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "Pardo doesn't really need anyone else honestly. If you're downscaling, you can bring BK for Heimdall. If not, then she can easily bruteforce through Heimdall's Red Mode.",
+					note: "Pardo doesn't really need anyone else honestly. If you're downscaling, you can bring BKE for Heimdall. If not, then she can easily bruteforce through Heimdall's Red Mode.",
 				},
 				signet: {
 					note: "Ideal Order from F1-F7: Double Ego Start (Hidden Claws + Cat's Eyes + Phantasma) into Pardo's 10% Coins by F3, finish Pardo 2nd Core by F4 Doubles with Shiny Silvers Drop and TDM, go shop F5 and grab Griseo's Red Paint, Aponia's QTE and Ultimate or V-V's Pendulum and Conflict. Then you can either unlock Aponia or Vill-V's 2nd Cores and proceed with getting the 2 important enhanceds of either.",
@@ -12621,7 +12600,7 @@ export const valkyries: Array<Valkyrie> = [
 									name: "Shiny & Valuable",
 									description:
 										"Enemy kills grant bonus Shiny Silvers. Non-boss enemies grant 5 each. Boss enemies grant each (independent effect).",
-										priority: "2nd",
+									priority: "2nd",
 								},
 								{
 									name: "Motto of Meow",
@@ -12696,7 +12675,7 @@ export const valkyries: Array<Valkyrie> = [
 								{
 									name: "You Shall Answer Prayers",
 									description:
-									"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
@@ -12775,7 +12754,8 @@ export const valkyries: Array<Valkyrie> = [
 								},
 								{
 									name: "Echo of Withered Soil",
-									description: "After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
+									description:
+										"After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
 									priority: "Optional 1st",
 								},
 							],
@@ -12912,7 +12892,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "VC / BK",
+							first: "VC / BKE",
 							second: "SS",
 						},
 						{
@@ -13219,7 +13199,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Veil of Tears",
-							second: "The Lonely Moon / Because of You (F5 Shop)",
+							second: "The Lonely Moon / Because of You",
 						},
 						{
 							time: "Mid",
@@ -13244,15 +13224,15 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
 							first: "AE",
-							second: "VC & BR",
+							second: "VC / BR",
 						},
 					],
-					note: "VC is a must due to not only her low 30s CD, essential for synergy with her Ego signet Phantom Plumes, but also because it provides a gather which is always appreciated for SW. Remember to bring BK before Heimdall fight.",
+					note: "VC is a must due to not only her low 30s CD, essential for synergy with her Ego signet Phantom Plumes, but also because it provides a gather which is always appreciated for SW. Remember to bring BKE before Heimdall fight.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Phantom Plumes & Grey Falcon) into Aponia Basic ATK F3, unlock Aponia 2nd Core by F4 with QTE and SP Regen, go shop F5 and grab Because of You, get Su's SP Regen and TDM Taken. Grab Aponia's Breach at F6 and finish Su 2nd Core by F7 Double.",
@@ -13486,9 +13466,7 @@ export const valkyries: Array<Valkyrie> = [
 		builds: [
 			{
 				name: "Rita's Training Arc",
-
 				note: "Updated 6.1. SpA had enough of sitting in the bench just warming it while watching other valkyries push ahead of her, so she decided to finally take matters into her hands and train to become a better valkyrie and catch up to the others! And she sure did went a bit overboard... by becoming even stronger than before! SpA's strength in favorable weathers is pretty strong and she also becomes a fairly easy valk to clear ER with. Although she struggles even more against Psy mobs.",
-
 				boss: {
 					info: "Hephaestus, then Aponia or Vill-V",
 					note: "You should consider Hephaestus' Overheat mechanic. You might not be able to kill him. If you're not confident in doing so, you can instead go with Husk, but he's more annoying due to SpA's lack of i-frames which makes her be reliant on manual dodging even more, as she already uses Kosma.",
@@ -13535,7 +13513,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "Gold Goblet / Light as a Bodhi Leaf / Rainbow of Absence",
-							second: "Because of You (F5 Shop) ",
+							second: "Because of You",
 						},
 						{
 							time: "Late",
@@ -13555,7 +13533,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -13563,7 +13541,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "Remember to bring BK for Heimdall, especially since SpA gets interrupted really easily by Heimdall in Red Mode.",
+					note: "Remember to bring BKE for Heimdall, especially since SpA gets interrupted really easily by Heimdall in Red Mode.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Wild Flare + Radiant Formation) into Aponia's Basic ATK F3, finish Aponia 2nd Core by F4 Double, go shop F5 and put Because of You, buy Griseo's Red and Yellow paints or Red and Eden's TDM, grab Aponia's Breach at F6 and get the remaining 2 Enhanceds from Aponia at F7 Double",
@@ -13695,7 +13673,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Withered Soil will further boost SpA's damage even more especially when you already have Su's SP Regen.",
 						},
-
 						{
 							name: "Su - Signet of Bodhi (3rd Core)",
 							lists: [
@@ -13735,7 +13712,6 @@ export const valkyries: Array<Valkyrie> = [
 								},
 							],
 						},
-
 						{
 							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
@@ -13790,7 +13766,7 @@ export const valkyries: Array<Valkyrie> = [
 				name: "Kosma Build",
 				note: "Updated 6.1. This valk is fucking awful. Honest truth. Her early game absolutely sucks, even as SS-rank, and loses against valks like Fischl and Eden in that regard. She only starts ramping up in strength after Benares, but even then, she still sucks a bit as she becomes mediocre at best. If anything, I would honestly recommend to play other valks instead of this shitty valk. She just really sucks, nothing more.",
 				boss: {
-					info: "Hephaestus OR Husk, then Aponia or Vill-V",
+					info: "Hephaestus / Husk, then Aponia or Vill-V",
 					note: "You should consider Hephaestus' Overheat mechanic. You might not be able to kill him. If you're not confident in doing so, you can instead go with Husk, but he's more annoying due to SpA's lack of i-frames which makes her be reliant on manual dodging even more, as she already uses Kosma.",
 				},
 				setup: {
@@ -13839,7 +13815,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "Out of Reach",
 						},
 					],
@@ -13855,7 +13831,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "AE",
-							second: "BR / VK",
+							second: "BR / VKE",
 						},
 						{
 							time: "Late",
@@ -13863,7 +13839,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "VK is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
+					note: "VKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start into Kosma's Basic ATK F3, then unlock Kosma 2nd Core by F4, go shop F5 and get 1 or 2 Kalpas signets, then decide between swapping or not swapping Out of Reach for Because Of You if you want more Ego Signets, and unlock Kalpas2 by F7",
@@ -14142,16 +14118,16 @@ export const valkyries: Array<Valkyrie> = [
 							time: "Early",
 							first: "Pseudo Miracle",
 							second:
-								"Because of You OR Falling in Past Light OR The Lonely Moon",
+								"Because of You / Falling in Past Light / The Lonely Moon",
 						},
 						{
 							time: "Mid",
 							first: "Memory / Rainbow of Absence",
-							second: "Because of You (Only if didn't start) / The Lonely Moon",
+							second: "Because of You / The Lonely Moon",
 						},
 						{
 							time: "Late",
-							first: "Tin Flask or Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -14166,7 +14142,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "BK",
+							first: "BKE",
 							second: "SN",
 						},
 						{
@@ -14175,7 +14151,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "SN",
 						},
 					],
-					note: "Remember to swap out AE for BK before facing Heimdall. Also, SN is used because of the load buff for 10% TDT.",
+					note: "Remember to swap out AE for BKE before facing Heimdall. Also, SN is used because of the load buff for 10% TDT.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Frigidity & Toxic Bath) into V-V's Conflict or Pendulum F3, unlock V-V 2nd Core by F4, go shop F5 and buy Hua's Elem Breach and TDM, roll for a Hua door F6 to complete Hua 2nd Core, then V-V door at F7 Double for Puppetry and Drama.",
@@ -14756,7 +14732,6 @@ export const valkyries: Array<Valkyrie> = [
 		builds: [
 			{
 				name: "Just Stfu",
-
 				note: "Updated 6.1. If anyone tells you that StFu can't do ER, you can show this to them! Or... you can do it yourself! Provided you actually wouldn't mind balding for making this valkyrie work, that is... Wait, this valk actually isn't that bad! Okay, but seriously. What can I say? StFu's strength as a valkyrie for ER is also pretty mid, but leaning towards somewhat strong. Though this comes with quite a number of downsides that StFu has, naturally making her not a better choice than other particular valks.",
 				boss: {
 					info: "Husk, then Aponia or Vill-V",
@@ -14804,7 +14779,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "Light as a Bodhi Leaf / Gold Goblet / Rainbow of Absence",
-							second: "Because of You (F5 Shop)",
+							second: "Because of You",
 						},
 						{
 							time: "Late",
@@ -14814,7 +14789,6 @@ export const valkyries: Array<Valkyrie> = [
 					],
 					note: "The Lonely Moon is a must to get F4 Double guaranteed.",
 				},
-
 				support: {
 					lists: [
 						{
@@ -14825,7 +14799,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "SS",
-							second: "BK",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -14833,7 +14807,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "SA",
 						},
 					],
-					note: "SN is mainly to deal with the early Quantum mobs as they are too tanky for her without being collapsed. Afterwards, SN is swapped out for SA. Remember to bring BK to Heimdall fight.",
+					note: "SN is mainly to deal with the early Quantum mobs as they are too tanky for her without being collapsed. Afterwards, SN is swapped out for SA. Remember to bring BKE to Heimdall fight.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Current + Karma) into Aponia Ultimate F3, finish Aponia 2nd Core by F4 Double, go shop F5 and put Because of You, buy Su's 30 SP and 25 Hits or TDM Taken, grab Aponia's Breach at F6 and finish Su 2nd Core by F7 Double.",
@@ -14921,7 +14895,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Ultimate is priority to +3, providing massive amounts of damage to StFu's laser blades.",
 						},
-
 						{
 							name: "Su - Signet of Bodhi (2nd Core)",
 							lists: [
@@ -14962,7 +14935,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Su's SP Regen will basically avoid StFu's downtime issues when she can't get her Burst Mode.",
 						},
-
 						{
 							name: "Eden - Signet of Gold (3rd Core)",
 							lists: [
@@ -15001,7 +14973,6 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Withered Soil can be a massive upgrade due to synergizing very well with StFu's Burst Mode and providing much more buffs from Eden's DMG boosts.",
 						},
-
 						{
 							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
@@ -15100,7 +15071,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "Veil of Tears",
-							second: "The Lonely Moon / Because of You (F5 Shop)",
+							second: "The Lonely Moon / Because of You",
 						},
 						{
 							time: "Mid",
@@ -15307,7 +15278,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 							],
-							note: "SN often can't make use of Sakura1 very well, and due to her nature of spamming UE over and over triggering Sakura Screens one after the other, it's not much of a priority to unlock her core, as SN prefers to have Bloodstained Sakura to make better use of it. Due to this, Sakura is better taken from Felis Shop.",
+							note: "SN often can't make use of Sakura1 very well, and due to her nature of spamming UE over and over triggering Sakura Screens one after the other, it's not much of a priority to unlock her core, as SN prefers to have Stained Sakura to make better use of it. Due to this, Sakura is better taken from Felis Shop.",
 						},
 						{
 							name: "Kalpas - Signet of Decimation (4th Core)",
@@ -15357,6 +15328,7 @@ export const valkyries: Array<Valkyrie> = [
 			},
 			{
 				name: "S2 Build 5D",
+				note: "",
 				boss: {
 					info: "Husk or Hephaestus, then Vill-V",
 				},
@@ -15405,7 +15377,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Late",
-							first: " Bloodstained Sakura",
+							first: " Stained Sakura",
 							second: "Tsukimi Himiko",
 						},
 					],
@@ -15628,22 +15600,74 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "sns sweet n spicy carole pepper",
 		builds: [
 			{
-				name: "Abstinence Build",
-				danger: "Outdated 5.8 build",
+				name: "Scamrole!",
+				note: "Updated 6.1. Carole arguably sits in a tier of her own thanks to this, and a couple other reasons. While she actually has A LOT of frontloaded damage that hurts a shitton, both in her Charged ATKs and Ultimate, this is however eclipsed by the fact that she's actually TERRIBLE when dealing with the F17 Bosses. This can easily become a problem for you to get past, which would mean a failed run.",
 				boss: {
-					info: "Aponia",
+					info: "Husk? or Hephaestus, then Aponia or Vill-V",
+					note: "I do not know how Carole performs against Husk, and I don't really want to try it out either. Not gonna deal with the IMG Taint and Husk's bullshit. Honestly, not sure which one between the two is less bullshit for Carole.",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							gear: "MKP & Paganini",
+							time: "12:34m (6.1)",
+							ref: "https://youtu.be/MdpFV-Zh1LU",
+						},
+					],
+					note: "Carole's downscalability shouldn't be much of an issue with other alternative stigmas like Elysia TB or BiankaT.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Max SP increases by 30.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+					],
+					note: "Effective for 6.1. ",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Mid",
+							first: "Mad King's Mask / Rainbow of Absence / Gold Goblet",
+							second: "Because of You",
+						},
+						{
+							time: "Late",
+							first: "Key to the Deep",
+							second: "The Lonely Moon",
+						},
+					],
+					note: "The Lonely Moon is essential to help Carole guarantee the F4 Double. You just have to time it well for 3rd Wave.",
 				},
 				support: {
 					lists: [
 						{
 							time: "Early",
 							first: "SS",
-							second: "VC",
+							second: "SN",
 						},
 						{
 							time: "Mid",
 							first: "SS",
-							second: "VC/BR",
+							second: "BR",
 						},
 						{
 							time: "Late",
@@ -15651,8 +15675,10 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
+					note: "SN will help Carole with the early floors' Quantum Mobs, making her essential. Afterwards, she can be swapped out quickly for BR. Carole does not need BKE, as she has a lot of Heavy Attack Trauma filling of her own to deal with Heimdall.",
 				},
 				signet: {
+					note: "Ideal Order from F1-F7: 2 Ego Start (Revolution + Brake) into Aponia's Basic ATK F3, finish Aponia 2nd Core by F4 double, go shop F5 and put Because of You, buy Kalpas' both DMG boosts or one and Eden's TDM, grab Aponia's Breach at F6, get the remaining Penance and TDM Taken from Aponia at F7 Double",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
@@ -15664,188 +15690,195 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Start",
 								},
 								{
-									name: "Blessing of Skyfall",
-									description:
-										"Each stage of aerial charging stacks Momentum once up to 6 stacks. Each stack boosts Ultimate DMG by 15%. Removed upon Ultimate cast",
-									priority: "*1st*",
-								},
-								{
-									name: "Blessing of Impulse",
-									description:
-										"Armor Shredder maxes at 4 stacks and stacks twice each time",
-									priority: "No",
-								},
-								{
 									name: "Blessing of Brake",
 									description:
 										"Charging speed accelerates and Physical DMG of Charged ATK increases by 10%. My Hands Are Burning stacks faster",
-									priority: "No",
+									priority: "1st",
 								},
 								{
 									name: "Blessing of Rupture",
 									description:
 										"Ground Charged ATK can charge up to 4 stages and deal 400% ATK of bonus Physical DMG",
-									priority: "No",
-								},
-							],
-						},
-						{
-							name: "Kosma - Signet of Daybreak (1st core)",
-							lists: [
-								{
-									name: "Eyes that Overlook the Vicious Abyss",
-									description:
-										"Each stack of Rend on enemies makes Valkyries deal 10% bonus DMG to their shields",
-									priority: "Yes",
-								},
-								{
-									name: "Talons that Desecrate the Santuary",
-									description:
-										"Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 20% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking CD: 1s",
-									priority: "1st",
-								},
-								{
-									name: "Horns that Rip the Bleak Sky",
-									description:
-										"Ultimate inflicts 8 stacks of Rend on all enemies, each stack dealing 20% ATK of Adaptive DMG per second for 10s. 70 stacks max. CD: 8s",
 									priority: "2nd",
 								},
 								{
-									name: "Heart that Committed Seven Crimes",
-									description: "Rend lasts 5s longer",
+									name: "Blessing of Impulse",
+									description:
+										"Armor Shredder maxes at 4 stacks and stacks twice each time",
 									priority: "3rd",
 								},
 								{
-									name: "Wings that Mask the Sanguine Moon",
+									name: "Blessing of Skyfall",
 									description:
-										"Ultimate Evasion Skill inflicts 8 stacks of Rend on all enemies, each stack dealing 20% ATK of Adaptive DMG per second for 70s. 10 stacks max. CD: 8s",
-									priority: "Filler",
+										"Each stage of aerial charging stacks Momentum once up to 6 stacks. Each stack boosts Ultimate DMG by 15%. Removed upon Ultimate cast",
+									priority: "Optional 4th",
+								},
+							],
+							note: "Revolution and Brake are the essential starter Ego signets for Carole. Afterwards, Rupture and Impulse are the other 2 must-get signets from Because of You. Skyfall is also good to take if you ever get a 5th Ego door in your run, as it further improves on Ultimate's DMG.",
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							lists: [
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "1st",
 								},
 								{
-									name: "Breath that Slanders Sulphur",
+									name: "Fifth, No Falsehood",
 									description:
-										"Inflicting Rend on an already affected enemy restores 10 SP. CD: 5s",
-									priority: "Filler",
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "2nd",
 								},
 								{
-									name: "Daybreak, an Undying Light",
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "3rd",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
 									description: "",
 									priority: "Core",
 								},
 								{
-									name: "Unwavering Promise",
+									name: "You Shall Follow Good",
 									description:
-										"Rend-inflicted enemies take 80% bonus Total DMG and addition 40% bonus Total DMG with 20 Rend stacks or more",
-									priority: "Filler",
-								},
-							],
-						},
-						{
-							name: "Kevin - Signet of Deliverance (1st Core)",
-							lists: [
-								{
-									name: "Mask of the Predator",
-									description: "Ultimate boosts Physical Breach by 25% for 5s",
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
 									priority: "1st",
 								},
 								{
-									name: "Pendant of the Watcher",
-									description: "Ultimate boosts Physical DMG by 30% for 5s",
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
-									name: "Goblet of the Giver",
-									description: "Ultimate boosts Total DMG by 35% for 5s",
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
 									priority: "3rd",
 								},
-								{
-									name: "Blade of the Deliverer",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Echo of the Deliverer",
-									description:
-										" Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s",
-									priority: "1st",
-								},
-								{
-									name: "Crusade of the Deliverer",
-									description:
-										"After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%",
-									priority: "2nd",
-								},
 							],
-						},
-						{
-							name: "Eden - Signet of Gold (2nd Core)",
-							lists: [
-								{
-									name: "Recitatif of Creeks",
-									description:
-										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
-									priority: "1st",
-								},
-								{
-									name: "Recitatif of Eden",
-									description: "Every 10 SP left boosts Total DMG by 3.0%",
-									priority: "2nd",
-								},
-								{
-									name: "Recitatif of Fine Jade",
-									description: "Initial SP and max SP increase by 30",
-									priority: "3rd",
-								},
-								{
-									name: "Echo of Gold",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Echo of Silent Night",
-									description:
-										"After lasting over 7s, reduce ATK, DEF, ele resists of enemies nearby",
-									priority: "1st",
-								},
-								{
-									name: "Echo of Withered Soil",
-									description:
-										"After lasting over 7s, boost SP cap and restore SP/s till it ends",
-									priority: "Filler",
-								},
-							],
+							note: "Basic ATK is the highest priority to +3. Ultimate can also be considered to +3 but give priority to Griseo's Red Paint.",
 						},
 						{
 							name: "Kalpas - Signet of Decimation (2nd Core)",
 							lists: [
 								{
-									name: "Path, Misfortune, and Written Fate",
-									description: "Max HP increases by 25%",
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
 									priority: "1st",
 								},
 								{
-									name: "Bone, Blood, and Ribbon",
+									name: "Bone, Blood and Ribbon",
 									description:
-										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%",
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
 									priority: "2nd",
 								},
 								{
-									name: "Blade, Grave, and Scar",
-									description: "Every 100 HP loss boosts Total DMG by 1.0%",
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
 									priority: "3rd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "Optional",
 								},
 								{
 									name: "Soldiers, Scissors, Spoils, and Slaughter",
 									description: "",
+									priority: "Core (Not Necessary)",
+								},
+							],
+							note: "Unlocking Kalpas' core wont be necessary if you don't get Skyfall in your run.",
+						},
+						{
+							name: "Griseo - Signet of Stars (3rd Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "4th",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "5th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
 									priority: "Core",
 								},
 								{
-									name: "Death, Life, Oblivion, and Existence",
+									name: "Petals in the Wind",
 									description:
-										" If [Bloodboil Garment] exceeds 1500, when taking damage, reduces damage taken by 1% of [Bloodboil Garment]",
-									priority: "Yes",
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
 								},
 							],
+							note: "If you manage to get Petals in the Wind, try to always trigger it whenever possible for maximum damage output.",
+						},
+						{
+							name: "Eden - Signet of Gold (4th Core)",
+							lists: [
+								{
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Recitatif of Creeks",
+									description:
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
+									priority: "2nd",
+								},
+								{
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second.",
+									priority: "Optional 3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "Optional 4th",
+								},
+								{
+									name: "Aria of Gold",
+									description: "",
+									priority: "Core",
+								},
+							],
+							note: "Prioritize getting Eden's DMG boost signets mainly from Felis Shop.",
 						},
 					],
 				},
@@ -15858,22 +15891,73 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "theresa apocalypse tp twilight paladin",
 		builds: [
 			{
-				name: "Recommended",
-				danger: "Outdated 5.8 build",
+				name: "Teri's Struggles",
+				note: "Updated 6.1. Sadly, TP's strength is pretty average. All around, she's average. Just a decent ER valkyrie that isn't either good nor bad. ",
 				boss: {
-					info: "Aponia",
+					info: "Hephaestus, then Aponia or Vill-V",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							gear: "Hekate Sombre & Kafka",
+							time: "11:26m (6.1)",
+							ref: "https://youtu.be/fVlpYAEqHug",
+						},
+					],
+					note: "This valkyrie's downscalability issues can be notoriously bad as she also sort of relies in her signature weapon for the endless combo hits, especially at early game when you don't have much room for continuously reducing your Ult's CD. Her gears are just... well. Time to inhale copium, probably.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Max SP increases by 30.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "The Lonely Moon / Because of You",
+						},
+						{
+							time: "Mid",
+							first: "Light as a Bodhi Leaf / Gold Goblet / Rainbow of Absence",
+							second: "Because of You / Dreamful Gold",
+						},
+						{
+							time: "Late",
+							first: "Key to the Deep",
+							second: "Dreamful Gold",
+						},
+					],
+					note: "The Lonely Moon is a must to get F4 Double guaranteed.",
 				},
 				support: {
 					lists: [
 						{
 							time: "Early",
-							first: "VC",
-							second: "DP",
+							first: "SS",
+							second: "SN",
 						},
 						{
 							time: "Mid",
-							first: "VC",
-							second: "DP/BR",
+							first: "SS",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -15881,41 +15965,96 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
+					note: "SA provides some comfy gather alongside a nice Phys DMG boost. SN is mainly to deal with the early Quantum mobs as they are too tanky for her without being collapsed. Afterwards, she's swapped out for SS. Remember to bring BKE before Heimdall fight.",
 				},
 				signet: {
+					note: "Ideal course of build up: 2 Ego start (Banishment + Penalty) into Aponia's SP Regen or Basic ATK F3, unlock Aponia's 2nd Core by F4 Doubles, go shop F5 and swap TLM for Because of You, buy Su's 30 SP and TDM Taken or 25 Hits from Shop, grab Aponia's Breach at F6 and finish Su's 2nd Core by F7.",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
 							lists: [
 								{
+									name: "Blessing of Banishment",
+									description:
+										"Every combo hits reduce Ultimate CD by 18% and restore 5 SP. CD: 2s. Ultimate deal 100% bonus Physical DMG and an additional 3000% ATK of Physical DMG. Blood Tide continuously gathers enemies nearby",
+									priority: "Start",
+								},
+								{
 									name: "Blessing of Penalty",
 									description:
 										"In Fervent state, Total DMG increases by 15% per second for up to 10 stacks. Reset when exiting Fervent state",
-									priority: "Start",
+									priority: "1st",
 								},
 								{
 									name: "Blessing of Dusk",
 									description:
 										"With Polarization Agent consumed, Feverish Barrage deals ATK of bonus Physical DMG and grants 10% bonus Move Speed for 20s. 6 stacks max",
-									priority: "1st",
-								},
-								{
-									name: "Blessing of Banishment",
-									description:
-										"Every combo hits reduce Ultimate CD by 18% and restore 5 SP. CD: 2s. Ultimate deal 100% bonus Physical DMG and an additional 3000% ATK of Physical DMG. Blood Tide continuously gathers enemies nearby",
 									priority: "2nd",
 								},
 								{
 									name: "Blessing of Radiance",
 									description:
 										"Ultimate Evasion Skill resets Fervor drain speed, boosts Physical DMG by 80% for 8s. Casting Feverish Barrage in Fervent state triggers Ultimate Evasion Skill but not Fang Execution",
-									priority: "No",
+									priority: "3rd",
 								},
 								{
 									name: "Blessing of Sanction",
 									description:
 										"Every combo hits trigger slashing blades to deal 2x1000% ATK of Physical DMG and grant 30% Physical Breach lasting 1s. CD: 5s",
 									priority: "No",
+								},
+							],
+							note: "2 Ego signet start is strongly recommended for TP. Banishment and Penalty are her go-to starting signets. It is also strongly recommended to use Because of You to get Dusk and Radiance. 5th Ego is not necessary.",
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							lists: [
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "3rd",
+								},
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "4th",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
 								},
 							],
 						},
@@ -15925,20 +16064,31 @@ export const valkyries: Array<Valkyrie> = [
 								{
 									name: "Motto of Dibba-Cakkhu",
 									description:
-										"Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35% for 10s",
+										"Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35% for 10s.",
 									priority: "1st",
 								},
 								{
 									name: "Motto of Asavakkhaya",
 									description:
-										"Attacks grant 25 bonus combo hits on hit. CD: 5s",
+										"Attacks grant 25 bonus combo hits on hit. CD: 5s.",
 									priority: "2nd",
+								},
+								{
+									name: "Motto of Ceto-Pariya-Nana",
+									description: "Combo hits are reset at 150 to restore 30 SP.",
+									priority: "3rd",
+								},
+								{
+									name: "Motto of Pubbe-Nivasanussati",
+									description:
+										"Combo hits are reset at 150 to boost Total DMG by 55% for 10s.",
+									priority: "4th",
 								},
 								{
 									name: "Motto of Iddhi-Vidha",
 									description:
-										"Combo hits are increased to 60 when below 60. CD: 10s",
-									priority: "3rd",
+										"Combo hits are increased to 60 when below 60. CD: 10s.",
+									priority: "Optional 5th",
 								},
 								{
 									name: "Dictum of Bodhi",
@@ -15946,64 +16096,31 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 							],
+							note: "You can instead just get 25 Hits & TDM Taken first from Shop.",
 						},
 						{
-							name: "Griseo - Signet of Stars (1st Core)",
+							name: "Eden - Signet of Gold (3rd Core)",
 							lists: [
 								{
-									name: "Red & Hot",
-									description:
-										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental MG (cannot stack). Triggering it again resets the duration",
+									name: "Recitatif of Eden",
+									description: "Every 10 SP left boosts Total DMG by 3.0%.",
 									priority: "1st",
 								},
-								{
-									name: "Yellow & Warm",
-									description:
-										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration",
-									priority: "2nd",
-								},
-								{
-									name: "Grey & Empty",
-									description: "Enemies stay tainted for 5s longer",
-									priority: "3rd",
-								},
-								{
-									name: "Blue & Cold",
-									description:
-										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration",
-									priority: "4th",
-								},
-								{
-									name: "Shine like Stars",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Blooming like Flowers",
-									description:
-										"When enemies of countering types are tainted with both blue and red paints, Valkyries deal 50% bonus Total DMG to them (cannot stack)",
-									priority: "Yes",
-								},
-							],
-						},
-						{
-							name: "Eden - Signet of Gold (2nd Core)",
-							lists: [
 								{
 									name: "Recitatif of Creeks",
 									description:
-										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%",
-									priority: "1st",
-								},
-								{
-									name: "Recitatif of Eden",
-									description: "Every 10 SP left boosts Total DMG by 3.0%",
+										"Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
 									priority: "2nd",
 								},
 								{
-									name: "Recitatif of Fine Jade",
-									description: "Initial SP and max SP increase by 30",
+									name: "Recitatif of Good Wine",
+									description: "Restore 1.5 SP per second.",
 									priority: "3rd",
+								},
+								{
+									name: "Recitatif of Fine Jade",
+									description: "Initial SP and max SP increase by 30.",
+									priority: "4th",
 								},
 								{
 									name: "Echo of Gold",
@@ -16011,52 +16128,85 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 								{
-									name: "Echo of Silent Night",
-									description:
-										"After lasting over 7s, reduce ATK, DEF, ele resists of enemies nearby",
-									priority: "1st",
-								},
-								{
 									name: "Echo of Withered Soil",
 									description:
-										"After lasting over 7s, boost SP cap and restore SP/s till it ends",
-									priority: "Filler",
-								},
-							],
-						},
-						{
-							name: "Kevin - Signet of Deliverance (1st Core)",
-							lists: [
-								{
-									name: "Mask of the Predator",
-									description: "Ultimate boosts Physical Breach by 25% for 5s",
+										"After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
 									priority: "1st",
 								},
 								{
-									name: "Pendant of the Watcher",
-									description: "Ultimate boosts Physical DMG by 30% for 5s",
+									name: "Echo of Silent Night",
+									description:
+										"After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2% per second (40% max) until it ends.",
+									priority: "Optional 2nd",
+								},
+							],
+							note: "Silent Night is strongly recommended to get as soon as possible, as it will act as your second Breach signet. Withered Soil in the other hand will go along nicely with the synergy from the massive SP regen you'll be getting from your other sources, leading to massive damage boosts.",
+						},
+						{
+							name: "Griseo - Signet of Stars (4th Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
-									name: "Goblet of the Giver",
-									description: "Ultimate boosts Total DMG by 35% for 5s",
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
 									priority: "3rd",
 								},
 								{
-									name: "Blade of the Deliverer",
-									description: "",
-									priority: "Core",
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "4th",
 								},
 								{
-									name: "Echo of the Deliverer",
+									name: "Blue & Cold",
 									description:
-										" Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s",
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "5th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core (Not Necessary)",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
 									priority: "1st",
 								},
 								{
-									name: "Crusade of the Deliverer",
+									name: "Fallen Leaves",
 									description:
-										"After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%",
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+							],
+							note: "Griseo's Core is not really needed to complete, so you can give priority to the other Signets.",
+						},
+						{
+							name: "Sakura - Signet of Setsuna (Felis Shop Signets)",
+							lists: [
+								{
+									name: "Bountiful Blossom: Koyo",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s.",
+									priority: "1st",
+								},
+								{
+									name: "Bountiful Blossom: Botan",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
 									priority: "2nd",
 								},
 							],

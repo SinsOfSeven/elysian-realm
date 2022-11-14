@@ -26,8 +26,8 @@ const nextValk = valkyrieIndex < valkyries.length - 1 ? valkyries[valkyrieIndex 
     ]">
         <div class="grid w-full grid-cols-3">
             <NuxtLink class="px-4 w-full h-full flex justify-center items-center" :to="`/${ slug(previousValk.name) }`">{{ previousValk.name }}</NuxtLink>
-            <div class="grid w-full grid-cols-1 px-1 py-0.5">
-                <button @click="$emit('selected', index)" v-for="(build, index) in valkyrie.builds" :key="index" class="px-4 py-2 rounded" :class="selected === index ? 'border border-white border-2' : ''">{{ build.name }}</button>
+            <div class="grid w-full grid-cols-2 place-content-around px-1 py-0.5">
+                <button @click="$emit('selected', index)" v-for="(build, index) in valkyrie.builds" :key="index" class="px-4 py-2 rounded" :class="selected === index ? 'border border-white border-2' : ''">{{ index + 1 }}</button>
             </div>
             <NuxtLink class="px-4 w-full h-full flex justify-center items-center" :to="`/${ slug(nextValk.name) }`">{{ nextValk.name }}</NuxtLink>
         </div>

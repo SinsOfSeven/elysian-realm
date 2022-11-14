@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Support } from "~~/utilities/types";
-import { slug } from "~~/utilities/helpers";
 const props = defineProps<{ support: Support }>();
 
 const first = ref(props.support.first.split(' / '));

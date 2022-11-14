@@ -33,15 +33,15 @@ function changeTime() {
 </script>
 
 <template>
-    <div class="px-2 pt-8 text-white bg-gray-700">
+    <div class="px-2 pt-8 text-white bg-gray-700 w-full">
         <p class="text-xs uppercase">{{ valkyrie.name }}</p>
         <p class="text-xl font-bold uppercase">{{ selectedBuild.name }}</p>
-        <div class="flex flex-col space-y-2">
+        <div class="flex flex-col space-y-2 w-full">
             <Information :note="selectedBuild.note" />
             <Danger v-if="selectedBuild.danger" :danger="selectedBuild.danger" />
             <Boss :boss="selectedBuild.boss" class="pt-5 pb-3" />
             <Buff :buff="selectedBuild.buff" />
-            <div class="flex w-full space-x-3">
+            <div class="flex w-full space-x-3 py-6 w-screen">
                 <button @click="changeTime" class="text-xs bg-white text-gray-700 rounded-full w-16 h-16">
                     {{ timeline[time] }}
                 </button>
@@ -50,5 +50,7 @@ function changeTime() {
             </div>
         </div>
     </div>
+    <Setup :setup="selectedBuild.setup" />
+    <Signet :signet="selectedBuild.signet" />
     <Navigation :selected="selectedIndex" @selected="selected" />
 </template>

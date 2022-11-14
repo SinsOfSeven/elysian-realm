@@ -14,7 +14,7 @@ interface Build {
     },
     setup: {
         lists: Array<Setup>,
-		danger?: string | Array<string>;
+		danger?: string;
 		note?: string;
     },
     buff: {
@@ -24,11 +24,11 @@ interface Build {
     },
     sigil: {
 		lists: Array<Sigil>;
-		note?: string | Array<string>;
+		note?: string;
 	},
 	support: {
 		lists: Array<Support>;
-		note?: string | Array<string>;
+		note?: string;
 		danger?: string;
 	},
 	signet: {
@@ -56,7 +56,7 @@ export interface Sigil {
 export interface Support extends Sigil { }
 interface Signet {
 	name: string;
-	note?: string | Array<string>;
+	note?: string;
 	danger?: string;
 	lists: Array<SignetList>;
 }

@@ -1,39 +1,36 @@
 <script setup lang="ts">
+import { Popover, PopoverGroup, PopoverButton, PopoverPanel } from "@headlessui/vue";
 import { InformationCircleIcon } from "@heroicons/vue/24/solid";
+import { Buff } from "~~/utilities/types";
 interface Props {
     note?: string;
-    lists: Array<{
-        description: string;
-        load: number;
-    }>;
-}
+    lists: Array<Buff>;
+};
 defineProps<{ buff: Props }>();
-
-const open = ref(false);
 </script>
 <template>
-    <div class="flex space-x-3">
-        <p class="uppercase text-lg">Buff</p>
-        <button @click="open = true"><InformationCircleIcon class="w-6 h-6 text-white animate-pulse" /></button>
+    <div class="flex items-center">
+        <p class="uppercase text-sm font-thin">Buff</p>
+        <Popover v-if="buff.note">
+            <PopoverButton class="flex items-center">
+                <InformationCircleIcon class="ml-2 w-6 h-6 animate-pulse" />
+            </PopoverButton>
+        
+            <PopoverPanel class="absolute z-10 left-0 bg-gray-900 rounded px-4 py-2 w-full">
+                {{ buff.note }}
+            </PopoverPanel>
+        </Popover>
     </div>
-    <Modal :open="open" @is-open="open = false">
-        <div v-if="buff.note" class="pb-2">
-            <p v-if="typeof buff.note === 'string'">{{ buff.note }}</p>
-            <p v-else v-for="i in buff.note" key="i">{{ i }}</p>
-        </div>
-        <table class="border border-collapse border-blue-600">
-            <tr>
-                <td class="border border-blue-600 px-4">
-                    Load
-                </td>
-                <td class="border border-blue-600">
-                    Description
-                </td>
-            </tr>
-            <tr v-for="i in buff.lists">
-                <td class="border border-blue-600">{{ i.load }}</td>
-                <td class="border border-blue-600 px-2 py-1 text-start">{{ i.description }}</td>
-            </tr>
-        </table>
-    </Modal>
+
+    <PopoverGroup class="w-sm flex pt-4 pb-2 relative">
+        <Popover v-for="(item, index) in buff.lists" :key="index" v-slot="{ open }">
+            <PopoverButton class="w-8 h-8 rounded rotate-45 border border-white mr-4" :class="{ 'bg-white text-gray-700': open }">
+                <p class="-rotate-45">{{ item.load }}</p>
+            </PopoverButton>
+        
+            <PopoverPanel class="absolute z-30 left-0 mt-2 bg-gray-900 rounded px-4 py-2 w-full">
+                {{ item.description }}
+            </PopoverPanel>
+        </Popover>
+    </PopoverGroup>
 </template>

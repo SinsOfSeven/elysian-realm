@@ -6,23 +6,23 @@ export interface Valkyrie {
 }
 interface Build {
     name: string;
-    note?: string;
+    note: string;
     danger?: string;
     boss: {
         info: string;
         note?: string;
     },
-    setup?: {
+    setup: {
         lists: Array<Setup>,
 		danger?: string | Array<string>;
 		note?: string;
     },
-    buff?: {
+    buff: {
         lists: Array<Buff>;
 		note?: string;
 		danger?: string;
     },
-    sigil?: {
+    sigil: {
 		lists: Array<Sigil>;
 		note?: string | Array<string>;
 	},

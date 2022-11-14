@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue';
-import { ExclamationCircleIcon } from '@heroicons/vue/24/outline';
+import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from "@headlessui/vue";
+import { ExclamationCircleIcon } from "@heroicons/vue/24/outline";
 
 defineProps<{ open: boolean }>();
 </script>

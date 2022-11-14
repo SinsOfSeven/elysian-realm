@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { valkyries } from '~~/utilities/database';
-import { slug } from '~~/utilities/helpers';
+import { valkyries } from "~~/utilities/database";
+import { slug } from "~~/utilities/helpers";
 
 defineProps<{ selected: number }>();
 

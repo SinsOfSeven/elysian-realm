@@ -9831,7 +9831,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "AE or BKE",
+							first: "AE / BKE",
 							second: "BR",
 						},
 						{
@@ -11908,7 +11908,7 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							note: "Fischl requires 3 Ego signets: Retribution into Fate start, then Midnight. 3rd Ego signet is a MUST because Fischl's personal and AoE damage is genuinely horrible without Midnight. It forms such a big part of her build here in ER that Fischl without any of these 3 signets becomes one of the weakest and most dogshit ER valks in the game. As such, Because of You is recommended to secure this.",
 							danger:
-								"This build has 2 different startups to note: We're gonna assume V-V start. Aponia start is slightly stronger, but V-V start is more comfortable and preferred if you don't have any ELF that provides gather or don't want to bother too much resetting for spawn RNG and maintaining enemies in the circle for Retribution. That's the only importance of choice; whether you choose one or the other, their order of priority is just swapped up between them. (Aponia 1st, V-V 2nd) ",
+								"This build has 2 different startups to note: We're gonna assume V-V start. Aponia start is slightly stronger, but V-V start is more comfortable and preferred if you don't have any ELF that provides gather or don't want to bother too much resetting for spawn RNG and maintaining enemies in the circle for Retribution. That's the only importance of choice; whether you choose one or the other, their order of priority is just swapped up between them. (Aponia 1st, V-V 2nd)",
 						},
 						{
 							name: "Vill-V - Signet of Helix (1st Core)",

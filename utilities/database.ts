@@ -15,9 +15,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "SS0",
+							rank: "SS",
 							difficult: "Finality",
-							gear: "Skadi Pri & 3-set Ana",
+							weap: "Skadi of Thrymheim",
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "10:08m (6.1)",
 							ref: "https://youtu.be/8DI2mKbHxNY",
 						},
@@ -323,9 +328,10 @@ export const valkyries: Array<Valkyrie> = [
 						"Truthfully, you shouldn't even bother with this Valkyrie if you don't have BOTH of the shit she needs, which is basically AF and 3-set Dante. AF is a given, and evne more so in the current weather since it is what enables BKE to abuse the 20% TDT on Timestop Load Buff. As for the 3-set Dante? There's just... no replacement for it. Other than maybe coping with 3-set Dirac. But, again, let's be honest... that's, uh, pretty awkward to cope with. BKE really needs the impair right from the get go.",
 					lists: [
 						{
-							rank: "SS0",
+							rank: "SS",
 							difficult: "Finality",
-							gear: "Abyss Flower & 3-set Dante",
+							weap: "Abyss Flower: Liminal Spiral",
+							stigmata: ["Dante (T)", "Dante (M)", "Dante (B)"],
 							time: "9:51m (6.1)",
 							ref: "https://youtu.be/Ja3yyEc2mQI",
 						},
@@ -602,9 +608,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Saggitarius & Shakes Adrift",
+							weap: "Sagittarius Astra",
+							stigmata: [
+								"Shakespeare: Adrift (T)",
+								"Shakespeare: Adrift (M)",
+								"Shakespeare: Adrift (B)",
+							],
 							time: "13:42m (6.1)",
 							ref: "https://youtu.be/WtStotdHLfg",
 						},
@@ -918,9 +929,10 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Lost Conviction & 3-set Handel",
+							weap: "Lost Conviction: Damnation",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "7:47m (6.1)",
 							ref: "https://youtu.be/250mouXMexk",
 						},
@@ -1227,7 +1239,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Iris Pri & Handel",
+							weap: "Iris of Helheim",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "6:21m (6.1)",
 							ref: "https://youtu.be/xppTS-q5ll4",
 						},
@@ -1539,7 +1552,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Sleeper's Dream & Michelangelo TB Dante M",
+							weap: "Sleeper's Dream",
+							stigmata: ["Michelangelo (T)", "Dante (M)", "Michelangelo (B)"],
 							time: "8:55m (6.0A)",
 							ref: "https://youtu.be/0od_2xpXFcI",
 						},
@@ -1876,7 +1890,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoI & Handel",
+							weap: "Domain of Incandescence",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "9:03m (6.0B)",
 							ref: "https://youtu.be/iWKlVGS9wnU",
 						},
@@ -2210,9 +2225,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "SS0",
+							rank: "SS",
 							difficult: "Finality",
-							gear: "7T & 3-set Ana",
+							weap: "Seven Thunders of Retribution: Narukami",
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "10:18m (6.1)",
 							ref: "https://youtu.be/2jg-_BezVv8",
 						},
@@ -2554,9 +2574,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "SS0",
+							rank: "SS",
 							difficult: "Finality",
-							gear: "Muramasa Bloodlust & Ana Schariac",
+							weap: "Muramasa Bloodlust",
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "10:30m (6.1)",
 							ref: "https://youtu.be/r-KRIK4AfB8",
 						},
@@ -2890,7 +2915,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "Tower of Past & 3-set Collodi",
+							weap: "Tower of the Past: Silk Leader",
+							stigmata: [
+								"Carlo Collodi (T)",
+								"Carlo Collodi (M)",
+								"Carlo Collodi (B)",
+							],
 							time: "5:15m (6.1)",
 							ref: "https://youtu.be/cwbYxS_h_VE",
 						},
@@ -3221,9 +3251,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "DoI & 3-set Himeko",
+							weap: "Domain of Incandescence",
+							stigmata: [
+								"Murata Himeko (T)",
+								"Murata Himeko (M)",
+								"Murata Himeko (B)",
+							],
 							time: "4:18m (6.0B)",
 							ref: "https://youtu.be/-fVlZ3l135k",
 						},
@@ -3548,16 +3583,22 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "DoI & 3-set Himeko",
+							weap: "Domain of Incandescence",
+							stigmata: [
+								"Murata Himeko (T)",
+								"Murata Himeko (M)",
+								"Murata Himeko (B)",
+							],
 							time: "5:26m (6.0A)",
 							ref: "https://youtu.be/YRwcFNoFUWk",
 						},
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "DoI & Shelley T Himeko M Scott B",
+							weap: "Domain of Incandescence",
+							stigmata: ["Marry Shelley (T)", "Murata Himeko (M)", "Scott (B)"],
 							time: "10:36m (6.0B)",
 							ref: "https://youtu.be/l5wUpammzF0",
 						},
@@ -3880,16 +3921,22 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "DoI & 3-set Himeko",
+							weap: "Domain of Incandescence",
+							stigmata: [
+								"Murata Himeko (T)",
+								"Murata Himeko (M)",
+								"Murata Himeko (B)",
+							],
 							time: "7:19m (6.0A)",
 							ref: "https://youtu.be/sBqs_DAPdAk",
 						},
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "DoI & Leuween TB Thales M",
+							weap: "Domain of Incandescence",
+							stigmata: ["Leeuwenhoek (T)", "Thales (M)", "Leeuwenhoek (B)"],
 							time: "9:44m (6.0A)",
 							ref: "https://youtu.be/6vlIJ4hAKT8",
 						},
@@ -4212,7 +4259,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "S1",
 							difficult: "Finality",
-							gear: "DoEgo & 3-set Pristine",
+							weap: "Domain of Ego: Flawless Return",
+							stigmata: [
+								"Elysia: Pristine (T)",
+								"Elysia: Pristine (M)",
+								"Elysia: Pristine (B)",
+							],
 							time: "3:47m (6.0A)",
 							ref: "https://youtu.be/Fgkcml9kPLw",
 						},
@@ -4561,7 +4613,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "S1",
 							difficult: "Finality",
-							gear: "DoEgo & 3-set Pristine",
+							weap: "Domain of Ego: Flawless Return",
+							stigmata: [
+								"Elysia: Pristine (T)",
+								"Elysia: Pristine (M)",
+								"Elysia: Pristine (B)",
+							],
 							time: "4:12m (6.0A)",
 							ref: "https://youtu.be/OdJ-aHcehW0",
 						},
@@ -4917,7 +4974,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "SoE:W & 3-set Ana Schariac",
+							weap: "Star of Eden: World",
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "7:57m (6.1)",
 							ref: "https://youtu.be/WtWG29ySI7s",
 						},
@@ -5230,7 +5292,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "65 DoR & 3-set Ana Schariac",
+							weap: "Domain of Revelation",
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "6:49 (6.0A)",
 							ref: "https://youtu.be/uA5SCbf7Pcs",
 						},
@@ -5558,7 +5625,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "65 DoR & 3-set Ana Schariac",
+							weap: "Domain of Revelation",
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "9:14 (6.0A)",
 							ref: "https://youtu.be/cgnVNUf8Ye0",
 						},
@@ -5914,16 +5986,18 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Senpri & Shattered Swords",
+							weap: "Domain of Sentience",
+							stigmata: ["Raksha (T)", "Sushang (M)", "Empyrea Phoenix (B)"],
 							time: "7:47m (6.0A)",
 							ref: "https://youtu.be/jalMiRdgqEw",
 						},
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Senpri & Ely TB PoloM",
+							weap: "Domain of Sentience",
+							stigmata: ["Elysia (T)", "Marco Polo (M)", "Elysia (B)"],
 							time: "8:29m (6.0A)",
 							ref: "https://youtu.be/7OyB4IOkjGA",
 						},
@@ -6255,9 +6329,10 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Senpri & Shattered Swords",
+							weap: "Domain of Sentience",
+							stigmata: ["Raksha (T)", "Sushang (M)", "Empyrea Phoenix (B)"],
 							time: "8:30m (5.9B)",
 							ref: "ttps://youtu.be/j_UFFAe3yWI",
 						},
@@ -6560,9 +6635,10 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Senpri & 3-Set Shattered Swords",
+							weap: "Domain of Sentience",
+							stigmata: ["Raksha (T)", "Sushang (M)", "Empyrea Phoenix (B)"],
 							time: "8:34 (6.0A)",
 							ref: "https://youtu.be/YjfVFkgrusA",
 						},
@@ -6897,7 +6973,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "65 7T & Handel",
+							weap: "Seven Thunders of Retribution: Narukami",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "6:53 (6.0A)",
 							ref: "https://youtu.be/hRm5kgih2ao",
 						},
@@ -7270,21 +7347,28 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "65 7T & Handel",
+							weap: "Seven Thunders of Retribution: Narukami",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "4:53 (6.0A)",
 							ref: "https://youtu.be/5Ivtllc8h1Y",
 						},
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "65 DoS & Benares: Awakening",
+							weap: "Domain of Sanction",
+							stigmata: [
+								"Benares: Awakening (T)",
+								"Benares: Awakening (M)",
+								"Benares: Awakening (B)",
+							],
 							time: "6:25 (6.0A)",
 							ref: "https://youtu.be/FD6YiTvLYnQ",
 						},
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "65 DoS & Handel",
+							weap: "Domain of Sanction",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "7:06 (6.0A)",
 							ref: "https://youtu.be/XDaxl4Aesxw",
 						},
@@ -7608,14 +7692,16 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							gear: "65 7T & Handel",
+							weap: "Seven Thunders of Retribution: Narukami",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "5:01 (6.0A)",
 							ref: "https://youtu.be/WSNNT-c0wns",
 						},
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "65 7T & Handel",
+							weap: "Seven Thunders of Retribution: Narukami",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
 							time: "8:17 (6.0A)",
 							ref: "https://youtu.be/3oqKVTRESns",
 						},
@@ -7955,35 +8041,52 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoV & 3-set Sirin Ascendant",
+							weap: "Domain of the Void",
+							stigmata: [
+								"Sirin: Ascendant (T)",
+								"Sirin: Ascendant (M)",
+								"Sirin: Ascendant (B)",
+							],
 							time: "3:57m (6.0B)",
 							ref: "https://youtu.be/fPhUSG4sug8",
 						},
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoV & 3-set Elysia",
+							weap: "Domain of the Void",
+							stigmata: ["Elysia (T)", "Elysia (M)", "Elysia (B)"],
 							time: "6:33m (6.0A)",
 							ref: "https://youtu.be/m9ODUGWtI-8",
 						},
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoV & 3-set Mich TB Polo M",
+							weap: "Domain of the Void",
+							stigmata: [
+								"Michelangelo (T)",
+								"Marco Polo (M)",
+								"Michelangelo (B)",
+							],
 							time: "9:53m (5.9B)",
 							ref: "https://youtu.be/5iB58b-fAQQ",
 						},
 						{
 							rank: "S3",
 							difficult: "Finality",
-							gear: "Lv55 DoV & Sirin Ascendant",
+							weap: "Domain of the Void",
+							stigmata: [
+								"Sirin: Ascendant (T)",
+								"Sirin: Ascendant (M)",
+								"Sirin: Ascendant (B)",
+							],
 							time: "7:26 (6.0A)",
 							ref: "https://youtu.be/oMdHkVnh7bE",
 						},
 						{
 							rank: "S3",
 							difficult: "Finality",
-							gear: "Lv55 DoV & 3-set Elysia",
+							weap: "Domain of the Void",
+							stigmata: ["Elysia (T)", "Elysia (M)", "Elysia (B)"],
 							time: "10:08m (6.0A)",
 							ref: "https://youtu.be/WkSisfkTyA0",
 						},
@@ -8352,14 +8455,24 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoV & 3-set Sirin Ascendant",
+							weap: "Domain of the Void",
+							stigmata: [
+								"Sirin: Ascendant (T)",
+								"Sirin: Ascendant (M)",
+								"Sirin: Ascendant (B)",
+							],
 							time: "5:25 (6.0B)",
 							ref: "https://youtu.be/0ZiDYsghgFM",
 						},
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoV & 3-set Sirin Ascendant",
+							weap: "Domain of the Void",
+							stigmata: [
+								"Sirin: Ascendant (T)",
+								"Sirin: Ascendant (M)",
+								"Sirin: Ascendant (B)",
+							],
 							time: "6:40 (6.0A)",
 							ref: "https://youtu.be/Oi9dDp6xo5A",
 						},
@@ -8720,9 +8833,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "SS0",
+							rank: "SS",
 							difficult: "Finality",
-							gear: "Nocturnal & Shenzhou",
+							weap: "Nocturnal Stealth: Beam",
+							stigmata: [
+								"Li Sushang: Shenzou Reminiscence (T)",
+								"Li Sushang: Shenzou Reminiscence (M)",
+								"Li Sushang: Shenzou Reminiscence (B)",
+							],
 							time: "3:37 (6.1)",
 							ref: "https://youtu.be/Pld1F3JfVbw",
 						},
@@ -9009,8 +9127,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core (Not Necessary)",
 								},
 							],
-							note: 
-								"Pick this or Su or Pardofelis As Sussy has weak healing, she can stay at low HP enough to make use of most of Kalpas' buffs without his 2nd Core.",
+							note: "Pick this or Su or Pardofelis As Sussy has weak healing, she can stay at low HP enough to make use of most of Kalpas' buffs without his 2nd Core.",
 							danger:
 								"This means that you can complete any of these 3 based on the RNG for the remainder of your run. Kalpas signets can be completely picked off from Felis Shop, it does not need the Core unlock. Keep that in mind.",
 						},
@@ -9090,8 +9207,7 @@ export const valkyries: Array<Valkyrie> = [
 							],
 							danger:
 								"This means that you can complete any of these 3 based on the RNG for the remainder of your run. Kalpas signets can be completely picked off from Felis Shop, it does not need the Core unlock. Keep that in mind.",
-							note: 
-								"Pick this or Kalpas or Su. Doesn't matter which of these cores you pick between.",
+							note: "Pick this or Kalpas or Su. Doesn't matter which of these cores you pick between.",
 						},
 					],
 				},
@@ -9106,9 +9222,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Lv55 Nocturnal & 3-set Ana",
+							weap: "Nocturnal Stealth: Beam",
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "5:44 (6.1)",
 							ref: "https://youtu.be/CYP9mv76lbU",
 						},
@@ -9169,8 +9290,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: 
-						"AE's Elemental Breach does NOT stack with Sussy's. Due to this, she's weaker as a support of choice for her, and VC & HB are better options. Now, regarding who to choose. AE's advantages are for Early only: gather, 30% Elem Taken, SP Regen. VC is for the purposes of reliable and consistent gather only. HB, on the other hand, has WAY more DMG boost during all stages of the run. TLDR; HB for maximum damage bonus, VC for easy and reliable gather, AE for gather/elem taken early on. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
+					note: "AE's Elemental Breach does NOT stack with Sussy's. Due to this, she's weaker as a support of choice for her, and VC & HB are better options. Now, regarding who to choose. AE's advantages are for Early only: gather, 30% Elem Taken, SP Regen. VC is for the purposes of reliable and consistent gather only. HB, on the other hand, has WAY more DMG boost during all stages of the run. TLDR; HB for maximum damage bonus, VC for easy and reliable gather, AE for gather/elem taken early on. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start into Hua Elem Breach F3, finish Hua 2nd Core by F4, either gamble for Broken Dream F5 or take Griseo/Kalpas door, go shop F6 and get Griseo Red/Yellow/Black or Kalpas TDM/Phys & Elem DMG/TDM Taken. Sakura TDM Taken and TDM can also be considered, and upgrade Hua Breach. Finish Griseo 2nd Core by F7",
@@ -9457,9 +9577,10 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "GTX & 3-set Scott",
+							weap: "Grips of Tai Xuan",
+							stigmata: ["Scott (T)", "Scott (M)", "Scott (B)"],
 							time: "8:57m (6.1)",
 							ref: "https://youtu.be/Z9kMkellZtU",
 						},
@@ -9521,8 +9642,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "HB / LE",
 						},
 					],
-					note: 
-						"AE's Elemental Breach does NOT stack with Sussy's. Regarding the other choices, LE is only used when you're using Sushang without her signature weapon, or when you don't have it, you instead swap her out the moment you get Eden's Initial/Max SP signet. Take this fact into consideration when switching out BR before Heimdall fight. Basically, keep LE if you don't have Nocturnal Stealth or once you get Eden's Initial/Max SP. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
+					note: "AE's Elemental Breach does NOT stack with Sussy's. Regarding the other choices, LE is only used when you're using Sushang without her signature weapon, or when you don't have it, you instead swap her out the moment you get Eden's Initial/Max SP signet. Take this fact into consideration when switching out BR before Heimdall fight. Basically, keep LE if you don't have Nocturnal Stealth or once you get Eden's Initial/Max SP. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start Eden's TDM F3, finish Eden 2nd Core by F4 with Phys/Elem DMG and Sp/s, grab Eden's Withered Soil at F5 and go shop F6, swap Dreamful Gold for Empty Like Shala, buy 2/3 Su Signets (TDM Taken, 25 Hits, 30 SP) and finish Su 2nd Core by F7 double, afterwards you can continue with Hua or Griseo.",
@@ -9777,9 +9897,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "SS0",
+							rank: "SS",
 							difficult: "Finality",
-							gear: "Nocturnal & Shenzhou",
+							weap: "Nocturnal Stealth: Beam",
+							stigmata: [
+								"Li Sushang: Shenzou Reminiscence (T)",
+								"Li Sushang: Shenzou Reminiscence (M)",
+								"Li Sushang: Shenzou Reminiscence (B)",
+							],
 							time: "To be Tested",
 							ref: "To be Tested",
 						},
@@ -10134,16 +10259,18 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "",
 							difficult: "Finality",
-							gear: "Basilisk & Linnaeus",
+							weap: "Basillisk's Image: Deathshroud",
+							stigmata: ["Linnaeus (T)", "Linnaeus (M)", "Linnaeus (B)"],
 							time: "4:57 (6.0B)",
 							ref: "https://youtu.be/4XkouMCLSOc",
 						},
 						{
-							rank: "S0",
+							rank: "",
 							difficult: "Finality",
-							gear: "Basilisk & Linnaeus",
+							weap: "Basillisk's Image: Deathshroud",
+							stigmata: ["Linnaeus (T)", "Linnaeus (M)", "Linnaeus (B)"],
 							time: "6:02 (6.0A)",
 							ref: "https://youtu.be/A0fgY7_m4c4",
 						},
@@ -10207,8 +10334,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR / LE",
 						},
 					],
-					note: 
-						"BR if your damage is a little lacking, particularly in early floors before Mobius 1st Core. LE is the comfier option due to eliminating the possibility of dealing with downtime outside Ult. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
+					note: "BR if your damage is a little lacking, particularly in early floors before Mobius 1st Core. LE is the comfier option due to eliminating the possibility of dealing with downtime outside Ult. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
 				},
 				signet: {
 					note: "Ideal Order from F1-F7: Double Ego Start for Ascension, grab Entwined [P] or Rodent [V] by F3, complete Mobius 1st Core by F4 with Entwined, Rodent, Lip Poison, take either Dead [X] or Unknown [X] by F5, then go shop, grab 2 Hua signets and 1 Kalpas signet and get a Hua door for F6 to complete her 2nd Core, swap Forbidden Seed out for Mad King's Mask, complete Kalpas 2nd Core by F7",
@@ -10458,7 +10584,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Abstinence",
-							gear: "Hekate & Ely TB Dante M",
+							weap: "Hekate's Sombre",
+							stigmata: ["Elysia (T)", "Dante (M)", "Elysia (B)"],
 							time: "11:35m (6.0A)",
 							ref: "https://youtu.be/sgAAftHZA4Y",
 						},
@@ -10788,7 +10915,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoEgo & Aslaug",
+							weap: "Domain of Ego: Flawless Return",
+							stigmata: ["Aslaug (T)", "Aslaug (M)", "Aslaug (B)"],
 							time: "12: 08m (6.1)",
 							ref: "https://youtu.be/rkCnkA44e4s",
 						},
@@ -11099,14 +11227,20 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Whisper Pri & 3-set Elysia",
+							weap: "Whisper of the Past: Sonnet",
+							stigmata: ["Elysia (T)", "Elysia (M)", "Elysia (B)"],
 							time: "5:39 (6.0B)",
 							ref: "https://youtu.be/vWv3zs66A0s",
 						},
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Call of Crescent & Michelangelo TB Polo M",
+							weap: "Call of Crescent",
+							stigmata: [
+								"Michelangelo (T)",
+								"Marco Polo (M)",
+								"Michelangelo (B)",
+							],
 							time: "12:05m (6.1)",
 							ref: "https://youtu.be/H4C8tPJzbxk",
 						},
@@ -11442,7 +11576,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Midnight Ataegina & BiankaT",
+							weap: "Midnight Ataegina",
+							stigmata: ["Bianka: Theatre (T)", "Bianka: Theatre (M)", "Bianka: Theatre (B)"],
 							time: "9:41m (6.0A)",
 							ref: "https://youtu.be/hVsZaDG7TVM",
 						},
@@ -11801,7 +11936,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "DoEgo & Zhenyi",
+							weap: "Domain of Ego: Flawless Return",
+							stigmata: ["Wang Zhenyi (T)", "Wang Zhenyi (M)", "Wang Zhenyi (B)"],
 							time: "8:51m (6.0B)",
 							ref: "https://youtu.be/t75HyvhKV6I",
 						},
@@ -11866,8 +12002,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: 
-						"You'll want to prioritize saving AE for gather sometimes if you are lacking in a ELF that has gather or while you don't have Vill-V's 2nd Core unlocked, as Fischl is straight up horrible without it. She's literally dependant on it due to her almost non-existent AoE damage, especially when lacking 3rd signet which is pretty much a requirement. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
+					note: "You'll want to prioritize saving AE for gather sometimes if you are lacking in a ELF that has gather or while you don't have Vill-V's 2nd Core unlocked, as Fischl is straight up horrible without it. She's literally dependant on it due to her almost non-existent AoE damage, especially when lacking 3rd signet which is pretty much a requirement. BKE is only for the purposes of filling Heimdall's Heavy Trauma Bar, forcefully ending his Red Mode.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2/3 Ego Start, finish V-V 2nd Core by F4 or F6, shop at F5, then either finish Aponia 2nd Core by F7 or grab V-V2's both Drama and Puppetry. For Aponia2, grab both the Breach and TDM Taken",
@@ -12154,14 +12289,16 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Purana & Bastet",
+							weap: "Purana Phantasma: Nighteye",
+							stigmata: ["Bastet (T)", "Bastet (M)", "Bastet (B)"],
 							time: "5:43m (6.1)",
 							ref: "https://youtu.be/tkFqo9p6bd4",
 						},
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Purana & Ana Schariac",
+							weap: "Purana Phantasma: Nighteye",
+							stigmata: ["Ana Schariac (T)", "Ana Schariac (M)", "Ana Schariac (B)"],
 							time: "8:08m (6.0A)",
 							ref: "https://youtu.be/EZNq6e74Wjc",
 						},
@@ -12453,14 +12590,16 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Purana & Bastet",
+							weap: "Purana Phantasma: Nighteye",
+							stigmata: ["Bastet (T)", "Bastet (M)", "Bastet (B)"],
 							time: "5:29m (6.1)",
 							ref: "https://youtu.be/N9fb3zsGZjM",
 						},
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Purana & Ana Schariac",
+							weap: "Purana Phantasma: Nighteye",
+							stigmata: ["Ana Schariac (T)", "Ana Schariac (M)", "Ana Schariac (B)"],
 							time: "7:41m (6.0A)",
 							ref: "https://youtu.be/jn0qc03V5WI",
 						},
@@ -12823,7 +12962,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Corruption",
-							gear: "DoV & 3-Set Elysia",
+							weap: "Domain of the Void",
+							stigmata: ["Elysia (T)", "Elysia (M)", "Elysia (B)"],
 							time: "13:25m (5.9B)",
 							ref: "https://youtu.be/rFxInRhkEdo",
 						},
@@ -13153,7 +13293,10 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "S2",
 							difficult: "Finality",
-							gear: "FFF & Bronya N-EX",
+							weap: "Falcon Flare: FINAL",
+							stigmata: [
+								"Bronya N-EX (T)", "Bronya N-EX (M)", "Bronya N-EX (B)"
+							],
 							time: "7:48m (6.1)",
 							ref: "https://youtu.be/vK_stvbRv50",
 						},
@@ -13461,7 +13604,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS",
 							difficult: "Finality",
-							gear: "Pisces & Ragna",
+							weap: "Astra Divide: Pisces",
+							stigmata: ["Ragna (T)", "Ragna (M)", "Ragna (B)"],
 							time: "7:00m (6.1)",
 							ref: "https://youtu.be/HvXbqtefzNA",
 						},
@@ -13759,7 +13903,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS",
 							difficult: "Finality",
-							gear: "Pisces & Ragna",
+							weap: "Astra Divide: Pisces",
+							stigmata: ["Ragna (T)", "Ragna (M)", "Ragna (B)"],
 							time: "10:16m (6.0A)",
 							ref: "https://youtu.be/IDZt4TyONVo",
 						},
@@ -14068,9 +14213,10 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "S0",
+							rank: "S",
 							difficult: "Finality",
-							gear: "Sanguine & Verne",
+							weap: "Sanguine Gaze: Union",
+							stigmata: ["Verne (T)", "Verne (M)", "Verne (B)"],
 							time: "8:48m (6.1)",
 							ref: "https://youtu.be/9w0XSpPfJNc",
 						},
@@ -14373,7 +14519,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Elysian Astra & Cezanne",
+							weap: "Elysian Astra: Heart's Color",
+							stigmata: ["Cezanne (T)", "Cezanne (M)", "Cezanne (B)"],
 							time: "7:16m (6.0A)",
 							ref: "https://youtu.be/WOaXlhdcyrc",
 						},
@@ -14726,7 +14873,8 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "7T & 3-set Dirac",
+							weap: "Seven Thunders of Retribution: Narukami",
+							stigmata: ["Dirac (T)", "Dirac (M)", "Dirac (B)"],
 							time: "13:18m (6.1)",
 							ref: "https://youtu.be/K-h8H2hQViQ",
 						},
@@ -15023,9 +15171,14 @@ export const valkyries: Array<Valkyrie> = [
 				setup: {
 					lists: [
 						{
-							rank: "SS0",
+							rank: "SS",
 							difficult: "Finality",
-							gear: "PoA:Kindred & Allan Poe",
+							weap: "Path to Acheron: Kindred",
+							stigmata: [
+								"Allan Poe (T)",
+								"Allan Poe (M)",
+								"Allan Poe (B)",
+							],
 							time: "16:10m (6.1)",
 							ref: "https://youtu.be/KDbo2fZi94E",
 						},
@@ -15322,7 +15475,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "S2",
 							difficult: "Abstinence",
-							gear: "Path of Acheron Pri & 3-set Allan Poe",
+							weap: "Path to Acheron: Kindred",
+							stigmata: [
+								"Allan Poe (T)",
+								"Allan Poe (M)",
+								"Allan Poe (B)",
+							],
 							time: "14m (5.9B)",
 							ref: "https://youtu.be/cslZh5G3YxI",
 						},
@@ -15596,7 +15754,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "MKP & Paganini",
+							weap: "Miracle Kissy Pillow",
+							stigmata: [
+								"Paganini (T)",
+								"Paganini (M)",
+								"Paganini (B)",
+							],
 							time: "12:34m (6.1)",
 							ref: "https://youtu.be/MdpFV-Zh1LU",
 						},
@@ -15886,7 +16049,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Finality",
-							gear: "Hekate Sombre & Kafka",
+							weap: "Hekate's Sombre",
+							stigmata: [
+"Kafka (T)",
+"Kafka (M)",
+"Kafka (B)",
+							],
 							time: "11:26m (6.1)",
 							ref: "https://youtu.be/fVlpYAEqHug",
 						},
@@ -16217,7 +16385,12 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SSS",
 							difficult: "Abstinence",
-							gear: "Eos Gloria & LWH TB Thales M",
+							weap: "Eos Gloria",
+							stigmata: [
+								"Leeuwenhoek (T)",
+								"Thales (M)",
+								"Leeuwenhoek (B)",
+							],
 							time: "13:09m (5.9B)",
 							ref: "https://youtu.be/ILcGqhJskcs",
 						},
@@ -16492,5 +16665,361 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 		],
+	},
+];
+export const sigils = [
+	{
+		name: "The MOTH Insignia",
+		description:
+			"Reduces Total DMG taken by 25% and restores 15% HP after battle.",
+	},
+	{
+		name: "Home Lost",
+		description:
+			"Grants 3 portal resets but locks Remembrance Sigil and Support Valkyrie.",
+	},
+	{
+		name: "False Hope",
+		description: "Valkyrie receives 50% less Total DMG when debuffed.",
+	},
+	{
+		name: "Tin Flask",
+		description: "Take 30% less Total DMG. Max HP increased by 500.",
+	},
+	{
+		name: "Ruined Legacy",
+		description:
+			"Grants 30 bonus initial SP but consumes 10% current HP after battle.",
+	},
+	{
+		name: "Key to the Deep",
+		description: "Max HP increased by 300; Max SP increased by 40. ",
+	},
+	{
+		name: "Burden",
+		description:
+			"Portals carrying Signets of Deliverance appear more often; Signets of Deliverance offer Ultimate buffs.",
+	},
+	{
+		name: "Gold Goblet",
+		description:
+			"Portals carrying Signets of Gold appear more often; Signets of Gold offer SP buffs.",
+	},
+	{
+		name: "Mad King's Mask",
+		description:
+			"Portals carrying Signets of Decimation appear more often; Signets of Decimation offer low HP buffs.",
+	},
+	{
+		name: "Light as a Bodhi Leaf",
+		description:
+			"Portals carrying Signets of Bodhi appear more often; Signets of Bodhi offer combo buffs.",
+	},
+	{
+		name: "Forget-Me-Not",
+		description:
+			"Portals carrying Signets of Setsuna appear more often; Signets of Setsuna offer evasion buffs.",
+	},
+	{
+		name: "Forbidden Seed",
+		description:
+			"Portals carrying Signets of Infinity appear more often; Signets of Infinity offer summoned entity buffs.",
+	},
+	{
+		name: "Memory",
+		description:
+			"Portals carrying Signets of Vicissitude appear more often; Signets of Vicissitude offer no-damage buffs.",
+	},
+	{
+		name: "Crystal Rose",
+		description:
+			"Portals carrying Signets Ego of appear more often; Signets of Ego offer special buffs.",
+	},
+	{
+		name: "Veil of Tears",
+		description:
+			"Portals carrying Signets Discipline of appear more often; Signets of Discipline offer restriction buffs.",
+	},
+	{
+		name: "Pseudo Miracle",
+		description:
+			"Portals carrying Signets Helix of appear more often; Signets of Helix offer weapon buffs.",
+	},
+	{
+		name: "Fragile Friend",
+		description:
+			"Portals carrying Signets Daybreak of appear more often; Signets of Daybreak offer shield-breaker buffs.",
+	},
+	{
+		name: "Rainbow of Absence",
+		description:
+			"Portals carrying Signets Stars of appear more often; Signets of Stars offer type counter buffs.",
+	},
+	{
+		name: "Feast of Emptiness",
+		description:
+			"Portals carrying Signets Reverie of appear more often; Signets of Reverie offer Shiny Silver buffs.",
+	},
+	{
+		name: "Thorny Crown",
+		description:
+			"Can choose another Signet of Ego (ineffective when worn by Flame-Chasers) when a run begins. Portals carrying Signets of Ego will not appear after 1F. Remembrance Sigil and support Valkyries cannot be swapped. The number of options when choosing a Signet is reduced to 2. Every Signet owned increases Total DMG bonus by 10% and reduces max HP by 1000.",
+	},
+	{
+		name: "Abandoned",
+		description:
+			"Grants 1 extra level when choosing a Signet of Deliverance. When the Signets of [Blade of the Deliverer] are active, defeating an enemy reduces Ultimate CD by 20% once every 10s; When the Signets of [Shadow of the Deliverer] are active, the number of combo hits required to enter War of Deliverance is reduced from 50 to 45. reduced from 50 to 45.",
+	},
+	{
+		name: "Good Old Days",
+		description:
+			"Grants 1 extra level when choosing a Signet of Gold. When the Signets of [Aria of Gold] are active, consuming 50 SP or more in one go drops an SP Pack that restores 10 SP; When the Signets of [Echo of Gold] are active, consuming SP restores 20 Final Echo charges once every 10s.",
+	},
+	{
+		name: "Shattered Shackles",
+		description:
+			"Grants 1 extra level when choosing a Signet of Decimation. When the Signets of [Fight, Struggle, and Decimation] are active, become immune to most debuffs at below 33% HP and interruption at below 20% HP; When the Signets of [Soldiers, Scissors, Spoils, and Slaughter] are active, raises max Bloodboil Armor charges by 300.",
+	},
+	{
+		name: "Heavy as a Million Lives",
+		description:
+			"Grants 1 extra level when choosing a Signet of Bodhi. When the Signets of [Motto of Bodhi] are active, combo count will not be reset and the first hit grants extra 50 combo hits; When the Signets of [Dictum of Bodhi] are active, hitting enemies in a Trance grants extra 8 combo hits once every 15s.",
+	},
+	{
+		name: "Stained Sakura",
+		description:
+			"Grants 1 extra level when choosing a Signet of Setsuna. When the Signets of [Setsuna Blade: Sakura ni Maku] are active, every time Sakura Screen is triggered, its DMG conversion ratio increases by 10%; When the Signets of [Setsuna Blade: Yasha] are active, the CD of Isshun status is reduced from 10s to 8.5s.",
+	},
+	{
+		name: "The First Scale",
+		description:
+			"Grants 1 extra level when choosing a Signet of Infinity. When the Signets of [Infinite [X]] are active, every time a battle starts, activate Mind Sync for 8s; When the Signets of [Infinite [M]] are active, the transfer progress of Mind Sync status increases by 3% per second.",
+	},
+	{
+		name: "Resolve",
+		description:
+			"Grants 1 extra level when choosing a Signet of Vicissitude. When the Signets of [Vivid Vicissitude] are active, Soldier's Resolve starts with 1 more stack and grants temporary invincibility when blocking DMG; When the Signets of [Suffering Mass] are active, start with 1 more Soldier's Resolve stack, and the invincibility from blocking DMG is prolonged to 0.6s.",
+	},
+	{
+		name: "Proof of Good and Evil",
+		description:
+			"Grants 1 extra level when choosing a Signet of Discipline. When the Signets of [You Shall Be Subject to Numerous Disciplines] are active and Exhortation reaches 100, Nexus Signet's effects will be triggered; When the Signets of [You Shall Receive Disciplines' Blessing] are active, their Total DMG bonus cap is raised from 70% to 100%.",
+	},
+	{
+		name: "Faraway Ship",
+		description:
+			"Grants 1 extra level when choosing a Signet of Helix. When the Signets of [Interlude: Reversed Spiral] are active, if enemies are hit by a weapon active, they take 20% bonus Physical DMG for 6s. With Signet [Intermezzo: Holistic Helix], ATK of Adaptive DMG dealt per second by the Gravitational Field to surrounding enemies increases to 120% ATK.",
+	},
+	{
+		name: "Ravenous Gully",
+		description:
+			"Grants 1 extra level when choosing a Signet of Daybreak. When the Signets of [Daybreak, an Undying Light] are active, Total DMG against shielded enemies is increased by 25%. With Signet [Daybreak, Lone Beacon], deal an additional 2% Total DMG with every 10 stacks of [Rend].",
+	},
+	{
+		name: "Grey-scale Rainbow",
+		description:
+			"Grants 1 extra level when choosing a Signet of Stars. When the Signets of [Shining Like Stars] are active, if an enemy is tainted red, yellow, and blue at the same time, enemies stay tainted for an extra 2.5s; When the Signets of [Faded Stars] are active, tainted enemies will taint nearby enemies with the same colors after 1s of their defeat.",
+	},
+	{
+		name: "Nine Lives",
+		description:
+			"Grants 1 extra level when choosing a Signet of Reverie. When Signets of [Empty Dreams, Self, Set, and Joy] are active, Nexus Signet's effects will be triggered at 200 less Shiny Silver. With Signet [Empty Illusions, Empty Fantasies], deal an additional 2% Total DMG with every stack of [VIP Service].",
+	},
+	{
+		name: "It Will Be Written",
+		description:
+			"Grants 1 extra level when choosing a Signet of Deliverance. All Back to Zero: The enemy with the highest HP becomes icebound for 10 hits, this executes non-boss enemies while causing bosses massive HP loss.",
+		charging: "Gain 200 Charge for every Ultimate use. CD: 10s.",
+	},
+	{
+		name: "Dreamful Gold",
+		description:
+			"Grants 1 extra level when choosing a Signet of Gold. Aria of Brilliance: Expands Eden's Stage, causing HP loss to surrounding enemies while increasing deployed Valkyrie's Total DMG by 50% for 10s.",
+		charging: "Gain 50 Charge for every 20 SP recovered in combat. CD 2s.",
+	},
+	{
+		name: "An Old Pal's Legacy",
+		description:
+			"Grants 1 extra level when choosing a Signet of Decimation. Divine Flames, Divine Wrath, and Divine Transformation: Increases deployed Valkyries max HP by 1000 for 10s. This skill permanently raises max HP by 50 with each use, for a maximum of 500 HP.",
+		charging: "Gain 100 Charge for each enemy defeated.",
+	},
+	{
+		name: "Empty like Shala",
+		description:
+			"Grants 1 extra level when choosing a Signet of Bodhi. Life and Death: A special skill that increases Valkyrie ATK (speed?) and Move Speed by 20% for. It then causes massive HP loss for all enemies based on the DMG Valkyrie dealt during this time and knocks them down.",
+		charging: "Gain 60 Charge for every 150 combo hits.",
+	},
+	{
+		name: "Tsukimi Himiko",
+		description:
+			"Grants 1 extra level when choosing a Signet of Setsuna. Setsuna Blade: Matsunitsuru: Unleash Chrono Slash, which causes massive HP loss for all enemies, then consecutive HP loss and a 4s Time Lock.",
+		charging:
+			"Gain 120 Charge for every Ultimate Evasion Skill triggered CD: 6s.",
+	},
+	{
+		name: "Boundless Logos",
+		description:
+			"Grants 1 extra level when choosing a Signet of Infinity. Miniature [X]: Creates an effigy to taunt enemies for 10s. The effigy is Soul Linked to enemies so that 30% of the DMG it takes is passed onto all enemies, or 60% if there are more than 2 enemies on the field.",
+		charging:
+			"Gain 100 Charge when casting ELF Ultimate or summoning entities. CD: 4s",
+	},
+	{
+		name: "Hometown",
+		description:
+			"Grants 1 extra level when choosing a signet of Vicissitude. Fleeting Moment: Become invincible and increase total DMG by 20% for 8s. Invincibility is extended by 2s if HP is below 30%.",
+		charging:
+			"Gain 20 Charge per second in combat. Unable to recover Charge for 5s after receiving DMG",
+	},
+	{
+		name: "Because of You",
+		description:
+			"Pristine Bless: Reset all portal on field, If there are less than 4 Signets of Ego, one of the portals will become an Exclusive Signet Portal.",
+		charging:
+			"Gain 100 Charge for every floor cleared (unavailable in Flame-Chasers' Trials).",
+	},
+	{
+		name: "Boundless Feeling",
+		description:
+			"Grants 1 extra level when choosing a signet of Discipline. You Shall Be Tested by Untold Sufferings: Pulls in enemies and calls waves of Rain and Light to pour down, each causing HP loss for 10s. Rain of Light's DMG increases by 30% with each use, caps at 120%, and resets after exiting stage.",
+		charging: "Gain 30 Charge per second in combat.",
+	},
+	{
+		name: "Falling in Past Light",
+		description:
+			"Grants 1 extra level when choosing a signet of Helix . Prologue: Surprise: Places a bomb that causes massive HP loss to all enemies.",
+		charging: "Gain 120 Charge for every Weapon Active use. CD: 6s",
+	},
+	{
+		name: "Out of Reach",
+		description:
+			"Grants 1 extra level when choosing a signet of Daybreak. Abyss that Engulfs All Evil: Launches a vortex that pulls in enemies, the vortex causes multiple HP loss per second and stacks Rend every 0.5s for 10s.",
+		charging:
+			"Gain 20 Charge per second in combat if an enemy is nearby and 10 additional Charge if there are more than 2 enemies nearby.",
+	},
+	{
+		name: "The Lonely Moon",
+		description:
+			"Grants 1 extra level when choosing a signet of Stars. Hugging Like Friends: Creates a phantom studio enemy. Valkyries deal 30% more Total DMG to countering-type enemies in the tainted area. Also triggers a paint explosion that cause HP loss and taints enemies with all unlocked paint colors when exiting the field.",
+		charging:
+			"Gain 150 charges for tacking down countered-type enemies, 50 for countering types, and 100 for other types.",
+	},
+	{
+		name: "Awakening",
+		description:
+			"Grants 1 extra level when choosing a signet of Reverie. Money Makes Money: Summon a slot machine at the end of non-shop stages. Each lever-pull costs 100 Silver for a random prize. If you win 999 Shiny Silvers, the slot machine will explode and cannot be resummoned.",
+		charging: "Gain 600 Charge after Clearing a Floor.",
+	},
+];
+export const supports = [
+	{
+		name: "Valkyrie Chariot",
+		abbr: "VC",
+		skill: "Black Hole",
+		cooldown: "30s",
+		description:
+			"Summons Valkyrie Chariot which unleashes a Black Hole that lasts 10s, sucking in enemies and causing Bleed. The ranged physical DMG taken by the sucked in enemies is increased by 27%, the the total damage dealt is reduced by 50%, the Ignore Interrupt is significantly reduced, and the enemies are stunned for 6s after the Black Hole vanishes.",
+	},
+	{
+		name: "Divine Prayer",
+		abbr: "DP",
+		skill: "Divine Retribution",
+		cooldown: "40",
+		description:
+			"Triggers Time Fracture for 12s, during which, Falling Thunder is triggered every 2s, dealing 100% ATK of Lightning DMG to all enemies and impairing them, and DEF is reduced by 80% for 5s.",
+	},
+	{
+		name: "Snowy Sniper",
+		abbr: "SS",
+		skill: "Arctic Snow",
+		cooldown: "60",
+		description:
+			"Summons Snowy Sniper to inflict 18 Rime Trauma to all enemies and increasing their physical DMG taken by 35% for 12s. Deals 150% of ATK as Ice DMG after the freeze ends.",
+	},
+	{
+		name: "Lightning Empress",
+		abbr: "LE",
+		skill: "Lightning Charge",
+		cooldown: "40",
+		description: "Lightning Empress restores 50 SP for the deployed Valkyrie.",
+	},
+	{
+		name: "Vermilion Knight: Eclipse",
+		abbr: "VK",
+		skill: "Ravaging Flame",
+		cooldown: "60",
+		description:
+			"Summons Vermilion Knight: Eclipse, with a devastating ATK that deals a total of 2650% ATK of Fire DMG + 350% ATK of Physical DMG. She then unleashes Might of An-Utu, dealing 2600% ATK of Fire DMG and inflicting 20% Fire Vulnerability on the target enemies for 10s.",
+	},
+	{
+		name: "Bright Knight: Excelsis",
+		abbr: "BKE",
+		skill: "Knightly Bulwark",
+		cooldown: "30",
+		description:
+			"Summons Bright Knight: Excelsis, who swings her lance and unleashes her Ultimate, dealing 930% ATK of Physical DMG, and blocking all incoming attacks temporarily.",
+	},
+	{
+		name: "Azure Empyrea",
+		abbr: "AE",
+		skill: "Empyrean Sunder",
+		cooldown: "50",
+		description:
+			"Summons Azure Empyrea, who gathers enemies and deals 1500% ATK of Fire DMG to all enemies, Enemies hit by that attack take 30% bonus Elemental DMG for 15s. Valkyrie regains 1 SP per second, gain greater Ignore Interrupt, and gain 16% Elemental Breach.",
+	},
+	{
+		name: "Blood Rose",
+		abbr: "BR",
+		skill: "Blood Boost",
+		cooldown: "40",
+		description:
+			"The Blood Rose reduces the HP of the deployed Valkyrie by 30%, and increases the Total DMG dealt by the Valkyrie by 60% for 10s.",
+	},
+	{
+		name: "Haxxor Bunny",
+		abbr: "HB",
+		skill: "Star Destroyer",
+		cooldown: "40",
+		description:
+			"Summons Haxxor Bunny, whose presence increases Valkyrie's Total DMG by 12%. She performs a carpet bombing for Is, dealing of ATK as Ice DMG and increasing Valkyrie's Ice DMG by 15% for 15s. Triggering it again resets its duration. It also sends Valkyrie into Tracking mode, which increases Total DMG by 10% for 15s. Bombed enemies' Move Speed is reduced by 40.0% for 5s.",
+	},
+	{
+		name: "Midnight Absinthe",
+		abbr: "MA",
+		skill: "Nightbird's Call",
+		cooldown: "60",
+		description:
+			"Summons Midnight Absinthe, whose presence increases Valkyrie's Fire DMG by 20%. Her assault deals 6x150% ATK of Fire DMG. She then shoots an explosive arrow at the ground, dealing 300% ATK of Fire DMG on hit and 700% ATK of Fire DMG to surrounding enemies by exploding, which also increases the team's Fire DMG by 30% for 18s. She simultaneously creates a Raven Cloud that lasts 18s over the battlefield. If the team damages the enemies in the cloud, the cloud explodes 1s later to deal 600% of ATK as Fire DMG.",
+	},
+	{
+		name: "Reverist Calico",
+		abbr: "RC",
+		skill: "All Paws on Deck",
+		cooldown: "50",
+		description:
+			"Summons Reverist Calico to deal 2100% ATK of Ice DMG, increase. Total DMG for deployed Valkyries by 10% for 16s, and restore 3 SP for deployed Valkyries. When she is present, deployed Valkyries deal 25% bonus Total DMG against frozen enemies.",
+	},
+	{
+		name: "Starlit Astrologos",
+		abbr: "SA",
+		skill: "Eight Formations",
+		cooldown: "50",
+		description:
+			"Deploy a formation with a whirling tornado, gathering enemies at the tornado eye dealing 20x160% ATK of Physical DMG in total. Reduces incoming DMG 20% and increases Ignore Interrupt for 15s. Increases deployed Valkyries Physical DMG by 25% for 18s. When she is present, Physical DMG dealt by deployed Valkyries Ultimate and Burst mode increases by 15%.",
+	},
+	{
+		name: "Stygian Nymph",
+		abbr: "SN",
+		skill: "Chthonic Fury",
+		cooldown: "30",
+		description:
+			"Summon Stygian Nymph to inflict Quantum Implosion on QUA enemies once, pull and immobilize enemies for 4s, deal 1000% + 7 × 100% ATK of Physical DMG, trigger a 2s Global Time Fracture, and increase Valkyrie's Total DMG by 15% for 15s.",
+	},
+	{
+		name: "Fallen Rosemary",
+		abbr: "FR",
+		skill: "God Hunter",
+		cooldown: "45",
+		description:
+			"Summon Fallen Rosemary's Garmr to attack, gather surrounding enemies, and deal 600% ATK of Lightning DMG. Add 10 Paralyse Trauma and increase Valkyrie Elemental DMG by 25% for 20s.",
 	},
 ];

@@ -40,7 +40,8 @@ interface Build {
 export interface Setup {
     rank: string;
     difficult: string;
-    gear: string;
+    weap: string;
+    stigmata: Array<string>;
     time: string;
     ref: string;
 }
@@ -53,7 +54,7 @@ export interface Sigil {
 	first: string;
 	second: string;
 }
-export interface Support extends Sigil { }
+export type Support = Sigil
 interface Signet {
 	name: string;
 	note?: string;
@@ -64,4 +65,10 @@ interface SignetList {
 	name: string;
 	description: string;
 	priority: string;
+}
+export interface Description extends Omit<SignetList, "priority"> {
+	charging?: string;
+	skill?: string;
+	abbr?: string;
+	cooldown?: string;
 }

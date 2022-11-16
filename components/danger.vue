@@ -15,7 +15,7 @@ const truncateButton = ref("Read more");
         <p class="flex text-red-500 text-left w-full font-bold">Warning!</p>
         <div class="flex flex-col w-full">
             <p>{{ isTruncate && danger.length > 100 ? `${danger.substring(0,100)}...` : danger }}</p>
-            <p @click="toggleTruncate" v-if="danger" class="cursor-pointer text-light-yellow animate-pulse underline">{{ truncateButton }}</p>
+            <p @click="toggleTruncate" v-if="danger && danger.length > 100" class="cursor-pointer text-light-yellow animate-pulse underline">{{ truncateButton }}</p>
         </div>
     </div>
 </template>

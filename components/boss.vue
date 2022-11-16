@@ -3,7 +3,7 @@ import { InformationCircleIcon } from "@heroicons/vue/24/outline";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 interface Props {
     info: string;
-    note?: string | Array<string>;
+    note?: string;
 }
 defineProps<{ boss: Props; class: string }>();
 

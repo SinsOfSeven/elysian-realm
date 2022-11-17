@@ -12,6 +12,9 @@ useHead({
     htmlAttrs: {
         lang: "en"
     },
+    bodyAttrs: {
+        class: "bg-gradient-to-br from-sky-blue to-dark-blue"
+    },
     meta: [
         {
             name: "description",

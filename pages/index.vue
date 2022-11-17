@@ -13,12 +13,66 @@ function filter(selected: string) {
 
 useHead({
     title: "Elysian Realm Guide 6.1",
+    htmlAttrs: {
+        lang: "en"
+    },
+    meta: [
+        {
+            name: "description",
+            content: "Recommended Signet Builds for Elysian Realm Honkai Impact 3rd"
+        },
+        {
+            name: "og:url",
+            content: "https://elysian-realm.vercel.app"
+        },
+        {
+            name: "og:type",
+            content: "website"
+        },
+        {
+            name: "og:title",
+            content: "Elysian Realm Guide v 6.1"
+        },
+        {
+            name: "og:description",
+            content: "Recommended Signet Builds for Elysian Realm Honkai Impact 3rd"
+        },
+        {
+            name: "og:image",
+            content: "https://elysian-realm.vercel.app/images/opengraph.jpg"
+        },
+        {
+            name: "twitter:card",
+            content: "summary_large_image"
+        },
+        {
+            name: "twitter:domain",
+            content: "elysian-realm.vercel.app"
+        },
+        {
+            name: "twitter:url",
+            content: "https://elysian-realm.vercel.app"
+        },
+        {
+            name: "twitter:title",
+            content: "Elysian Realm Guide v6.1"
+        },
+        {
+            name: "twitter:description",
+            content: "Recommended Signet Builds for Elysian Realm Honkai Impact 3rd"
+        },
+        {
+            name: "twitter:image",
+            content: "https://elysian-realm.vercel.app/images/opengraph.jpg"
+        },
+    ],
     bodyAttrs: {
         class: 'bg-gradient-to-br from-turquoise to-dark-blue'
     }
 });
 
 const isSticky = ref(false);
+
 function scroll() {
     let y = window.scrollY;
     if (y >= 150) isSticky.value = true;
@@ -37,8 +91,8 @@ onUnmounted(() => window.removeEventListener('scroll', scroll));
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-6 md:px-12 md:gap-6 gap-4 py-8" v-if="valks.length > 0">
             <Card v-for="valkyrie in valks" :key="valkyrie.name" :valkyrie="valkyrie" />
         </div>
-        <div v-else class="grow bg-red-500">
-            No Result
+        <div v-else class="grow flex justify-center items-center">
+            <p class="text-lg font-extrabold text-dark-pink uppercase">no result</p>
         </div>
     </div>
 </template>

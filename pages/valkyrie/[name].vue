@@ -9,6 +9,59 @@ const valkyrie: Valkyrie = ensure(valkyries.find((el: Valkyrie) => slug(el.name)
 
 useHead({
     title: valkyrie.name,
+    htmlAttrs: {
+        lang: "en"
+    },
+    meta: [
+        {
+            name: "description",
+            content: `Recommended Signet Builds for ${valkyrie.name} Elysian Realm Honkai Impact 3rd`
+        },
+        {
+            name: "og:url",
+            content: `https://elysian-realm.vercel.app/valkyrie/${slug(valkyrie.name)}`
+        },
+        {
+            name: "og:type",
+            content: "website"
+        },
+        {
+            name: "og:title",
+            content: `Elysian Realm: ${valkyrie.name} Guide`
+        },
+        {
+            name: "og:description",
+            content: `Recommended Signet Builds for ${valkyrie.name} Elysian Realm Honkai Impact 3rd`
+        },
+        {
+            name: "og:image",
+            content: `https://elysian-realm.vercel.app/valkyries/${slug(valkyrie.name)}.webp`
+        },
+        {
+            name: "twitter:card",
+            content: "summary_large_image"
+        },
+        {
+            name: "twitter:domain",
+            content: "elysian-realm.vercel.app"
+        },
+        {
+            name: "twitter:url",
+            content: `https://elysian-realm.vercel.app/valkyrie/${slug(valkyrie.name)}`
+        },
+        {
+            name: "twitter:title",
+            content: `Elysian Realm: ${valkyrie.name} Guide`
+        },
+        {
+            name: "twitter:description",
+            content: `Recommended Signet Builds for ${valkyrie.name} Elysian Realm Honkai Impact 3rd`
+        },
+        {
+            name: "twitter:image",
+            content: `https://elysian-realm.vercel.app/valkyries/${slug(valkyrie.name)}.webp`
+        },
+    ],
 });
 
 const selectedIndex = ref(0);

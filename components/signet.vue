@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Signet } from "~~/utilities/types";
-import { QuestionMarkCircleIcon, ExclamationTriangleIcon } from "@heroicons/vue/24/solid";
+import { QuestionMarkCircleIcon } from "@heroicons/vue/24/solid/index.js";
 
 interface Props {
     note?: string;

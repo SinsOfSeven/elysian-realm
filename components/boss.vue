@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { InformationCircleIcon } from "@heroicons/vue/24/outline";
+import { InformationCircleIcon } from "@heroicons/vue/24/outline/index.js";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 interface Props {
     info: string;

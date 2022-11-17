@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Setup } from "~~/utilities/types";
-import { ArrowUpRightIcon } from "@heroicons/vue/24/outline";
+import { ArrowUpRightIcon } from "@heroicons/vue/24/outline/index.js";
 import { teamBuild, ensure, slug } from "~~/utilities/helpers";
 import { valkyries } from "~~/utilities/database";
 

@@ -2,7 +2,6 @@
 import { Valkyrie, Description } from "~~/utilities/types";
 import { valkyries } from "~~/utilities/database";
 import { slug, ensure } from "~~/utilities/helpers";
-import { InformationCircleIcon } from "@heroicons/vue/24/outline";
 
 const name = useRoute().params.name;
 const valkyrie: Valkyrie = ensure(valkyries.find((el: Valkyrie) => slug(el.name) === name));
@@ -123,6 +122,13 @@ const isOpen = ref(false);
     <div class="flex flex-col min-h-screen">
         <div class="grow">
             <div class="px-2 md:px-6 pt-8 bg-gradient-to-br from-dark-blue to-sky-blue text-light-yellow relative z-0">
+                <NuxtLink to="/" class="hover:animate-pulse absolute top-8 right-8 rounded rounded-full border border-light-yellow p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 lg:w-8 lg:h-8 text-light-yellow">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </NuxtLink>
                 <div class="z-20">
                     <p class="text-xs uppercase">{{ valkyrie.name }}</p>
                     <p class="text-xl font-bold uppercase">{{ selectedBuild.name }}</p>
@@ -136,23 +142,32 @@ const isOpen = ref(false);
                             </div>
                             <div class="flex flex-col w-full py-6 relative">
                                 <div class="flex space-x-2 lg:justify-end">
-                                    <button @click="changeTime" class="tracking-tight border border-dark-blue text-xs bg-dark-pink font-semibold text-dark-blue rounded-full w-16 h-16">
+                                    <button @click="changeTime"
+                                        class="tracking-tight border border-dark-blue text-xs bg-dark-pink font-semibold text-dark-blue rounded-full w-16 h-16">
                                         {{ timeline[time].toUpperCase() }}
                                     </button>
                                     <Sigil :sigil="sigil" :key="time" @is-hover="fetchDescription" />
                                     <Support :support="support" :key="time" @is-hover="fetchDescription" />
-                                    <button v-show="selectedBuild.sigil.note || selectedBuild.support.note" class="animate-pulse" @click="isOpen = true"><InformationCircleIcon class="w-8 h-8" /></button>
+                                    <button v-show="selectedBuild.sigil.note || selectedBuild.support.note"
+                                        class="animate-pulse" @click="isOpen = true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div :class="showDetails ? 'z-30 right-0 mt-4 ml-auto bottom-0 w-full max-w-sm bg-dark-pink border border-dark-blue text-dark-blue rounded px-4 py-1' : ''">
+                                <div
+                                    :class="showDetails ? 'z-30 right-0 mt-4 ml-auto bottom-0 w-full max-w-sm bg-dark-pink border border-dark-blue text-dark-blue rounded px-4 py-1' : ''">
                                     <h2 class="font-semibold">
-                                        {{ description.name }} 
+                                        {{ description.name }}
                                         <div v-show="description.skill" class="text-sm">
                                             <span>{{ description.skill }} (CD: {{ description.cooldown }} sec)</span>
                                         </div>
                                     </h2>
                                     <p>{{ description.description }}</p>
                                     <p v-show="description.charging">
-                                        <span class="font-semibold">Charging:</span> 
+                                        <span class="font-semibold">Charging:</span>
                                         {{ description.charging }}
                                     </p>
                                 </div>
@@ -167,11 +182,11 @@ const isOpen = ref(false);
                 <div class="space-y-3">
                     <div v-show="selectedBuild.sigil.note">
                         <span class="underline">Sigil Note</span>
-                        <p>{{ selectedBuild.sigil.note }}</p>
+                        <p class="font-thin">{{ selectedBuild.sigil.note }}</p>
                     </div>
                     <div v-show="selectedBuild.support.note">
                         <span class="underline">Support Note</span>
-                        <p>{{ selectedBuild.support.note }}</p>
+                        <p class="font-thin">{{ selectedBuild.support.note }}</p>
                     </div>
                 </div>
             </Modal>

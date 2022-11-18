@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Signet } from "~~/utilities/types";
-import { QuestionMarkCircleIcon } from "@heroicons/vue/24/solid/index.js";
 
 interface Props {
     note?: string;
@@ -31,12 +30,34 @@ const toggleTruncate = (type: string) => {
 
 const descriptionModal = ref("");
 const isOpen = ref(false);
+const dangerDescription = ref(false);
+const dangerDescriptionText = ref("Read more");
 
+const truncateSignetDanger = () => {
+    dangerDescription.value = !dangerDescription.value;
+    if (dangerDescription.value) dangerDescriptionText.value = "Show less";
+    else dangerDescriptionText.value = "Read more";
+}
 </script>
 <template>
+    <div class="px-3 py-1 space-y-2 lg:px-6 lg:py-4 text-light-yellow font-semibold text-sm lg:text-base">
+        <div>
+            <span v-if="signet.note">{{ signet.note }}</span>
+            <span v-else>No additional information</span>
+        </div>
+        <div v-if="signet.danger" class="flex flex-col">
+            <div class="flex">
+                <span class="text-red-500">Warning!</span> 
+                <button class="underline ml-2" @click="truncateSignetDanger">{{ dangerDescriptionText }}</button>
+            </div>
+            <div class="mt-2">
+                <span v-show="dangerDescription" v-text="signet.danger" />
+            </div>
+        </div>
+    </div>
     <div class="flex flex-col lg:flex-row w-full border border-dark-blue">
         <div class="py-2 grid grid-cols-3 place-items-center w-full bg-sky-blue gap-3">
-            <button @click="select(index)" v-for="(item, index) in signet.lists" :key="index" class="flex items-center justify-center w-20 h-20 lg:w-36 lg:h-36 focus:animate-pulse">
+            <button @click="select(index)" v-for="(item, index) in signet.lists" :key="index" class="flex items-center justify-center w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 focus:animate-pulse">
                 <img class="w-full h-full" :src="`/signets/${item.name.toLowerCase().split(' - signet')[0]}.webp`" :alt="item.name.split(' - Signet')[0]">
             </button>
         </div>
@@ -64,7 +85,7 @@ const isOpen = ref(false);
                     <tr v-for="(item, index) in selectedSignet.lists" :key="index">
                         <td class="border border-dark-blue py-3">
                             <button @click="descriptionModal = item.description; isOpen = true" class="flex">
-                                <span class="inline-flex text-left font-bold pl-3">{{ item.name }}</span>
+                                <span class="inline-flex text-left pl-3">{{ item.name }}</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                     class="ml-2 w-6 h-6 animate-pulse">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -72,7 +93,7 @@ const isOpen = ref(false);
                                 </svg>
                             </button>
                         </td>
-                        <td class="border border-dark-blue text-center font-bold">{{ item.priority }}</td>
+                        <td class="border border-dark-blue text-center">{{ item.priority }}</td>
                     </tr>
                 </table>
             </div>
@@ -80,6 +101,8 @@ const isOpen = ref(false);
     </div>
     <Modal :open="isOpen" @is-close="isOpen = false">
         <template #title>Description</template>
-        {{ descriptionModal }}
+        <p class="font-thin">
+            {{ descriptionModal }}
+        </p>
     </Modal>
 </template>

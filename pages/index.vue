@@ -89,10 +89,24 @@ onUnmounted(() => window.removeEventListener('scroll', scroll));
             <SearchBar @filter="filter" />
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-6 md:px-12 md:gap-6 gap-4 py-8" v-if="valks.length > 0">
-            <Card v-for="valkyrie in valks" :key="valkyrie.name" :valkyrie="valkyrie" />
+            <TransitionGroup name="list">
+                <Card v-for="valkyrie in valks" :key="valkyrie.name" :valkyrie="valkyrie" />
+            </TransitionGroup>
         </div>
         <div v-else class="grow flex justify-center items-center">
             <p class="text-lg font-extrabold text-dark-pink uppercase">no result</p>
         </div>
     </div>
 </template>
+<style>
+.list-enter-active,
+.list-leave-active {
+    transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+}
+</style>

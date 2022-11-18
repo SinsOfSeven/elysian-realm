@@ -20,10 +20,11 @@ defineProps<{ buff: Props; class: string }>();
                             d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
                     </svg>
                 </PopoverButton>
-            
-                <PopoverPanel class="absolute z-10 left-0 md:left-6 text-dark-blue bg-dark-pink rounded px-4 py-2 w-full max-w-sm border border-dark-blue max-w-sm">
-                    {{ buff.note }}
-                </PopoverPanel>
+                <Transition name="slide-fade">
+                    <PopoverPanel class="absolute z-10 left-0 md:left-6 text-dark-blue bg-dark-pink rounded px-4 py-2 w-full max-w-sm border border-dark-blue max-w-sm">
+                        {{ buff.note }}
+                    </PopoverPanel>
+                </Transition>
             </Popover>
         </div>
     
@@ -33,10 +34,27 @@ defineProps<{ buff: Props; class: string }>();
                     <p class="-rotate-45">{{ item.load }}</p>
                 </PopoverButton>
             
-                <PopoverPanel class="absolute z-30 left-0 mt-2 bg-dark-pink text-dark-blue rounded px-4 py-2 w-full max-w-sm border border-dark-blue">
-                    {{ item.description }}
-                </PopoverPanel>
+                <Transition name="slide-fade">
+                    <PopoverPanel class="absolute z-30 left-0 mt-2 bg-dark-pink text-dark-blue rounded px-4 py-2 w-full max-w-sm border border-dark-blue">
+                        {{ item.description }}
+                    </PopoverPanel>
+                </Transition>
             </Popover>
         </PopoverGroup>
     </div>
 </template>
+<style>
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+</style>

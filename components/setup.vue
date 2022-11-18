@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Setup } from "~~/utilities/types";
-import { ArrowUpRightIcon } from "@heroicons/vue/24/outline/index.js";
 import { teamBuild, ensure, slug } from "~~/utilities/helpers";
 import { valkyries } from "~~/utilities/database";
 
@@ -38,7 +37,7 @@ const gear = computed(() => {
             <NuxtLink :to="gear" class="py-2 underline" target="_blank" rel="noopener noreferrer">Visual preview by Arustats</NuxtLink>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-start lg:text-lg w-full lg:w-3/12 text-sm place-content-start">
-            <button @click="selected(index)" v-for="(item, index) in setup.lists" :key="index" :class="['border border-dark-blue rounded border-2 px-2 py-0.5', index === selectedIndex ? 'bg-dark-blue text-light-yellow' : '']">
+            <button @click="selected(index)" v-for="(item, index) in setup.lists" :key="index" :class="['w-full border border-dark-blue rounded border-2 px-2 py-0.5', index === selectedIndex ? 'bg-dark-blue text-light-yellow' : '']">
                 {{ item.time }}
             </button>
         </div>

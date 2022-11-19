@@ -19,12 +19,12 @@ const selected = (index: number) => {
 };
 
 const reference = computed(() => selectedSetup.value.ref.split('/youtu.be/')[1]);
-const size = ref(window.innerWidth);
 
 const gear = computed(() => {
     const valk = ensure(valkyries.find(el => slug(el.name) === useRoute().params.name));
     return teamBuild(valk.name, selectedSetup.value.rank, selectedSetup.value.weap, selectedSetup.value.stigmata);
 });
+
 </script>
 <template>
     <div class="bg-dark-pink text-dark-blue w-full flex flex-col md:flex-row px-6 py-4 space-y-4">
@@ -51,7 +51,10 @@ const gear = computed(() => {
                     </svg>
                 </span>
             </NuxtLink>
-            <iframe class="hidden md:block" :width="size < 1024 ? 325 : 650" :height="size < 1024 ? 174 : 378" :src="`https://www.youtube.com/embed/${reference}`" title="YouTube video player"
+            <iframe class="hidden md:block lg:hidden" width="325" height="174" :src="`https://www.youtube.com/embed/${reference}`" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="hidden lg:block" width="650" height="378" :src="`https://www.youtube.com/embed/${reference}`" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>

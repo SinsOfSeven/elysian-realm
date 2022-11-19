@@ -2915,7 +2915,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							rank: "SS1",
 							difficult: "Finality",
-							weap: "Tower of the Past: Silk Leader",
+							weap: "Tower of the Past: Silk Ladder",
 							stigmata: [
 								"Carlo Collodi (T)",
 								"Carlo Collodi (M)",

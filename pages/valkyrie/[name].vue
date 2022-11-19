@@ -12,7 +12,7 @@ useHead({
         lang: "en"
     },
     bodyAttrs: {
-        class: "bg-gradient-to-br from-sky-blue to-dark-blue"
+        class: "bg-gradient-to-br from-sky-blue to-dark-blue",
     },
     meta: [
         {
@@ -71,7 +71,6 @@ const selectedBuild = ref(valkyrie.builds[selectedIndex.value]);
 function selected(index: number) {
     selectedIndex.value = index;
     selectedBuild.value = valkyrie.builds[selectedIndex.value];
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 };
 
 const timeline = ["Early", "Mid", "Late"];
@@ -165,10 +164,10 @@ const isOpen = ref(false);
                                             <span>{{ description.skill }} (CD: {{ description.cooldown }} sec)</span>
                                         </div>
                                     </h2>
-                                    <p>{{ description.description }}</p>
+                                    <p class="font-thin" v-text="description.description" />
                                     <p v-show="description.charging">
                                         <span class="font-semibold">Charging:</span>
-                                        {{ description.charging }}
+                                        <span v-text="description.charging" />
                                     </p>
                                 </div>
                             </div>

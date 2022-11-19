@@ -1,42 +1,39 @@
-# Nuxt 3 Minimal Starter
+#### Introduction
+This guide based on [this website](https://butteryrafa.github.io/hi3er), make sure to check that out
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+#### Where's the sauce?
+- [Argent Knight: Artemis](https://www.pixiv.net/en/artworks/77113890)
+- [Bright Knight: Excelsis](https://www.pixiv.net/en/artworks/80592082)
+- [Dea Ancora](https://www.pixiv.net/en/artworks/89619455)
+- [Disciplinary Perdition](https://www.pixiv.net/en/artworks/101621257)
+- [Fallen Rosemary](https://www.pixiv.net/en/artworks/84114449)
+- [Fervent Tempo](https://www.pixiv.net/en/artworks/91399263)
+- [Golden Diva](https://www.pixiv.net/en/artworks/101733240)
+- [Goushinnso Memento](https://www.pixiv.net/en/artworks/62233080)
+- [Helical Contraption](https://www.pixiv.net/en/artworks/102122107)
+- [Herrscher of Flamescion](https://www.pixiv.net/en/artworks/99186811)
+- [Herrscher of Human: Ego](https://www.pixiv.net/en/artworks/100666991)
+- [Herrscher of Reason](https://www.pixiv.net/en/artworks/85617190)
+- [Herrscher of Sentience](https://www.pixiv.net/en/artworks/91384752)
+- [Herrscher of Thunder](https://www.pixiv.net/en/artworks/88155143)
+- [Herrscher of the Void](https://www.pixiv.net/en/artworks/77812590)
+- [Jade Knight](https://www.pixiv.net/en/artworks/94559484)
+- [Infinite Ouroboros](https://www.pixiv.net/en/artworks/100402269)
+- [Luna Kindred](https://www.pixiv.net/en/artworks/96471140)
+- [Midnight Absinthe](https://www.pixiv.net/en/artworks/99142866)
+- [Miss Pink Elf](https://www.pixiv.net/en/artworks/102152559)
+- [Palatinus Equinox](https://www.pixiv.net/en/artworks/101391902)
+- [Prinzessin der Verurteilung!](https://www.pixiv.net/en/artworks/91384810)
+- [Reverist Calico](https://www.pixiv.net/en/artworks/96920058)
+- [Ritual Imayoh](https://www.pixiv.net/en/artworks/97174236)
+- [Silverwing N-EX](https://www.pixiv.net/en/artworks/96994862)
+- [Spina Astera](https://www.pixiv.net/en/artworks/94180152)
+- [Starchasm Nyx](https://www.pixiv.net/en/artworks/102353710)
+- [Starry Impression](https://www.pixiv.net/en/artworks/98766898)
+- [Striker Fulminata](https://www.pixiv.net/en/artworks/84327656)
+- [Stygian Nymph](https://www.pixiv.net/en/artworks/102540767)
+- [Sweet n Spicy](https://www.pixiv.net/en/artworks/93538694)
+- [Twilight Paladin](https://www.pixiv.net/en/artworks/101773790)
+- [Valkyrie Gloria](https://www.pixiv.net/en/artworks/81600602)
+- [Opengraph](https://www.pixiv.net/en/artworks/101459879)
+- [Pallete Theme](https://offeo.com/learn/pastel-colors-palette)

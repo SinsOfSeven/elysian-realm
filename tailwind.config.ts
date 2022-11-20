@@ -6,13 +6,11 @@ export default <Partial<Config>>{
 	theme: {
 		extend: {
 			colors: {
-				"light-yellow": "#F7F6CF",
-				turquoise: "#B6D8F2",
-				"dark-pink": "#F4CFDF",
-				"dark-blue": "#5784BA",
-				"sky-blue": "#9AC8EB"
-			}
-		}
+				"dark-blue": "#1C17E2",
+				"dark-violet": "#7214E2",
+				"dark-pink": "#AF0EE2",
+			},
+		},
 	},
 	content: [
 		"./components/**/*.{vue,js}",
@@ -22,7 +20,5 @@ export default <Partial<Config>>{
 	corePlugins: {
 		aspectRatio: false,
 	},
-	plugins: [
-		tailwindForms, tailwindAspectRatio
-	]
+	plugins: [tailwindForms, tailwindAspectRatio],
 };

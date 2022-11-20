@@ -1,22 +1,47 @@
 <script setup lang="ts">
-defineProps<{ note: string }>();
+import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
+defineProps<{ note: string, danger?: string }>();
 
 const isTruncate = ref(true);
-
-const toggleTruncate = () => {
-    isTruncate.value = !isTruncate.value;
-    if (isTruncate.value) truncateButton.value = "Read more";
-    else truncateButton.value = "Show less";
-};
-
-const truncateButton = ref("Read more");
 </script>
 <template>
     <div class="py-2 text-base lg:w-1/2" v-if="note">
-        <p>{{ isTruncate && note.length > 100 ? `${note.substring(0, 100)}...` : note }}</p>
-        <button @click="toggleTruncate()" v-if="note.length > 100" class="cursor-pointer underline animate-pulse">{{ truncateButton }}</button>
+        <div v-show="isTruncate">
+            <Popover>
+                <PopoverButton class="text-left focus:outline-none">
+                    {{ note.length > 100 ? note.substring(0, 100) + '... Read more' : note }}
+                </PopoverButton>
+                <Transition name="slide-fade">
+                    <PopoverPanel class="z-40 h-fit max-h-72 px-2 py-1 rounded overflow-y-auto absolute top-3 bg-dark-pink text-white w-full border border-white">
+                        <p>{{ note }}</p>
+                        <div class="flex flex-col w-full" v-show="danger">
+                            <p class="font-bold">Warning!</p>
+                            <div class="flex flex-col w-full">
+                                <p>{{ danger }}</p>
+                            </div>
+                        </div>
+                    </PopoverPanel>
+                </Transition>
+            </Popover>
+        </div>
     </div>
     <div class="py-2 text-base" v-else>
         <p>No additional information</p>
     </div>
 </template>
+
+<style>
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+</style>

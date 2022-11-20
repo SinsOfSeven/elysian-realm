@@ -18,7 +18,7 @@ defineProps<{ open: boolean }>();
                         leave-from="opacity-100 translate-y-0 sm:scale-100"
                         leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
                         <DialogPanel
-                            class="text-dark-blue font-semibold relative transform overflow-hidden rounded-lg bg-dark-pink text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                            class="text-white font-semibold relative transform overflow-hidden rounded-lg bg-dark-pink text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                             <div class="bg-dark-pink px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                                 <div class="mt-3 text-center sm:mt-0 sm:ml-4 lg:text-left">
                                     <DialogTitle as="h3" class="uppercase underline leading-6 text-center">
@@ -31,7 +31,7 @@ defineProps<{ open: boolean }>();
                             </div>
                             <div class="bg-dark-pink px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                                 <button type="button"
-                                    class="font-semibold inline-flex w-full justify-center rounded-md border border-dark-blue bg-dark-pink px-4 py-2 text-base font-medium text-dark-blue hover:bg-dark-blue hover:bg-dark-pink focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                                    class="font-semibold inline-flex w-full justify-center rounded-md border border-white bg-dark-pink px-4 py-2 text-base font-medium text-white hover:bg-dark-blue hover:bg-dark-pink focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                                     @click="$emit('isClose')" ref="cancelButtonRef">Close</button>
                             </div>
                         </DialogPanel>

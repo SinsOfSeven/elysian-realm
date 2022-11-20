@@ -5,7 +5,8 @@ export default defineNuxtConfig({
 		strict: true,
 	},
 	modules: [
-		"@nuxtjs/tailwindcss"
+		"@nuxtjs/tailwindcss",
+		"@nuxt/image-edge"
 	],
 	app: {
 		pageTransition: { name: "page", mode: "out-in" }

@@ -11,9 +11,8 @@ defineProps<{ boss: Props; class: string }>();
     <div :class="class" class="flex flex-col">
         <span class="uppercase text-sm font-semibold">boss</span>
         <Popover>
-            <PopoverButton class="uppercase text-sm flex focus:outline-none" :class="boss.note === '' ? 'cursor-arrow': 'cursor-auto'" aria-label="More info">
-                <span class="inline-flex text-left font-semibold items-center">{{ boss.info }}</span>
-                <span class="animate-pulse" v-show="boss.note">. More info</span>
+            <PopoverButton class="uppercase text-sm flex focus:outline-none py-3" :class="boss.note === '' ? 'cursor-arrow': 'cursor-auto'" aria-label="More info">
+                <p class="text-left font-semibold items-center">{{ boss.info }}. <span v-show="boss.note" class="underline">More info</span></p>
             </PopoverButton>
         
             <Transition name="slide-fade">

@@ -27,7 +27,7 @@ function swapSupport(support: string) {
 const fetchDescription = (name: string) => ensure(supports.find(el => el.abbr.toLowerCase() === name.toLowerCase()));
 </script>
 <template>
-<div class="flex w-full justify-center py-8 md:py-0">
+<div class="flex w-full justify-center py-12 md:py-0">
     <button @click="first.length > 1 ? swapSupport('first') : ''" class="w-24 flex relative z-0"
         @mouseenter="$emit('isHover', true, fetchDescription(first[firstSection]))"
         @mouseleave="$emit('isHover', false)">
@@ -49,10 +49,10 @@ const fetchDescription = (name: string) => ensure(supports.find(el => el.abbr.to
             :key="nextSecondSection" placeholder sizes="xs:64 md:80" />
     </button>
     <Popover>
-        <PopoverButton class="text-left focus:outline-none md:hidden">
+        <PopoverButton class="text-left focus:outline-none md:hidden" aria-label="More info">
             <!-- InformationCircleIcon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-12 h-12" v-show="note" aria-hidden="true">
+                stroke="currentColor" class="w-12 h-12" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
             </svg>

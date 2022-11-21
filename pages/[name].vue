@@ -70,7 +70,6 @@ const isOpen = ref(false);
 
 <template>
     <div>
-
         <Head>
             <Title>{{ valkyrie.name }}</Title>
             <Meta name="description"
@@ -130,7 +129,7 @@ const isOpen = ref(false);
                                         <Popover>
                                             <PopoverButton
                                                 v-show="selectedBuild.sigil.note || selectedBuild.support.note || selectedBuild.support.danger"
-                                                @click="isOpen = true" aria-label="More info" class="ml-4">
+                                                @click="isOpen = true" aria-label="More info" class="ml-4 hidden md:block">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-12 h-12"
                                                     aria-hidden="true">

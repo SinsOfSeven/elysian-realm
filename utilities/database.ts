@@ -1314,29 +1314,31 @@ export const valkyries: Array<Valkyrie> = [
 								{
 									name: "Blessing of Soul Siphon",
 									description:
-										"In Valfreyja form basic ATK siphons extra Disir",
+										"In Valfreyja form, Basic ATK siphons extra Disir. It has 2 charges, which reset upon casting God Eater. Ormr Rune deals extra 100% ATK of Lightning DMG. Ulf Rune increases Lightning DMG by 50%.",
 									priority: "Start",
 								},
 								{
 									name: "Blessing of Valfreyja",
-									description: "In Valfreyja form Lightning DMG is increased",
+									description:
+										"In Valfreyja form, Lightning DMG is increased by 40%. After casting Helvegr, Trickster's attack will pull enemies again; After 3s, it will release a blast that deals 2200% ATK of Lightning DMG to nearby enemies, and reconjure Ulf/Ormr/Strix Rune.",
 									priority: "1st",
 								},
 								{
 									name: "Blessing of Nocturne",
-									description: "Using God Eater increases Charge ATK TDM",
+									description:
+										"Using God Eater increases Charged ATK's Total DMG by 70%, reduces Ultimate's CD by 5s, and increases Ultimate's Total DMG by for 10s. Triggering it again resets its duration.",
 									priority: "2nd",
 								},
 								{
 									name: "Blessing of God Eater",
 									description:
-										"When God Eater hits, a lightning bolt hits and fully recharges Strix",
+										"When God Eater hits, a lightning bolt strikes, dealing 5x100% ATK of Lightning DMG to enemies nearby, and fully recharges Strix.",
 									priority: "3rd",
 								},
 								{
 									name: "Blessing of Spirit Servants",
 									description:
-										"When Garmr/Strix/Linnorm hits, increases Lightning DMG",
+										"When Garmr/Strix/Linnorm hits, increases Lightning DMG by 8% for 15s. It stacks 8 times. Triggering it again resets the duration.",
 									priority: "No",
 								},
 							],
@@ -1531,6 +1533,322 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "2nd",
 								},
 							],
+						},
+					],
+				},
+			},
+			{
+				name: "Above SS2 Build",
+				note: "Updated 6.1. This is the strongest build that FR has available to her, which in turn also makes her become one of the strongest ER valks to clear with.",
+				boss: {
+					info: "Hephaestus, then Elysia (for booling her), Vill-V or Aponia",
+					note: "Your preference! Pick whichever you want to booli!",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "SSS",
+							difficult: "Finality",
+							weap: "Iris of Helheim",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
+							time: "4:40m (6.1)",
+							ref: "https://youtu.be/6S2R2sffbLs",
+						},
+					],
+					danger:
+						"In downscalability terms, her pri-arm is a given. She can work with lower gears like Zhenyi TB Handel/Benares M or Irene Adler, just expect varying performance.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description:
+								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "Because of You / The Lonely Moon",
+						},
+						{
+							time: "Mid",
+							first: "Memory / Mad King's Mask / Rainbow of Absence",
+							second: "The Lonely Moon",
+						},
+						{
+							time: "Late",
+							first: "Tin Flask / Key to the Deep",
+							second: "The Lonely Moon",
+						},
+					],
+					note: "You can use Boundless Feeling for the +1 on Aponia signets. By F5 Shop, you can swap both Remembrance Sigils for either Kevin or Griseo's to gamble for free +2 on resetting Shop. Griseo preferred for free Red +2.",
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "Early",
+							second: "AE",
+						},
+						{
+							time: "Mid",
+							first: "Mid",
+							second: "BK",
+						},
+						{
+							time: "Late",
+							first: "Late",
+							second: "AE or BR",
+						},
+					],
+					note: "LE is a given for this build, especially early on. You can consider getting Eden's Initial/Max SP signet from Shop if you want to swap LE out. If not, just use BR and LE. For Heimdall fight, swap BR out for BK or LE (Eden signet only)",
+				},
+				signet: {
+					note: "Ideal course of build up: 2 Ego start (Valfreyja + Nocturne) into Aponia's Basic ATK F3, finish Aponia 2nd Core by F4, go shop F5 and abuse 3* Remembrance Sigils to gamble for either Kevin's TDM/Elem Breach or Griseo's Red and Yellow. Can also take Aponia's Ultimate from here. Grab Aponia's Breach at F6 and grab the remaining 2 Aponia Enhanceds (or 1 + Ultimate) from F7 Doubles",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							lists: [
+								{
+									name: "Blessing of Valfreyja",
+									description:
+										"In Valfreyja form, Lightning DMG is increased by 40%. After casting Helvegr, Trickster's attack will pull enemies again; After 3s, it will release a blast that deals 2200% ATK of Lightning DMG to nearby enemies, and reconjure Ulf/Ormr/Strix Rune.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Nocturne",
+									description:
+										"Using God Eater increases Charged ATK's Total DMG by 70%, reduces Ultimate's CD by 5s, and increases Ultimate's Total DMG by for 10s. Triggering it again resets its duration.",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Spirit Servants",
+									description:
+										"When Garmr/Strix/Linnorm hits, increases Lightning DMG by 8% for 15s. It stacks 8 times. Triggering it again resets the duration.",
+									priority: "Optional 2nd",
+								},
+								{
+									name: "Blessing of Soul Siphon",
+									description:
+										"In Valfreyja form, Basic ATK siphons extra Disir. It has 2 charges, which reset upon casting God Eater. Ormr Rune deals extra 100% ATK of Lightning DMG. Ulf Rune increases Lightning DMG by 50%.",
+									priority: "No",
+								},
+								{
+									name: "Blessing of God Eater",
+									description:
+										"When God Eater hits, a lightning bolt strikes, dealing 5x100% ATK of Lightning DMG to enemies nearby, and fully recharges Strix.",
+									priority: "No",
+								},
+							],
+							note: "Only 2 Ego signets are needed for this build: Valfreyja and Nocturne. It is a must to reset for Double Ego start to get those 2 right away and get the build going.",
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							lists: [
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "2nd",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "3rd",
+								},
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "4th",
+								},
+								{
+									name: " You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+							note: "Ultimate is priority to upgrade to +3. Basic ATK can follow after.",
+						},
+						{
+							name: "Kevin - Signet of Deliverance (2nd Core)",
+							lists: [
+								{
+									name: "Artifact of the Inhibitor",
+									description: "Ultimate boosts Elemental Breach by 20% for 5s",
+									priority: "1st",
+								},
+								{
+									name: "Goblet of the Giver",
+									description: "Ultimate boosts Total DMG by 35% for 5s",
+									priority: "2nd",
+								},
+								{
+									name: "Rochet of the Pilgrim",
+									description: "Ultimate restores 3 SP per second for 5s",
+									priority: "3rd",
+								},
+								{
+									name: "Brand of the Undead",
+									description: "Ultimate boosts Elemental DMG by 30% for 5s",
+									priority: "4th",
+								},
+								{
+									name: " Blade of the Deliverer",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Crusade of the Deliverer",
+									description:
+										"After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%",
+									priority: "1st",
+								},
+								{
+									name: "Echo of the Deliverer",
+									description:
+										"Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s.",
+									priority: "2nd",
+								},
+								{
+									name: "Flock of the Deliverer",
+									description:
+										"Final Battle is also considered burst mode. Total DMG increases by 20% in burst mode.",
+									priority: "Optional 3rd",
+								},
+							],
+							note: "Crusade is priority to +3. It will be a massive boost if you gamble for it with the 3* Remembrance Sigil abuse for getting it at +2 straight away. Flock can be considered but otherwise not a priority.",
+						},
+						{
+							name: "Griseo - Signet of Stars (3rd Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "4th",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "5th",
+								},
+								{
+									name: " Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
+									priority: "Optional 3rd",
+								},
+							],
+							note: "Red is absolute priority to +3. Yellow is good to consider +3 but after other important upgrades. Griseo's signets are also a massive upgrade if 3* Remembrance Sigil abuse for free +2.",
+						},
+						{
+							name: "Kalpas - Signet of Decimation (4th Core)",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "3rd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "Optional 4th",
+								},
+								{
+									name: " Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core (Not Necessary)",
+								},
+							],
+							note: "Kalpas signets are better taken off from Shop. FR does not need to unlock its Core.",
 						},
 					],
 				},
@@ -3264,8 +3582,16 @@ export const valkyries: Array<Valkyrie> = [
 							time: "4:18m (6.0B)",
 							ref: "https://youtu.be/-fVlZ3l135k",
 						},
+						{
+							rank: "S",
+							difficult: "Finality",
+							weap: "Domain of Incandescence",
+							stigmata: ["Leeuwenhoek (T)", "Thales (M)", "Leeuwenhoek (B)"],
+							time: "14:09m (6.1)",
+							ref: "https://youtu.be/woycwAya1cg",
+						},
 					],
-					note: "This build is downscaleable with lower clear times and lower gear requirement. LWH TB Thales M efficiency with this build is yet to be tested.",
+					note: "For downscalability purposes, HoFS is actually pretty damn awful with lower stigmatas.",
 				},
 				buff: {
 					lists: [
@@ -10252,6 +10578,363 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "mobius io infinite ouroboros snek snake",
 		builds: [
 			{
+				name: "DMG Reduction? Where?",
+				note: "Updated for 6.1. Honestly, this is a really fun and genuine surprise that I wasn't expecting to hit this strong. Who would've thought that non-Linnaeus Mobius would be so damn strong nonetheless? Clearly, she doesn't need it, and neither does she gives a fuck about having DMG Reduction trying to weigh her down.",
+				boss: {
+					info: "Hephaestus, then Vill-V or Aponia",
+					note: "Vill-V is the best choice easily if you have Miniature [X] available.",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "S",
+							difficult: "Finality",
+							weap: "Basillisk's Image: Deathshroud",
+							stigmata: ["Linnaeus (T)", "Linnaeus (M)", "Linnaeus (B)"],
+							time: "3:52m (6.1)",
+							ref: "https://youtu.be/unn867ieZ70",
+						},
+						{
+							rank: "S",
+							difficult: "Finality",
+							weap: "Basillisk's Image: Deathshroud",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
+							time: "5:29m (6.1)",
+							ref: "https://youtu.be/5otXPMfRQKU",
+						},
+						{
+							rank: "S",
+							difficult: "Finality",
+							weap: "Oath of Judah",
+							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
+							time: "9:05m (6.1)",
+							ref: "https://youtu.be/ARcTleTzNYk",
+						},
+					],
+					note: "Mobius is perfectly fine and really strong without Linnaeus and even on a DMG-Reduction weather.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+							load: 5,
+						},
+						{
+							description: "Flame-Chasers deal 15% more Total DMG.",
+							load: 10,
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
+					],
+					note: "Effective for 6.1.",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Forbidden Seed",
+							second: "Boundless Logos",
+						},
+						{
+							time: "Mid",
+							first: "Veil of Tears / Rainbow of Absence / Mad King's Mask",
+							second: "Boundless Logos",
+						},
+						{
+							time: "Late",
+							first: "The First Scale / Tin Flask",
+							second: "Boundless Logos",
+						},
+					],
+					note: "Boundless Logos is a given. It is not swapped out due to the brutal efficiency in which Mobius can abuse it. However, when it's low on charge by the time you go into Shop, then you can consider swapping it out in order to abuse the 3* Remembrance Sigil gamble.",
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "BR / LE",
+						},
+						{
+							time: "Mid",
+							first: "BK",
+							second: "BR / LE",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR / LE",
+						},
+					],
+					note: "Due to the existing Load Buff granting 10 SP per 60 SP restored, Mobius can make really good use out of BR right away from the start. Once this is gone, however, LE is used instead unless you're otherwise missing damage in which case BR is the best choice to go here. Remember to bring BK for Heimdall fight.",
+				},
+				signet: {
+					note: "Ideal Order from F1-F7: Double Ego Start for Ascension, grab Entwined [P] or Rodent [V] by F3, complete Mobius 1st Core by F4 with Entwined, Rodent, Lip Poison, take either Dead [X] or Unknown [X] or Ravenousness by F5, then go shop, grab Aponia's Ultimate and 70 Initial Load or SP Regen with +2 from 3* Rememb Sigil Abuse. Take Sakura's TDM or TDM Taken or Kalpas TDM, then finish Aponia 2nd Core by F7.",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							lists: [
+								{
+									name: "Blessing of Dark Assault",
+									description:
+										"Basic/Charged/Combo ATKs deal 40% bonus Lightning DMG. Linked enemies hit by Basic/Charged/Combo ATKs pass on 12% of the DMG to other linked enemies",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Ill Fortune",
+									description:
+										"Ultimate deals 240% bonus Lightning DMG. Every Genesis Seed consumed reduces Ultimate CD by 0.5s",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of Ascension",
+									description:
+										"When Umbra of Ouroboros is active, enemies are struck by lightning once per second and take 600% ATK of Lightning DMG (DMG source: Basic ATK)",
+									priority: "1st",
+								},
+								{
+									name: "Blessing of Ravenousness",
+									description:
+										"Exiting submerged mode deals 1600% ATK of AOE Lightning DMG and enemies hit take 30% bonus Combo ATK DMG in the next 5s (independent effect)",
+									priority: "2nd",
+								},
+								{
+									name: "Blessing of Mirage",
+									description:
+										"In submerged mode, enemies in contact take 200% ATK of Lightning DMG per and take 35% bonus Total DMG for 8s",
+									priority: "No",
+								},
+							],
+							note: "Dark Assault + Ill Fortune is all Mobius needs to clear, however, to make her way stronger, you can do Double Ego start to take Ascension. Ravenousness is also a very good choice to consider taking if you get a 4th Ego door.",
+						},
+						{
+							name: "Mobius - Signet of Infinity (1st Core)",
+							lists: [
+								{
+									name: "Entwined [P]",
+									description:
+										"For every summoned entity, ELF, or Support Valkyrie present, enemies take 8% bonus Total DMG (5 stacks max)",
+									priority: "1st",
+								},
+								{
+									name: "Rodent [V]",
+									description:
+										"For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (5 stacks max).",
+									priority: "2nd",
+								},
+								{
+									name: "Lip Poison [E]",
+									description:
+										"Total DMG from summoned entities, ELFs, and Support Valkyries increases by 60%. ELFs",
+									priority: "3rd",
+								},
+								{
+									name: "Lodging [C]",
+									description:
+										"ELF Ultimates and Support Valkyries' support skills have 20% reduced CD",
+									priority: "Optional 4th",
+								},
+								{
+									name: "Infinite [X]",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Dead [X]",
+									description:
+										"For every second in Mind Sync, Valkyrie herself, summoned entities, ELFs, and Support Valkyries deal 10% bonus Total DMG. 5 stacks max. 9 stacks max with any summoned entity present. Reset on exiting Mind Sync",
+									priority: "1st",
+								},
+								{
+									name: "Unknown [X]",
+									description:
+										"Triggering Mind Sync again during Mind Sync reduces the CD of ELF Ultimates and Support Valkyries' support skills by 2s. With any summoned entity present, the CDs are reduced by 2s additionally. This effect can only be triggered once per 4s.",
+									priority: "Optional 2nd",
+								},
+							],
+							note: "Dead [X]'s impact is mainly from being a ramping up buff, so it's not so much of a problem to not get it early on, meanwhile Unknown [X] is a good choice to take in case you don't manage to get Dead [X]. Also, Dead [X] is really high priority to upgrade to +3.",
+						},
+						{
+							name: "Aponia - Signet of Discipline (2nd Core)",
+							lists: [
+								{
+									name: "First, No Betrayal",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
+									priority: "1st",
+								},
+								{
+									name: "Fifth, No Falsehood",
+									description:
+										"Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
+									priority: "2nd",
+								},
+								{
+									name: "Third, No Brutality",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "3rd",
+								},
+								{
+									name: "Fourth, No Insolence",
+									description:
+										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
+									priority: "4th",
+								},
+								{
+									name: "You Shall Receive Disciplines' Blessing",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "You Shall Follow Good",
+									description:
+										"You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Answer Prayers",
+									description:
+										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "You Shall Punish Evil",
+									description:
+										"Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
+									priority: "3rd",
+								},
+							],
+							note: "Both Ultimate and Basic ATK are priority to upgrade to +3. Do play around both Restrictions, make sure to always let the Adaptive DMG hit.",
+						},
+						{
+							name: "Griseo - Signet of Stars (3rd Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "Black & Dark",
+									description:
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "4th",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "5th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
+									priority: "3rd",
+								},
+							],
+							note: "Red is absolute highest priority to +3. Yellow is also good to +3. Getting Grey is essential.",
+						},
+						{
+							name: "Kalpas - Signet of Decimation (4th Core)",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "3rd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "4th",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core (Optional)",
+								},
+							],
+							note: "Kalpas is best gotten from Felis Shop. Getting core is not necessary.",
+						},
+						{
+							name: "Sakura - Signet of Setsuna (Felis Shop Signets)",
+							lists: [
+								{
+									name: "Bountiful Blossom: Koyo",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s.",
+									priority: "1st",
+								},
+								{
+									name: "Bountiful Blossom: Botan",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
+									priority: "2nd",
+								},
+								{
+									name: "Bountiful Blossom: Ayame",
+									description:
+										"Triggering Ultimate Evasion Skill restores 12.0 bonus SP.",
+									priority: "3rd",
+								},
+								{
+									name: "Sakura ni Maku",
+									description: "",
+									priority: "Core (Optional)",
+								},
+							],
+							note: "Sakura is best gotten from Felis Shop. Either of her cores are useless for Mobius.",
+						},
+					],
+				},
+			},
+			{
 				name: "Non-Kevin Build",
 				note: "Updated for 6.1. This build has less dependancy on Kevin's short-lived buffs, instead having consistent buffs that stay present throughout whole floors, even outside of Ultimate.",
 				boss: {
@@ -10983,7 +11666,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
-					note: "AE will be your main means of gather aside of her other bonuses. BR will also help to get past DPS check in the early floors. You can take BKE for Heimdall if you want to be extra sure. However, if you have hands and the skill for it, you can go without BKE and be fine for the fight. Raven can break Heimdall's shields easily through her Ultimate sequence. Breaking Heimdall's shields will keep him from going Red Mode until he's down to half HP",
+					note: "AE will be your main means of gather aside of her other bonuses. BR will also help to get past DPS check in the early floors. You can take BK for Heimdall if you want to be extra sure. However, if you have hands and the skill for it, you can go without BK and be fine for the fight. Raven can break Heimdall's shields easily through her Ultimate sequence. Breaking Heimdall's shields will keep him from going Red Mode until he's down to half HP.",
 				},
 				signet: {
 					note: "Ideal course of build up: 2 Ego start (Ominous Mist + Arrowhead) into V-V Spider Web or Pendulum F3, finish V-V 2nd Core by F4 Doubles, grab V-V's Drama or Puppetry at F5, go shop F6 and buy Griseo's Red and Yellow Paint or Red and Kevin's TDM/Elem DMG/Elem Breach, then grab V-V's remaining Enhanced except Saga from F7 and Sneer. Ideal Order from F1-F7: Double Reroll into Apo2 Core by F4, then 1 Griseo door before F7, then finish Griseo by F7 double.",
@@ -11186,7 +11869,7 @@ export const valkyries: Array<Valkyrie> = [
 									name: "Blue & Cold",
 									description:
 										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
-									priority: "Optional 3rd or 4th",
+									priority: "Optional 4th",
 								},
 								{
 									name: "Faded Stars",

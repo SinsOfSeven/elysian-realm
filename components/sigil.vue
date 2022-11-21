@@ -49,7 +49,7 @@ const fetchDescription = (name: string) => ensure(sigils.find(el => el.name.toLo
                 :key="nextSecondSection" placeholder sizes="xs:64px md:80px" />
         </button>
         <Popover>
-            <PopoverButton class="text-left focus:outline-none md:hidden">
+            <PopoverButton class="text-left focus:outline-none md:hidden" aria-label="More info">
                 <!-- InformationCircleIcon -->
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                     class="w-12 h-12" aria-hidden="true">

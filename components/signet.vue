@@ -69,7 +69,7 @@ const isOpen = ref(false);
                     </div>
                 </div>
                 <div
-                    class="bg-dark-blue lg:bg-gradient-to-b lg:from-dark-violet lg:to-dark-blue text-white lg:h-full overflow-y-auto mt-6 lg:mt-0">
+                    class="bg-dark-blue lg:bg-gradient-to-b lg:from-dark-violet lg:to-dark-blue text-white overflow-y-auto mt-6 lg:mt-0">
                     <table class="w-full border border-collapse">
                         <tr v-for="(item, index) in selectedSignet.lists" :key="index">
                             <td class="border border-white py-3">

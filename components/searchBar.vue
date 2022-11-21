@@ -3,7 +3,7 @@ const search = ref("");
 </script>
 <template>
     <div class="py-5 flex w-full justify-center max-w-md mx-auto px-8 relative">
-        <input type="text" v-model="search" class="text-dark-blue w-full rounded-full border-transparent focus:outline-none focus:ring-0 focus:border-dark-blue" @input="$emit('filter', search)" />
+        <input type="text" aria-label="search" v-model="search" class="text-dark-blue w-full rounded-full border-transparent focus:outline-none focus:ring-0 focus:border-dark-blue" @input="$emit('filter', search)" />
         <!-- MagnifyingGlassIcon -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 absolute right-12 mt-2">

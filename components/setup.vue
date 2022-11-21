@@ -35,8 +35,8 @@ const gear = computed(() => {
                 </ul>
             </div>
             <div class="flex flex-col w-full lg:space-y-4">
-                <NuxtLink :to="gear" class="py-2 underline font-semibold text-lg" target="_blank" rel="noopener noreferrer">Visual preview by Arustats</NuxtLink>
-                <NuxtLink class="underline text-lg font-semibold" :to="selectedSetup.ref" target="_blank" rel="noopener noreferrer">
+                <NuxtLink :to="gear" class="py-4 underline font-semibold text-lg" target="_blank" rel="noopener noreferrer">Visual preview by Arustats</NuxtLink>
+                <NuxtLink class="py-4 underline text-lg font-semibold" :to="selectedSetup.ref" target="_blank" rel="noopener noreferrer">
                     Reference
                 </NuxtLink>
             </div>

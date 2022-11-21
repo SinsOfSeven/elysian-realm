@@ -315,6 +315,7 @@ export const valkyries: Array<Valkyrie> = [
 		type: "MECH",
 		keyword:
 			"dudu bianca durandal astagina bright knight: excelsis bright knight excelsis bkek jojo goose",
+
 		builds: [
 			{
 				name: "Jojo Fan",
@@ -598,6 +599,7 @@ export const valkyries: Array<Valkyrie> = [
 		type: "BIO",
 		keyword:
 			"fire dudu fire bianca durandal astagina dea anchora leg bow one hand da goose",
+
 		builds: [
 			{
 				name: "Tap B, Watch Youtube",
@@ -11577,7 +11579,11 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SSS",
 							difficult: "Finality",
 							weap: "Midnight Ataegina",
-							stigmata: ["Bianka: Theatre (T)", "Bianka: Theatre (M)", "Bianka: Theatre (B)"],
+							stigmata: [
+								"Bianka: Theatre (T)",
+								"Bianka: Theatre (M)",
+								"Bianka: Theatre (B)",
+							],
 							time: "9:41m (6.0A)",
 							ref: "https://youtu.be/hVsZaDG7TVM",
 						},
@@ -11937,7 +11943,11 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SSS",
 							difficult: "Finality",
 							weap: "Domain of Ego: Flawless Return",
-							stigmata: ["Wang Zhenyi (T)", "Wang Zhenyi (M)", "Wang Zhenyi (B)"],
+							stigmata: [
+								"Wang Zhenyi (T)",
+								"Wang Zhenyi (M)",
+								"Wang Zhenyi (B)",
+							],
 							time: "8:51m (6.0B)",
 							ref: "https://youtu.be/t75HyvhKV6I",
 						},
@@ -12298,7 +12308,11 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SSS",
 							difficult: "Finality",
 							weap: "Purana Phantasma: Nighteye",
-							stigmata: ["Ana Schariac (T)", "Ana Schariac (M)", "Ana Schariac (B)"],
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "8:08m (6.0A)",
 							ref: "https://youtu.be/EZNq6e74Wjc",
 						},
@@ -12599,7 +12613,11 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SSS",
 							difficult: "Finality",
 							weap: "Purana Phantasma: Nighteye",
-							stigmata: ["Ana Schariac (T)", "Ana Schariac (M)", "Ana Schariac (B)"],
+							stigmata: [
+								"Ana Schariac (T)",
+								"Ana Schariac (M)",
+								"Ana Schariac (B)",
+							],
 							time: "7:41m (6.0A)",
 							ref: "https://youtu.be/jn0qc03V5WI",
 						},
@@ -13295,7 +13313,9 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Falcon Flare: FINAL",
 							stigmata: [
-								"Bronya N-EX (T)", "Bronya N-EX (M)", "Bronya N-EX (B)"
+								"Bronya N-EX (T)",
+								"Bronya N-EX (M)",
+								"Bronya N-EX (B)",
 							],
 							time: "7:48m (6.1)",
 							ref: "https://youtu.be/vK_stvbRv50",
@@ -15174,11 +15194,7 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SS",
 							difficult: "Finality",
 							weap: "Path to Acheron: Kindred",
-							stigmata: [
-								"Allan Poe (T)",
-								"Allan Poe (M)",
-								"Allan Poe (B)",
-							],
+							stigmata: ["Allan Poe (T)", "Allan Poe (M)", "Allan Poe (B)"],
 							time: "16:10m (6.1)",
 							ref: "https://youtu.be/KDbo2fZi94E",
 						},
@@ -15476,11 +15492,7 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "S2",
 							difficult: "Abstinence",
 							weap: "Path to Acheron: Kindred",
-							stigmata: [
-								"Allan Poe (T)",
-								"Allan Poe (M)",
-								"Allan Poe (B)",
-							],
+							stigmata: ["Allan Poe (T)", "Allan Poe (M)", "Allan Poe (B)"],
 							time: "14m (5.9B)",
 							ref: "https://youtu.be/cslZh5G3YxI",
 						},
@@ -15755,11 +15767,7 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SSS",
 							difficult: "Finality",
 							weap: "Miracle Kissy Pillow",
-							stigmata: [
-								"Paganini (T)",
-								"Paganini (M)",
-								"Paganini (B)",
-							],
+							stigmata: ["Paganini (T)", "Paganini (M)", "Paganini (B)"],
 							time: "12:34m (6.1)",
 							ref: "https://youtu.be/MdpFV-Zh1LU",
 						},
@@ -16050,11 +16058,7 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SSS",
 							difficult: "Finality",
 							weap: "Hekate's Sombre",
-							stigmata: [
-"Kafka (T)",
-"Kafka (M)",
-"Kafka (B)",
-							],
+							stigmata: ["Kafka (T)", "Kafka (M)", "Kafka (B)"],
 							time: "11:26m (6.1)",
 							ref: "https://youtu.be/fVlpYAEqHug",
 						},
@@ -16386,11 +16390,7 @@ export const valkyries: Array<Valkyrie> = [
 							rank: "SSS",
 							difficult: "Abstinence",
 							weap: "Eos Gloria",
-							stigmata: [
-								"Leeuwenhoek (T)",
-								"Thales (M)",
-								"Leeuwenhoek (B)",
-							],
+							stigmata: ["Leeuwenhoek (T)", "Thales (M)", "Leeuwenhoek (B)"],
 							time: "13:09m (5.9B)",
 							ref: "https://youtu.be/ILcGqhJskcs",
 						},

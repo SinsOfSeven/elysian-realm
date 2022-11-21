@@ -2,28 +2,26 @@
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 defineProps<{ note: string, danger?: string }>();
 
-const isTruncate = ref(true);
 </script>
 <template>
     <div class="py-2 text-base lg:w-1/2" v-if="note">
-        <div v-show="isTruncate">
-            <Popover>
-                <PopoverButton class="text-left focus:outline-none">
-                    {{ note.length > 100 ? note.substring(0, 100) + '... Read more' : note }}
-                </PopoverButton>
-                <Transition name="slide-fade">
-                    <PopoverPanel class="z-40 h-fit max-h-72 px-2 py-1 rounded overflow-y-auto absolute top-3 bg-dark-pink text-white w-full border border-white">
-                        <p>{{ note }}</p>
-                        <div class="flex flex-col w-full" v-show="danger">
-                            <p class="font-bold">Warning!</p>
-                            <div class="flex flex-col w-full">
-                                <p>{{ danger }}</p>
-                            </div>
+        <Popover>
+            <PopoverButton class="text-left focus:outline-none" :disabled="note.length <= 100">
+                {{ note.length > 100 ? note.substring(0, 100) + '...' : note }}
+            </PopoverButton>
+            <Transition name="slide-fade">
+                <PopoverPanel
+                    class="z-40 h-fit max-h-72 px-2 py-1 rounded overflow-y-auto absolute top-3 bg-dark-pink text-white w-full border border-white">
+                    <p>{{ note }}</p>
+                    <div class="flex flex-col w-full" v-show="danger">
+                        <p class="font-bold">Warning!</p>
+                        <div class="flex flex-col w-full">
+                            <p>{{ danger }}</p>
                         </div>
-                    </PopoverPanel>
-                </Transition>
-            </Popover>
-        </div>
+                    </div>
+                </PopoverPanel>
+            </Transition>
+        </Popover>
     </div>
     <div class="py-2 text-base" v-else>
         <p>No additional information</p>

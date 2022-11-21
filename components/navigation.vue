@@ -11,7 +11,7 @@ const previousValk = valkyrieIndex > 0 ? valkyries[valkyrieIndex - 1] : valkyrie
 const nextValk = valkyrieIndex < valkyries.length - 1 ? valkyries[valkyrieIndex + 1] : valkyries[0];
 </script>
 <template>
-    <div class="bg-gradient-to-b from-dark-blue via-dark-violet to-dark-pink text-white font-semibold py-4">
+    <div class="bg-gradient-to-b from-dark-blue via-dark-violet to-dark-pink text-white font-semibold py-4 lg:from-dark-blue lg:via-dark-blue lg:to-dark-blue">
         <div class="grid w-full grid-cols-3">
             <NuxtLink class="px-4 w-full h-full flex justify-center items-center" :to="`/${ slug(previousValk.name) }`">{{ previousValk.name }}</NuxtLink>
             <div class="grid w-full grid-cols-2 place-content-around px-1 py-0.5">

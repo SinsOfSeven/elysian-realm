@@ -99,7 +99,7 @@ const isOpen = ref(false);
                             <p class="text-xs uppercase">{{ valkyrie.name }}</p>
                             <p class="text-xl font-bold uppercase">{{ selectedBuild.name }}</p>
                         </div>
-                        <NuxtLink to="/" class="hover:animate-pulse rounded rounded-full border border-white p-3 w-12"
+                        <NuxtLink to="/" class="hover:animate-pulse rounded rounded-full border border-white p-3 w-12 lg:w-14"
                             aria-label="Homepage">
                             <!-- HomeIcon -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

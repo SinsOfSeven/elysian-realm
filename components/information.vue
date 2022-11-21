@@ -11,7 +11,7 @@ defineProps<{ note: string, danger?: string }>();
             </PopoverButton>
             <Transition name="slide-fade">
                 <PopoverPanel
-                    class="z-40 h-fit max-h-72 px-2 py-1 rounded overflow-y-auto absolute top-3 bg-dark-pink text-white w-full border border-white">
+                    class="z-40 h-fit max-h-72 px-2 py-1 rounded overflow-y-auto absolute top-3 bg-dark-pink text-white w-full lg:max-w-md border border-white">
                     <p>{{ note }}</p>
                     <div class="flex flex-col w-full" v-show="danger">
                         <p class="font-bold">Warning!</p>

@@ -27,29 +27,29 @@ function swapSupport(support: string) {
 const fetchDescription = (name: string) => ensure(supports.find(el => el.abbr.toLowerCase() === name.toLowerCase()));
 </script>
 <template>
-<div class="flex w-full justify-center py-8">
+<div class="flex w-full justify-center py-8 md:py-0">
     <button @click="first.length > 1 ? swapSupport('first') : ''" class="w-24 flex relative z-0"
         @mouseenter="$emit('isHover', true, fetchDescription(first[firstSection]))"
         @mouseleave="$emit('isHover', false)">
         <nuxt-img class="absolute top-0 left-0 z-10 border border-black bg-yellow-100"
             :src="`/supports/${first[firstSection]}.webp`" :alt="first[firstSection]" :key="firstSection"
-            placeholder height="64" width="64" />
+            placeholder sizes="xs:64 md:80" />
         <nuxt-img class="absolute top-2 left-2 z-0 border border-black bg-yellow-100" v-show="first.length > 1"
             :src="`/supports/${first[nextFirstSection]}.webp`" :alt="first[nextFirstSection]"
-            :key="nextFirstSection" placeholder height="64" width="64" />
+            :key="nextFirstSection" placeholder sizes="xs:64 md:80" />
     </button>
     <button @click="second.length > 1 ? swapSupport('second') : ''" class="w-24 flex relative z-0"
         @mouseenter="$emit('isHover', true, fetchDescription(second[secondSection]))"
         @mouseleave="$emit('isHover', false)">
         <nuxt-img class="absolute top-0 left-0 z-10 border border-black bg-yellow-100"
             :src="`/supports/${second[secondSection]}.webp`" :alt="second[secondSection]" :key="secondSection"
-            placeholder height="64" width="64" />
+            placeholder sizes="xs:64 md:80" />
         <nuxt-img class="absolute top-2 left-2 z-0 border border-black bg-yellow-100" v-show="second.length > 1"
             :src="`/supports/${second[nextSecondSection]}.webp`" :alt="second[nextSecondSection]"
-            :key="nextSecondSection" placeholder height="64" width="64" />
+            :key="nextSecondSection" placeholder sizes="xs:64 md:80" />
     </button>
     <Popover>
-        <PopoverButton class="text-left focus:outline-none">
+        <PopoverButton class="text-left focus:outline-none md:hidden">
             <!-- InformationCircleIcon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-12 h-12" v-show="note" aria-hidden="true">

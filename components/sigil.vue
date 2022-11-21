@@ -27,29 +27,29 @@ function swapSigil(sigil: string) {
 const fetchDescription = (name: string) => ensure(sigils.find(el => el.name.toLowerCase() === name.toLowerCase()));
 </script>
 <template>
-    <div class="flex w-full justify-center">
+    <div class="flex w-full justify-center md:justify-start md:ml-6">
         <button @click="first.length > 1 ? swapSigil('first') : ''" class="w-24 flex relative z-0"
             @mouseenter="$emit('isHover', true, fetchDescription(first[firstSection]))"
             @mouseleave="$emit('isHover', false)">
             <nuxt-img class="absolute top-0 left-0 z-10 border border-black bg-yellow-100"
                 :src="`/sigils/${slug(first[firstSection])}.webp`" :alt="first[firstSection]" :key="firstSection"
-                placeholder height="64" width="64" />
+                placeholder sizes="xs:64px md:80px" />
             <nuxt-img class="absolute top-2 left-2 z-0 border border-black bg-yellow-100" v-show="first.length > 1"
                 :src="`/sigils/${slug(first[nextFirstSection])}.webp`" :alt="first[nextFirstSection]"
-                :key="nextFirstSection" placeholder height="64" width="64" />
+                :key="nextFirstSection" placeholder sizes="xs:64px md:80px" />
         </button>
         <button @click="second.length > 1 ? swapSigil('second') : ''" class="w-24 flex relative z-0"
             @mouseenter="$emit('isHover', true, fetchDescription(second[secondSection]))"
             @mouseleave="$emit('isHover', false)">
             <nuxt-img class="absolute top-0 left-0 z-10 border border-black bg-yellow-100"
                 :src="`/sigils/${slug(second[secondSection])}.webp`" :alt="second[secondSection]" :key="secondSection"
-                placeholder height="64" width="64" />
+                placeholder sizes="xs:64px md:80px" />
             <nuxt-img class="absolute top-2 left-2 z-0 border border-black bg-yellow-100" v-show="second.length > 1"
                 :src="`/sigils/${slug(second[nextSecondSection])}.webp`" :alt="second[nextSecondSection]"
-                :key="nextSecondSection" placeholder height="64" width="64" />
+                :key="nextSecondSection" placeholder sizes="xs:64px md:80px" />
         </button>
         <Popover>
-            <PopoverButton class="text-left focus:outline-none">
+            <PopoverButton class="text-left focus:outline-none md:hidden">
                 <!-- InformationCircleIcon -->
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                     class="w-12 h-12" aria-hidden="true">

@@ -119,7 +119,7 @@ const isOpen = ref(false);
                                 class="text-sm bg-white text-dark-blue rounded-full text-center w-16 h-14">
                                 {{ timeline[time].toUpperCase() }}
                             </button>
-                            <div class="flex flex-col md:flex-row w-full md:w-fit md:max-w-sm"
+                            <div class="flex flex-col md:flex-row w-full md:w-fit md:max-w-sm relative"
                                 :key="timeCounter">
                                 <Sigil :sigil="sigil" :note="selectedBuild.sigil.note" :key="time"
                                     @is-hover="fetchDescription" />
@@ -157,8 +157,8 @@ const isOpen = ref(false);
                                             </PopoverPanel>
                                         </Transition>
                                     </Popover>
-                                    <!-- <div
-                                        :class="showDetails ? 'z-30 right-0 mt-4 ml-auto bottom-0 w-full max-w-sm bg-dark-pink border border-dark-blue text-dark-blue rounded px-4 py-1' : ''">
+                                    <div
+                                        :class="{ 'z-30 left-0 mt-4 top-20 w-full max-w-sm bg-dark-pink border border-white text-white rounded px-4 py-1 absolute' : showDetails }">
                                         <h2 class="font-semibold">
                                             {{ description.name }}
                                             <div v-show="description.skill" class="text-sm">
@@ -170,7 +170,7 @@ const isOpen = ref(false);
                                             <span class="font-semibold">Charging:</span>
                                             <span v-text="description.charging" />
                                         </p>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>

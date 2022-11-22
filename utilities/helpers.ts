@@ -6,7 +6,6 @@ export function slug(str: string): string {
 		.replace(/[\s_-]+/g, "-")
 		.replace(/^-+|-+$/g, "");
 }
-
 export function ensure<T>(
 	argument: T | undefined | null,
 	message: string = "Data not found"
@@ -27,7 +26,6 @@ export function teamBuild(
 }
 
 import { valkyries } from "../utilities/database";
-
 export const valkyrieList = valkyries.map((el) => {
 	const filtered = { name: "", keyword: "" };
 

@@ -1,0 +1,78 @@
+---
+ # Kosma
+Signet:
+  name: Daybreak
+  normal:
+   signets:
+      - Talons that Desecrate the Santuary: 
+        - Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:1s.
+        - Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:0.9s.
+        - Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:0.8s.
+        - Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:0.6s.
+      - Wings that Mask the Sanguine Moon: 
+        - Ultimate Evasion Skill inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:15s.
+        - Ultimate Evasion Skill inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:13s.
+        - Ultimate Evasion Skill inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:11s.
+        - Ultimate Evasion Skill inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:9s.
+      - Horns the Rip the Bleak Sky: 
+        - Ultimate inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:15s.
+        - Ultimate inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:11s.
+        - Ultimate inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:9s.
+        - Ultimate inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:13s.
+      - Eyes that Overlook the Vicious Abyss: 
+        - Each stack of Rend on enemies makes Valkyries deal 10% bonus DMG to their shields.
+        - Each stack of Rend on enemies makes Valkyries deal 12% bonus DMG to their shields.
+        - Each stack of Rend on enemies makes Valkyries deal 14% bonus DMG to their shields.
+        - Each stack of Rend on enemies makes Valkyries deal 16% bonus DMG to their shields.
+      - Breath that Slanders Sulphur: 
+        - Inflicting Rend on an already affected enemy restores 10 SP. cd:5s.
+        - Inflicting Rend on an already affected enemy restores 12 SP. cd:5s.
+        - Inflicting Rend on an already affected enemy restores 14 SP. cd:5s.
+        - Inflicting Rend on an already affected enemy restores 16 SP. cd:5s.
+      - Heart that Committed Seven Crimes: 
+        - Rend lasts 5s longer.
+        - Rend lasts 6s longer.
+        - Rend lasts 7s longer.
+        - Rend lasts 8s longer.
+  nexus1:
+    signets:
+      - Daybreak, an Undying Light:
+        - Hitting an enemy with 10 or more stacks of Rend triggers Evil's Doom which deals ATK of Adaptive 1500% DMG and 5000% ATK of bonus Adaptive DMG against shields. cd:5s.
+  enhanced1:
+    signets:
+      - Unbending Hero: 
+        - For every stack on any enemy, Valkyries have 1% Physical & Elemental Breach. 25% max.
+        - For every stack on any enemy, Valkyries have 1.2% Physical & Elemental Breach. 30% max.
+        - For every stack on any enemy, Valkyries have 1.4% Physical & Elemental Breach. 35% max.
+        - For every stack on any enemy, Valkyries have 1.6% Physical & Elemental Breach. 40% max.
+      - Undetermined Judgement: 
+        - Breaking an enemy shield triggers Evil's Doom and Valkyries deal 100% bonus Total DMG to enemies with broken shields.
+        - Breaking an enemy shield triggers Evil's Doom and Valkyries deal 120% bonus Total DMG to enemies with broken shields.
+        - Breaking an enemy shield triggers Evil's Doom and Valkyries deal 140% bonus Total DMG to enemies with broken shields.
+        - Breaking an enemy shield triggers Evil's Doom and Valkyries deal 160% bonus Total DMG to enemies with broken shields.
+      - Unwavering Promise: 
+        - Rend-inflicted enemies take 80% bonus Total DMG and addition 40% bonus Total DMG with 20 Rend stacks or more.
+        - Rend-inflicted enemies take 100% bonus Total DMG and addition 50% bonus Total DMG with 20 Rend stacks or more.
+        - Rend-inflicted enemies take 120% bonus Total DMG and addition 60% bonus Total DMG with 20 Rend stacks or more.
+        - Rend-inflicted enemies take 140% bonus Total DMG and addition 70% bonus Total DMG with 20 Rend stacks or more.
+  nexus2:
+    signets:
+      - Daybreak, Lone Beacon:
+        - Rend will also be applied to the Valkyrie. Each stack of Rend makes Valkyrie deal 2% more Total DMG and lose 2 HP per second down to 1 HP.
+  enhanced2:
+    signets:
+      - Dawn, Perpetual Wait: 
+        - While Rended, recovering HP reduces Total DMG taken by 1% each time upto 30%, and losing HP increases Physical and Elemental Breach by 2% each time up to 30%.
+        - While Rended, recovering HP reduces Total DMG taken by 1.2% each time upto 30%, and losing HP increases Physical and Elemental Breach by 2.4% each time up to 36%.
+        - While Rended, recovering HP reduces Total DMG taken by 1.4% each time upto 30%, and losing HP increases Physical and Elemental Breach by 2.8% each time up to 42%.
+        - While Rended, recovering HP reduces Total DMG taken by 1.6% each time upto 30%, and losing HP increases Physical and Elemental Breach by 3.2% each time up to 48%.
+      - Choice, Ensuing Regret: 
+        - When Combo and Charged ATKs hit, unleash Righteous Retribution once, dealing 3000% ATK of Adaptive DMG to nearby enemies as well as restoring 0.5% of HP for each stack of Rend on Valkyrie. cd:10s.
+        - When Combo and Charged ATKs hit, unleash Righteous Retribution once, dealing 3600% ATK of Adaptive DMG to nearby enemies as well as restoring 0.5% of HP for each stack of Rend on Valkyrie. cd:10s.
+        - When Combo and Charged ATKs hit, unleash Righteous Retribution once, dealing 3600% ATK of Adaptive DMG to nearby enemies as well as restoring 0.5% of HP for each stack of Rend on Valkyrie. cd:10s.
+        - When Combo and Charged ATKs hit, unleash Righteous Retribution once, dealing 3600% ATK of Adaptive DMG to nearby enemies as well as restoring 0.5% of HP for each stack of Rend on Valkyrie. cd:10s.
+      - Heart, Unshakable Character: 
+        - Each stack of Rend on Valkyrie makes her deal 1.5% more Physical and Elemental DMG.  
+        - Each stack of Rend on Valkyrie makes her deal 1.8% more Physical and Elemental DMG.
+        - Each stack of Rend on Valkyrie makes her deal 2.1% more Physical and Elemental DMG.
+        - Each stack of Rend on Valkyrie makes her deal 2.4% more Physical and Elemental DMG.

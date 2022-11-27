@@ -1,0 +1,78 @@
+---
+ # Griseo
+Signet:
+  name: Stars
+  normal:
+   signets:
+      - Red & Hot: 
+        - Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.
+        - Using a weapon active taints enemies nearby with red paint for 8s and makes them take 30% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.
+        - Using a weapon active taints enemies nearby with red paint for 8s and makes them take 35% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.
+        - Using a weapon active taints enemies nearby with red paint for 8s and makes them take 40% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.
+      - Blue & Cold: 
+        - Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.
+        - Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 36%. Triggering it again resets the duration.
+        - Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 42%. Triggering it again resets the duration.
+        - Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 48%. Triggering it again resets the duration.
+      - Yellow & Warm: 
+        - Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.
+        - Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 36% bonus Total DMG. Triggering it again resets the duration.
+        - Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 42% bonus Total DMG. Triggering it again resets the duration.
+        - Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 48% bonus Total DMG. Triggering it again resets the duration.
+      - Black & Dark: 
+        - Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.
+        - Every time an enemy is tainted, Valkyries deals 12% bonus Physical and Elemental DMG for 20s. 6 stacks max.
+        - Every time an enemy is tainted, Valkyries deals 14% bonus Physical and Elemental DMG for 20s. 6 stacks max.
+        - Every time an enemy is tainted, Valkyries deals 16% bonus Physical and Elemental DMG for 20s. 6 stacks max.
+      - White & Bright: 
+        - Every time an enemy is tainted, Valkyrie restores 12 SP. cd:5s.
+        - Every time an enemy is tainted, Valkyrie restores 14 SP. cd:5s.
+        - Every time an enemy is tainted, Valkyrie restores 16 SP. cd:5s.
+        - Every time an enemy is tainted, Valkyrie restores 18 SP. cd:5s.
+      - Grey & Empty: 
+        - Enemies stay tainted for 5s longer.
+        - Enemies stay tainted for 6s longer.
+        - Enemies stay tainted for 7s longer.
+        - Enemies stay tainted for 8s longer.
+  nexus1:
+    signets:
+      - Shining Like Stars:
+        - When there are enemies tainted with 1/2/3 different paints, Valkyries deal 20%/50%/100% bonus Total DMG to enemies of countering types.
+  enhanced1:
+    signets:
+      - Blooming Like Flowers: 
+        - When enemies of countered types are tainted with both blue and red paints, Valkyries deal 50% bonus Total DMG to them (cannot stack).
+        - When enemies of countered types are tainted with both blue and red paints, Valkyries deal 60% bonus Total DMG to them.
+        - When enemies of countered types are tainted with both blue and red paints, Valkyries deal 70% bonus Total DMG to them.
+        - When enemies of countered types are tainted with both blue and red paints, Valkyries deal 80% bonus Total DMG to them.
+      - Burning Like Flames: 
+        - When enemies are tainted with both yellow and red paints, Valkyries have 25% bonus Physical and Elemental Breach against them.
+        - When enemies are tainted with both yellow and red paints, Valkyries have 30% bonus Physical and Elemental Breach against them.
+        - When enemies are tainted with both yellow and red paints, Valkyries have 35% bonus Physical and Elemental Breach against them.
+        - When enemies are tainted with both yellow and red paints, Valkyries have 40% bonus Physical and Elemental Breach against them.
+      - Stretching Like Leaves: 
+        - When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 3000% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.
+        - When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 3600% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.
+        - When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 4200% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.
+        - When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 4800% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.
+  nexus2:
+    signets:
+      - Faded Stars:
+        - When tainted enemies are tainted another color, Blending is triggered, dealing 300% ATK of Adaptive DMG to enemies within 15m and tainting enemies purple, green, or orange based on the Enhanced Signet; cd:1s. Total DMG increases 15% for each layer of taint, plus an additional 15% for enemies of a countered type.
+  enhanced2:
+    signets:
+      - Petals in the Wind: 
+        - When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.
+        - When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 45%. Triggering it again resets the duration.
+        - When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 50%. Triggering it again resets the duration.
+        - When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 55%. Triggering it again resets the duration.
+      - Fallen Leaves: 
+        - When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.
+        - When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 25% for each taint in Faded Stars. Triggering it again resets the duration.
+        - When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 30% for each taint in Faded Stars. Triggering it again resets the duration.
+        - When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 35% for each taint in Faded Stars. Triggering it again resets the duration.
+      - A Flame Extinguished: 
+        - When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:7s. Triggering it again resets the duration.
+        - When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6.5s. Triggering it again resets the duration.
+        - When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6s. Triggering it again resets the duration.
+        - When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:5.5s. Triggering it again resets the duration.

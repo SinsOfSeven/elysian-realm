@@ -1,0 +1,78 @@
+---
+ # Yae Sakura
+Signet:
+  name: Setsuna
+  normal:
+   signets:
+      - Bountiful Blossom:Ume: 
+        - Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 40% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 48% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 56% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 64% for 8s.
+      - Bountiful Blossom:Koyo: 
+        - Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 36% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 42% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 48% for 8s.
+      - Bountiful Blossom:Botan: 
+        - Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Total DMG by 48% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Total DMG by 56% for 8s.
+        - Triggering Ultimate Evasion Skill boosts Total DMG by 64% for 8s.
+      - Bountiful Blossom:Kiku: 
+        - Ultimate Evasions reset Ultimate Evasion Skill CD.
+        - Ultimate Evasions reset Ultimate Evasion Skill CD.
+        - Ultimate Evasions reset Ultimate Evasion Skill CD.
+        - Ultimate Evasions reset Ultimate Evasion Skill CD.
+      - Bountiful Blossom:Fuji:
+        - Ultimate Evasion Skill has 1 more charge and 10% reduced CD.
+        - Ultimate Evasion Skill has 1 more charge and 12% reduced CD.
+        - Ultimate Evasion Skill has 1 more charge and 14% reduced CD.
+        - Ultimate Evasion Skill has 1 more charge and 16% reduced CD.
+      - Bountiful Blossom:Ayame: 
+        - Triggering Ultimate Evasion Skill restores 12.0 bonus SP.
+        - Triggering Ultimate Evasion Skill restores 15.0 bonus SP.
+        - Triggering Ultimate Evasion Skill restores 18.0 bonus SP.
+        - Triggering Ultimate Evasion Skill restores 21.0 bonus SP.
+  nexus1:
+    signets:
+      - Setsuna Blade:Sakura ni Maku:
+        - Triggering Ultimate Evasion Skill 3 times activates Sakura Screen to render all enemies static for 3s, after which they lose HP equal to 40% of the DMG they have received during the duration.
+  enhanced1:
+    signets:
+      - Setsuna Blade:Ame-Shiko: 
+        - Activating Sakura Screen resets Ultimate CD and weapon active CD.
+        - Activating Sakura Screen resets Ultimate CD and weapon active CD.
+        - Activating Sakura Screen resets Ultimate CD and weapon active CD.
+        - Activating Sakura Screen resets Ultimate CD and weapon active CD.
+      - Setsuna Blade:Tsukimi-de Ippai: 
+        - When Sakura Screen is active, every attack deals 50% ATK of bonus Ice DMG. cd:0.1s.
+        - When Sakura Screen is active, every attack deals 60% ATK of bonus Ice DMG. cd:0.1s.
+        - When Sakura Screen is active, every attack deals 70% ATK of bonus Ice DMG. cd:0.1s.
+        - When Sakura Screen is active, every attack deals 80% ATK of bonus Ice DMG. cd:0.1s.
+      - Setsuna Blade:Ino-Shika-Cho: 
+        - When Sakura Screen is active, moving around can pause its duration countdown for up to 3.0s.
+        - When Sakura Screen is active, moving around can pause its duration countdown for up to 3.0s.
+        - When Sakura Screen is active, moving around can pause its duration countdown for up to 3.0s.
+        - When Sakura Screen is active, moving around can pause its duration countdown for up to 3.0s.
+  nexus2:
+    signets:
+      - Setsuna Blade:Yasha:
+        - Valkyries enter Isshun status every 10s during which a normal evasion becomes Ultimate Evasion and unleashes Setsuna Blade:Karuma dealing 7x200% ATK of Ice DMG to all enemies.
+  enhanced2:
+    signets:
+      - Setsuna Blade:Shinra Bansho: 
+        - Triggering Ultimate Evasion Skill 3 times also induces Setsuna Blade:Karuma and makes it deal 200% bonus Ice DMG on every hit.
+        - Triggering Ultimate Evasion Skill 3 times also induces Setsuna Blade:Karuma and makes it deal 240% bonus Ice DMG on every hit.
+        - Triggering Ultimate Evasion Skill 3 times also induces Setsuna Blade:Karuma and makes it deal 280% bonus Ice DMG on every hit.
+        - Triggering Ultimate Evasion Skill 3 times also induces Setsuna Blade:Karuma and makes it deal 320% bonus Ice DMG on every hit.
+      - Setsuna Blade:Mugenjigoku: 
+        - Unleashing Setsuna Blade:Karuma reduces Ultimate Evasion Skill's remaining CD by 25%.
+        - Unleashing Setsuna Blade:Karuma reduces Ultimate Evasion Skill's remaining CD by 30%.
+        - Unleashing Setsuna Blade:Karuma reduces Ultimate Evasion Skill's remaining CD by 35%.
+        - Unleashing Setsuna Blade:Karuma reduces Ultimate Evasion Skill's remaining CD by 40%.
+      - Setsuna Blade:Mumyo: 
+        - Every cast of Setsuna Blade:Karuma makes the next deal 25% bonus Ice DMG on every hit. 8 stacks max.
+        - Every cast of Setsuna Blade:Karuma makes the next deal 30% bonus Ice DMG on every hit. 8 stacks max.
+        - Every cast of Setsuna Blade:Karuma makes the next deal 35% bonus Ice DMG on every hit. 8 stacks max.
+        - Every cast of Setsuna Blade:Karuma makes the next deal 40% bonus Ice DMG on every hit. 8 stacks max.

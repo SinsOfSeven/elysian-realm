@@ -6,7 +6,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "ice rita rossweisse argent knight artemis aka jojo",
 		builds: [
 			{
-				name: "General Build",
+				name: "General",
 				note: "Updated 6.1. AKA is yet another one of these valkyries that needs quite the particular investment for comfily using in ER. She wants a minimum rank of S2, and she also wants her pri-arm, without which she struggles quite noticeably. However, there's also something else that adds up into her performance at ER. She's also a highly difficult mechanical valk to optimally play with, as she does have quite a lot of tricks going for her. Most notably, animation cancels, which arguably do provide quite a big and drastic DPS increase for her, both inside and outside ER.",
 				boss: {
 					info: "Husk, then Vill-V or Kalpas",
@@ -23,7 +23,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Ana Schariac (M)",
 								"Ana Schariac (B)",
 							],
-							time: "10:08m (6.1)",
+							time: "10:08m (6.1A)",
 							ref: "https://youtu.be/8DI2mKbHxNY",
 						},
 					],
@@ -34,20 +34,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -315,7 +316,6 @@ export const valkyries: Array<Valkyrie> = [
 		type: "MECH",
 		keyword:
 			"dudu bianca durandal astagina bright knight: excelsis bright knight excelsis bkek jojo goose",
-
 		builds: [
 			{
 				name: "Jojo Fan",
@@ -333,27 +333,22 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Abyss Flower: Liminal Spiral",
 							stigmata: ["Dante (T)", "Dante (M)", "Dante (B)"],
-							time: "9:51m (6.1)",
+							time: "9:51m (6.1A)",
 							ref: "https://youtu.be/Ja3yyEc2mQI",
 						},
 					],
 				},
 				buff: {
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
-						},
-						{
-							description:
 								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -599,7 +594,6 @@ export const valkyries: Array<Valkyrie> = [
 		type: "BIO",
 		keyword:
 			"fire dudu fire bianca durandal astagina dea anchora leg bow one hand da goose",
-
 		builds: [
 			{
 				name: "Tap B, Watch Youtube",
@@ -618,7 +612,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Shakespeare: Adrift (M)",
 								"Shakespeare: Adrift (B)",
 							],
-							time: "13:42m (6.1)",
+							time: "13:42m (6.1A)",
 							ref: "https://youtu.be/WtStotdHLfg",
 						},
 					],
@@ -629,20 +623,16 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -922,7 +912,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "aponia nun disciplinary perdition dpe dip",
 		builds: [
 			{
-				name: "Recommended",
+				name: "General",
 				note: "Updated 6.1. Aponia being one of the strongest Flamechasers available to do ER with, is also a valk that doesn't really demands much mechanical play. There's really not much to explain about her. Aponia in ER is basically a get 100 sp, use Ultimate, hold A for Thunderstorm and move or just watch a video while enemies die. Then gain SP again and repeat the same process. More explanation on her is given in the description of the video runs.",
 				boss: {
 					info: "Husk, then Aponia",
@@ -935,7 +925,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Lost Conviction: Damnation",
 							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
-							time: "7:47m (6.1)",
+							time: "7:47m (6.1A)",
 							ref: "https://youtu.be/250mouXMexk",
 						},
 					],
@@ -946,20 +936,16 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
-						},
-						{
-							description:
 								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -1230,7 +1216,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "rita rossweisse fallen rosemary fr",
 		builds: [
 			{
-				name: "General Build",
+				name: "Below SS2",
 				note: "Updated 6.1. Do note that FR needs her Pri-arm if you want to use her for ER. Due to the complex mechanics that FR has, she's one of the harder valks to properly play into ER. In fact, much like certain other valks, her performance won't only depend on her gears and ranks, but also will depend on how optimally you can play her. As long as you can consistently and properly do her Evade cancels (especially taking note of Strix-the bird rune- getting off CD to spam him) into Charged ATKs one after another, you can expect things to go well. Her greatest dps is between her ult and the successive Charged ATK chain. ",
 				boss: {
 					info: "Hephaestus, then Aponia or Kosma",
@@ -1243,7 +1229,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Iris of Helheim",
 							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
-							time: "6:21m (6.1)",
+							time: "6:21m (6.1A)",
 							ref: "https://youtu.be/xppTS-q5ll4",
 						},
 					],
@@ -1259,11 +1245,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -1290,17 +1276,17 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "AE",
-							second: "SN",
+							second: "BR",
 						},
 						{
 							time: "Mid",
-							first: "AE / BKE",
-							second: "SN",
+							first: "BKE",
+							second: "BR",
 						},
 						{
 							time: "Late",
-							first: "AE / BR",
-							second: "SN",
+							first: "AE",
+							second: "BR",
 						},
 					],
 					note: "Remember to swap AE out for BKE before Heimdall fight. As for the late floors, you can use BR because by then you'll already have more than enough breach with Aponia's and Hua's combined. For this very same reason. You don't take SN out because of 2nd Load Buff.",
@@ -1551,7 +1537,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Iris of Helheim",
 							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
-							time: "4:40m (6.1)",
+							time: "4:40m (6.1A)",
 							ref: "https://youtu.be/6S2R2sffbLs",
 						},
 					],
@@ -1562,21 +1548,16 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
-						},
-						{
-							description:
 								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -1861,7 +1842,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "rozaliya olenyeva twins fervent tempo delta ft",
 		builds: [
 			{
-				name: "FT General Build 7D",
+				name: "General",
 				note: "Updated 6.1. In terms of downscalability, this build sucks for that. It's linked to the valk herself. What does this mean? Basically, you'd rather be using another valk instead of FT if your FT is a bit too downscaled. Needs Sleeper's Dream as minimum, otherwise her ER gameplay is really painful.",
 				boss: {
 					info: "Husk, then Vill-V",
@@ -1874,8 +1855,8 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Sleeper's Dream",
 							stigmata: ["Michelangelo (T)", "Dante (M)", "Michelangelo (B)"],
-							time: "8:55m (6.0A)",
-							ref: "https://youtu.be/0od_2xpXFcI",
+							time: "8:55m (6.1A)",
+							ref: "https://youtu.be/FL43jLuR_Sc",
 						},
 					],
 					danger:
@@ -1885,17 +1866,17 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -2199,7 +2180,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "eden golden diva gd",
 		builds: [
 			{
-				name: "General Build",
+				name: "General",
 				note: "Updated 6.1. As far as testing goes, this is the current best build for Eden, and other variations with different signets are either weaker, or just don't really work as well as they would seem to do in paper. Take Eden2 for instance, which supposedly GD would be perfectly fine with. Issue? It actually isn't that great. Only acceptable as a versatile option when you don't have any other better alternatives for doors, but otherwise, not recommended to do as early start, as it's garbage.",
 				boss: {
 					info: "Husk or Hephaestus, then Aponia or Vill-V",
@@ -2223,24 +2204,17 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
-						{
-							description: "Max SP increases by 30.",
-							load: 5,
-						},
+						{ description: "Flame-Chasers deal 15% more Total DMG.", load: 10 },
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
-						},
-						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -2553,7 +2527,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Ana Schariac (M)",
 								"Ana Schariac (B)",
 							],
-							time: "10:18m (6.1)",
+							time: "10:18m (6.1A)",
 							ref: "https://youtu.be/2jg-_BezVv8",
 						},
 					],
@@ -2564,24 +2538,17 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
-						{
-							description: "Max SP increases by 30.",
-							load: 5,
-						},
+						{ description: "Flame-Chasers deal 15% more Total DMG.", load: 10 },
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
-						},
-						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -2883,7 +2850,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "(Muramasa) Vergil plays on Easy difficulty",
+				name: "Vergil on Easy mode",
 				note: "Updated 6.1. Memento didn't had enough fun with 7T and thought it was too simple and easy for her, so she got rid of it and decided to go to a back alley, proceeded to buy a 3* weapon of doubtful quality from a merchant by the name of Senti, got back home and chose the highest difficulty to prove she isn't any weaker and can also do it herself. Was it worth the 500,000,000 yen that the 3* weapon cost her? Did she get scammed by Senti? Or does that not matter? Turns out even the highest difficulty couldn't stop her and she became an unstoppable force of nature! What an absolute madlad!",
 				danger:
 					"Do note that the best start for this build is Griseo's Red Paint at F2, so it's strongly recommended to mald for it instead of Ego signet.",
@@ -2913,24 +2880,17 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
-						{
-							description: "Max SP increases by 30.",
-							load: 5,
-						},
+						{ description: "Flame-Chasers deal 15% more Total DMG.", load: 10 },
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
-						},
-						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -3241,7 +3201,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Carlo Collodi (M)",
 								"Carlo Collodi (B)",
 							],
-							time: "5:15m (6.1)",
+							time: "5:15m (6.1A)",
 							ref: "https://youtu.be/cwbYxS_h_VE",
 						},
 					],
@@ -3251,16 +3211,12 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 						{
 							description:
-								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -3587,7 +3543,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Domain of Incandescence",
 							stigmata: ["Leeuwenhoek (T)", "Thales (M)", "Leeuwenhoek (B)"],
-							time: "14:09m (6.1)",
+							time: "14:09m (6.1A)",
 							ref: "https://youtu.be/woycwAya1cg",
 						},
 					],
@@ -3597,21 +3553,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -3905,7 +3861,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Burger King Tuna 7D",
+				name: "Burger King Tuna",
 				note: "Updated 6.1. The strength of this build noticeably goes up in Kalpas +2 weathers.",
 				boss: { info: "Hephaestus, then Elysia, Aponia (easiest) or Vill-V." },
 				setup: {
@@ -3937,12 +3893,17 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
+							load: 5,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -4242,333 +4203,6 @@ export const valkyries: Array<Valkyrie> = [
 					],
 				},
 			},
-			{
-				name: "HoFS General Build 7D",
-				note: "Updated for 6.1. Your normal, standard Tuna build that has only 3 necessary Cores. Has downscaling problems, however.",
-				boss: { info: "Hephaestus, then Elysia (fastest times) or Aponia" },
-				setup: {
-					lists: [
-						{
-							rank: "S",
-							difficult: "Finality",
-							weap: "Domain of Incandescence",
-							stigmata: [
-								"Murata Himeko (T)",
-								"Murata Himeko (M)",
-								"Murata Himeko (B)",
-							],
-							time: "7:19m (6.0A)",
-							ref: "https://youtu.be/sBqs_DAPdAk",
-						},
-						{
-							rank: "S",
-							difficult: "Finality",
-							weap: "Domain of Incandescence",
-							stigmata: ["Leeuwenhoek (T)", "Thales (M)", "Leeuwenhoek (B)"],
-							time: "9:44m (6.0A)",
-							ref: "https://youtu.be/6vlIJ4hAKT8",
-						},
-					],
-					note: "This build is downscaleable with lower clear times and lower gear requirement. However, do note that Leuween TB Thales M has some serious problems to be taken into account that will be noted down in some of the signets info.",
-				},
-				buff: {
-					lists: [
-						{
-							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
-						},
-						{
-							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
-							load: 15,
-						},
-					],
-					note: "Effective for 6.1.",
-				},
-				sigil: {
-					lists: [
-						{
-							time: "Early",
-							first: "Mad King's Mask",
-							second: "The Lonely Moon",
-						},
-						{
-							time: "Mid",
-							first: "Forget-Me-Not / Rainbow of Absence",
-							second: "The Lonely Moon",
-						},
-						{
-							time: "Late",
-							first: "Key to the Deep",
-							second: "The Lonely Moon",
-						},
-					],
-				},
-				support: {
-					lists: [
-						{
-							time: "Early",
-							first: "AE",
-							second: "BR",
-						},
-						{
-							time: "Mid",
-							first: "VKE",
-							second: "BR",
-						},
-						{
-							time: "Late",
-							first: "AE",
-							second: "BR",
-						},
-					],
-					note: "You want to save BR specifically for after entering Herrscher Mode on the first snap. Basically, when you're about to use your first Blackhole in Herrscher Form for the maximum output of damage possible.",
-					danger:
-						"VKE for Heimdall fight is recommended in order to fill his Heavy Bar Trauma. Do note that this is specifically for getting him out of Red Mode forcibly once its filled.",
-				},
-				signet: {
-					lists: [
-						{
-							name: "Elysia - Signet of Ego",
-							lists: [
-								{
-									name: "Blessing of Heatflow",
-									description:
-										"Black holes generated by the Herrscher of Flamescion deal 75% bonus Fire DMG. Triggering Ultimate Evasion Skill creates an additional black hole",
-									priority: "Start",
-								},
-								{
-									name: "Blessing of Reburn",
-									description:
-										"Triggering Ultimate Evasion Skill removes Overheat and clears Heat",
-									priority: "1st",
-								},
-								{
-									name: "Blessing of Tempered Warrior",
-									description:
-										"Aerial Combo ATKs reduce Ultimate Evasion Skill CD by 9s",
-									priority: "2nd",
-								},
-								{
-									name: "Blessing of Starfire",
-									description:
-										"When a black hole created by the Herrscher of Flamescion ends, a smaller black hole lasting 5s is generated to deal 300% ATK of Fire DMG per second. CD: 3s",
-									priority: "Optional",
-								},
-								{
-									name: "Blessing of Flamescion",
-									description:
-										"For every black hole created by the Herrscher of Flamescion, Valkyrie restores 25 HP per second and deals 30% bonus Total DMG",
-									priority: "No",
-								},
-							],
-							note: "The minimum requirement of Tuna is to have Heatflow and Reburn as her starting signets. Without Reburn, she feels awful to play. Without Heatflow, she doesn't feel like she has much damage. So, a double Ego start is essential for Tuna. Afterwards, getting a 3rd Ego door is very good, taking Tempered Warrior to make the entire run easier and feel better. 4th is also taken for Starfire, adding even more damage but it's not really necessary.",
-							danger:
-								"If using Leuween TB Thales M, Tempered Warrior becomes an absolute must. Either you get it early, or you hope to get it later; if you don't get it early, Setsuna's Fuji will become a priority to get as soon as possible, preferentially in F5 or F6 shop.",
-						},
-						{
-							name: "Kalpas - Signet of Decimation (1st Core)",
-							lists: [
-								{
-									name: "Blade, Grave and Scar",
-									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
-									priority: "1st",
-								},
-								{
-									name: "Bone, Blood and Ribbon",
-									description:
-										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
-									priority: "2nd",
-								},
-								{
-									name: "Path, Misfortune and Written Fate",
-									description: "Max HP increases by 25%.",
-									priority: "3rd",
-								},
-								{
-									name: "Desireless, Mindless and Homeless",
-									description:
-										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
-									priority: "4th",
-								},
-								{
-									name: "Soldiers, Scissors, Spoils, and Slaughter",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Hometown, Homeland, Friends, and Acquaintances",
-									description:
-										"The cap of Bloodboil Armor charges increases by 500. At over 1500 charges, Bloodboil Armor grants 25% Physical and Elemental Breach.",
-									priority: "Optional (Priority only by F9 afterwards)",
-								},
-								{
-									name: "Body, Bones, Heart, and Soul",
-									description:
-										"The Bloodboil Armor charges cap increases by 500. When its charges exceed 1500, if it gains HP recovery, when it next deals DMG to enemies, it will have a bonus 800% ATK of adaptive DMG. CD: 5s.",
-									priority: "Optional (Not necessary)",
-								},
-							],
-							danger:
-								"Kalpas Enhanceds, no matter if you're running Himeko or Leuween Thales, are never good to take right after completing his core. Instead of wasting one door for F5 or F6 with Kalpas, use it for either Sakura or Griseo, or go shop and get Fuji, then proceed with Griseo signets.",
-							note: "I also strongly recommend upgrading Kalpas' Max HP after both of his DMG boosts if you're using Himeko. Himeko M giving 25% max HP paired with Kalpas 40% Max HP from +3 and Pardofelis Max HP signet makes it possible to reach up to 16k or 17k HP which gives Kalpas an absolutely massive scaling on his +3 DMG Boosts.",
-						},
-						{
-							name: "Sakura - Signet of Setsuna (2nd Core)",
-							lists: [
-								{
-									name: "Bountiful Blossom: Fuji",
-									description:
-										"Ultimate Evasion Skill has 1 more charge and 10% reduced CD",
-									priority: "1st",
-								},
-								{
-									name: "Bountiful Blossom: Koyo",
-									description:
-										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s",
-									priority: "2nd",
-								},
-								{
-									name: "Bountiful Blossom: Botan",
-									description:
-										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
-									priority: "3rd",
-								},
-								{
-									name: "Bountiful Blossom: Ayame",
-									description:
-										"Triggering Ultimate Evasion Skill restores 12.0 bonus SP",
-									priority: "Optional",
-								},
-								{
-									name: "Sakura-ni-Maku",
-									description: "",
-									priority: "Core",
-								},
-							],
-							danger:
-								"Fuji is a first priority if the next 2 conditions are met: Using Leuween TB Thales M and no Tempered Warrior before F7. In Himeko's case, it won't matter if you get it without Tempered Warrior, but will do a big favor for you, so it's still good to take. ",
-							note: "After getting Fuji, you can then proceed to leave completing Sakura by F11 onwards, with Griseo taking the priority. Also, Ayame is good to consider taking for the purposes of getting Yellow applied through early Ultimate so you can get your maximum damage output as soon as possible.",
-						},
-						{
-							name: "Griseo - Signet of Stars (3rd Core)",
-							lists: [
-								{
-									name: "Red & Hot",
-									description:
-										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Black & Dark",
-									description:
-										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
-									priority: "2nd",
-								},
-								{
-									name: "Blue & Cold",
-									description:
-										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
-									priority: "3rd",
-								},
-								{
-									name: "Yellow & Warm",
-									description:
-										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
-									priority: "4th",
-								},
-								{
-									name: "Faded Stars",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Petals in the Wind",
-									description:
-										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Fallen Leaves",
-									description:
-										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
-									name: "A Flame Extinguished",
-									description:
-										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
-									priority: "3rd",
-								},
-							],
-							note: "Due to HoFS' problem of using Ult right away to apply Yellow, you'll usually want to leave at least one charge of UE for the purposes of being able to reset Overheat meter right after using Ultimate. ",
-						},
-						{
-							name: "Pardofelis - Signet of Reverie (4th Core)",
-							lists: [
-								{
-									name: "Neighborhood Chatters",
-									description:
-										"Every 100 Shiny Silvers obtained this round boost max HP by 25 and max SP by 1.",
-									priority: "1st",
-								},
-								{
-									name: "Motto of Meow",
-									description:
-										"Every 100 Shiny Silvers obtained this round boost Total DMG by 1%.",
-									priority: "2nd",
-								},
-								{
-									name: "Back-Curled Tail",
-									description:
-										"Every 100 Shiny Silvers obtained this round boost Physical and Elemental DMG by 0.8%.",
-									priority: "3rd",
-								},
-								{
-									name: "Empty Dreams, Self, Set, and Joy",
-									description: "",
-									priority: "Core",
-								},
-							],
-							note: "Pardofelis has amazing synergy with Kalpas for the purposes of increasing the max HP and thus getting more boosts out of his buffs.",
-						},
-						{
-							name: "Hua - Signet of Vicissitude (5th Core)",
-							lists: [
-								{
-									name: "Old Dreams Again",
-									description: "Elemental Breach increases by 0.6% per second",
-									priority: "1st",
-								},
-								{
-									name: "Dark Garb No More",
-									description: "Elemental DMG increases by 0.8% per second",
-									priority: "2nd",
-								},
-								{
-									name: "Long Trip",
-									description:
-										"Total DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks",
-									priority: "3rd",
-								},
-								{
-									name: "Suffering Mass",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Broken Dream",
-									description:
-										"When possessing Soldier's Remembrance., increase the maximum stack of normal Vicissitude signets by 20",
-									priority: "Optional",
-								},
-							],
-							note: "Hua is not necessary to complete.",
-						},
-					],
-				},
-			},
 		],
 	},
 	{
@@ -4577,10 +4211,11 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "hohe hoe h2o herrscher of human ego elysia ellie",
 		builds: [
 			{
-				name: "Ultimate Build",
-				note: "Updated for 6.1. The stronger variation that also clears faster.",
+				name: "Ultimate",
+				note: "Updated for 6.1. The strongest variation with the only downside of having to go through Elysia's long animation times everytime. Also heavily favored currently by Load Buffs.",
 				boss: {
 					info: "Hephaestus, then Elysia for fastest time. The rest are also easy choices.",
+					note: "Mobius and Vill-V are the easiest ones.",
 				},
 				setup: {
 					lists: [
@@ -4596,39 +4231,53 @@ export const valkyries: Array<Valkyrie> = [
 							time: "3:47m (6.0A)",
 							ref: "https://youtu.be/Fgkcml9kPLw",
 						},
+						{
+							rank: "S2",
+							difficult: "Finality",
+							weap: "Call of Crescent",
+							stigmata: ["Scott (T)", "Scott (M)", "Rasputin (B)"],
+							time: "3:47m (6.0A)",
+							ref: "https://youtu.be/Fgkcml9kPLw",
+						},
 					],
-					note: "This build is downscaleable with lower clear times and lower gear requirement. Even with complete cope gears such as Call of Crescent and full Ana Schariac or just Light String, HoH can still clear Finality.",
+					note: 'HoH\'s downscalability is amazing by being able to clear really easily. Do not upgrade CoC for "better chances", use another bow like Whisper of the Past, Key of Ego or Mitternachts.',
 				},
 				buff: {
 					lists: [
 						{
 							description:
-								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
-							load: 15,
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description:
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
 						{
 							time: "Early",
-							first: "Rainbow of Absence",
-							second: "The Lonely Moon",
+							first: "Memory",
+							second: "Falling in Past Light",
 						},
 						{
 							time: "Mid",
-							first: "Mad King's Mask / Memory / Pseudo Miracle / Home Lost",
+							first:
+								"Pseudo Miracle / Rainbow of Absence / Mad King's Mask / Forget-Me-Not",
 							second: "The Lonely Moon",
 						},
 						{
 							time: "Late",
-							first: "Key to the Deep",
+							first: "Tin Flask / Key to the Deep",
 							second: "The Lonely Moon",
 						},
 					],
@@ -4638,23 +4287,23 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Early",
 							first: "AE",
-							second: "LE / BR",
+							second: "BR",
 						},
 						{
 							time: "Mid",
-							first: "AE",
-							second: "LE / BR",
+							first: "AE / BKE",
+							second: "BR",
 						},
 						{
 							time: "Late",
-							first: "AE",
-							second: "LE / BR",
+							first: "HB",
+							second: "BR",
 						},
 					],
-					note: "LE gives you instant ult, also comfier, whereas BR is preferred if you might be lacking damage, especially for early floors.",
+					note: "HoE honestly doesn't need anyone else. You can bring BK for Heimdall, or if your HoH is strong enough, she can just bruteforce through him anyways. HB is for when you have so much breach already that AE's breach won't be impactful at all.",
 				},
 				signet: {
-					note: "Ideal Order from F1-F7: Double Reroll start into Griseo Red Paint by 2F, Griseo 2nd Core with Black & Dark and Yellow & Warm, shop by F5 or F6 and try to grab Petals in the Wind (purple). Then Vill-V 2nd Core by F7 double.",
+					note: "Ideal Order from F1-F7: Double Ego Start (Bloom + Journey + Awakening) into Hua's Elem Breach F3, then finish Hua 2nd Core by F4 with TDM and Elem DMG, grab Broken Dream at F5, go shop F6 and use 3* Remembrance Sigil Abuse for Vill-V's Conflict and Pendulum and Griseo's Red Paint or Sakura's TDM and TDM Taken, then finish Vill-V's 2nd Core by F7 Doubles",
 					lists: [
 						{
 							name: "Elysia - Signet of Ego",
@@ -4666,15 +4315,15 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Start",
 								},
 								{
-									name: "Blessing of First Awakening",
-									description:
-										"In Herrscher of Origin Form, triggering Ultimate Evasion Skill restores 400 Herrscher Charge and Charged ATKs and special weapon skill deal an additional 1500% ATK of Ice DMG.",
-									priority: "Start",
-								},
-								{
 									name: "Blessing of First Journey",
 									description:
 										"When switching to Herrscher Form, increase DMG taken by all enemies by 40% for 5s and gain 4 Pristine Crystals. Charged ATKs in Herrscher of Human Form and Ultimate Evasion Skill in Herrscher of Origin Form will clear all Pristine Crystals to deal 1200% x 4 ATK of Ice DMG.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of First Awakening",
+									description:
+										"In Herrscher of Origin Form, triggering Ultimate Evasion Skill restores 400 Herrscher Charge and Charged ATKs and special weapon skill deal an additional 1500% ATK of Ice DMG.",
 									priority: "1st",
 								},
 								{
@@ -4692,139 +4341,7 @@ export const valkyries: Array<Valkyrie> = [
 							],
 						},
 						{
-							name: "Vill-V - Signet of Helix (1st Core)",
-							lists: [
-								{
-									name: "Act V: Spider Web",
-									description:
-										"Using a weapon active boosts Valkyrie ranged Total DMG by 40% for 4.5s. Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Act II: Pendulum",
-									description:
-										"Using a weapon active makes enemies take 20% bonus Total DMG for 4.5s. Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
-									name: "Act III: Conflict",
-									description:
-										"Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
-									priority: "3rd",
-								},
-								{
-									name: "Act IV: Spoon",
-									description:
-										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
-									priority: "Optional 4th",
-								},
-								{
-									name: "Holistic Helix",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Drama: Origin of Slumber",
-									description:
-										"During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
-									priority: "1st",
-								},
-								{
-									name: "Puppetry: Interlacing Cells",
-									description:
-										"Extends Global Time Fracture caused by Specail Weapon: No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
-									priority: "2nd",
-								},
-							],
-							note: "You can leave the Enhanceds for later doors, as once you get the 2nd Core, you'll want to have either Kalpas or Hua's cores unlocked.",
-						},
-						{
-							name: "Griseo - Signet of Stars (2nd Core)",
-							lists: [
-								{
-									name: "Red & Hot",
-									description:
-										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Yellow & Warm",
-									description:
-										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
-									name: "Black & Dark",
-									description:
-										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
-									priority: "3rd",
-								},
-								{
-									name: "Blue & Cold",
-									description:
-										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
-									priority: "4th",
-								},
-								{
-									name: "Faded Stars",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Petals in the Wind",
-									description:
-										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
-									priority: "1st",
-								},
-								{
-									name: "Fallen Leaves",
-									description:
-										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
-									priority: "2nd",
-								},
-								{
-									name: "A Flame Extinguished",
-									description:
-										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
-									priority: "3rd",
-								},
-							],
-							note: "All 3 Enhanceds are priority to take, but can leave A Flame Extinguished for a later floor Griseo door, because Vill-V 2nd core is important to take by F7.",
-						},
-						{
-							name: "Kalpas - Signet of Decimation (3rd Core)",
-							lists: [
-								{
-									name: "Blade, Grave and Scar",
-									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
-									priority: "1st",
-								},
-								{
-									name: "Bone, Blood and Ribbon",
-									description:
-										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
-									priority: "2nd",
-								},
-								{
-									name: "Path, Misfortune and Written Fate",
-									description: "Max HP increases by 25%.",
-									priority: "3rd",
-								},
-								{
-									name: "Desireless, Mindless and Homeless",
-									description:
-										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
-									priority: "Optional",
-								},
-								{
-									name: "Soldiers, Scissors, Spoils, and Slaughter",
-									description: "",
-									priority: "Core",
-								},
-							],
-						},
-						{
-							name: "Hua - Signet of Vicissitude (4th Core)",
+							name: "Hua - Signet of Vicissitude (1st Core)",
 							lists: [
 								{
 									name: "Old Dreams Again",
@@ -4856,228 +4373,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Optional",
 								},
 							],
-							note: "Broken Dream best taken from Felis shop, as gambling for it on a door might not pay off.",
-						},
-						{
-							name: "Sakura - Signet of Setsuna (5th Core)",
-							lists: [
-								{
-									name: "Bountiful Blossom: Botan",
-									description:
-										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
-									priority: "1st",
-								},
-								{
-									name: "Bountiful Blossom: Koyo",
-									description:
-										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s.",
-									priority: "2nd",
-								},
-								{
-									name: "Bountiful Blossom: Fuji",
-									description:
-										"Ultimate Evasion Skill has 1 more charge and 10% reduced CD.",
-									priority: "3rd",
-								},
-								{
-									name: "Bountiful Blossom: Ume",
-									description:
-										"Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 40% for 8s.",
-									priority: "Optional",
-								},
-								{
-									name: "Sakura ni Maku",
-									description: "",
-									priority: "Core",
-								},
-								{
-									name: "Shinra Bansho",
-									description: "",
-									priority: "Core",
-								},
-							],
-							note: "The choice between both Cores doesn't matter. 1st will be more impactful if you for some reason don't kill in the last seconds of Ult duration.",
-						},
-						{
-							name: "Pardofelis - Signet of Reverie (6th Core)",
-							lists: [
-								{
-									name: "Motto of Meow",
-									description:
-										"Every 100 Shiny Silvers obtained this round boost Total DMG by 1%.",
-									priority: "1st",
-								},
-								{
-									name: "Back-Curled Tail",
-									description:
-										"Every 100 Shiny Silvers obtained this round boost Physical and Elemental DMG by 0.8%.",
-									priority: "2nd",
-								},
-								{
-									name: "Neighborhood Chatters",
-									description:
-										"Every 100 Shiny Silvers obtained this round boost max HP by 25 and max SP by 1.",
-									priority: "3rd",
-								},
-								{
-									name: "Empty Dreams, Self, Set, and Joy",
-									description: "",
-									priority: "Core",
-								},
-							],
-							note: "Felis signets are better taken from shop.",
-						},
-					],
-				},
-			},
-			{
-				name: "Ballista Build",
-				note: "Updated for 6.1. The slightly weaker variant with slightly less clear time, but nevertheless at the same strength as Ult build.",
-				boss: {
-					info: "Hephaestus, then Elysia for fastest time. The rest are also easy choices.",
-				},
-				setup: {
-					lists: [
-						{
-							rank: "S1",
-							difficult: "Finality",
-							weap: "Domain of Ego: Flawless Return",
-							stigmata: [
-								"Elysia: Pristine (T)",
-								"Elysia: Pristine (M)",
-								"Elysia: Pristine (B)",
-							],
-							time: "4:12m (6.0A)",
-							ref: "https://youtu.be/OdJ-aHcehW0",
-						},
-					],
-					note: "This build is downscaleable with lower clear times and lower gear requirement.",
-				},
-				buff: {
-					lists: [
-						{
-							description:
-								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
-							load: 15,
-						},
-						{
-							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
-							load: 15,
-						},
-					],
-					note: "Effective for 6.1.",
-				},
-				sigil: {
-					lists: [
-						{
-							time: "Early",
-							first: "Mad King's Mask",
-							second: "Falling in Past Light",
-						},
-						{
-							time: "Mid",
-							first: "Pseudo Miracle / Veil of Tears / Home Lost",
-							second: "Falling in Past Light",
-						},
-						{
-							time: "Late",
-							first: "Key to the Deep",
-							second: "Falling in Past Light",
-						},
-					],
-				},
-				support: {
-					lists: [
-						{
-							time: "Early",
-							first: "AE",
-							second: "BR",
-						},
-						{
-							time: "Mid",
-							first: "AE",
-							second: "BR",
-						},
-						{
-							time: "Late",
-							first: "AE",
-							second: "BR",
-						},
-					],
-					note: "Use BR right from the start of the run. Then proceed to use her every other floor to reduce your HP as much as possible.",
-				},
-				signet: {
-					note: "Ideal Order from F1-F7: Kalpas 1F, Vill-V or Aponia 2F, Kalpas 1 Core by F4, shop by F5 or F6, complete V-V and Aponia 2nd Cores by F7 double.",
-					lists: [
-						{
-							name: "Elysia - Signet of Ego",
-							lists: [
-								{
-									name: "Blessing of First Yearning",
-									description:
-										"In Herrscher of Human Form, Charged ATK Speed increases by 30% for 5s after triggering Ultimate Evasion Skill. When using Charged ATK, shooting speed continously increases, up to a maximum of 80%. Move Speed while using Charged ATKs increases by 100%. Resets when Charged ATK ends. When Charged ATK hits, Ultimate Evasion CD decreases by 2.5s and weapon skill CD decreases by 1s. Gain 1 stack of Crystal Ice Mirror for every Charged ATK that hits an enemy. Every stack of Crystal Ice Mirror increases DMG from Charged ATK's by 10%.",
-									priority: "Start",
-								},
-								{
-									name: "Blessing of First Encounter",
-									description:
-										"Charged ATKs in Herrscher of Human Form pull enemies on both sides of the arrow slightly towards the center. Charged ATKs deal an additional 1200% ATK of Ice DMG. If a Charged ATK hits more than 10 times, enemies take 10% more Total DMG from Charged ATKs for every Nexus Signet owned (cannot stack).",
-									priority: "Start",
-								},
-								{
-									name: "Blessing of First Bloom",
-									description:
-										"In Herrscher of Origin Form, Ice DMG increases by 50%. In Herrscher of Human Form, using Charged ATKs reduces Ultimate CD by 1s and restores 20 SP.",
-									priority: "No",
-								},
-								{
-									name: "Blessing of First Awakening",
-									description:
-										"In Herrscher of Origin Form, triggering Ultimate Evasion Skill restores 400 Herrscher Charge and Charged ATKs and special weapon skill deal an additional 1500% ATK of Ice DMG.",
-									priority: "No",
-								},
-								{
-									name: "Blessing of First Journey",
-									description:
-										"When switching to Herrscher Form, increase DMG taken by all enemies by 40% for 5s and gain 4 Pristine Crystals. Charged ATKs in Herrscher of Human Form and Ultimate Evasion Skill in Herrscher of Origin Form will clear all Pristine Crystals to deal 1200% x 4 ATK of Ice DMG.",
-									priority: "No",
-								},
-							],
-							note: "Ballista build only requires 2 Ego signets. As such, this doesn't use the double reroll start. ",
-						},
-						{
-							name: "Kalpas - Signet of Decimation (1st Core)",
-							lists: [
-								{
-									name: "Blade, Grave and Scar",
-									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
-									priority: "1st",
-								},
-								{
-									name: "Bone, Blood and Ribbon",
-									description:
-										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
-									priority: "2nd",
-								},
-								{
-									name: "Path, Misfortune and Written Fate",
-									description: "Max HP increases by 25%.",
-									priority: "3rd",
-								},
-								{
-									name: "Desireless, Mindless and Homeless",
-									description:
-										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
-									priority: "Optional",
-								},
-								{
-									name: "Fight, Struggle, and Decimation",
-									description: "",
-									priority: "Core",
-								},
-							],
-							note: "Why Kalpas 1? Simply because it has the small added bonus of Fire DMG to aid a little with your already shitton overloaded damage. Kalpas2 doesn't really give anything.",
+							note: "Broken Dream is a good gamble to try and take as early as F5. However, if you don't want to risk it by potentially having to reset run if you want the best result possible, you can just chase the other cores instead.",
 						},
 						{
 							name: "Vill-V - Signet of Helix (2nd Core)",
@@ -5112,27 +4408,315 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 								{
-									name: "Puppetry: Interlacing Cells",
-									description:
-										"Extends Global Time Fracture caused by Specail Weapon: No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
-									priority: "1st",
-								},
-								{
 									name: "Drama: Origin of Slumber",
 									description:
 										"During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
+									priority: "1st",
+								},
+								{
+									name: "Puppetry: Interlacing Cells",
+									description:
+										"Extends Global Time Fracture caused by Specail Weapon: No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
+									priority: "2nd",
+								},
+							],
+							note: "Although Puppetry will give excess breach, it's still recommended due to extending the Time Fracture to abuse Drama's additional TDT. Thus, in this case, Drama is the highest priority to +3 and Puppetry is ignored.",
+						},
+						{
+							name: "Griseo - Signet of Stars (3rd Core)",
+							lists: [
+								{
+									name: "Red & Hot",
+									description:
+										"Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Yellow & Warm",
+									description:
+										"Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
-									name: "Saga: Overlapping Needles",
+									name: "Black & Dark",
 									description:
-										"Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 500% ATK of Adaptive DMG.",
+										"Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+									priority: "3rd",
+								},
+								{
+									name: "Blue & Cold",
+									description:
+										"Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Grey & Empty",
+									description: "Enemies stay tainted for 5s longer.",
+									priority: "5th",
+								},
+								{
+									name: "Faded Stars",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Petals in the Wind",
+									description:
+										"When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; CD: 3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+									priority: "1st",
+								},
+								{
+									name: "Fallen Leaves",
+									description:
+										"When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; CD: 3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+									priority: "2nd",
+								},
+								{
+									name: "A Flame Extinguished",
+									description:
+										"When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; CD: 7s. Triggering it again resets the duration.",
 									priority: "Filler",
 								},
 							],
+							note: "Red is the absolute highest priority to +3. Yellow +3 is also good, but you need Grey. You can also go for the 3* Remembrance Sigil abuse in order to maximize your gains with Griseo and get +3 on all of her signets, making it maximum stonks. A Flame Extinguished is not necessary due to excess breach, but can be taken for stronger Fallen Leaves and more damage.",
 						},
 						{
-							name: "Aponia - Signet of Discipline (3rd Core)",
+							name: "Kalpas - Signet of Decimation (4th Core)",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "3rd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "4th",
+								},
+								{
+									name: "Soldiers, Scissors, Spoils, and Slaughter",
+									description: "",
+									priority: "Core (Optional)",
+								},
+							],
+							note: "HoE doesn't really need to finish Kalpas core.",
+						},
+						{
+							name: "Sakura - Signet of Setsuna (5th Core)",
+							lists: [
+								{
+									name: "Bountiful Blossom: Botan",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
+									priority: "1st",
+								},
+								{
+									name: "Bountiful Blossom: Koyo",
+									description:
+										"Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s.",
+									priority: "2nd",
+								},
+								{
+									name: "Bountiful Blossom: Ayame",
+									description:
+										"Triggering Ultimate Evasion Skill restores 12.0 bonus SP.",
+									priority: "3rd",
+								},
+								{
+									name: "Sakura ni Maku",
+									description: "",
+									priority: "Core (Optional)",
+								},
+								{
+									name: "Shinra Bansho",
+									description: "",
+									priority: "Core (Optional)",
+								},
+							],
+							note: "The choice between both Cores doesn't matter. 2nd Core can provide a bit of DMG.",
+						},
+						{
+							name: "Pardofelis - Signet of Reverie (6th Core)",
+							lists: [
+								{
+									name: "Neighborhood Chatters",
+									description:
+										"Every 100 Shiny Silvers obtained this round boost max HP by 25 and max SP by 1.",
+									priority: "1st",
+								},
+								{
+									name: "Motto of Meow",
+									description:
+										"Every 100 Shiny Silvers obtained this round boost Total DMG by 1%.",
+									priority: "2nd",
+								},
+								{
+									name: "Back-Curled Tail",
+									description:
+										"Every 100 Shiny Silvers obtained this round boost Physical and Elemental DMG by 0.8%.",
+									priority: "3rd",
+								},
+								{
+									name: "Empty Dreams, Self, Set, and Joy",
+									description: "",
+									priority: "Core",
+								},
+								{
+									name: "Empty Illusions, Empty Fantasies",
+									description: "",
+									priority: "Core",
+								},
+							],
+							note: "You probably won't finish Pardofelis core, but getting its Max HP/SP signet is good for Kalpas synergy.",
+						},
+					],
+				},
+			},
+			{
+				name: "Ballista",
+				note: "Updated for 6.1. The slightly weaker variant with slightly less clear time, but nevertheless at the same strength as Ult build.",
+				boss: {
+					info: "Hephaestus, then Elysia for fastest time. The rest are also easy choices.",
+				},
+				setup: {
+					lists: [
+						{
+							rank: "S1",
+							difficult: "Finality",
+							weap: "Domain of Ego: Flawless Return",
+							stigmata: [
+								"Elysia: Pristine (T)",
+								"Elysia: Pristine (M)",
+								"Elysia: Pristine (B)",
+							],
+							time: "4:12m (6.0A)",
+							ref: "https://youtu.be/OdJ-aHcehW0",
+						},
+						{
+							rank: "S2",
+							difficult: "Finality",
+							weap: "Call of Crescent",
+							stigmata: [
+								"Scott (T)",
+								"Scott (M)",
+								"Rasputin (B)",
+							],
+							time: "4:12m (6.1A)",
+							ref: "https://youtu.be/CxXYamDEaMw",
+						},
+					],
+					danger: "Please do note that normally, Vill-V would also be included in Ballista build. However, specifically for the F2P Run using CoC & Scott TM Rasp B, I haven't used Vill-V at all, with the reason being playing around charging V-V support skill being a bit hard to play around properly alongside its buffs and the fact that if it's not DoEgo, HoE doesn't have 3 Actives instead of 2. In better geared runs, this build will use Vill-V.",
+					note: "HoE's downscalability is amazing by being able to clear really easily. Do not upgrade CoC for \"better chances\", use another bow like Whisper of the Past, Key of Ego or Mitternachts.",
+				},
+				buff: {
+					lists: [
+						{
+							description:
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
+						},
+						{ description: "Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.", load: 10 },
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
+					],
+					note: "Effective for 6.1B",
+				},
+				sigil: {
+					lists: [
+						{
+							time: "Early",
+							first: "Veil of Tears",
+							second: "Falling in Past Light",
+						},
+						{
+							time: "Mid",
+							first: "Pseudo Miracle / Mad King's Mask / Memory / Forget-Me-Not",
+							second: "Falling in Past Light",
+						},
+						{
+							time: "Late",
+							first: "Key to the Deep",
+							second: "Falling in Past Light",
+						},
+					],
+				},
+				support: {
+					lists: [
+						{
+							time: "Early",
+							first: "AE",
+							second: "BR",
+						},
+						{
+							time: "Mid",
+							first: "AE / BKE",
+							second: "BR",
+						},
+						{
+							time: "Late",
+							first: "AE",
+							second: "BR",
+						},
+					],
+					note: "If you're playing downscaled gears HoE, make sure to bring BK for Heimdall fight. If your HoE is more than geared enough, you won't need BK, as she can easily bruteforce through Heimdall.",
+				},
+				signet: {
+					note: "Ideal Order from F1-F7: Reroll start for Griseo Red Paint at F2 into Aponia's Basic ATK or SP Regen at F3, finish Aponia 2nd Core by F4 Doubles, grab Aponia's Breach at F5, go shop F6 and get either of Kalpas' DMG Boosts or Sakura's DMG boosts or Vill-V's Spider Web and Pendulum, then grab Aponia's remaining 2 Penance and TDM Taken from F7, preferentially with +2 (use 3* Remembrance Sigil Abuse). Can also upgrade Aponia's Basic ATK to +3.",
+					lists: [
+						{
+							name: "Elysia - Signet of Ego",
+							lists: [
+								{
+									name: "Blessing of First Yearning",
+									description:
+										"In Herrscher of Human Form, Charged ATK Speed increases by 30% for 5s after triggering Ultimate Evasion Skill. When using Charged ATK, shooting speed continously increases, up to a maximum of 80%. Move Speed while using Charged ATKs increases by 100%. Resets when Charged ATK ends. When Charged ATK hits, Ultimate Evasion CD decreases by 2.5s and weapon skill CD decreases by 1s. Gain 1 stack of Crystal Ice Mirror for every Charged ATK that hits an enemy. Every stack of Crystal Ice Mirror increases DMG from Charged ATK's by 10%.",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of First Encounter",
+									description:
+										"Charged ATKs in Herrscher of Human Form pull enemies on both sides of the arrow slightly towards the center. Charged ATKs deal an additional 1200% ATK of Ice DMG. If a Charged ATK hits more than 10 times, enemies take 10% more Total DMG from Charged ATKs for every Nexus Signet owned (cannot stack).",
+									priority: "Start",
+								},
+								{
+									name: "Blessing of First Bloom",
+									description:
+										"In Herrscher of Origin Form, Ice DMG increases by 50%. In Herrscher of Human Form, using Charged ATKs reduces Ultimate CD by 1s and restores 20 SP.",
+									priority: "No",
+								},
+								{
+									name: "Blessing of First Awakening",
+									description:
+										"In Herrscher of Origin Form, triggering Ultimate Evasion Skill restores 400 Herrscher Charge and Charged ATKs and special weapon skill deal an additional 1500% ATK of Ice DMG.",
+									priority: "No",
+								},
+								{
+									name: "Blessing of First Journey",
+									description:
+										"When switching to Herrscher Form, increase DMG taken by all enemies by 40% for 5s and gain 4 Pristine Crystals. Charged ATKs in Herrscher of Human Form and Ultimate Evasion Skill in Herrscher of Origin Form will clear all Pristine Crystals to deal 1200% x 4 ATK of Ice DMG.",
+									priority: "No",
+								},
+							],
+							note: "Ballista build only requires 2 Ego signets, allowing the opportunity for HoE to do Griseo Red Paint start instead.",
+						},
+						{
+							name: "Aponia - Signet of Discipline (1st Core)",
+							note: "Basic ATK is the highest priority to upgrade +3 alongside Griseo's Red Paint.",
 							lists: [
 								{
 									name: "First, No Betrayal",
@@ -5141,10 +4725,10 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 								{
-									name: "Fourth, No Insolence",
+									name: "Third, No Brutality",
 									description:
-										"Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
-									priority: "1st",
+										"EExhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
+									priority: "2nd",
 								},
 								{
 									name: "Fifth, No Falsehood",
@@ -5173,47 +4757,98 @@ export const valkyries: Array<Valkyrie> = [
 									name: "You Shall Answer Prayers",
 									description:
 										"Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; CD: 5s. Triggering it again resets the duration.",
-									priority: "Optional",
+									priority: "3rd",
 								},
 							],
 						},
 						{
-							name: "Hua - Signet of Vicissitude (4th Core)",
+							name: "Vill-V - Signet of Helix (2nd Core)",
 							lists: [
 								{
-									name: "Old Dreams Again",
+									name: "Act V: Spider Web",
 									description:
-										"Elemental Breach increases by 0.6% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
+										"Using a weapon active boosts Valkyrie ranged Total DMG by 40% for 4.5s. Triggering it again resets the duration.",
 									priority: "1st",
 								},
 								{
-									name: "Long Trip",
+									name: "Act II: Pendulum",
 									description:
-										"Total DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
+										"Using a weapon active makes enemies take 20% bonus Total DMG for 4.5s. Triggering it again resets the duration.",
 									priority: "2nd",
 								},
 								{
-									name: "Dark Garb No More",
+									name: "Act III: Conflict",
 									description:
-										"Elemental DMG increases by 0.8% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
+										"Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
 									priority: "3rd",
 								},
 								{
-									name: "Suffering Mass",
+									name: "Act IV: Spoon",
+									description:
+										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
+									priority: "4th",
+								},
+								{
+									name: "Act VI: Sneer",
+									description:
+										"Using a weapon active restores 12 SP in 5s and reduces its CD by 15%.",
+									priority: "5th",
+								},
+								{
+									name: "Holistic Helix",
 									description: "",
 									priority: "Core",
 								},
 								{
-									name: "Broken Dream",
+									name: "Puppetry: Interlacing Cells",
 									description:
-										"With Soldier's Remembrance stacks, the max stacks of all buffs from Normal Signets of Vicissitude increase by 20. Losing all Soldier's Remembrance stacks reduces the max stacks by 10 but restores 1 Soldier's Remembrance stack. Can only be triggered once every battle.",
-									priority: "Optional",
+										"Extends Global Time Fracture caused by Specail Weapon: No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
+									priority: "1st",
+								},
+								{
+									name: "Drama: Origin of Slumber",
+									description:
+										"During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
+									priority: "2nd",
 								},
 							],
-							note: "Broken Dream best taken from Felis shop, as gambling for it on a door might not pay off.",
+							note: "Sneer is highly recommended in order to allow HoE to re-apply V-V's buffs fast enough everytime between each cycle of flashing Active and Ballista spam. Also, Drama is highest priority to +3.",
 						},
 						{
-							name: "Griseo - Signet of Stars (5th Core)",
+							name: "Kalpas - Signet of Decimation (3rd Core)",
+							lists: [
+								{
+									name: "Blade, Grave and Scar",
+									description: "Every 100 HP loss boosts Total DMG by 1.0%.",
+									priority: "1st",
+								},
+								{
+									name: "Bone, Blood and Ribbon",
+									description:
+										"Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
+									priority: "2nd",
+								},
+								{
+									name: "Path, Misfortune and Written Fate",
+									description: "Max HP increases by 25%.",
+									priority: "3rd",
+								},
+								{
+									name: "Desireless, Mindless and Homeless",
+									description:
+										"Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
+									priority: "4th",
+								},
+								{
+									name: "Fight, Struggle, and Decimation",
+									description: "",
+									priority: "Core",
+								},
+							],
+							note: "Why Kalpas 1? Simply because it has the small added bonus of Fire DMG to aid a little with your already shitton overloaded damage. Kalpas2 doesn't really give anything.",
+						},
+						{
+							name: "Griseo - Signet of Stars (4th Core)",
 							lists: [
 								{
 									name: "Red & Hot",
@@ -5245,10 +4880,9 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "1st",
 								},
 							],
-							note: "Take this or Sakura",
 						},
 						{
-							name: "Sakura - Signet of Setsuna (6th Core)",
+							name: "Sakura - Signet of Setsuna (5th Core)",
 							lists: [
 								{
 									name: "Bountiful Blossom: Botan",
@@ -5279,7 +4913,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Core",
 								},
 							],
-							note: "Take this or Griseo. The choice between both Cores doesn't matter. 1st will be more impactful if you for some reason don't kill in the last seconds of Ult duration.",
+							note: "The choice between both Cores doesn't matter. 1st will be more impactful if you for some reason don't kill in the last seconds of Ult duration.",
 						},
 					],
 				},
@@ -5292,7 +4926,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "bronya zaychik hor hr herrscher of reason",
 		builds: [
 			{
-				name: "[SoE-Only] Ultimate Build",
+				name: "[SoE-Only] Ultimate",
 				note: "Updated 6.1. Do note that SoE feels a bit weak compared to DoR. Nevertheless, this is the strongest build done up until now from testing.",
 				boss: {
 					info: "Hephaestus, then Aponia",
@@ -5308,7 +4942,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Ana Schariac (M)",
 								"Ana Schariac (B)",
 							],
-							time: "7:57m (6.1)",
+							time: "7:57m (6.1A)",
 							ref: "https://youtu.be/WtWG29ySI7s",
 						},
 					],
@@ -5318,12 +4952,12 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
@@ -5332,7 +4966,7 @@ export const valkyries: Array<Valkyrie> = [
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -5610,7 +5244,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "[DOR-Only] Weapon Active Spam Build",
+				name: "[DOR-Only] Weapon Active Spam",
 				note: "Updated 6.1. This is the strongest and easiest build for HoR compared to other options. Also, please note that this is DoR-only, as SoE has a substantial difference from this.",
 				boss: {
 					info: "Hephaestus, then Vill-V",
@@ -5636,20 +5270,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -5847,15 +5482,15 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "2nd",
 								},
 								{
-									name: "Act IV: Spoon",
-									description:
-										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
-									priority: "3rd",
-								},
-								{
 									name: "Act VI: Sneer",
 									description:
 										"Using a weapon active restores 12 SP in 5s and reduces its CD by 15%.",
+									priority: "3rd",
+								},
+								{
+									name: "Act IV: Spoon",
+									description:
+										"Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
 									priority: "4th",
 								},
 								{
@@ -5882,7 +5517,7 @@ export const valkyries: Array<Valkyrie> = [
 									priority: "Filler",
 								},
 							],
-							note: "Sneer is nice to take but preferentially from Felis shop. It helps spam even further. ",
+							note: "Sneer is an absolute must",
 						},
 						{
 							name: "Kalpas - Signet of Decimation (4th Core)",
@@ -5943,7 +5578,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Ultimate Build",
+				name: "Ultimate",
 				note: "Updated 6.1. The weaker build version. This is only to be considered if you want to for some reason play HoR, but you do not possess either DoR or SoE.",
 				boss: {
 					info: "Hephaestus, then Vill-V",
@@ -5969,20 +5604,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -6306,7 +5942,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "fu hua fuhua hos hs herrscher of sentience",
 		builds: [
 			{
-				name: "General Build",
+				name: "General",
 				note: "Updated 6.1.",
 				boss: {
 					info: "Husk, then Vill-V (easiest) or Aponia",
@@ -6318,8 +5954,8 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Domain of Sentience",
 							stigmata: ["Raksha (T)", "Sushang (M)", "Empyrea Phoenix (B)"],
-							time: "7:47m (6.0A)",
-							ref: "https://youtu.be/jalMiRdgqEw",
+							time: "7:47m (6.1A)",
+							ref: "https://youtu.be/KjQfwb51fy4",
 						},
 						{
 							rank: "S",
@@ -6341,11 +5977,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -6649,7 +6285,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Mobius Build",
+				name: "Mobius",
 				note: "Load buffs adjusted and up to date for 6.1.",
 				boss: {
 					info: "Husk, then Vill-V or Aponia",
@@ -6678,11 +6314,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -6955,7 +6591,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Kosma Build",
+				name: "Kosma",
 				note: "Updated to 6.1. Strength is pretty close to General Build, but otherwise still loses to it.",
 				boss: {
 					info: "Hephaestus, then Elysia or Vill-V (easiest)",
@@ -6982,7 +6618,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -7289,7 +6925,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "herrscher of thunder raiden mei hot ht",
 		builds: [
 			{
-				name: "4-5 Revived Build",
+				name: "4-5",
 				note: "Updated 6.1. This is the 3rd strongest build, and also competes with the others in being the most braindead to play... sort of. The strength of this build is that it is very solid and has damage on everything. 4-5, 7T actives, Dragon slam, Finisher, Shinzan. Overall, it's pretty good.",
 				danger:
 					"Do note though, that this build is not recommended if your HoT is not S1+. Narukami Finisher is stronger.",
@@ -7318,11 +6954,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 					danger:
 						"If not using 7T, then you should instead go with the 10 Load buff that gives 15% TDM as long as your valk doesn't take damage.",
 				},
@@ -7663,7 +7299,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Bombard Build",
+				name: "Bombard",
 				note: "Updated and proper adjustments made for 6.1. The 2nd strongest build. This build also has a surprisingly good time with DoS & Benares Awakening. It also seems to prefer DoS, but nonetheless 7T still does really well.",
 				danger:
 					"This build can't work if your HoT isn't at least S2 rank. S2 is essential to make Bombard work.",
@@ -7712,11 +7348,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -8010,7 +7646,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Narukami Finisher Build",
+				name: "Narukami Finisher",
 				note: "Updated for 6.1. The strongest build out of all 3 that also strongly competes really closely with Bombard, but is the definite winner for any rank of HoT.",
 				boss: {
 					info: "Hephaestus, then Elysia or Mobius/Vill-V",
@@ -8045,11 +7681,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.0 (2nd Half)",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -8358,7 +7994,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "gk god kiana hov hv hotv herrscher of the void herrscher of void",
 		builds: [
 			{
-				name: "Thanos Snap Build",
+				name: "Thanos Snap",
 				note: "Updated for 6.1. Thanos Snap is the strongest build out of the two possible builds for HoV. Also, Mobius has been revived, and it is now used for the build.",
 				boss: {
 					info: "Husk or Hephaestus, then Elysia (fastest clear/speedrun) or Aponia",
@@ -8426,21 +8062,22 @@ export const valkyries: Array<Valkyrie> = [
 				buff: {
 					lists: [
 						{
-							description: "Max SP increases by 30.",
+							description:
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -8471,7 +8108,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							time: "Mid",
-							first: "VC / BR / BKE",
+							first: "BKE",
 							second: "SS",
 						},
 						{
@@ -8772,7 +8409,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Gate of Babylon Build",
+				name: "Gate of Babylon",
 				note: "Updated for 6.1. Slower clear build, but in terms of strength, it's vastly superior.",
 				boss: {
 					info: "Husk or Hephaestus, then Elysia, Aponia or Vill-V",
@@ -8810,21 +8447,22 @@ export const valkyries: Array<Valkyrie> = [
 				buff: {
 					lists: [
 						{
-							description: "Max SP increases by 30.",
+							description:
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -9152,7 +8790,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "jade knight jk li sushang",
 		builds: [
 			{
-				name: "Unlimited Blade Works Build - Aponia Variation",
+				name: "UBW - Aponia",
 				note: "Updated for 6.1. This build basically focuses on A spam. It's her strongest general build, taking into account ranks, downscaling and weather-related buffs & debuffs. On the other hand, however, it is heavily reliant on gather. The strongest variation of Sussy's UBW build, which fully utilizes Aponia signets' strength alongside Griseo, resulting in a really deadly and strong as fuck build that melts through enemies easily like a rain of millions of knives going through butter.",
 				boss: {
 					info: "Hephaestus, then Elysia, Mobius, Aponia or Vill-V",
@@ -9169,7 +8807,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Li Sushang: Shenzou Reminiscence (M)",
 								"Li Sushang: Shenzou Reminiscence (B)",
 							],
-							time: "3:37 (6.1)",
+							time: "3:37 (6.1A)",
 							ref: "https://youtu.be/Pld1F3JfVbw",
 						},
 					],
@@ -9185,11 +8823,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -9541,7 +9179,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Unlimited Blade Works Build - Hua & Kosma Variation",
+				name: "UBW - Hua & Kosma",
 				note: "Updated for 6.1. This build basically focuses on A spam. It's her strongest general build, taking into account ranks, downscaling and weather-related buffs & debuffs. On the other hand, however, it is heavily reliant on gather. So, having as much means of reliable gather as possible is strongly recommended for this build. You can expect a sharp decline in the strength and efficiency if you're not hitting everyone. Without effective means of gather, this build effectively loses out by A LOT as its main effectiveness is through AoE hitting every monster which is achieved by gathering them. If you're hitting only one monster after the other, you'll notice really poor performance and results from this build.",
 				boss: {
 					info: "Hephaestus, then Mobius, Aponia or Vill-V (not recommended due to Hua)",
@@ -9558,7 +9196,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Ana Schariac (M)",
 								"Ana Schariac (B)",
 							],
-							time: "5:44 (6.1)",
+							time: "5:44 (6.1A)",
 							ref: "https://youtu.be/CYP9mv76lbU",
 						},
 					],
@@ -9574,7 +9212,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -9896,7 +9534,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Unlimited Blade Works Build [Eden & Su Variation]",
+				name: "UBW - Eden & Su",
 				note: "Updated for 6.1. This build basically focuses on A spam. It's her strongest general build, taking into account ranks, downscaling and weather-related buffs & debuffs. This particular variant focuses in the use of Eden & Su, abusing the synergy that both have between themselves. However, do expect this build's strength to fall off when Eden is no longer +2.",
 				boss: {
 					info: "Hephaestus, then Mobius, Aponia or Vill-V (not recommended due to Hua)",
@@ -9909,7 +9547,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Grips of Tai Xuan",
 							stigmata: ["Scott (T)", "Scott (M)", "Scott (B)"],
-							time: "8:57m (6.1)",
+							time: "8:57m (6.1A)",
 							ref: "https://youtu.be/Z9kMkellZtU",
 						},
 					],
@@ -9925,7 +9563,7 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -10216,7 +9854,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Dash ATK Build",
+				name: "Dash ATK",
 				note: "Updated for 6.1. This build focuses basically on B Spam. As a warning, this build is a bit more limited in usage, as it requires your Sushang to be strong enough as to have damage overflow, due to B spam consuming Blade Mantra. It can potentially beat or contest strongly with A spam build. It's also not gather-reliant.",
 				boss: {
 					info: "Hephaestus, then Vill-V, Mobius or Aponia",
@@ -10249,11 +9887,11 @@ export const valkyries: Array<Valkyrie> = [
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -10578,7 +10216,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "mobius io infinite ouroboros snek snake",
 		builds: [
 			{
-				name: "DMG Reduction? Where?",
+				name: "DMG Reduction?",
 				note: "Updated for 6.1. Honestly, this is a really fun and genuine surprise that I wasn't expecting to hit this strong. Who would've thought that non-Linnaeus Mobius would be so damn strong nonetheless? Clearly, she doesn't need it, and neither does she gives a fuck about having DMG Reduction trying to weigh her down.",
 				boss: {
 					info: "Hephaestus, then Vill-V or Aponia",
@@ -10591,7 +10229,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Basillisk's Image: Deathshroud",
 							stigmata: ["Linnaeus (T)", "Linnaeus (M)", "Linnaeus (B)"],
-							time: "3:52m (6.1)",
+							time: "3:52m (6.1A)",
 							ref: "https://youtu.be/unn867ieZ70",
 						},
 						{
@@ -10599,7 +10237,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Basillisk's Image: Deathshroud",
 							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
-							time: "5:29m (6.1)",
+							time: "5:29m (6.1A)",
 							ref: "https://youtu.be/5otXPMfRQKU",
 						},
 						{
@@ -10607,7 +10245,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Oath of Judah",
 							stigmata: ["Handel (T)", "Handel (M)", "Handel (B)"],
-							time: "9:05m (6.1)",
+							time: "9:05m (6.1A)",
 							ref: "https://youtu.be/ARcTleTzNYk",
 						},
 					],
@@ -10617,16 +10255,12 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
+								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 						{
 							description:
-								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
@@ -10935,7 +10569,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Non-Kevin Build",
+				name: "Non-Kevin",
 				note: "Updated for 6.1. This build has less dependancy on Kevin's short-lived buffs, instead having consistent buffs that stay present throughout whole floors, even outside of Ultimate.",
 				boss: {
 					info: "Hephaestus, then Aponia or Vill-V",
@@ -10966,20 +10600,16 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
-						},
-						{
-							description:
 								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -11281,21 +10911,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -11590,7 +11220,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "raven midnight absinthe natasha cioara ma",
 		builds: [
 			{
-				name: "Who needs IMG Weather?",
+				name: "IMG Weather?",
 				note: "Updated 6.1. Honestly, considering only base A ranks and non-Flame Chasers, Raven is probably one of the strongest valkyries to clear ER. At least, in weathers that are not so unfavorable for her. She's rather excellent, albeit a bit awkward and her gameplay pretty much just revolves around controlling the appropiate timings.",
 				boss: {
 					info: "Hephaestus, then Vill-V",
@@ -11613,20 +11243,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -11902,7 +11533,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "mpe me miss pink elf elysia",
 		builds: [
 			{
-				name: "General Build",
+				name: "General",
 				note: "Updated for 6.1. Be advised that MPE becomes weaker the less ranks and gears she has. Basically, her downscalability issues are pretty big depending on the difficulty.",
 				boss: {
 					info: "Hephaestus, then Mobius or Vill-V",
@@ -11926,7 +11557,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Marco Polo (M)",
 								"Michelangelo (B)",
 							],
-							time: "12:05m (6.1)",
+							time: "12:05m (6.1A)",
 							ref: "https://youtu.be/H4C8tPJzbxk",
 						},
 					],
@@ -11936,32 +11567,23 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
-							load: 15,
-						},
-						{
-							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
-							load: 15,
-						},
-						{
-							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
+							description:
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
 							description:
-								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
 					danger:
 						"Last 3 Buffs are specifically for CoC & Michelangelo TB Polo M F2P build",
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -12251,7 +11873,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "dudu goose bianca durandal astagina pe juan",
 		builds: [
 			{
-				name: "Equinox Severance Build",
+				name: "Equinox Severance",
 				note: "Updated to 6.1. This build is far stronger, superior and easier compared to Gallop build.",
 				boss: {
 					info: "Husk, then Aponia or Vill-V.",
@@ -12277,13 +11899,13 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
 						},
 						{
 							description:
@@ -12291,7 +11913,7 @@ export const valkyries: Array<Valkyrie> = [
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -12615,7 +12237,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "pv fish fischl Prinzessin der Verurteilung",
 		builds: [
 			{
-				name: "General Build",
+				name: "General",
 				note: "Updated 6.1. This is her best build up to date.",
 				boss: {
 					info: "Husk, then Aponia",
@@ -12631,7 +12253,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Wang Zhenyi (M)",
 								"Wang Zhenyi (B)",
 							],
-							time: "8:51m (6.0B)",
+							time: "8:51m (6.1A)",
 							ref: "https://youtu.be/t75HyvhKV6I",
 						},
 					],
@@ -12642,20 +12264,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
+						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -12972,7 +12595,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "rc cat neko reverist calico pardofelis",
 		builds: [
 			{
-				name: "Pardo1 Variation",
+				name: "Pardo1",
 				note: "Updated to 6.1. More tailored towards late-game. Strength comes in close to Pardo2 variation.",
 				boss: {
 					info: "Hephaestus, then Kalpas or Vill-V",
@@ -13006,24 +12629,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
+							description:
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
+							load: 5,
 						},
 					],
-					note: "Effective for 6.1",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -13275,7 +12895,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Pardo2 Variation",
+				name: "Pardo2",
 				note: "",
 				danger:
 					"Updated to 6.1. Pardo2 variation basically just focuses on giving you a stronger headstart towards getting more signets and also getting more upgrades in comparison to Pardo1 variation. That's pretty much about it.",
@@ -13289,7 +12909,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Purana Phantasma: Nighteye",
 							stigmata: ["Bastet (T)", "Bastet (M)", "Bastet (B)"],
-							time: "5:29m (6.1)",
+							time: "5:29m (6.1A)",
 							ref: "https://youtu.be/N9fb3zsGZjM",
 						},
 						{
@@ -13311,24 +12931,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
-							description: "Flame-Chasers deal 15% more Total DMG.",
-							load: 10,
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -13653,7 +13270,7 @@ export const valkyries: Array<Valkyrie> = [
 		keyword: "kallen kaslana ritual imayoh ir",
 		builds: [
 			{
-				name: "Aponia Build",
+				name: "Aponia",
 				note: "Updated to 6.1 for load buffs. The strength of this build is weakened for 6.0. Don't expect the same results as the example run shown below.",
 				boss: {
 					info: "Hephaestus and Aponia",
@@ -13675,20 +13292,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -14000,7 +13618,7 @@ export const valkyries: Array<Valkyrie> = [
 								"Bronya N-EX (M)",
 								"Bronya N-EX (B)",
 							],
-							time: "7:48m (6.1)",
+							time: "7:48m (6.1A)",
 							ref: "https://youtu.be/vK_stvbRv50",
 						},
 					],
@@ -14009,21 +13627,17 @@ export const valkyries: Array<Valkyrie> = [
 				buff: {
 					lists: [
 						{
-							description: "Max SP increases by 30.",
-							load: 5,
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
-						},
-						{
-							description:
-								"When the stage timer is paused, Total DMG received by all enemies on the field increases by 20% for 15s. Triggering it again resets the duration.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -14309,7 +13923,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Astra Divide: Pisces",
 							stigmata: ["Ragna (T)", "Ragna (M)", "Ragna (B)"],
-							time: "7:00m (6.1)",
+							time: "7:00m (6.1A)",
 							ref: "https://youtu.be/HvXbqtefzNA",
 						},
 					],
@@ -14319,13 +13933,8 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 						{
 							description:
@@ -14333,7 +13942,7 @@ export const valkyries: Array<Valkyrie> = [
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -14595,7 +14204,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "Kosma Build",
+				name: "Kosma",
 				note: "Updated 6.1. This valk is fucking awful. Honest truth. Her early game absolutely sucks, even as SS-rank, and loses against valks like Fischl and Eden in that regard. She only starts ramping up in strength after Benares, but even then, she still sucks a bit as she becomes mediocre at best. If anything, I would honestly recommend to play other valks instead of this shitty valk. She just really sucks, nothing more.",
 				boss: {
 					info: "Hephaestus / Husk, then Aponia or Vill-V",
@@ -14618,13 +14227,13 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
 						},
 						{
 							description:
@@ -14920,7 +14529,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Sanguine Gaze: Union",
 							stigmata: ["Verne (T)", "Verne (M)", "Verne (B)"],
-							time: "8:48m (6.1)",
+							time: "8:48m (6.1A)",
 							ref: "https://youtu.be/9w0XSpPfJNc",
 						},
 					],
@@ -14930,21 +14539,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -15234,20 +14843,25 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
+							load: 10,
+						},
+						{
+							description:
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
+							load: 5,
+						},
+						{
+							description:
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description: "Flame-Chasers deal 15% more Total DMG.",
 							load: 10,
 						},
-						{
-							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
-							load: 15,
-						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -15278,7 +14892,7 @@ export const valkyries: Array<Valkyrie> = [
 						{
 							time: "Mid",
 							first: "SS",
-							second: "BR",
+							second: "BKE",
 						},
 						{
 							time: "Late",
@@ -15286,6 +14900,7 @@ export const valkyries: Array<Valkyrie> = [
 							second: "BR",
 						},
 					],
+					note: "Remember to bring BK for Heimdall fight.",
 				},
 				signet: {
 					note: "Ideal Order from F1-F7: Double Ego start into Griseo 2nd Core finish by F4, grab either A Flame Extinguished or Petals in the Wind based on the required paints you have by F5 or F6, then unlock Apo 2nd Core by F7",
@@ -15578,7 +15193,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Seven Thunders of Retribution: Narukami",
 							stigmata: ["Dirac (T)", "Dirac (M)", "Dirac (B)"],
-							time: "13:18m (6.1)",
+							time: "13:18m (6.1A)",
 							ref: "https://youtu.be/K-h8H2hQViQ",
 						},
 					],
@@ -15589,21 +15204,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -15878,7 +15493,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Path to Acheron: Kindred",
 							stigmata: ["Allan Poe (T)", "Allan Poe (M)", "Allan Poe (B)"],
-							time: "16:10m (6.1)",
+							time: "16:10m (6.1A)",
 							ref: "https://youtu.be/KDbo2fZi94E",
 						},
 					],
@@ -15888,20 +15503,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
+							load: 10,
 						},
 						{
-							description: "Max SP increases by 30.",
+							description:
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -16164,7 +15780,7 @@ export const valkyries: Array<Valkyrie> = [
 				},
 			},
 			{
-				name: "S2 Build 5D",
+				name: "Abstinence",
 				note: "",
 				boss: {
 					info: "Husk or Hephaestus, then Vill-V",
@@ -16186,20 +15802,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
+							load: 10,
 						},
 						{
-							description: "Max SP increases by 30.",
+							description:
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -16451,7 +16068,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Miracle Kissy Pillow",
 							stigmata: ["Paganini (T)", "Paganini (M)", "Paganini (B)"],
-							time: "12:34m (6.1)",
+							time: "12:34m (6.1A)",
 							ref: "https://youtu.be/MdpFV-Zh1LU",
 						},
 					],
@@ -16461,20 +16078,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
+							load: 10,
 						},
 						{
-							description: "Max SP increases by 30.",
+							description:
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
-							load: 10,
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
 						},
 					],
-					note: "Effective for 6.1. ",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -16742,7 +16360,7 @@ export const valkyries: Array<Valkyrie> = [
 							difficult: "Finality",
 							weap: "Hekate's Sombre",
 							stigmata: ["Kafka (T)", "Kafka (M)", "Kafka (B)"],
-							time: "11:26m (6.1)",
+							time: "11:26m (6.1A)",
 							ref: "https://youtu.be/fVlpYAEqHug",
 						},
 					],
@@ -16752,20 +16370,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description: "Max SP increases by 30.",
+								"Enemies damaged by weapon actives take 5% bonus Total DMG for 5s. Triggering it again resets the duration.",
 							load: 5,
 						},
 						{
 							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
+							load: 15,
+						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [
@@ -17084,21 +16703,21 @@ export const valkyries: Array<Valkyrie> = [
 					lists: [
 						{
 							description:
-								"Valkyries gain an additional 10 SP for every 60 SP restored.",
-							load: 5,
-						},
-						{
-							description:
-								"Deployed Valkyries Total DMG increases 15%. This effect is negated 5s after taking DMG. Triggering it again resets the duration.",
+								"Valkyrie deals 20% more Total DMG for 8s when enemies are Frozen or Bleeding. Triggering it again resets the duration.",
 							load: 10,
 						},
 						{
 							description:
-								"When a Support and Deployed Valkyrie are of matching type, all enemies on the field take 10% more Total DMG.",
+								"Time slowed enemies take 8% bonus Total DMG for 4s. Triggering it again resets the duration.",
+							load: 5,
+						},
+						{
+							description:
+								"For every 60 SP restored, Total DMG received by enemies on the field increases by 10%. 2 stacks max. Duration: 15s. Triggering it again resets the duration.",
 							load: 15,
 						},
 					],
-					note: "Effective for 6.1.",
+					note: "Effective for 6.1B",
 				},
 				sigil: {
 					lists: [

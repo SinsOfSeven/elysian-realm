@@ -1,0 +1,78 @@
+---
+ # Kevin
+Signet:
+  name: Deliverance
+  normal:
+   signets:
+      - Goblet of the Giver: 
+        - Ultimate boosts Total DMG by 35% for 5s.
+        - Ultimate boosts Total DMG by 42% for 5s.
+        - Ultimate boosts Total DMG by 49% for 5s.
+        - Ultimate boosts Total DMG by 56% for 5s.
+      - Pendant of the Watcher: 
+        - Ultimate boosts Physical DMG by 30% for 5s.
+        - Ultimate boosts Physical DMG by 36% for 5s.
+        - Ultimate boosts Physical DMG by 42% for 5s.
+        - Ultimate boosts Physical DMG by 48% for 5s.
+      - Brand of the Undead: 
+        - Ultimate boosts Elemental DMG by 30% for 5s.
+        - Ultimate boosts Elemental DMG by 36% for 5s.
+        - Ultimate boosts Elemental DMG by 42% for 5s.
+        - Ultimate boosts Elemental DMG by 48% for 5s.
+      - Mask of the Predator: 
+        - Ultimate boosts Physical Breach by 25% for 5s.
+        - Ultimate boosts Physical Breach by 30% for 5s.
+        - Ultimate boosts Physical Breach by 35% for 5s.
+        - Ultimate boosts Physical Breach by 40% for 5s.
+      - Artifact of the Inhibitor: 
+        - Ultimate boosts Elemental Breach by 20% for 5s.
+        - Ultimate boosts Elemental Breach by 24% for 5s.
+        - Ultimate boosts Elemental Breach by 28% for 5s.
+        - Ultimate boosts Elemental Breach by 32% for 5s.
+      - Rochet of the Pilgrim: 
+        - Ultimate restores 3 SP per second for 5s.
+        - Ultimate restores 3.5 SP per second for 5s.
+        - Ultimate restores 4 SP per second for 5s.
+        - Ultimate restores 4.5 SP per second for 5s.
+  nexus1:
+    signets:
+      - Blade of the Deliverer:
+        - Ultimate triggers Final Battle status during which all buffs provided by Normal Signets of Deliverance increase by for 5s.
+  enhanced1:
+    signets:
+      - Flock of the Deliverer: 
+        - Final Battle is also considered burst mode. Total DMG increases by 20% in burst mode.
+        - Final Battle is also considered burst mode. Total DMG increases by 24% in burst mode.
+        - Final Battle is also considered burst mode. Total DMG increases by 28% in burst mode.
+        - Final Battle is also considered burst mode. Total DMG increases by 32% in burst mode.
+      - Crusade of the Deliverer: 
+        - After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%.
+        - After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 108% instead of 50%.
+        - After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 126% instead of 50%.
+        - After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 144% instead of 50%.
+      - Echo of the Deliverer: 
+        - Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s.
+        - Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 9s.
+        - Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 10s.
+        - Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 11s.
+  nexus2:
+    signets:
+      - Shadow of the Deliverer:
+        - Ultimate or burst mode ATKs hitting enemies 50 times triggers War of Deliverance status during which all buffs provided by Normal Signets of Deliverance are active.
+  enhanced2:
+    signets:
+      - Dream of the Deliverer: 
+        - In War of Deliverance, all buffs provided by Normal Signets of Deliverance are enhanced by 50%.
+        - In War of Deliverance, all buffs provided by Normal Signets of Deliverance are enhanced by 60%.
+        - In War of Deliverance, all buffs provided by Normal Signets of Deliverance are enhanced by 70%.
+        - In War of Deliverance, all buffs provided by Normal Signets of Deliverance are enhanced by 80%.
+      - Resolve of the Deliverer: 
+        - Every hit of Ultimate or burst mode ATKs boosts Total DMG by 0.5% (caps at 50%).
+        - Every hit of Ultimate or burst mode ATKs boosts Total DMG by 0.6% (caps at 60%).
+        - Every hit of Ultimate or burst mode ATKs boosts Total DMG by 0.7% (caps at 70%).
+        - Every hit of Ultimate or burst mode ATKs boosts Total DMG by 0.8% (caps at 80%).
+      - Triumph of the Deliverer: 
+        - Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 6s, after which all enemies take 20% bonus Total DMG.
+        - Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 8s, after which all enemies take 20% bonus Total DMG.
+        - Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 10s, after which all enemies take 20% bonus Total DMG.
+        - Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 10s, after which all enemies take 30% bonus Total DMG.

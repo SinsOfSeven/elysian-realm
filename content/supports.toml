@@ -1,0 +1,111 @@
+[[supports]]
+id = 1
+name = "Valkyrie Chariot"
+abbr = "VC"
+skill = "Black Hole"
+cooldown = "30"
+description = "Summons Valkyrie Chariot which unleashes a Black Hole that lasts 10s, sucking in enemies and causing Bleed. The ranged physical DMG taken by the sucked in enemies is increased by 27%, the the total damage dealt is reduced by 50%, the Ignore Interrupt is significantly reduced, and the enemies are stunned for 6s after the Black Hole vanishes."
+
+[[supports]]
+id = 2
+name = "Divine Prayer"
+abbr = "DP"
+skill = "Divine Retribution"
+cooldown = "40"
+description = "Triggers Time Fracture for 12s, during which, Falling Thunder is triggered every 2s, dealing 100% ATK of Lightning DMG to all enemies and impairing them, and DEF is reduced by 80% for 5s."
+
+[[supports]]
+id = 3
+name = "Snowy Sniper"
+abbr = "SS"
+skill = "Arctic Snow"
+cooldown = "60"
+description = "Summons Snowy Sniper to inflict 18 Rime Trauma to all enemies and increasing their physical DMG taken by 35% for 12s. Deals 150% of ATK as Ice DMG after the freeze ends."
+
+[[supports]]
+id = 4
+name = "Lightning Empress"
+abbr = "LE"
+skill = "Lightning Charge"
+cooldown = "40"
+description = "Lightning Empress restores 50 SP for the deployed Valkyrie."
+
+[[supports]]
+id = 5
+name = "Vermilion Knight: Eclipse"
+abbr = "VK"
+skill = "Ravaging Flame"
+cooldown = "60"
+description = "Summons Vermilion Knight: Eclipse, with a devastating ATK that deals a total of 2650% ATK of Fire DMG + 350% ATK of Physical DMG. She then unleashes Might of An-Utu, dealing 2600% ATK of Fire DMG and inflicting 20% Fire Vulnerability on the target enemies for 10s."
+
+[[supports]]
+id = 6
+name = "Bright Knight: Excelsis"
+abbr = "BKE"
+skill = "Knightly Bulwark"
+cooldown = "30"
+description = "Summons Bright Knight: Excelsis, who swings her lance and unleashes her Ultimate, dealing 930% ATK of Physical DMG, and blocking all incoming attacks temporarily."
+
+[[supports]]
+id = 7
+name = "Azure Empyrea"
+abbr = "AE"
+skill = "Empyrean Sunder"
+cooldown = "50"
+description = "Summons Azure Empyrea, who gathers enemies and deals 1500% ATK of Fire DMG to all enemies, Enemies hit by that attack take 30% bonus Elemental DMG for 15s. Valkyrie regains 1 SP per second, gain greater Ignore Interrupt, and gain 16% Elemental Breach."
+
+[[supports]]
+id = 8
+name = "Blood Rose"
+abbr = "BR"
+skill = "Blood Boost"
+cooldown = "40"
+description = "The Blood Rose reduces the HP of the deployed Valkyrie by 30%, and increases the Total DMG dealt by the Valkyrie by 60% for 10s."
+
+[[supports]]
+id = 9
+name = "Haxxor Bunny"
+abbr = "HB"
+skill = "Star Destroyer"
+cooldown = "40"
+description = "Summons Haxxor Bunny, whose presence increases Valkyrie's Total DMG by 12%. She performs a carpet bombing for Is, dealing of ATK as Ice DMG and increasing Valkyrie's Ice DMG by 15% for 15s. Triggering it again resets its duration. It also sends Valkyrie into Tracking mode, which increases Total DMG by 10% for 15s. Bombed enemies' Move Speed is reduced by 40.0% for 5s."
+
+[[supports]]
+id = 10
+name = "Midnight Absinthe"
+abbr = "MA"
+skill = "Nightbird's Call"
+cooldown = "60"
+description = "Summons Midnight Absinthe, whose presence increases Valkyrie's Fire DMG by 20%. Her assault deals 6x150% ATK of Fire DMG. She then shoots an explosive arrow at the ground, dealing 300% ATK of Fire DMG on hit and 700% ATK of Fire DMG to surrounding enemies by exploding, which also increases the team's Fire DMG by 30% for 18s. She simultaneously creates a Raven Cloud that lasts 18s over the battlefield. If the team damages the enemies in the cloud, the cloud explodes 1s later to deal 600% of ATK as Fire DMG."
+
+[[supports]]
+id = 11
+name = "Reverist Calico"
+abbr = "RC"
+skill = "All Paws on Deck"
+cooldown = "50"
+description = "Summons Reverist Calico to deal 2100% ATK of Ice DMG, increase. Total DMG for deployed Valkyries by 10% for 16s, and restore 3 SP for deployed Valkyries. When she is present, deployed Valkyries deal 25% bonus Total DMG against frozen enemies."
+
+[[supports]]
+id = 12
+name = "Starlit Astrologos"
+abbr = "SA"
+skill = "Eight Formations"
+cooldown = "50"
+description = "Deploy a formation with a whirling tornado, gathering enemies at the tornado eye dealing 20x160% ATK of Physical DMG in total. Reduces incoming DMG 20% and increases Ignore Interrupt for 15s. Increases deployed Valkyries Physical DMG by 25% for 18s. When she is present, Physical DMG dealt by deployed Valkyries Ultimate and Burst mode increases by 15%."
+
+[[supports]]
+id = 13
+name = "Stygian Nymph"
+abbr = "SN"
+skill = "Chthonic Fury"
+cooldown = "30"
+description = "Summon Stygian Nymph to inflict Quantum Implosion on QUA enemies once, pull and immobilize enemies for 4s, deal 1000% + 7 × 100% ATK of Physical DMG, trigger a 2s Global Time Fracture, and increase Valkyrie's Total DMG by 15% for 15s."
+
+[[supports]]
+id = 14
+name = "Fallen Rosemary"
+abbr = "FR"
+skill = "God Hunter"
+cooldown = "45"
+description = "Summon Fallen Rosemary's Garmr to attack, gather surrounding enemies, and deal 600% ATK of Lightning DMG. Add 10 Paralyse Trauma and increase Valkyrie Elemental DMG by 25% for 20s."

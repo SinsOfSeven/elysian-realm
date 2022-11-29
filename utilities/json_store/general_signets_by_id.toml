@@ -1,5 +1,6 @@
-[[general_signets."Kevin"]]
-name = "Deliverance"
+[[exclusive."Kevin"]]
+flame_chaser_name = "Kevin"
+hard_name = "Deliverance"
 [[general_signets."Kevin".normal]]
 name = "Goblet of the Giver"
 levels = ["Ultimate boosts Total DMG by 35% for 5s.", "Ultimate boosts Total DMG by 42% for 5s.", "Ultimate boosts Total DMG by 49% for 5s.", "Ultimate boosts Total DMG by 56% for 5s."]
@@ -42,8 +43,9 @@ levels = ["Every hit of Ultimate or burst mode ATKs boosts Total DMG by 0.5% (ca
 [[general_signets."Kevin".nexus.enhanced]]
 name = "Triumph of the Deliverer"
 levels = ["Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 6s, after which all enemies take 20% bonus Total DMG.", "Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 8s, after which all enemies take 20% bonus Total DMG.", "Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 10s, after which all enemies take 20% bonus Total DMG.", "Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 10s, after which all enemies take 30% bonus Total DMG."]
-[[general_signets."Eden"]]
-name = "Gold"
+[[exclusive."Eden"]]
+flame_chaser_name = "Eden"
+hard_name = "Gold"
 [[general_signets."Eden".normal]]
 name = "Recitatif of Eden"
 levels = ["Every 10 SP left boosts Total DMG by 3.0%.", "Every 10 SP left boosts Total DMG by 3.6%.", "Every 10 SP left boosts Total DMG by 4.2%.", "Every 10 SP left boosts Total DMG by 4.8%."]
@@ -86,8 +88,9 @@ levels = ["After lasting over 1s, Final Echo deals 300% ATK of Lightning DMG per
 [[general_signets."Eden".nexus.enhanced]]
 name = "Echo of Silent Night"
 levels = ["After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2% per second (40% max) until it ends.", "After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2.4% per second (48% max) until it ends.", "After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2.8% per second (56% max) until it ends.", "After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 3.2% per second (64% max) until it ends."]
-[[general_signets."Kalpas"]]
-name = "Decimation"
+[[exclusive."Kalpas"]]
+flame_chaser_name = "Kalpas"
+hard_name = "Decimation"
 [[general_signets."Kalpas".normal]]
 name = "Blade, Grave, and Scar"
 levels = ["Every 100 HP loss boosts Total DMG by 1.0%.", "Every 100 HP loss boosts Total DMG by 1.2%.", "Every 100 HP loss boosts Total DMG by 1.4%.", "Every 100 HP loss boosts Total DMG by 1.6%."]
@@ -130,8 +133,9 @@ levels = ["The cap of Bloodboil Armor charges increases by 500. At over 1500 cha
 [[general_signets."Kalpas".nexus.enhanced]]
 name = "Body, Bones, Heart, and Soul"
 levels = ["The Bloodboil Armor charges cap increases by 500. When its charges exceed 1500, if it gains HP recovery, when it next deals DMG to enemies, it will have a bonus 800% ATK of adaptive DMG. CD:5s.", "The Bloodboil Armor charges cap increases by 600. When its charges exceed 1500, if it gains HP recovery, when it next deals DMG to enemies, it will have a bonus 800% ATK of adaptive DMG. CD:5s.", "The Bloodboil Armor charges cap increases by 700. When its charges exceed 1500, if it gains HP recovery, when it next deals DMG to enemies, it will have a bonus 800% ATK of adaptive DMG. CD:5s.", "The Bloodboil Armor charges cap increases by 800. When its charges exceed 1500, if it gains HP recovery, when it next deals DMG to enemies, it will have a bonus 800% ATK of adaptive DMG. CD:5s."]
-[[general_signets."Su"]]
-name = "Bodhi"
+[[exclusive."Su"]]
+flame_chaser_name = "Su"
+hard_name = "Bodhi"
 [[general_signets."Su".normal]]
 name = "Motto of Pubbe-Nivasanussati"
 levels = ["Combo hits are reset at 150 to boost Total DMG by 55% for 10s.", "Combo hits are reset at 150 to boost Total DMG by 66% for 10s.", "Combo hits are reset at 150 to boost Total DMG by 77% for 10s.", "Combo hits are reset at 150 to boost Total DMG by 88% for 10s."]
@@ -174,8 +178,9 @@ levels = ["The Bodhi:Eyes Open lasts for 3s longer. For every debuff on the targ
 [[general_signets."Su".nexus.enhanced]]
 name = "Dictum of Santam"
 levels = ["Bodhi:Eyes Open inflicts 3 random debuffs lasting 3s on hit.", "Bodhi:Eyes Open inflicts 3 random debuffs lasting 4s on hit.", "Bodhi:Eyes Open inflicts 3 random debuffs lasting 5s on hit.", "Bodhi:Eyes Open inflicts 3 random debuffs lasting 6s on hit."]
-[[general_signets."Yae Sakura"]]
-name = "Setsuna"
+[[exclusive."Yae Sakura"]]
+flame_chaser_name = "Yae Sakura"
+hard_name = "Setsuna"
 [[general_signets."Yae Sakura".normal]]
 name = "Bountiful Blossom:Ume"
 levels = ["Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 40% for 8s.", "Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 48% for 8s.", "Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 56% for 8s.", "Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 64% for 8s."]
@@ -218,8 +223,9 @@ levels = ["Unleashing Setsuna Blade:Karuma reduces Ultimate Evasion Skill's rema
 [[general_signets."Yae Sakura".nexus.enhanced]]
 name = "Setsuna Blade:Mumyo"
 levels = ["Every cast of Setsuna Blade:Karuma makes the next deal 25% bonus Ice DMG on every hit. 8 stacks max.", "Every cast of Setsuna Blade:Karuma makes the next deal 30% bonus Ice DMG on every hit. 8 stacks max.", "Every cast of Setsuna Blade:Karuma makes the next deal 35% bonus Ice DMG on every hit. 8 stacks max.", "Every cast of Setsuna Blade:Karuma makes the next deal 40% bonus Ice DMG on every hit. 8 stacks max."]
-[[general_signets."Mobius"]]
-name = "Infinity"
+[[exclusive."Mobius"]]
+flame_chaser_name = "Mobius"
+hard_name = "Infinity"
 [[general_signets."Mobius".normal]]
 name = "Rodent [V]"
 levels = ["For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (5 stacks max).", "For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (7 stacks max).", "For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (9 stacks max).", "For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (12 stacks max)."]
@@ -262,8 +268,9 @@ levels = ["When a self-generated summoned entity remains for more than 8s, the p
 [[general_signets."Mobius".nexus.enhanced]]
 name = "Collapsed [M]"
 levels = ["Each time a summoned entity deals DMG to enemies, the total DMG taken by the enemies increases by 1%, and if Sentience Sync is activated, each ATK dealt by Valkyrie increases the total DMG taken by the enemies by 1%. This effect has a 1s CD and a 30% cap.", "Each time a summoned entity deals DMG to enemies, the total DMG taken by the enemies increases by 1.2%, and if Sentience Sync is activated, each ATK dealt by Valkyrie increases the total DMG taken by the enemies by 1.2%. This effect has a 1s CD and a 36% cap.", "Each time a summoned entity deals DMG to enemies, the total DMG taken by the enemies increases by 1.4%, and if Sentience Sync is activated, each ATK dealt by Valkyrie increases the total DMG taken by the enemies by 1.4%. This effect has a 1s CD and a 42% cap.", "Each time a summoned entity deals DMG to enemies, the total DMG taken by the enemies increases by 1.6%, and if Sentience Sync is activated, each ATK dealt by Valkyrie increases the total DMG taken by the enemies by 1.6%. This effect has a 1s CD and a 48% cap."]
-[[general_signets."Hua"]]
-name = "Vicissitude"
+[[exclusive."Hua"]]
+flame_chaser_name = "Hua"
+hard_name = "Vicissitude"
 [[general_signets."Hua".normal]]
 name = "Long Trip"
 levels = ["Total DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks.", "Total DMG increases by 1.2% per second. 40 stacks max. Taking DMG reduces 10 stacks.", "Total DMG increases by 1.4% per second. 40 stacks max. Taking DMG reduces 10 stacks.", "Total DMG increases by 1.6% per second. 40 stacks max. Taking DMG reduces 10 stacks."]
@@ -306,8 +313,9 @@ levels = ["Absorbing DMG more times extends the invincibility from Soldier's Rem
 [[general_signets."Hua".nexus.enhanced]]
 name = "Broken Dream"
 levels = ["With Soldier's Remembrance stacks, the max stacks of all buffs from Normal Signets of Vicissitude increase by 20. Losing all Soldier's Remembrance stacks reduces the max stacks by 10 but restores 1 Soldier's Remembrance stack. Can only be triggered once every battle.", "With Soldier's Remembrance stacks, the max stacks of all buffs from Normal Signets of Vicissitude increase by 20. Losing all Soldier's Remembrance stacks reduces the max stacks by 5 but restores 1 Soldier's Remembrance stack. Can only be triggered once every battle.", "With Soldier's Remembrance stacks, the max stacks of all buffs from Normal Signets of Vicissitude increase by 20. Losing all Soldier's Remembrance stacks restores 1 Soldier's Remembrance stack. Can only be triggered once every battle.", "With Soldier's Remembrance stacks, the max stacks of all buffs from Normal Signets of Vicissitude increase by 20. Losing all Soldier's Remembrance stacks restores 1 Soldier's Remembrance stack. Can only be triggered 2 times every battle."]
-[[general_signets."Aponia"]]
-name = "Discipline"
+[[exclusive."Aponia"]]
+flame_chaser_name = "Aponia"
+hard_name = "Discipline"
 [[general_signets."Aponia".normal]]
 name = "First, No Betrayal"
 levels = ["Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.", "Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.36% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.", "Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.42% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.", "Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.48% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation."]
@@ -350,8 +358,9 @@ levels = ["You Shall Know Your Sins' Total DMG dealt increases 40% and increases
 [[general_signets."Aponia".nexus.enhanced]]
 name = "You Shall Answer Prayers"
 levels = ["Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; cd:5s. Triggering it again resets the duration.", "Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 45% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; cd:5s. Triggering it again resets the duration.", "Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 50% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; cd:5s. Triggering it again resets the duration.", "Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 55% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; cd:5s. Triggering it again resets the duration."]
-[[general_signets."Vill-V"]]
-name = "Helix"
+[[exclusive."Vill-V"]]
+flame_chaser_name = "Vill-V"
+hard_name = "Helix"
 [[general_signets."Vill-V".normal]]
 name = "Act I:Magic"
 levels = ["Using a weapon active boosts its Total DMG by 10%. 6 stacks max. Reset at the end of each battle.", "Using a weapon active boosts its Total DMG by 12%. 6 stacks max. Reset at the end of each battle.", "Using a weapon active boosts its Total DMG by 14%. 6 stacks max. Reset at the end of each battle.", "Using a weapon active boosts its Total DMG by 16%. 6 stacks max. Reset at the end of each battle."]
@@ -394,8 +403,9 @@ levels = ["During Gravitational Field, enemies take 20% more Total DMG. During G
 [[general_signets."Vill-V".nexus.enhanced]]
 name = "Saga:Overlapping Needles"
 levels = ["Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 500% ATK of Adaptive DMG.", "Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 600% ATK of Adaptive DMG.", "Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 700% ATK of Adaptive DMG.", "Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 800% ATK of Adaptive DMG."]
-[[general_signets."Kosma"]]
-name = "Daybreak"
+[[exclusive."Kosma"]]
+flame_chaser_name = "Kosma"
+hard_name = "Daybreak"
 [[general_signets."Kosma".normal]]
 name = "Talons that Desecrate the Santuary"
 levels = ["Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:1s.", "Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:0.9s.", "Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:0.8s.", "Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:0.6s."]
@@ -438,8 +448,9 @@ levels = ["When Combo and Charged ATKs hit, unleash Righteous Retribution once, 
 [[general_signets."Kosma".nexus.enhanced]]
 name = "Heart, Unshakable Character"
 levels = ["Each stack of Rend on Valkyrie makes her deal 1.5% more Physical and Elemental DMG.  ", "Each stack of Rend on Valkyrie makes her deal 1.8% more Physical and Elemental DMG.", "Each stack of Rend on Valkyrie makes her deal 2.1% more Physical and Elemental DMG.", "Each stack of Rend on Valkyrie makes her deal 2.4% more Physical and Elemental DMG."]
-[[general_signets."Griseo"]]
-name = "Stars"
+[[exclusive."Griseo"]]
+flame_chaser_name = "Griseo"
+hard_name = "Stars"
 [[general_signets."Grieso".normal]]
 name = "Red & Hot"
 levels = ["Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.", "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 30% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.", "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 35% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.", "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 40% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration."]
@@ -482,8 +493,9 @@ levels = ["When yellow and blue taint triggers Blending along with an AoE ATK de
 [[general_signets."Grieso".nexus.enhanced]]
 name = "A Flame Extinguished"
 levels = ["When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:7s. Triggering it again resets the duration.", "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6.5s. Triggering it again resets the duration.", "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6s. Triggering it again resets the duration.", "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:5.5s. Triggering it again resets the duration."]
-[[general_signets."Pardofelis"]]
-name = "Reverie"
+[[exclusive."Pardofelis"]]
+flame_chaser_name = "Pardofelis"
+hard_name = "Reverie"
 [[general_signets."Pardofelis".normal]]
 name = "Motto of Meow"
 levels = ["Every 100 Shiny Silvers obtained this round boost Total DMG by 1%.", "Every 100 Shiny Silvers obtained this round boost Total DMG by 1.2%.", "Every 100 Shiny Silvers obtained this round boost Total DMG by 1.4%.", "Every 100 Shiny Silvers obtained this round boost Total DMG by 1.6%."]

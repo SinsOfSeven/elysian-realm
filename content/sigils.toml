@@ -1,0 +1,237 @@
+[[sigils]]
+id = 1
+name = "The MOTH Insignia"
+description = "Reduces Total DMG taken by 25% and restores 15% HP after battle."
+
+[[sigils]]
+id = 2
+name = "Home Lost"
+description = "Grants 3 portal resets but locks Remembrance Sigil and Support Valkyrie."
+
+[[sigils]]
+id = 3
+name = "False Hope"
+description = "Valkyrie receives 50% less Total DMG when debuffed."
+
+[[sigils]]
+id = 4
+name = "Tin Flask"
+description = "Take 30% less Total DMG. Max HP increased by 500."
+
+[[sigils]]
+id = 5
+name = "Ruined Legacy"
+description = "Grants 30 bonus initial SP but consumes 10% current HP after battle."
+
+[[sigils]]
+id = 5
+name = "Key to the Deep"
+description = "Max HP increased by 300; Max SP increased by 40."
+
+[[sigils]]
+id = 6
+name = "Burden"
+description = "Portals carrying Signets of Deliverance appear more often; Signets of Deliverance offer Ultimate buffs."
+
+[[sigils]]
+id = 7
+name = "Gold Goblet"
+description = "Portals carrying Signets of Gold appear more often; Signets of Gold offer SP buffs."
+
+[[sigils]]
+id = 8
+name = "Mad King's Mask"
+description = "Portals carrying Signets of Decimation appear more often; Signets of Decimation offer low HP buffs."
+
+[[sigils]]
+id = 9
+name = "Light as a Bodhi Leaf"
+description = "Portals carrying Signets of Bodhi appear more often; Signets of Bodhi offer combo buffs."
+
+[[sigils]]
+id = 10
+name = "Forget-Me-Not"
+description = "Portals carrying Signets of Setsuna appear more often; Signets of Setsuna offer evasion buffs."
+
+[[sigils]]
+id = 11
+name = "Forbidden Seed"
+description = "Portals carrying Signets of Infinity appear more often; Signets of Infinity offer summoned entity buffs."
+
+[[sigils]]
+id = 12
+name = "Memory"
+description = "Portals carrying Signets of Vicissitude appear more often; Signets of Vicissitude offer no-damage buffs."
+
+[[sigils]]
+id = 13
+name = "Crystal Rose"
+description = "Portals carrying Signets Ego of appear more often; Signets of Ego offer special buffs."
+
+[[sigils]]
+id = 14
+name = "Veil of Tears"
+description = "Portals carrying Signets Discipline of appear more often; Signets of Discipline offer restriction buffs."
+
+[[sigils]]
+id = 15
+name = "Pseudo Miracle"
+description = "Portals carrying Signets Helix of appear more often; Signets of Helix offer weapon buffs."
+
+[[sigils]]
+id = 16
+name = "Fragile Friend"
+description = "Portals carrying Signets Daybreak of appear more often; Signets of Daybreak offer shield-breaker buffs."
+
+[[sigils]]
+id = 17
+name = "Rainbow of Absence"
+description = "Portals carrying Signets Stars of appear more often; Signets of Stars offer type counter buffs."
+
+[[sigils]]
+id = 18
+name = "Feast of Emptiness"
+description = "Portals carrying Signets Reverie of appear more often; Signets of Reverie offer Shiny Silver buffs."
+
+[[sigils]]
+id = 19
+name = "Thorny Crown"
+description = "Can choose another Signet of Ego (ineffective when worn by Flame-Chasers) when a run begins. Portals carrying Signets of Ego will not appear after 1F. Remembrance Sigil and support Valkyries cannot be swapped. The number of options when choosing a Signet is reduced to 2. Every Signet owned increases Total DMG bonus by 10% and reduces max HP by 1000."
+
+[[sigils]]
+id = 20
+name = "Abandoned"
+description = "Grants 1 extra level when choosing a Signet of Deliverance. When the Signets of [Blade of the Deliverer] are active, defeating an enemy reduces Ultimate CD by 20% once every 10s; When the Signets of [Shadow of the Deliverer] are active, the number of combo hits required to enter War of Deliverance is reduced from 50 to 45. reduced from 50 to 45."
+
+[[sigils]]
+id = 21
+name = "Good Old Days"
+description = "Grants 1 extra level when choosing a Signet of Gold. When the Signets of [Aria of Gold] are active, consuming 50 SP or more in one go drops an SP Pack that restores 10 SP; When the Signets of [Echo of Gold] are active, consuming SP restores 20 Final Echo charges once every 10s."
+
+[[sigils]]
+id = 22
+name = "Shattered Shackles"
+description = "Grants 1 extra level when choosing a Signet of Decimation. When the Signets of [Fight, Struggle, and Decimation] are active, become immune to most debuffs at below 33% HP and interruption at below 20% HP; When the Signets of [Soldiers, Scissors, Spoils, and Slaughter] are active, raises max Bloodboil Armor charges by 300."
+
+[[sigils]]
+id = 23
+name = "Heavy as a Million Lives"
+description = "Grants 1 extra level when choosing a Signet of Bodhi. When the Signets of [Motto of Bodhi] are active, combo count will not be reset and the first hit grants extra 50 combo hits; When the Signets of [Dictum of Bodhi] are active, hitting enemies in a Trance grants extra 8 combo hits once every 15s."
+
+[[sigils]]
+id = 24
+name = "Stained Sakura"
+description = "Grants 1 extra level when choosing a Signet of Setsuna. When the Signets of [Setsuna Blade: Sakura ni Maku] are active, every time Sakura Screen is triggered, its DMG conversion ratio increases by 10%; When the Signets of [Setsuna Blade: Yasha] are active, the CD of Isshun status is reduced from 10s to 8.5s."
+
+[[sigils]]
+id = 25
+name = "The First Scale"
+description = "Grants 1 extra level when choosing a Signet of Infinity. When the Signets of [Infinite [X]] are active, every time a battle starts, activate Mind Sync for 8s; When the Signets of [Infinite [M]] are active, the transfer progress of Mind Sync status increases by 3% per second."
+
+[[sigils]]
+id = 26
+name = "Resolve"
+description = "Grants 1 extra level when choosing a Signet of Vicissitude. When the Signets of [Vivid Vicissitude] are active, Soldier's Resolve starts with 1 more stack and grants temporary invincibility when blocking DMG; When the Signets of [Suffering Mass] are active, start with 1 more Soldier's Resolve stack, and the invincibility from blocking DMG is prolonged to 0.6s."
+
+[[sigils]]
+id = 27
+name = "Proof of Good and Evil"
+description = "Grants 1 extra level when choosing a Signet of Discipline. When the Signets of [You Shall Be Subject to Numerous Disciplines] are active and Exhortation reaches 100, Nexus Signet's effects will be triggered; When the Signets of [You Shall Receive Disciplines' Blessing] are active, their Total DMG bonus cap is raised from 70% to 100%."
+
+[[sigils]]
+id = 28
+name = "Faraway Ship"
+description = "Grants 1 extra level when choosing a Signet of Helix. When the Signets of [Interlude: Reversed Spiral] are active, if enemies are hit by a weapon active, they take 20% bonus Physical DMG for 6s. With Signet [Intermezzo: Holistic Helix], ATK of Adaptive DMG dealt per second by the Gravitational Field to surrounding enemies increases to 120% ATK."
+
+[[sigils]]
+id = 29
+name = "Ravenous Gully"
+description = "Grants 1 extra level when choosing a Signet of Daybreak. When the Signets of [Daybreak, an Undying Light] are active, Total DMG against shielded enemies is increased by 25%. With Signet [Daybreak, Lone Beacon], deal an additional 2% Total DMG with every 10 stacks of [Rend]."
+
+[[sigils]]
+id = 30
+name = "Grey-scale Rainbow"
+description = "Grants 1 extra level when choosing a Signet of Stars. When the Signets of [Shining Like Stars] are active, if an enemy is tainted red, yellow, and blue at the same time, enemies stay tainted for an extra 2.5s; When the Signets of [Faded Stars] are active, tainted enemies will taint nearby enemies with the same colors after 1s of their defeat."
+
+[[sigils]]
+id = 31
+name = "Nine Lives"
+description = "Grants 1 extra level when choosing a Signet of Reverie. When Signets of [Empty Dreams, Self, Set, and Joy] are active, Nexus Signet's effects will be triggered at 200 less Shiny Silver. With Signet [Empty Illusions, Empty Fantasies], deal an additional 2% Total DMG with every stack of [VIP Service]."
+
+[[sigils]]
+id = 32
+name = "It Will Be Written"
+description = "Grants 1 extra level when choosing a Signet of Deliverance. All Back to Zero: The enemy with the highest HP becomes icebound for 10 hits, this executes non-boss enemies while causing bosses massive HP loss."
+charging = "Gain 200 Charge for every Ultimate use. CD: 10s."
+
+[[sigils]]
+id = 33
+name = "Dreamful Gold"
+description = "Grants 1 extra level when choosing a Signet of Gold. Aria of Brilliance: Expands Eden's Stage, causing HP loss to surrounding enemies while increasing deployed Valkyrie's Total DMG by 50% for 10s."
+charging = "Gain 50 Charge for every 20 SP recovered in combat. CD 2s."
+
+[[sigils]]
+id = 34
+name = "An Old Pal's Legacy"
+description = "Grants 1 extra level when choosing a Signet of Decimation. Divine Flames, Divine Wrath, and Divine Transformation: Increases deployed Valkyries max HP by 1000 for 10s. This skill permanently raises max HP by 50 with each use, for a maximum of 500 HP."
+charging = "Gain 100 Charge for each enemy defeated."
+
+[[sigils]]
+id = 35
+name = "Empty like Shala"
+description = "Grants 1 extra level when choosing a Signet of Bodhi. Life and Death: A special skill that increases Valkyrie ATK (speed?) and Move Speed by 20% for. It then causes massive HP loss for all enemies based on the DMG Valkyrie dealt during this time and knocks them down."
+charging = "Gain 60 Charge for every 150 combo hits."
+
+[[sigils]]
+id = 36
+name = "Tsukimi Himiko"
+description = "Grants 1 extra level when choosing a Signet of Setsuna. Setsuna Blade: Matsunitsuru: Unleash Chrono Slash, which causes massive HP loss for all enemies, then consecutive HP loss and a 4s Time Lock."
+charging = "Gain 120 Charge for every Ultimate Evasion Skill triggered CD: 6s."
+
+[[sigils]]
+id = 37
+name = "Boundless Logos"
+description = "Grants 1 extra level when choosing a Signet of Infinity. Miniature [X]: Creates an effigy to taunt enemies for 10s. The effigy is Soul Linked to enemies so that 30% of the DMG it takes is passed onto all enemies, or 60% if there are more than 2 enemies on the field."
+charging = "Gain 100 Charge when casting ELF Ultimate or summoning entities. CD: 4s"
+
+[[sigils]]
+id = 38
+name = "Hometown"
+description = "Grants 1 extra level when choosing a signet of Vicissitude. Fleeting Moment: Become invincible and increase total DMG by 20% for 8s. Invincibility is extended by 2s if HP is below 30%."
+charging = "Gain 20 Charge per second in combat. Unable to recover Charge for 5s after receiving DMG"
+
+[[sigils]]
+id = 39
+name = "Because of You"
+description = "Pristine Bless: Reset all portal on field, If there are less than 4 Signets of Ego, one of the portals will become an Exclusive Signet Portal."
+charging = "Gain 100 Charge for every floor cleared (unavailable in Flame-Chasers' Trials)."
+
+[[sigils]]
+id = 40
+name = "Boundless Feeling"
+description = "Grants 1 extra level when choosing a signet of Discipline. You Shall Be Tested by Untold Sufferings: Pulls in enemies and calls waves of Rain and Light to pour down, each causing HP loss for 10s. Rain of Light's DMG increases by 30% with each use, caps at 120%, and resets after exiting stage."
+charging = "Gain 30 Charge per second in combat."
+
+[[sigils]]
+id = 41
+name = "Falling in Past Light"
+description = "Grants 1 extra level when choosing a signet of Helix . Prologue: Surprise: Places a bomb that causes massive HP loss to all enemies."
+charging = "Gain 120 Charge for every Weapon Active use. CD: 6s"
+
+[[sigils]]
+id = 42
+name = "Out of Reach"
+description = "Grants 1 extra level when choosing a signet of Daybreak. Abyss that Engulfs All Evil: Launches a vortex that pulls in enemies, the vortex causes multiple HP loss per second and stacks Rend every 0.5s for 10s."
+charging = "Gain 20 Charge per second in combat if an enemy is nearby and 10 additional Charge if there are more than 2 enemies nearby."
+
+[[sigils]]
+id = 43
+name = "The Lonely Moon"
+description = "Grants 1 extra level when choosing a signet of Stars. Hugging Like Friends: Creates a phantom studio enemy. Valkyries deal 30% more Total DMG to countering-type enemies in the tainted area. Also triggers a paint explosion that cause HP loss and taints enemies with all unlocked paint colors when exiting the field."
+charging = "Gain 150 charges for tacking down countered-type enemies, 50 for countering types, and 100 for other types."
+
+[[sigils]]
+id = 44
+name = "Awakening"
+description = "Grants 1 extra level when choosing a signet of Reverie. Money Makes Money: Summon a slot machine at the end of non-shop stages. Each lever-pull costs 100 Silver for a random prize. If you win 999 Shiny Silvers, the slot machine will explode and cannot be resummoned."
+charging = "Gain 600 Charge after Clearing a Floor."

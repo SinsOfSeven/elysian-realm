@@ -1,12 +1,12 @@
 {
-    "general_signets": [
+  "general": {
+    "Kevin": [
       {
-        "flamechaser": "Kevin",
-        "name": "Deliverance",
+        "flame_chaser_name": "Kevin",
+        "hard_name": "Deliverance",
         "normal": [
           {
             "name": "Goblet of the Giver",
-            "description": "",
             "levels": [
               "Ultimate boosts Total DMG by 35% for 5s.",
               "Ultimate boosts Total DMG by 42% for 5s.",
@@ -16,7 +16,6 @@
           },
           {
             "name": "Pendant of the Watcher",
-            "description": "",
             "levels": [
               "Ultimate boosts Physical DMG by 30% for 5s.",
               "Ultimate boosts Physical DMG by 36% for 5s.",
@@ -26,7 +25,6 @@
           },
           {
             "name": "Brand of the Undead",
-            "description": "",
             "levels": [
               "Ultimate boosts Elemental DMG by 30% for 5s.",
               "Ultimate boosts Elemental DMG by 36% for 5s.",
@@ -36,7 +34,6 @@
           },
           {
             "name": "Mask of the Predator",
-            "description": "",
             "levels": [
               "Ultimate boosts Physical Breach by 25% for 5s.",
               "Ultimate boosts Physical Breach by 30% for 5s.",
@@ -46,7 +43,6 @@
           },
           {
             "name": "Artifact of the Inhibitor",
-            "description": "",
             "levels": [
               "Ultimate boosts Elemental Breach by 20% for 5s.",
               "Ultimate boosts Elemental Breach by 24% for 5s.",
@@ -56,7 +52,6 @@
           },
           {
             "name": "Rochet of the Pilgrim",
-            "description": "",
             "levels": [
               "Ultimate restores 3 SP per second for 5s.",
               "Ultimate restores 3.5 SP per second for 5s.",
@@ -72,7 +67,6 @@
             "enhanced": [
               {
                 "name": "Flock of the Deliverer",
-                "description": "",
                 "levels": [
                   "Final Battle is also considered burst mode. Total DMG increases by 20% in burst mode.",
                   "Final Battle is also considered burst mode. Total DMG increases by 24% in burst mode.",
@@ -82,7 +76,6 @@
               },
               {
                 "name": "Crusade of the Deliverer",
-                "description": "",
                 "levels": [
                   "After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 90% instead of 50%.",
                   "After 3s into Final Battle, all buffs provided by Normal Signets of Deliverance increase by 108% instead of 50%.",
@@ -92,7 +85,6 @@
               },
               {
                 "name": "Echo of the Deliverer",
-                "description": "",
                 "levels": [
                   "Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 8s.",
                   "Duration of Final Battle and all buffs provided by Normal Signets of Deliverance are extended to 9s.",
@@ -108,7 +100,6 @@
             "enhanced": [
               {
                 "name": "Dream of the Deliverer",
-                "description": "",
                 "levels": [
                   "In War of Deliverance, all buffs provided by Normal Signets of Deliverance are enhanced by 50%.",
                   "In War of Deliverance, all buffs provided by Normal Signets of Deliverance are enhanced by 60%.",
@@ -118,7 +109,6 @@
               },
               {
                 "name": "Resolve of the Deliverer",
-                "description": "",
                 "levels": [
                   "Every hit of Ultimate or burst mode ATKs boosts Total DMG by 0.5% (caps at 50%).",
                   "Every hit of Ultimate or burst mode ATKs boosts Total DMG by 0.6% (caps at 60%).",
@@ -128,7 +118,6 @@
               },
               {
                 "name": "Triumph of the Deliverer",
-                "description": "",
                 "levels": [
                   "Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 6s, after which all enemies take 20% bonus Total DMG.",
                   "Entering War of Deliverance makes Valkyrie attacks ignore enemy DEF and Elemental Resists for 8s, after which all enemies take 20% bonus Total DMG.",
@@ -139,14 +128,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Eden": [
       {
-        "flamechaser": "Eden",
-        "name": "Gold",
+        "flame_chaser_name": "Eden",
+        "hard_name": "Gold",
         "normal": [
           {
             "name": "Recitatif of Eden",
-            "description": "",
             "levels": [
               "Every 10 SP left boosts Total DMG by 3.0%.",
               "Every 10 SP left boosts Total DMG by 3.6%.",
@@ -156,7 +146,6 @@
           },
           {
             "name": "Recitatif of Creeks",
-            "description": "",
             "levels": [
               "Every 10 SP left boosts Physical & Elemental DMG by 2.5%.",
               "Every 10 SP left boosts Physical & Elemental DMG by 3.0%.",
@@ -166,7 +155,6 @@
           },
           {
             "name": "Recitatif of Birds",
-            "description": "",
             "levels": [
               "Every 10 SP left reduces Total DMG taken by 2.5%.",
               "Every 10 SP left reduces Total DMG taken by 3.0%.",
@@ -176,7 +164,6 @@
           },
           {
             "name": "Recitatif of Fruit Trees",
-            "description": "",
             "levels": [
               "The lower the SP. the more SP can be restored from attack (SP regen boost maxed at 100%).",
               "The lower the SP, the more SP can be restored from attack (SP regen boost maxed at 120%).",
@@ -186,7 +173,6 @@
           },
           {
             "name": "Recitatif of Good Wine",
-            "description": "",
             "levels": [
               "Restore 1.5 SP per second.",
               "Restore 1.8 SP per second.",
@@ -196,7 +182,6 @@
           },
           {
             "name": "Recitatif of Fine Jade",
-            "description": "",
             "levels": [
               "Initial SP and max SP increase by 30.",
               "Initial SP and max SP increase by 35.",
@@ -212,7 +197,6 @@
             "enhanced": [
               {
                 "name": "Aria of Soil",
-                "description": "",
                 "levels": [
                   "Intoxicated enemies take only 10% bonus Total DMG but it can stack up to 3 times.",
                   "Intoxicated enemies take only 10% bonus Total DMG but it can stack up to 4 times.",
@@ -222,7 +206,6 @@
               },
               {
                 "name": "Aria of Life",
-                "description": "",
                 "levels": [
                   "Every hit on an Intoxicated enemy restores 1.0 SP for the Valkyrie.",
                   "Every hit on an Intoxicated enemy restores 1.2 SP for the Valkyrie.",
@@ -232,7 +215,6 @@
               },
               {
                 "name": "Aria of Dawn",
-                "description": "",
                 "levels": [
                   "If the 3 Lightning of Aria bolts hit the same target, Thunder Symphony will be triggered to deal 1200% Lightning DMG in a large area and inflict 3s of Paralyze.",
                   "If the 3 Lightning of Aria bolts hit the same target, Thunder Symphony will be triggered to deal 1440% Lightning DMG in a large area and inflict 3s of Paralyze.",
@@ -248,7 +230,6 @@
             "enhanced": [
               {
                 "name": "Echo of Withered Soil",
-                "description": "",
                 "levels": [
                   "After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1% SP per second until it ends.",
                   "After lasting over 1s, Final Echo boosts SP cap by 50% and restores 1.2% SP per second until it ends.",
@@ -258,7 +239,6 @@
               },
               {
                 "name": "Echo of Shrill Wind",
-                "description": "",
                 "levels": [
                   "After lasting over 1s, Final Echo deals 300% ATK of Lightning DMG per second until it ends.",
                   "After lasting over 1s, Final Echo deals 360% ATK of Lightning DMG per second until it ends.",
@@ -268,7 +248,6 @@
               },
               {
                 "name": "Echo of Silent Night",
-                "description": "",
                 "levels": [
                   "After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2% per second (40% max) until it ends.",
                   "After lasting over 1s, Final Echo reduces the ATK, DEF. and Elemental Resists of enemies nearby by 2.4% per second (48% max) until it ends.",
@@ -279,14 +258,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Kalpas": [
       {
-        "flamechaser": "Kalpas",
-        "name": "Decimation",
+        "flame_chaser_name": "Kalpas",
+        "hard_name": "Decimation",
         "normal": [
           {
             "name": "Blade, Grave, and Scar",
-            "description": "",
             "levels": [
               "Every 100 HP loss boosts Total DMG by 1.0%.",
               "Every 100 HP loss boosts Total DMG by 1.2%.",
@@ -296,7 +276,6 @@
           },
           {
             "name": "Bone, Blood, and Ribbon",
-            "description": "",
             "levels": [
               "Every 100 HP loss boosts Physical & Elemental DMG by 0.8%.",
               "Every 100 HP loss boosts Physical & Elemental DMG by 1.0%.",
@@ -306,7 +285,6 @@
           },
           {
             "name": "Letter, Maniac, and Ravings",
-            "description": "",
             "levels": [
               "Every 100 HP loss reduces Total DMG taken by 0.8%.",
               "Every 100 HP loss reduces Total DMG taken by 1.0%.",
@@ -316,7 +294,6 @@
           },
           {
             "name": "Path, Misfortune, and Written Fate",
-            "description": "",
             "levels": [
               "Max HP increases by 25%.",
               "Max HP increases by 30%.",
@@ -326,7 +303,6 @@
           },
           {
             "name": "Desireless, Mindless, and Homeless",
-            "description": "",
             "levels": [
               "Losing HP boosts Total DMG taken by all enemies by 25% for 8s.",
               "Losing HP boosts Total DMG taken by all enemies by 30% for 8s.",
@@ -336,7 +312,6 @@
           },
           {
             "name": "God, Me, and the Only",
-            "description": "",
             "levels": [
               "Losing HP restores SP equal to 1.0% of this time's HP loss.",
               "Losing HP restores SP equal to 1.2% of this time's HP loss.",
@@ -352,7 +327,6 @@
             "enhanced": [
               {
                 "name": "Inhuman, Unevil, and Ungodly",
-                "description": "",
                 "levels": [
                   "Losing HP recharges 200 points for Blood Boil. CD:1s.",
                   "Losing HP recharges 250 points for Blood Boil. CD:1s",
@@ -362,7 +336,6 @@
               },
               {
                 "name": "Man, Mask, and Contract",
-                "description": "",
                 "levels": [
                   "Blood Boil deals 60% bonus Total DMG to enemies with a higher HP percentage than the Valkyrie.",
                   "Blood Boil deals 72% bonus Total DMG to enemies with a higher HP percentage than the Valkyrie.",
@@ -372,7 +345,6 @@
               },
               {
                 "name": "Burden, Difficulty, and Calamity",
-                "description": "",
                 "levels": [
                   "Blood Boil costs 20% current HP and Every 100 HP consumed deals 120% ATK of bonus Fire DMG.",
                   "Blood Boil costs 20% current HP and Every 100 HP consumed deals 150% ATK of bonus Fire DMG.",
@@ -388,7 +360,6 @@
             "enhanced": [
               {
                 "name": "Death, Life, Oblivion, and Existence",
-                "description": "",
                 "levels": [
                   "The Bloodboil Armor charges cap increases by 500. At over 1500 charges, Bloodboil Armor can absorb DMG equal to 1% of its charges.",
                   "The Bloodboil Armor charges cap increases by 600. At over 1500 charges, Bloodboil Armor can absorb DMG equal to 1% of its charges.",
@@ -398,7 +369,6 @@
               },
               {
                 "name": "Hometown, Homeland, Friends, and Acquaintances",
-                "description": "",
                 "levels": [
                   "The cap of Bloodboil Armor charges increases by 500. At over 1500 charges, Bloodboil Armor grants 25% Physical and Elemental Breach.",
                   "The cap of Bloodboil Armor charges increases by 600. At over 1500 charges, Bloodboil Armor grants 25% Physical and Elemental Breach.",
@@ -408,7 +378,6 @@
               },
               {
                 "name": "Body, Bones, Heart, and Soul",
-                "description": "",
                 "levels": [
                   "The Bloodboil Armor charges cap increases by 500. When its charges exceed 1500, if it gains HP recovery, when it next deals DMG to enemies, it will have a bonus 800% ATK of adaptive DMG. CD:5s.",
                   "The Bloodboil Armor charges cap increases by 600. When its charges exceed 1500, if it gains HP recovery, when it next deals DMG to enemies, it will have a bonus 800% ATK of adaptive DMG. CD:5s.",
@@ -419,14 +388,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Su": [
       {
-        "flamechaser": "Su",
-        "name": "Bodhi",
+        "flame_chaser_name": "Su",
+        "hard_name": "Bodhi",
         "normal": [
           {
             "name": "Motto of Pubbe-Nivasanussati",
-            "description": "",
             "levels": [
               "Combo hits are reset at 150 to boost Total DMG by 55% for 10s.",
               "Combo hits are reset at 150 to boost Total DMG by 66% for 10s.",
@@ -436,7 +406,6 @@
           },
           {
             "name": "Motto of Dibba-Cakkhu",
-            "description": "",
             "levels": [
               "Combo hits are reset at 150 to boost Total DMG taken by all enemies by 35% for 10s.",
               "Combo hits are reset at 150 to boost Total DMG taken by all enemies by 42% for 10s.",
@@ -446,7 +415,6 @@
           },
           {
             "name": "Motto of Dibba-Sota",
-            "description": "",
             "levels": [
               "Combo hits are reset at 150 to reduce Total DMG taken by the Valkyrie by 32% for 10s.",
               "Combo hits are reset at 150 to reduce Total DMG taken by the Valkyrie by 38% for 10s.",
@@ -456,7 +424,6 @@
           },
           {
             "name": "Motto of Ceto-Pariya-Nana",
-            "description": "",
             "levels": [
               "Combo hits are reset at 150 to restore 30 SP.",
               "Combo hits are reset at 150 to restore 36 SP.",
@@ -466,7 +433,6 @@
           },
           {
             "name": "Motto of Iddhi-Vidha",
-            "description": "",
             "levels": [
               "Combo hits are increased to 60 when below 60. cd:10s.",
               "Combo hits are increased to 70 when below 70. cd:10s.",
@@ -476,7 +442,6 @@
           },
           {
             "name": "Motto of Asavakkhaya",
-            "description": "",
             "levels": [
               "Attacks grant 25 bonus combo hits on hit. cd:5s.",
               "Attacks grant 30 bonus combo hits on hit. cd:5s",
@@ -492,7 +457,6 @@
             "enhanced": [
               {
                 "name": "Maxim of Anitya",
-                "description": "",
                 "levels": [
                   "Enemies hit by Karma Wheels are unable to recover their shields for 3s.",
                   "Enemies hit by Karma Wheels are unable to recover their shields for 4s.",
@@ -502,7 +466,6 @@
               },
               {
                 "name": "Maxim of Anatman",
-                "description": "",
                 "levels": [
                   "The next attack within 8s from an enemy hit by Karma Wheels deals 50% less Total DMG.",
                   "The next attack within 8s from an enemy hit by Karma Wheels deals 60% less Total DMG.",
@@ -512,7 +475,6 @@
               },
               {
                 "name": "Maxim of Santam",
-                "description": "",
                 "levels": [
                   "Karma Wheels deal 100% bonus DMG to shields and 500% ATK of bonus adaptive DMG to unshielded enemies.",
                   "Karma Wheels deal 120% bonus DMG to shields and 600% ATK of bonus adaptive DMG to unshielded enemies.",
@@ -528,7 +490,6 @@
             "enhanced": [
               {
                 "name": "Dictum of Anitya",
-                "description": "",
                 "levels": [
                   "For every debuff on the target enemy, it takes 150% ATK of bonus adaptive DMG when hit by Bodhi:Eyes Open.",
                   "For every debuff on the target enemy, it takes 180% ATK of bonus adaptive DMG when hit by Bodhi:Eyes Open.",
@@ -538,7 +499,6 @@
               },
               {
                 "name": "Dictum of Anatman",
-                "description": "",
                 "levels": [
                   "The Bodhi:Eyes Open lasts for 3s longer. For every debuff on the target enemy, it takes 5% bonus Total DMG.",
                   "The Bodhi:Eyes Open lasts for 3s longer. For every debuff on the target enemy, it takes 6% bonus Total DMG.",
@@ -548,7 +508,6 @@
               },
               {
                 "name": "Dictum of Santam",
-                "description": "",
                 "levels": [
                   "Bodhi:Eyes Open inflicts 3 random debuffs lasting 3s on hit.",
                   "Bodhi:Eyes Open inflicts 3 random debuffs lasting 4s on hit.",
@@ -559,14 +518,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Yae Sakura": [
       {
-        "flamechaser": "Yae Sakura",
-        "name": "Setsuna",
+        "flame_chaser_name": "Yae Sakura",
+        "hard_name": "Setsuna",
         "normal": [
           {
             "name": "Bountiful Blossom:Ume",
-            "description": "",
             "levels": [
               "Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 40% for 8s.",
               "Triggering Ultimate Evasion Skill boosts Attack Speed & Move Speed by 48% for 8s.",
@@ -576,7 +536,6 @@
           },
           {
             "name": "Bountiful Blossom:Koyo",
-            "description": "",
             "levels": [
               "Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 30% for 8s.",
               "Triggering Ultimate Evasion Skill boosts Total DMG taken by all enemies by 36% for 8s.",
@@ -586,7 +545,6 @@
           },
           {
             "name": "Bountiful Blossom:Botan",
-            "description": "",
             "levels": [
               "Triggering Ultimate Evasion Skill boosts Total DMG by 40% for 8s.",
               "Triggering Ultimate Evasion Skill boosts Total DMG by 48% for 8s.",
@@ -596,7 +554,6 @@
           },
           {
             "name": "Bountiful Blossom:Kiku",
-            "description": "",
             "levels": [
               "Ultimate Evasions reset Ultimate Evasion Skill CD.",
               "Ultimate Evasions reset Ultimate Evasion Skill CD.",
@@ -606,7 +563,6 @@
           },
           {
             "name": "Bountiful Blossom:Fuji",
-            "description": "",
             "levels": [
               "Ultimate Evasion Skill has 1 more charge and 10% reduced CD.",
               "Ultimate Evasion Skill has 1 more charge and 12% reduced CD.",
@@ -616,7 +572,6 @@
           },
           {
             "name": "Bountiful Blossom:Ayame",
-            "description": "",
             "levels": [
               "Triggering Ultimate Evasion Skill restores 12.0 bonus SP.",
               "Triggering Ultimate Evasion Skill restores 15.0 bonus SP.",
@@ -632,7 +587,6 @@
             "enhanced": [
               {
                 "name": "Setsuna Blade:Ame-Shiko",
-                "description": "",
                 "levels": [
                   "Activating Sakura Screen resets Ultimate CD and weapon active CD.",
                   "Activating Sakura Screen resets Ultimate CD and weapon active CD.",
@@ -642,7 +596,6 @@
               },
               {
                 "name": "Setsuna Blade:Tsukimi-de Ippai",
-                "description": "",
                 "levels": [
                   "When Sakura Screen is active, every attack deals 50% ATK of bonus Ice DMG. cd:0.1s.",
                   "When Sakura Screen is active, every attack deals 60% ATK of bonus Ice DMG. cd:0.1s.",
@@ -652,7 +605,6 @@
               },
               {
                 "name": "Setsuna Blade:Ino-Shika-Cho",
-                "description": "",
                 "levels": [
                   "When Sakura Screen is active, moving around can pause its duration countdown for up to 3.0s.",
                   "When Sakura Screen is active, moving around can pause its duration countdown for up to 3.0s.",
@@ -668,7 +620,6 @@
             "enhanced": [
               {
                 "name": "Setsuna Blade:Shinra Bansho",
-                "description": "",
                 "levels": [
                   "Triggering Ultimate Evasion Skill 3 times also induces Setsuna Blade:Karuma and makes it deal 200% bonus Ice DMG on every hit.",
                   "Triggering Ultimate Evasion Skill 3 times also induces Setsuna Blade:Karuma and makes it deal 240% bonus Ice DMG on every hit.",
@@ -678,7 +629,6 @@
               },
               {
                 "name": "Setsuna Blade:Mugenjigoku",
-                "description": "",
                 "levels": [
                   "Unleashing Setsuna Blade:Karuma reduces Ultimate Evasion Skill's remaining CD by 25%.",
                   "Unleashing Setsuna Blade:Karuma reduces Ultimate Evasion Skill's remaining CD by 30%.",
@@ -688,7 +638,6 @@
               },
               {
                 "name": "Setsuna Blade:Mumyo",
-                "description": "",
                 "levels": [
                   "Every cast of Setsuna Blade:Karuma makes the next deal 25% bonus Ice DMG on every hit. 8 stacks max.",
                   "Every cast of Setsuna Blade:Karuma makes the next deal 30% bonus Ice DMG on every hit. 8 stacks max.",
@@ -699,14 +648,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Mobius": [
       {
-        "flamechaser": "Mobius",
-        "name": "Infinity",
+        "flame_chaser_name": "Mobius",
+        "hard_name": "Infinity",
         "normal": [
           {
             "name": "Rodent [V]",
-            "description": "",
             "levels": [
               "For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (5 stacks max).",
               "For every summoned entity, ELF, or Support Valkyrie present, Valkyrie deals 10% bonus Total DMG (7 stacks max).",
@@ -716,7 +666,6 @@
           },
           {
             "name": "Entwined [P]",
-            "description": "",
             "levels": [
               "For every summoned entity, ELF, or Support Valkyrie present, enemies take 8% bonus Total DMG (5 stacks max).",
               "For every summoned entity, ELF, or Support Valkyrie present, enemies take 8% bonus Total DMG (7 stacks max).",
@@ -726,7 +675,6 @@
           },
           {
             "name": "Silent [B]",
-            "description": "",
             "levels": [
               "For every summoned entity, ELF, or Support Valkyrie present, Valkyrie takes 8% less Total DMG (5 stacks max).",
               "For every summoned entity, ELF, or Support Valkyrie present, Valkyrie takes 8% less Total DMG (7 stacks max).",
@@ -736,7 +684,6 @@
           },
           {
             "name": "Lip Poison [E]",
-            "description": "",
             "levels": [
               "Total DMG from summoned entities, ELFs, and Support Valkyries increases by 60%.",
               "Total DMG from summoned entitles, ELFs, and Support Valkyries increases by 72%.",
@@ -746,7 +693,6 @@
           },
           {
             "name": "Lodging [C]",
-            "description": "",
             "levels": [
               "ELF Ultimates and Support Valkyries' support skills have 20% reduced CD.",
               "ELF Ultimates and Support Valkyries' support skills have 24% reduced CD.",
@@ -756,7 +702,6 @@
           },
           {
             "name": "Dark Pupil [T]",
-            "description": "",
             "levels": [
               "ELFs restore SP 75% faster.",
               "ELFs restore SP 90% faster.",
@@ -772,7 +717,6 @@
             "enhanced": [
               {
                 "name": "Dead [X]",
-                "description": "",
                 "levels": [
                   "For every second in Mind Sync, Valkyrie herself, summoned entities, ELFs, and Support Valkyries deal 10% bonus Total DMG. 5 stacks max. 9 stacks max with any summoned entity present. Reset on exiting Mind Sync.",
                   "For every second in Mind Sync, summoned entities, ELFs, and Support Valkyries deal 13% bonus Total DMG, max 5 stacks, if entities summoned by Valkyrie exists on the field, max stack increased to 9. Reset on exiting Mind Sync.",
@@ -782,7 +726,6 @@
               },
               {
                 "name": "Unknown [X]",
-                "description": "",
                 "levels": [
                   "Triggering Mind Sync again during Mind Sync reduces the CD of ELF Ultimates and Support Valkyries' support skills by 2s. With any summoned entity present, the CDs are reduced by 2s additionally. This effect can only be triggered once per 4s.",
                   "Triggering Mind Sync again during Mind Sync reduces the CD of ELF Ultimates and Support Valkyries' support skills by 2s. With any summoned entity present, the CDs are reduced by 3s additionally. This effect can only be triggered once per 4s.",
@@ -792,7 +735,6 @@
               },
               {
                 "name": "Newborn [X]",
-                "description": "",
                 "levels": [
                   "Triggering Mind Sync again during Mind Sync no longer resets the duration but extends the duration by 4.0s instead. With any summoned entity present, the duration is extended by 5s additionally.",
                   "Triggering Mind Sync again during Mind Sync no longer resets the duration but extends the duration by 4.0s instead. With any summoned entity present, the duration is extended by 6s additionally.",
@@ -808,7 +750,6 @@
             "enhanced": [
               {
                 "name": "Sacrificial [M]",
-                "description": "",
                 "levels": [
                   "When a self-generated summoned entity remains for more than 1s, it increases the duration of Sentience Sync by 1s every second when ifs active, and increases the transfer progress by 15% per second when ifs inactive.",
                   "When a self-generated summoned entity remains for more than 1s, it increases the duration of Sentience Sync by 1s every second when it's active, and increases the transfer progress by 20% per second when it's inactive.",
@@ -818,7 +759,6 @@
               },
               {
                 "name": "Immortal/Athanasia [M]",
-                "description": "",
                 "levels": [
                   "When a self-generated summoned entity remains for more than 8s, the physical and elemental DMG it deals increase by 5% per second, up to a maximum of 50% While Sentience Sync is active, Valkyrie will accumulate 50% of the summoned entitys physical and elemental DMG increase, with a cap of 30%.",
                   "When a self-generated summoned entity remains for more than 8s, the physical and elemental DMG it deals increase by 5% per second, up to a maximum of 50% While Sentience Sync is active, Valkyrie will accumulate 50% of the summoned entity's physical and elemental DMG increase, with a cap Of 35%.",
@@ -828,7 +768,6 @@
               },
               {
                 "name": "Collapsed [M]",
-                "description": "",
                 "levels": [
                   "Each time a summoned entity deals DMG to enemies, the total DMG taken by the enemies increases by 1%, and if Sentience Sync is activated, each ATK dealt by Valkyrie increases the total DMG taken by the enemies by 1%. This effect has a 1s CD and a 30% cap.",
                   "Each time a summoned entity deals DMG to enemies, the total DMG taken by the enemies increases by 1.2%, and if Sentience Sync is activated, each ATK dealt by Valkyrie increases the total DMG taken by the enemies by 1.2%. This effect has a 1s CD and a 36% cap.",
@@ -839,14 +778,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Hua": [
       {
-        "flamechaser": "Hua",
-        "name": "Vicissitude",
+        "flame_chaser_name": "Hua",
+        "hard_name": "Vicissitude",
         "normal": [
           {
             "name": "Long Trip",
-            "description": "",
             "levels": [
               "Total DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
               "Total DMG increases by 1.2% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
@@ -856,7 +796,6 @@
           },
           {
             "name": "Days Gone",
-            "description": "",
             "levels": [
               "Physical DMG increases by 0.8% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
               "Physical DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
@@ -866,7 +805,6 @@
           },
           {
             "name": "Dark Garb No More",
-            "description": "",
             "levels": [
               "Elemental DMG increases by 0.8% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
               "Elemental DMG increases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
@@ -876,7 +814,6 @@
           },
           {
             "name": "Old Dreams Again",
-            "description": "",
             "levels": [
               "Elemental Breach increases by 0.6% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
               "Elemental Breach increases by 0.7% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
@@ -886,7 +823,6 @@
           },
           {
             "name": "Lost and Found",
-            "description": "",
             "levels": [
               "Total DMG taken decreases by 0.8% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
               "Total DMG taken decreases by 1.0% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
@@ -896,7 +832,6 @@
           },
           {
             "name": "No One to Share",
-            "description": "",
             "levels": [
               "Physical Breach increases by 0.6% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
               "Physical Breach increases by 0.7% per second. 40 stacks max. Taking DMG reduces 10 stacks.",
@@ -912,7 +847,6 @@
             "enhanced": [
               {
                 "name": "Fleeting Fantasy",
-                "description": "",
                 "levels": [
                   "Valkyrie has 1 initial stack of Soldier's Resolve.",
                   "Valkyrie has 2 initial stacks of Soldier's Resolve.",
@@ -922,7 +856,6 @@
               },
               {
                 "name": "Fallen Flowers",
-                "description": "",
                 "levels": [
                   "Every stack of Soldier's Resolve grants 1 bonus stack per second to all buffs provided by Normal Signets of Vicissitude.",
                   "Every stack of Soldier's Resolve grants 1 bonus stack per second to all buffs provided by Normal Signets of Vicissitude.",
@@ -932,7 +865,6 @@
               },
               {
                 "name": "Forgotten and Forsaken",
-                "description": "",
                 "levels": [
                   "All buffs provided by Normal Signets of Vicissitude can stack up to 60 times, and at 30 stacks or more, Soldier's Resolve stacks once per 8 seconds.",
                   "All buffs provided by Normal Signets of Vicissitude can stack up to 60 times, and at 30 stacks or more, Soldier's Resolve stacks once per 7 seconds.",
@@ -948,7 +880,6 @@
             "enhanced": [
               {
                 "name": "Worldly Troubles",
-                "description": "",
                 "levels": [
                   "With Soldier's Remembrance stacks, Total DMG increases by 50% of the Total DMG Reduction percentage from all Signets.",
                   "With Soldier's Remembrance stacks, Total DMG increases by 60% of the Total DMG Reduction percentage from all Signets.",
@@ -958,7 +889,6 @@
               },
               {
                 "name": "Go with the Flow",
-                "description": "",
                 "levels": [
                   "Absorbing DMG more times extends the invincibility from Soldier's Remembrance. Every time it absorbs DMG extends the invincibility by 0.3s.",
                   "Absorbing DMG more times extends the invincibility from Soldier's Remembrance. Every time it absorbs DMG extends the invincibility by 0.35s.",
@@ -968,7 +898,6 @@
               },
               {
                 "name": "Broken Dream",
-                "description": "",
                 "levels": [
                   "With Soldier's Remembrance stacks, the max stacks of all buffs from Normal Signets of Vicissitude increase by 20. Losing all Soldier's Remembrance stacks reduces the max stacks by 10 but restores 1 Soldier's Remembrance stack. Can only be triggered once every battle.",
                   "With Soldier's Remembrance stacks, the max stacks of all buffs from Normal Signets of Vicissitude increase by 20. Losing all Soldier's Remembrance stacks reduces the max stacks by 5 but restores 1 Soldier's Remembrance stack. Can only be triggered once every battle.",
@@ -979,14 +908,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Aponia": [
       {
-        "flamechaser": "Aponia",
-        "name": "Discipline",
+        "flame_chaser_name": "Aponia",
+        "hard_name": "Discipline",
         "normal": [
           {
             "name": "First, No Betrayal",
-            "description": "",
             "levels": [
               "Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.3% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
               "Exhortation increases by 5 per second and caps at 200. Basic ATK's Total DMG increases by 0.36% of Exhortation. Triggering Ultimate Evasion Skill reduces 50% Exhortation.",
@@ -996,7 +926,6 @@
           },
           {
             "name": "Second, No Deception",
-            "description": "",
             "levels": [
               "Exhortation increases by 5 per second and caps at 200. Valkyrie has Total DMG Reduction equal to 0.3% of Exhortation. Summoning entities reduces 50% Exhortation.",
               "Exhortation increases by 5 per second and caps at 200. Valkyrie has Total DMG Reduction equal to 0.36% of Exhortation. Summoning entities reduces 50% Exhortation.",
@@ -1006,7 +935,6 @@
           },
           {
             "name": "Third, No Brutality",
-            "description": "",
             "levels": [
               "Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
               "Exhortation increases by 5 per second and caps at 200. Valkyrie has bonus SP regen per second equal to 1.2% of Exhortation. Reaching 160 combo reduces 50% Exhortation.",
@@ -1016,7 +944,6 @@
           },
           {
             "name": "Fourth, No Insolence",
-            "description": "",
             "levels": [
               "Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.3% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
               "Exhortation increases by 5 per second and caps at 200. Ultimate's Physical and Elemental DMG increases by 0.36% of of Exhortation. Using weapon skills reduces 50% Exhortation.",
@@ -1026,7 +953,6 @@
           },
           {
             "name": "Fifth, No Falsehood",
-            "description": "",
             "levels": [
               "Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 25% bonus Total DMG for 5s. Can be refreshed.",
               "Valkyrie starts with 70 bonus Exhortation. Whenever Exhortation is reduced, enemies take 30% bonus Total DMG for 5s. Can be refreshed.",
@@ -1036,7 +962,6 @@
           },
           {
             "name": "Sixth, No Decadence",
-            "description": "",
             "levels": [
               "Boosts Valkyrie Total DMG by 20% and keeps Exhortation from reducing for 15s upon QTE hitting an enemy. Triggering it again resets the duration.",
               "Boosts Valkyrie Total DMG by 35% and keeps Exhortation from reducing for 15s upon QTE hitting an enemy. Triggering it again resets the duration.",
@@ -1052,7 +977,6 @@
             "enhanced": [
               {
                 "name": "You Shall Be Bound by Thy Body",
-                "description": "",
                 "levels": [
                   "In Mortification, Basic ATK has 30% Physical Breach and Elemental Breach but Ultimate deals 20% less Total DMG.",
                   "In Mortification, Basic ATK has 36% Physical Breach and Elemental Breach but Ultimate deals 20% less Total DMG.",
@@ -1062,7 +986,6 @@
               },
               {
                 "name": "You Shall Be Committed to Thy Life",
-                "description": "",
                 "levels": [
                   "Exhortation starts at 40 and won't drop below 40.",
                   "Exhortation starts at 50 and won't drop below 50.",
@@ -1072,7 +995,6 @@
               },
               {
                 "name": "You Shall Be Witnessed by Thy Heart",
-                "description": "",
                 "levels": [
                   "In Mortification, Ultimate deals 40% bonus Total DMG but Basic ATK deals 20% less Physical and Elemental DMG.",
                   "In Mortification, Ultimate deals 48% bonus Total DMG but Basic ATK deals 20% less Physical and Elemental DMG.",
@@ -1088,7 +1010,6 @@
             "enhanced": [
               {
                 "name": "You Shall Punish Evil",
-                "description": "",
                 "levels": [
                   "Enemies struck by You Shall Know Your Sins two or more times take 40% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
                   "Enemies struck by You Shall Know Your Sins two or more times take 45% more Total DMG. 5 SP is restored when these enemies are hit by You Shall Know Your Sins.",
@@ -1098,7 +1019,6 @@
               },
               {
                 "name": "You Shall Follow Good",
-                "description": "",
                 "levels": [
                   "You Shall Know Your Sins' Total DMG dealt increases 40% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
                   "You Shall Know Your Sins' Total DMG dealt increases 45% and increases Physical and Elemental Breach by 0.25% of Exhortation for 6s upon hitting an enemy. Triggering it again resets the duration.",
@@ -1108,7 +1028,6 @@
               },
               {
                 "name": "You Shall Answer Prayers",
-                "description": "",
                 "levels": [
                   "Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 40% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; cd:5s. Triggering it again resets the duration.",
                   "Triggering You Shall Know Your Sins causes the Valkyrie to enter Penance for 8s. In Penance, the Valkyrie takes 30% less Total DMG and deals 45% more Physical and Elemental DMG to enemies. Valkyrie deals 800% ATK of Adaptive DMG to attacking enemies when hit; cd:5s. Triggering it again resets the duration.",
@@ -1119,14 +1038,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Vill-V": [
       {
-        "flamechaser": "Vill-V",
-        "name": "Helix",
+        "flame_chaser_name": "Vill-V",
+        "hard_name": "Helix",
         "normal": [
           {
             "name": "Act I:Magic",
-            "description": "",
             "levels": [
               "Using a weapon active boosts its Total DMG by 10%. 6 stacks max. Reset at the end of each battle.",
               "Using a weapon active boosts its Total DMG by 12%. 6 stacks max. Reset at the end of each battle.",
@@ -1136,7 +1056,6 @@
           },
           {
             "name": "Act II:Pendulum",
-            "description": "",
             "levels": [
               "Using a weapon active makes enemies take 20% bonus Total DMG for 4.5s. Triggering it again resets the duration.",
               "Using a weapon active makes enemies take 24% bonus Total DMG for 4.5s. Triggering it again resets the duration.",
@@ -1146,7 +1065,6 @@
           },
           {
             "name": "Act III:Conflict",
-            "description": "",
             "levels": [
               "Using a weapon active boosts Valkyrie Total DMG by 20% for 4.5s Triggering it again resets the duration.",
               "Using a weapon active boosts Valkyrie Total DMG by 36% for 4.5s Triggering it again resets the duration.",
@@ -1156,7 +1074,6 @@
           },
           {
             "name": "Act IV:Spoon",
-            "description": "",
             "levels": [
               "Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 25% for 4.5s Triggering it again resets the duration.",
               "Using a weapon active boosts Physical DMG and Elemental DMG from Charge ATK and Combo ATK by 30% for 4.5s Triggering it again resets the duration.",
@@ -1166,7 +1083,6 @@
           },
           {
             "name": "Act V:Spider Web",
-            "description": "",
             "levels": [
               "Using a weapon active boosts Valkyrie ranged Total DMG by 40% for 4.5s. Triggering it again resets the duration.",
               "Using a weapon active boosts Valkyrie ranged Total DMG by 48% for 4.5s. Triggering it again resets the duration.",
@@ -1176,7 +1092,6 @@
           },
           {
             "name": "Act VI:Sneer",
-            "description": "",
             "levels": [
               "Using a weapon active restores 12 SP in 5s and reduces its CD by 15%.",
               "Using a weapon active restores 15 SP in 5s and reduces its CD by 15%.",
@@ -1192,7 +1107,6 @@
             "enhanced": [
               {
                 "name": "Act VII:Half-Closed Door",
-                "description": "",
                 "levels": [
                   "Marvellous Magic creates 2 extra round blades dealing 2x400% ATK of Physical DMG.",
                   "Marvellous Magic creates 2 extra round blades dealing 2x480% ATK of Physical DMG.",
@@ -1202,7 +1116,6 @@
               },
               {
                 "name": "Act VIII:Adorned Chamber",
-                "description": "",
                 "levels": [
                   "Marvellous Magic costs 20 SP to boost its base Physical DMG by 35% and grants 30% Physical Breach for 6s.",
                   "Marvellous Magic costs 20 SP to boost its base Physical DMG by 40% and grants 30% Physical Breach for 6s.",
@@ -1212,7 +1125,6 @@
               },
               {
                 "name": "Finale:Broken Truth",
-                "description": "",
                 "levels": [
                   "Marvellous Magic deals 100% bonus DMG to shields, every cast boosts it's Total DMG by 4% up to 40%.",
                   "Marvellous Magic deals 100% bonus DMG to shields, every cast boosts it's Total DMG by 5% up to 50%.",
@@ -1228,7 +1140,6 @@
             "enhanced": [
               {
                 "name": "Puppetry:Interlacing Cells",
-                "description": "",
                 "levels": [
                   "Extends Global Time Fracture caused by Special Weapon:No. 4's detonation by 3s. During Global Time Fracture, gain 30% Physical and Elemental Breach.",
                   "Extends Global Time Fracture caused by Special Weapon:No. 4's detonation by 3s. During Global Time Fracture, gain 36% Physical and Elemental Breach.",
@@ -1238,7 +1149,6 @@
               },
               {
                 "name": "Drama:Origin of Slumber",
-                "description": "",
                 "levels": [
                   "During Gravitational Field, enemies take 20% more Total DMG. During Global Time Fracture caused by detonation, enemies take 30% more Total DMG in addition.",
                   "During Gravitational Field, enemies take 24% more Total DMG. During Global Time Fracture caused by detonation, enemies take 36% more Total DMG in addition.",
@@ -1248,7 +1158,6 @@
               },
               {
                 "name": "Saga:Overlapping Needles",
-                "description": "",
                 "levels": [
                   "Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 500% ATK of Adaptive DMG.",
                   "Gravitational Field affects a larger area and gain a stronger pull. DMG-dealing hits deal and extra 600% ATK of Adaptive DMG.",
@@ -1259,14 +1168,15 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Kosma": [
       {
-        "flamechaser": "Kosma",
-        "name": "Daybreak",
+        "flame_chaser_name": "Kosma",
+        "hard_name": "Daybreak",
         "normal": [
           {
             "name": "Talons that Desecrate the Santuary",
-            "description": "",
             "levels": [
               "Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:1s.",
               "Basic/Combo/Charged ATKs inflict a stack of Rend on hit, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. Stacking cd:0.9s.",
@@ -1276,7 +1186,6 @@
           },
           {
             "name": "Wings that Mask the Sanguine Moon",
-            "description": "",
             "levels": [
               "Ultimate Evasion Skill inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:15s.",
               "Ultimate Evasion Skill inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:13s.",
@@ -1286,7 +1195,6 @@
           },
           {
             "name": "Horns the Rip the Bleak Sky",
-            "description": "",
             "levels": [
               "Ultimate inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:15s.",
               "Ultimate inflicts 15 stacks of Rend on all enemies, each stack dealing 25% ATK of Adaptive DMG per second for 10s. 70 stacks max. cd:11s.",
@@ -1296,7 +1204,6 @@
           },
           {
             "name": "Eyes that Overlook the Vicious Abyss",
-            "description": "",
             "levels": [
               "Each stack of Rend on enemies makes Valkyries deal 10% bonus DMG to their shields.",
               "Each stack of Rend on enemies makes Valkyries deal 12% bonus DMG to their shields.",
@@ -1306,7 +1213,6 @@
           },
           {
             "name": "Breath that Slanders Sulphur",
-            "description": "",
             "levels": [
               "Inflicting Rend on an already affected enemy restores 10 SP. cd:5s.",
               "Inflicting Rend on an already affected enemy restores 12 SP. cd:5s.",
@@ -1316,7 +1222,6 @@
           },
           {
             "name": "Heart that Committed Seven Crimes",
-            "description": "",
             "levels": [
               "Rend lasts 5s longer.",
               "Rend lasts 6s longer.",
@@ -1332,7 +1237,6 @@
             "enhanced": [
               {
                 "name": "Unbending Hero",
-                "description": "",
                 "levels": [
                   "For every stack on any enemy, Valkyries have 1% Physical & Elemental Breach. 25% max.",
                   "For every stack on any enemy, Valkyries have 1.2% Physical & Elemental Breach. 30% max.",
@@ -1342,7 +1246,6 @@
               },
               {
                 "name": "Undetermined Judgement",
-                "description": "",
                 "levels": [
                   "Breaking an enemy shield triggers Evil's Doom and Valkyries deal 100% bonus Total DMG to enemies with broken shields.",
                   "Breaking an enemy shield triggers Evil's Doom and Valkyries deal 120% bonus Total DMG to enemies with broken shields.",
@@ -1352,7 +1255,6 @@
               },
               {
                 "name": "Unwavering Promise",
-                "description": "",
                 "levels": [
                   "Rend-inflicted enemies take 80% bonus Total DMG and addition 40% bonus Total DMG with 20 Rend stacks or more.",
                   "Rend-inflicted enemies take 100% bonus Total DMG and addition 50% bonus Total DMG with 20 Rend stacks or more.",
@@ -1368,7 +1270,6 @@
             "enhanced": [
               {
                 "name": "Dawn, Perpetual Wait",
-                "description": "",
                 "levels": [
                   "While Rended, recovering HP reduces Total DMG taken by 1% each time upto 30%, and losing HP increases Physical and Elemental Breach by 2% each time up to 30%.",
                   "While Rended, recovering HP reduces Total DMG taken by 1.2% each time upto 30%, and losing HP increases Physical and Elemental Breach by 2.4% each time up to 36%.",
@@ -1378,7 +1279,6 @@
               },
               {
                 "name": "Choice, Ensuing Regret",
-                "description": "",
                 "levels": [
                   "When Combo and Charged ATKs hit, unleash Righteous Retribution once, dealing 3000% ATK of Adaptive DMG to nearby enemies as well as restoring 0.5% of HP for each stack of Rend on Valkyrie. cd:10s.",
                   "When Combo and Charged ATKs hit, unleash Righteous Retribution once, dealing 3600% ATK of Adaptive DMG to nearby enemies as well as restoring 0.5% of HP for each stack of Rend on Valkyrie. cd:10s.",
@@ -1388,7 +1288,6 @@
               },
               {
                 "name": "Heart, Unshakable Character",
-                "description": "",
                 "levels": [
                   "Each stack of Rend on Valkyrie makes her deal 1.5% more Physical and Elemental DMG.  ",
                   "Each stack of Rend on Valkyrie makes her deal 1.8% more Physical and Elemental DMG.",
@@ -1399,154 +1298,147 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    "Griseo": [
       {
-        "flamechaser": "Griseo",
-        "name": "Stars",
-        "normal": [
-          {
-            "name": "Red & Hot",
-            "description": "",
-            "levels": [
-              "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
-              "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 30% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
-              "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 35% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
-              "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 40% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration."
-            ]
-          },
-          {
-            "name": "Blue & Cold",
-            "description": "",
-            "levels": [
-              "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
-              "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 36%. Triggering it again resets the duration.",
-              "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 42%. Triggering it again resets the duration.",
-              "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 48%. Triggering it again resets the duration."
-            ]
-          },
-          {
-            "name": "Yellow & Warm",
-            "description": "",
-            "levels": [
-              "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
-              "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 36% bonus Total DMG. Triggering it again resets the duration.",
-              "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 42% bonus Total DMG. Triggering it again resets the duration.",
-              "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 48% bonus Total DMG. Triggering it again resets the duration."
-            ]
-          },
-          {
-            "name": "Black & Dark",
-            "description": "",
-            "levels": [
-              "Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
-              "Every time an enemy is tainted, Valkyries deals 12% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
-              "Every time an enemy is tainted, Valkyries deals 14% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
-              "Every time an enemy is tainted, Valkyries deals 16% bonus Physical and Elemental DMG for 20s. 6 stacks max."
-            ]
-          },
-          {
-            "name": "White & Bright",
-            "description": "",
-            "levels": [
-              "Every time an enemy is tainted, Valkyrie restores 12 SP. cd:5s.",
-              "Every time an enemy is tainted, Valkyrie restores 14 SP. cd:5s.",
-              "Every time an enemy is tainted, Valkyrie restores 16 SP. cd:5s.",
-              "Every time an enemy is tainted, Valkyrie restores 18 SP. cd:5s."
-            ]
-          },
-          {
-            "name": "Grey & Empty",
-            "description": "",
-            "levels": [
-              "Enemies stay tainted for 5s longer.",
-              "Enemies stay tainted for 6s longer.",
-              "Enemies stay tainted for 7s longer.",
-              "Enemies stay tainted for 8s longer."
-            ]
-          }
-        ],
-        "nexus": [
-          {
-            "name": "Shining Like Stars",
-            "description": "When there are enemies tainted with 1/2/3 different paints, Valkyries deal 20%/50%/100% bonus Total DMG to enemies of countering types.",
-            "enhanced": [
-              {
-                "name": "Blooming Like Flowers",
-                "description": "",
-                "levels": [
-                  "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 50% bonus Total DMG to them (cannot stack).",
-                  "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 60% bonus Total DMG to them.",
-                  "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 70% bonus Total DMG to them.",
-                  "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 80% bonus Total DMG to them."
-                ]
-              },
-              {
-                "name": "Burning Like Flames",
-                "description": "",
-                "levels": [
-                  "When enemies are tainted with both yellow and red paints, Valkyries have 25% bonus Physical and Elemental Breach against them.",
-                  "When enemies are tainted with both yellow and red paints, Valkyries have 30% bonus Physical and Elemental Breach against them.",
-                  "When enemies are tainted with both yellow and red paints, Valkyries have 35% bonus Physical and Elemental Breach against them.",
-                  "When enemies are tainted with both yellow and red paints, Valkyries have 40% bonus Physical and Elemental Breach against them."
-                ]
-              },
-              {
-                "name": "Stretching Like Leaves",
-                "description": "",
-                "levels": [
-                  "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 3000% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.",
-                  "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 3600% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.",
-                  "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 4200% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.",
-                  "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 4800% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s."
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Faded Stars",
-            "description": "When tainted enemies are tainted another color, Blending is triggered, dealing 300% ATK of Adaptive DMG to enemies within 15m and tainting enemies purple, green, or orange based on the Enhanced Signet; cd:1s. Total DMG increases 15% for each layer of taint, plus an additional 15% for enemies of a countered type.",
-            "enhanced": [
-              {
-                "name": "Petals in the Wind",
-                "description": "",
-                "levels": [
-                  "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
-                  "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 45%. Triggering it again resets the duration.",
-                  "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 50%. Triggering it again resets the duration.",
-                  "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 55%. Triggering it again resets the duration."
-                ]
-              },
-              {
-                "name": "Fallen Leaves",
-                "description": "",
-                "levels": [
-                  "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
-                  "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 25% for each taint in Faded Stars. Triggering it again resets the duration.",
-                  "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 30% for each taint in Faded Stars. Triggering it again resets the duration.",
-                  "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 35% for each taint in Faded Stars. Triggering it again resets the duration."
-                ]
-              },
-              {
-                "name": "A Flame Extinguished",
-                "description": "",
-                "levels": [
-                  "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:7s. Triggering it again resets the duration.",
-                  "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6.5s. Triggering it again resets the duration.",
-                  "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6s. Triggering it again resets the duration.",
-                  "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:5.5s. Triggering it again resets the duration."
-                ]
-              }
-            ]
-          }
-        ]
-      },
+        "flame_chaser_name": "Griseo",
+        "hard_name": "Stars"
+      }
+    ],
+    "Grieso": {
+      "normal": [
+        {
+          "name": "Red & Hot",
+          "levels": [
+            "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 25% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+            "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 30% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+            "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 35% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration.",
+            "Using a weapon active taints enemies nearby with red paint for 8s and makes them take 40% bonus Physical and Elemental DMG (cannot stack). Triggering it again resets the duration."
+          ]
+        },
+        {
+          "name": "Blue & Cold",
+          "levels": [
+            "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 30%. Triggering it again resets the duration.",
+            "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 36%. Triggering it again resets the duration.",
+            "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 42%. Triggering it again resets the duration.",
+            "Triggering an Ultimate Evasion Skill taints enemies nearby with blue paint for 8s and reduces their Total DMG and Move Speed by 48%. Triggering it again resets the duration."
+          ]
+        },
+        {
+          "name": "Yellow & Warm",
+          "levels": [
+            "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 30% bonus Total DMG. Triggering it again resets the duration.",
+            "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 36% bonus Total DMG. Triggering it again resets the duration.",
+            "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 42% bonus Total DMG. Triggering it again resets the duration.",
+            "Using an Ultimate taints enemies nearby with yellow paint for 8s and makes them take 48% bonus Total DMG. Triggering it again resets the duration."
+          ]
+        },
+        {
+          "name": "Black & Dark",
+          "levels": [
+            "Every time an enemy is tainted, Valkyries deals 10% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+            "Every time an enemy is tainted, Valkyries deals 12% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+            "Every time an enemy is tainted, Valkyries deals 14% bonus Physical and Elemental DMG for 20s. 6 stacks max.",
+            "Every time an enemy is tainted, Valkyries deals 16% bonus Physical and Elemental DMG for 20s. 6 stacks max."
+          ]
+        },
+        {
+          "name": "White & Bright",
+          "levels": [
+            "Every time an enemy is tainted, Valkyrie restores 12 SP. cd:5s.",
+            "Every time an enemy is tainted, Valkyrie restores 14 SP. cd:5s.",
+            "Every time an enemy is tainted, Valkyrie restores 16 SP. cd:5s.",
+            "Every time an enemy is tainted, Valkyrie restores 18 SP. cd:5s."
+          ]
+        },
+        {
+          "name": "Grey & Empty",
+          "levels": [
+            "Enemies stay tainted for 5s longer.",
+            "Enemies stay tainted for 6s longer.",
+            "Enemies stay tainted for 7s longer.",
+            "Enemies stay tainted for 8s longer."
+          ]
+        }
+      ],
+      "nexus": [
+        {
+          "name": "Shining Like Stars",
+          "description": "When there are enemies tainted with 1/2/3 different paints, Valkyries deal 20%/50%/100% bonus Total DMG to enemies of countering types.",
+          "enhanced": [
+            {
+              "name": "Blooming Like Flowers",
+              "levels": [
+                "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 50% bonus Total DMG to them (cannot stack).",
+                "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 60% bonus Total DMG to them.",
+                "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 70% bonus Total DMG to them.",
+                "When enemies of countered types are tainted with both blue and red paints, Valkyries deal 80% bonus Total DMG to them."
+              ]
+            },
+            {
+              "name": "Burning Like Flames",
+              "levels": [
+                "When enemies are tainted with both yellow and red paints, Valkyries have 25% bonus Physical and Elemental Breach against them.",
+                "When enemies are tainted with both yellow and red paints, Valkyries have 30% bonus Physical and Elemental Breach against them.",
+                "When enemies are tainted with both yellow and red paints, Valkyries have 35% bonus Physical and Elemental Breach against them.",
+                "When enemies are tainted with both yellow and red paints, Valkyries have 40% bonus Physical and Elemental Breach against them."
+              ]
+            },
+            {
+              "name": "Stretching Like Leaves",
+              "levels": [
+                "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 3000% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.",
+                "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 3600% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.",
+                "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 4200% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s.",
+                "When enemies are tainted with both yellow and blue paints, Valkyrie attacks against them deal 4800% ATK of bonus Adaptive DMG to enemies within 6 meters. cd:8s."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Faded Stars",
+          "description": "When tainted enemies are tainted another color, Blending is triggered, dealing 300% ATK of Adaptive DMG to enemies within 15m and tainting enemies purple, green, or orange based on the Enhanced Signet; cd:1s. Total DMG increases 15% for each layer of taint, plus an additional 15% for enemies of a countered type.",
+          "enhanced": [
+            {
+              "name": "Petals in the Wind",
+              "levels": [
+                "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 40%. Triggering it again resets the duration.",
+                "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 45%. Triggering it again resets the duration.",
+                "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 50%. Triggering it again resets the duration.",
+                "When red and blue taint triggers Blending, enemies within 8m are dealt 1200%/500% ATK of Adaptive DMG; cd:3s. Also taints yourself purple for 15s, increasing the effect of red, yellow, and blue taint by 55%. Triggering it again resets the duration."
+              ]
+            },
+            {
+              "name": "Fallen Leaves",
+              "levels": [
+                "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 20% for each taint in Faded Stars. Triggering it again resets the duration.",
+                "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 25% for each taint in Faded Stars. Triggering it again resets the duration.",
+                "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 30% for each taint in Faded Stars. Triggering it again resets the duration.",
+                "When yellow and blue taint triggers Blending along with an AoE ATK dealing 800% ATK of Adaptive DMG; cd:3s. Also taints yourself green for 15s, increasing Total DMG 35% for each taint in Faded Stars. Triggering it again resets the duration."
+              ]
+            },
+            {
+              "name": "A Flame Extinguished",
+              "levels": [
+                "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:7s. Triggering it again resets the duration.",
+                "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6.5s. Triggering it again resets the duration.",
+                "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:6s. Triggering it again resets the duration.",
+                "When red and yellow taint triggers Blending you become tainted orange for 15s, triggering Time Fracture for 2.5s and reducing enemy Physical Defense 40% and Elemental Resist 15% for 10s; cd:5.5s. Triggering it again resets the duration."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Pardofelis": [
       {
-        "flamechaser": "Pardofelis",
-        "name": "Reverie",
+        "flame_chaser_name": "Pardofelis",
+        "hard_name": "Reverie",
         "normal": [
           {
             "name": "Motto of Meow",
-            "description": "",
             "levels": [
               "Every 100 Shiny Silvers obtained this round boost Total DMG by 1%.",
               "Every 100 Shiny Silvers obtained this round boost Total DMG by 1.2%.",
@@ -1556,7 +1448,6 @@
           },
           {
             "name": "Back-Curled Tail",
-            "description": "",
             "levels": [
               "Every 100 Shiny Silvers obtained this round boost Physical and Elemental DMG by 0.8%.",
               "Every 100 Shiny Silvers obtained this round boost Physical and Elemental DMG by 1%.",
@@ -1566,7 +1457,6 @@
           },
           {
             "name": "Neighborhood Chatters",
-            "description": "",
             "levels": [
               "Every 100 Shiny Silvers obtained this round boost max HP by 25 and max SP by 1.",
               "Every 100 Shiny Silvers obtained this round boost max HP by 30 and max SP by 1.2.",
@@ -1576,7 +1466,6 @@
           },
           {
             "name": "Flexible P&C",
-            "description": "",
             "levels": [
               "Every 100 Shiny Silvers obtained this round restore 1 HP and 0.1 SP. Taking DMG disables this effect for 5s.",
               "Every 100 Shiny Silvers obtained this round restore 1.2 HP and 0.12 SP. Taking DMG disables this effect for 5s.",
@@ -1586,7 +1475,6 @@
           },
           {
             "name": "Merchant's Philosophy",
-            "description": "",
             "levels": [
               "After finishing each floor, the number of currently owned Shiny Silvers grows by 10% for up to 100 (independent effect).",
               "After finishing each floor, the number of currently owned Shiny Silvers grows by 12% for up to 120 (independent effect).",
@@ -1596,7 +1484,6 @@
           },
           {
             "name": "Shiny & Valuable",
-            "description": "",
             "levels": [
               "Enemy kills grant bonus Shiny Silvers. Non-boss enemies grant 5 each. Boss enemies grant each (independent effect).",
               "Enemy kills grant bonus Shiny Silvers. Non-boss enemies grant 6 each. Boss enemies grant 120 each (independent effect).",
@@ -1612,7 +1499,6 @@
             "enhanced": [
               {
                 "name": "Improvised Drama",
-                "description": "",
                 "levels": [
                   "Ultimate Evasion Skills trigger Pardo's Signature Move which deals 500% ATK of Adaptive DMG to enemies nearby. Every 100 Shiny Silvers owned grant 200% ATK of bonus Adaptive DMG. cd:15s.",
                   "Ultimate Evasion Skills trigger Pardo's Signature Move which deals 600% ATK of Adaptive DMG to enemies nearby. Every 100 Shiny Silvers owned grant 240% ATK of bonus Adaptive DMG. cd:15s.",
@@ -1622,7 +1508,6 @@
               },
               {
                 "name": "Setsuna Paw",
-                "description": "",
                 "levels": [
                   "Ultimates trigger Pardo's Signature Move which deals 500% ATK of Adaptive DMG to enemies nearby. Every 100 Shiny Silvers owned grant 200% ATK of bonus Adaptive DMG. cd:15s.",
                   "Ultimates trigger Pardo's Signature Move which deals 600% ATK of Adaptive DMG to enemies nearby. Every 100 Shiny Silvers owned grant 240% ATK of bonus Adaptive DMG. cd:15s.",
@@ -1632,7 +1517,6 @@
               },
               {
                 "name": "This Is Not Where We Die",
-                "description": "",
                 "levels": [
                   "Valkyries enters with a Good Luck shield. While the shield holds, every 100 Shiny Silvers owned grant 1% Physical and Elemental Breach. The shield can block incoming DMG twice before it breaks, and every 500 Shiny Silvers owned grant one more block.",
                   "Valkyries enters with a Good Luck shield. While the shield holds, every 100 Shiny Silvers owned grant 1.2% Physical and Elemental Breach. The shield can block incoming DMG twice before it breaks, and every 500 Shiny Silvers owned grant one more block.",
@@ -1648,7 +1532,6 @@
             "enhanced": [
               {
                 "name": "Improv Magic:Zeroing",
-                "description": "",
                 "levels": [
                   "10% off shop items. A newly gained stack of VIP Service increases Total DMG by another 10%.",
                   "10% off shop items. A newly gained stack of VIP Service increases Total DMG by another 12%.",
@@ -1658,7 +1541,6 @@
               },
               {
                 "name": "Snowy Paw",
-                "description": "",
                 "levels": [
                   "A newly gained stack of VIP Service lasts for 6 floors. Can gain 1 more stack of VIP Service at most on a shop visit.",
                   "A newly gained stack of VIP Service lasts for 6 floors. Can gain 2 more stack of VIP Service at most on a shop visit.",
@@ -1668,7 +1550,6 @@
               },
               {
                 "name": "My Dreams Will Come True",
-                "description": "",
                 "levels": [
                   "With 1/2/3 stacks of VIP Service, release Making Money every 15/10/5 seconds in an area around Valkyrie, dealing 800% ATK of Adaptive DMG and making enemies take 50% more Total DMG for 5s. This debuff will diminish to nothing over 5s.",
                   "With 1/2/3 stacks of VIP Service, release Making Money every 15/10/5 seconds in an area around Valkyrie, dealing 800% ATK of Adaptive DMG and making enemies take 60% more Total DMG for 5s. This debuff will diminish to nothing over 5s.",
@@ -1682,3 +1563,4 @@
       }
     ]
   }
+}
